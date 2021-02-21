@@ -1,0 +1,88 @@
+#===============================================================================
+#
+# teetest Build Script
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2015 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/core.tz/1.0.3.c1/securemsm/trustzone/qsapps/teetest/teetest/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Author: pwbldsvc $
+#  $Change: 11896995 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+#===============================================================================
+Import('env')
+env = env.Clone()
+vars = Variables()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/trustzone/qsapps/teetest/teetest/src"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Internal depends within CoreBSP
+#-------------------------------------------------------------------------------
+
+CBSP_API = [
+   'MINK',
+]
+
+env.RequirePublicApi(CBSP_API)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+INC_PATH = [
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/teetest/teetest/src",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/teetest/teetest/src/${CHIPSET}",
+]
+
+env.Append(CPPPATH = INC_PATH)
+
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------
+APP_CORE_ENTRY_SOURCES = [
+   '${BUILDPATH}/teetest_cache.s',
+   '${BUILDPATH}/teetest_entry.s',
+   '${BUILDPATH}/teetest_mmu.s',
+   '${BUILDPATH}/teetest_mmu_func.c',
+   '${BUILDPATH}/teetest_smc.s',
+   '${BUILDPATH}/teetest.c',
+   '${BUILDPATH}/teetest_secdisp.c',
+   '${BUILDPATH}/teetest_hal_qgic.c',
+   '${BUILDPATH}/teetest_i2c.c',
+   '${BUILDPATH}/teetest_crypto.c',
+   '${BUILDPATH}/CEnv.c',
+   '${BUILDPATH}/CGuestVM.c',
+]
+
+app_core_obj = env.Object(APP_CORE_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddLibsToImage('TEETEST_IMAGE', app_core_obj)
+
+#-------------------------------------------------------------------------------
+# Pack out files: no files packed out for teetest application
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

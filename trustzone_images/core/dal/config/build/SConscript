@@ -1,0 +1,43 @@
+#===============================================================================
+#
+# DAL CONFIG Lib
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2014 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Qualcomm Confidential and Proprietary
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/core.tz/1.0.3.c1/dal/config/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Author: pwbldsvc $
+#  $Change: 11896995 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when         who     what, where, why
+# --------     ---     ---------------------------------------------------------
+# 10/31/2014   aa      Create
+#
+#===============================================================================
+Import('env')
+import os
+env = env.Clone()
+
+# Invoke script based on image env
+if env.GetUsesFlag('USES_HYPERVISOR') is True:
+   script_fname = "hypervisor.script"   # hypervisor
+elif env.has_key('TZOS_IMAGE'):         # qsee
+   script_fname = "tz.script"
+elif env.has_key('DAL_DEVCFG_OEM_IMG'): # devcfg_img
+   script_fname = "oem.script" 
+else :
+   script_fname = None
+   
+if (None !=script_fname):
+   env.SConscript(script_fname, exports='env')

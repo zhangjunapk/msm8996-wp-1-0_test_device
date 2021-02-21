@@ -1,0 +1,95 @@
+l1_file_name = /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/tools/build/scons/sectools/resources/data_prov_assets/Encryption/Unified/default/l1_key.bin
+l2_file_name = /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/tools/build/scons/sectools/resources/data_prov_assets/Encryption/Unified/default/l2_key.bin
+l3_file_name = /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/tools/build/scons/sectools/resources/data_prov_assets/Encryption/Unified/default/l3_key.bin
+Signing image: /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/build/ms/bin/IADAANAA/unsigned/secure_ui_sample.mbn
+attestation_certificate_extensions = /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/tools/build/scons/sectools/resources/data_prov_assets/General_Assets/Signing/openssl/v3_attest.ext
+ca_certificate_extensions = /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/tools/build/scons/sectools/resources/data_prov_assets/General_Assets/Signing/openssl/v3.ext
+openssl_configfile = /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/tools/build/scons/sectools/resources/data_prov_assets/General_Assets/Signing/openssl/opensslroot.cfg
+Generating new Root certificate and a random key
+Generating new Attestation CA certificate and a random key
+Generating new Attestation certificate and a random key
+
+Attestation Certificate Properties:
+| SW_ID     | 0x000000000000000C  |
+| HW_ID     | 0x0000000000000000  |
+| DEBUG     | 0x0000000000000002  |
+| OEM_ID    | 0x0000              |
+| SW_SIZE   | 264                 |
+| MODEL_ID  | 0x0000              |
+| SHA256    | True                |
+| APP_ID    | 0x0000000000001110  |
+| CRASH_DUMP| None                |
+| ROT_EN    | None                |
+| Exponent  | 3                   |
+| TCG_MIN   | None                |
+| TCG_MAX   | None                |
+| FID_MIN   | None                |
+| FID_MAX   | None                |
+
+Signed & Encrypted image is stored at /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/bsp/trustzone/qsapps/secure_ui_sample/build/IADAANAA/sign_and_encrypt/default/secure_ui_sample/secure_ui_sample.mbn
+Image /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/bsp/trustzone/qsapps/secure_ui_sample/build/IADAANAA/sign_and_encrypt/default/secure_ui_sample/secure_ui_sample.mbn signature is valid
+Image /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/bsp/trustzone/qsapps/secure_ui_sample/build/IADAANAA/sign_and_encrypt/default/secure_ui_sample/secure_ui_sample.mbn is encrypted
+
+Base Properties: 
+| Integrity Check                 | True  |
+| Signed                          | True  |
+| Encrypted                       | True  |
+| Size of signature               | 256   |
+| Size of one cert                | 2048  |
+| Num of certs in cert chain      | 3     |
+| Number of root certs            | 1     |
+| Hash Page Segments as segments  | False |
+| Cert chain size                 | 6144  |
+
+ELF Properties: 
+Elf Header: 
+| Magic                      | ELF                           |
+| Class                      | ELF32                          |
+| Data                       | 2's complement, little endian  |
+| Version                    | 1 (Current)                    |
+| OS/ABI                     | No extensions or unspecified   |
+| ABI Version                | 0                              |
+| Type                       | DYN (Shared object file)       |
+| Machine                    | Advanced RISC Machines ARM     |
+| Version                    | 0x1                            |
+| Entry address              | 0x00000000                     |
+| Program headers offset     | 0x00000034                     |
+| Section headers offset     | 0x00000000                     |
+| Flags                      | 0x05000200                     |
+| ELF header size            | 52                             |
+| Program headers size       | 32                             |
+| Number of program headers  | 5                              |
+| Section headers size       | 40                             |
+| Number of section headers  | 0                              |
+| String table section index | 0                              |
+
+Elf Program Headers: 
+| S.No | Type | Offset | VirtAddr | PhysAddr | FileSize | MemSize | Flags | Align |
+|------|------|--------|----------|----------|----------|---------|-------|-------|
+|  1   | LOAD |0x003000| 0x000000 | 0x000000 | 0x0aae09 | 0x0aae09|  0x5  | 0x100 |
+|  2   | LOAD |0x0ade10| 0x0ab000 | 0x0ab000 | 0x174398 | 0x286398|  0x6  | 0x10  |
+|  3   | LOAD |0x222f00| 0x332000 | 0x332000 | 0x0001e8 | 0x0001e8|  0x6  | 0x1000|
+|  4   | LOAD |0x223f00| 0x333000 | 0x333000 | 0x000058 | 0x000058|  0x6  | 0x1000|
+|  5   | LOAD |0x224f00| 0x334000 | 0x334000 | 0x000508 | 0x000508|  0x4  | 0x1000|
+
+Hash Segment Properties: 
+| Header Size  | 40B  |
+
+Header: 
+| cert_chain_ptr  | 0x00335208  |
+| cert_chain_size | 0x00001800  |
+| code_size       | 0x000000e0  |
+| data_is_none    | 0x00000000  |
+| flash_parti_ver | 0x00000003  |
+| image_dest_ptr  | 0x00335028  |
+| image_id        | 0x00000004  |
+| image_size      | 0x000019e0  |
+| image_src       | 0x00000000  |
+| sig_ptr         | 0x00335108  |
+| sig_size        | 0x00000100  |
+
+SecElf Properties: 
+| image_type        | 0     |
+| max_elf_segments  | 100   |
+| testsig_serialnum | None  |
+

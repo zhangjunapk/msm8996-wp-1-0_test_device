@@ -1,0 +1,23 @@
+#============================================================================
+#  Name:                                                                     
+#    QCA6174_SCAQBAFM_rampatch_objs.lf 
+#
+#  Description:                                                              
+#    None 
+#                                                                            
+# Copyright (c) 2016 by QUALCOMM, Incorporated.  All Rights Reserved.        
+#============================================================================
+#                                                                            
+# *** AUTO GENERATED FILE - DO NOT EDIT                                      
+#                                                                            
+# GENERATED: Wed Nov 16 00:00:33 2016 
+#============================================================================
+../../../../rampatch/bt/platform/coex/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/MCI/src/patch_PFAL_COEX_MCI.o
+../../../../rampatch/bt/platform/pfal/eeprom/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/src/patch_PFAL_EEPROM.o
+../../../../rampatch/bt/platform/pfal/gpio/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/src/patch_PFAL_GPIO_MUX.o
+../../../../rampatch/bt/platform/pfal/lc/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/src/patch_PFAL_LC.o
+../../../../rampatch/bt/platform/pfal/lc/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/src/patch_PFAL_LC_State.o
+../../../../rampatch/bt/platform/pfal/rm/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/common/src/patch_PFAL_RM_HW.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/common/src/patch_PFAL_SYS_EDL.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/6174/src/patch_PFAL_SYS_CLK_EXT.o
+../../../../rampatch/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/rampatch_main.o

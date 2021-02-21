@@ -1,0 +1,72 @@
+#===============================================================================
+#
+# QSEE Secure UI Layouts
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2016 Qualcomm Technologies, Inc.  All Rights Reserved.
+# Qualcomm Technologies Proprietary and Confidential.
+#
+#-------------------------------------------------------------------------------
+#
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 07/29/15   sn      Initial version
+#===============================================================================
+
+Import('env')
+env = env.Clone()
+
+env.Append(CCFLAGS = ' -O0')
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/secure_ui_sample/layouts/src"
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Publish Private APIs
+#-------------------------------------------------------------------------------
+
+env.PublishPrivateApi('SECUREMSM', [
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUI/inc",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/libgd/include",
+])
+
+#-------------------------------------------------------------------------------
+# Sources, libraries
+#-------------------------------------------------------------------------------
+
+INC_PATH_API = ["${INC_ROOT}/core/api/kernel/libstd/stringl"]
+env.Append(CPPPATH = INC_PATH_API)
+
+vars = Variables()
+if 'form_factor_layout' not in env:
+   vars.Add(EnumVariable('form_factor_layout', 'form factor', '8996_fluid',
+                         allowed_values=('8996_fluid','8976_fluid','8952_fluid','8953_fluid'),
+                         map={}, ignorecase=2))
+vars.Update(env)
+
+SOURCES_LAYOUT = [
+  '${BUILDPATH}/layout_${form_factor_layout}.c',
+]
+layout_lib = env.Object(SOURCES_LAYOUT)
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+
+env.AddLibrary([
+   'SECUREUISAMPLE_IMAGE',
+   'SECUREUISAMPLE64_IMAGE',
+   ],
+   '${BUILDPATH}/secure_ui_layout',
+   layout_lib)
+

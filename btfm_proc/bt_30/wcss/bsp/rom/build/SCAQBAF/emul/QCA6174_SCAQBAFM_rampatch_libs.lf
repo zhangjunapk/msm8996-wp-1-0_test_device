@@ -1,0 +1,21 @@
+#============================================================================
+#  Name:                                                                     
+#    QCA6174_SCAQBAFM_rampatch_libs.lf 
+#
+#  Description:                                                              
+#    None 
+#                                                                            
+# Copyright (c) 2016 by QUALCOMM, Incorporated.  All Rights Reserved.        
+#============================================================================
+#                                                                            
+# *** AUTO GENERATED FILE - DO NOT EDIT                                      
+#                                                                            
+# GENERATED: Wed Nov 16 00:01:24 2016 
+#============================================================================
+../../../../rampatch/bt/platform/coex/build/wcss_ram_uart/cortex-m0/SCAQBAF/MCI/src/patch_PFAL_COEX_MCI.o
+../../../../rampatch/bt/platform/coex/build/wcss_ram_uart/cortex-m0/SCAQBAF/MCI/src/patch_PFAL_COEX_MCI_HW.o
+../../../../rampatch/bt/platform/coex/build/wcss_ram_uart/cortex-m0/SCAQBAF/MCI/src/patch_PFAL_COEX_MCI_UTIL.o
+../../../../rampatch/bt/platform/coex/build/wcss_ram_uart/cortex-m0/SCAQBAF/MWS/src/patch_PFAL_COEX_MWS.o
+../../../../rampatch/bt/services/dbg/build/wcss_ram_uart/cortex-m0/SCAQBAF/dbg.lib
+../../../../rampatch/bt/services/pf/sleep/build/wcss_ram_uart/cortex-m0/SCAQBAF/pf.lib
+../../../../rampatch/bt/services/pf/txp/build/wcss_ram_uart/cortex-m0/SCAQBAF/pf.lib

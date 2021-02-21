@@ -1,0 +1,134 @@
+;============================================================================
+;  Name:
+;    debug_uefi.cmm
+;
+;  Description:
+;     Debug UEFI Environment
+;
+; Copyright (c) 2013-2015 Qualcomm Technologies Incorporated.
+; All Rights Reserved.
+; Qualcomm Technologies Confidential and Proprietary
+;
+;----------------------------------------------------------------------------
+;============================================================================
+;
+;                        EDIT HISTORY FOR MODULE
+;
+;
+;
+;when         who     what, where, why
+;----------   ---     ----------------------------------------------------------
+;2015-11-04   bh      Attach before getting HW revision
+;2015-11-04   bh      Fix dload cookie address
+;2015-10-28   bh      Clear path before executing
+;2015-10-15   bh      Update PATH
+;2015-07-09   bh      Fix UEFI_Logs area issues
+;2015-03-19   bh      Robust debug script
+;2015-02-11   vk      Bringup updates
+;2015-01-27   bh      Unifying 32/64-bit scripts
+;2014-10-08   vk      Clear RAM dump cookie
+;2014-08-21   wg      Updated argument order passed to dxe_dbg.cmm
+;2014-07-31   wg      Updated UefiDebugCookieAddr location to safer location
+;2014-07-14   wg      Added UefiDebugCookie to be passed to dxe_dbg.cmm
+;2014-06-06   vk      Remove having to hit enter
+;2014-04-09   vk      Add wait, cleanup
+;2014-03-28   vk      Remove unused variables
+;2014-01-02   vk      Update core alias
+;2013-11-15   vk      updates for Virtio
+;2013-11-11   vk      Fix typo
+;2013-11-08   vk      Add ARMv8
+;2013-10-15   vk      8994 Virtio support
+;2013-08-15   plc     Updating pkg
+;2013-03-09   vk      Initial Version
+;============================================================================;
+
+;============================================================================
+;  CMM script variables
+;============================================================================
+local &SharedImemBase
+local &UefiDebugCookieAddr
+local &HwVersion
+
+LOCAL &DLOAD_COOKIE1_ADDR
+
+&SharedImemBase=0x066BF000
+
+
+local &TargetPkg
+local &RamEntryAddr
+local &AppsBLRamEntryAddr
+
+;uefi debug cookie address and value, it's always in ocimem
+&UefiDebugCookieAddr=&SharedImemBase+944
+&UefiDebugCookie=0x55444247
+&DumpCookieBaseAddr=&SharedImemBase
+
+;============================================================================
+
+
+;---------------------------------------------------
+; Setup area and log
+;---------------------------------------------------
+area.clear
+area.reset
+area.create UEFI_Logs 1000. 8192.
+area.select UEFI_Logs
+
+;---------------------------------------------------
+; Entry point
+;---------------------------------------------------
+ENTRY &ImageName &ImageName1
+
+  ; Later these can be parameterized
+  &TargetPkg="Msm8996Pkg"
+  &RamEntryAddr=0x80200000
+  &AppsBLRamEntryAddr=0x90B00000
+  &DLOAD_COOKIE1_ADDR=0x007b3000
+
+  sys.m.a
+
+  &HwVersion=(DATA.LONG(EAXI:0x7a8000)&0xFF00)>>8
+  if (&HwVersion<3)
+  (
+    &DLOAD_COOKIE1_ADDR=0x00361008
+  )
+
+  PATH 
+
+  ; Setup present and other directories
+  &CwDir=os.ppd()
+
+  PATH + &CwDir
+
+  winclear
+ 
+  b.d
+  sys.u
+  
+  D.S A:&UefiDebugCookieAddr %LE %LONG &UefiDebugCookie
+
+  ;D.S NSD:0x361008 %LE %Long 0
+
+  D.S A:&DLOAD_COOKIE1_ADDR %LE %LONG 0x0
+  
+
+  ;break 
+  
+  b.set &RamEntryAddr /o /disablehit
+  b.set &AppsBLRamEntryAddr /o /disablehit
+  go
+  wait !run()
+
+  PATH + &CwDir/../../Tools/
+  PATH + &CwDir/../../Tools/cmm
+  
+  ;Load T32 UEFI awareness
+  do t32_uefi_menu.cmm
+  
+  b.d &AppsBLRamEntryAddr
+  b.d &RamEntryAddr
+  do dxe_dbg.cmm &TargetPkg &RamEntryAddr &UefiDebugCookieAddr &ImageName &ImageName1
+
+  cd &CwDir
+enddo
+

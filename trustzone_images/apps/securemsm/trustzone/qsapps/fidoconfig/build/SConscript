@@ -1,0 +1,97 @@
+#===========================================================================
+#  Copyright (c) 2011-2014 QUALCOMM Incorporated.
+#  All Rights Reserved.
+#  Qualcomm Confidential and Proprietary
+#===========================================================================
+#
+# App Core
+#
+# GENERAL DESCRIPTION
+#    build script
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 01/13/14    wt     Created
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidoconfig"
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+INC_PATH = [
+  "${COREBSP_ROOT}/securemsm/trustzone/qsee/include",
+  "${COREBSP_ROOT}/securemsm/trustzone/qsee/mink/include",
+  "${INC_ROOT}/core/api/kernel/libstd/stringl",
+  "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+  "${INC_ROOT}/apps/securemsm/trustzone/qsapps/fidoconfig/src",
+  "${INC_ROOT}/apps/securemsm/trustzone/qsapps/fidoconfig/inc",
+]
+env.Append(CPPPATH = INC_PATH)
+env.RequireRestrictedApi('FIDOCONFIG')
+env.RequireRestrictedApi('FIDOCRYPTO')
+env.RequirePrivateApi('SECUREMSM')
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------
+APP_CORE_ENTRY_SOURCES = [
+      '${BUILDPATH}/src/app_main.c',
+]
+env.AddBinaryObject('FIDOCONFIG_IMAGE', APP_CORE_ENTRY_SOURCES)
+
+#----------------------------------------------------------------------------
+# IPC
+#----------------------------------------------------------------------------
+IPC_SOURCES = [
+      '${BUILDPATH}/src/COEMFidoConfig.c',
+]
+env.AddBinaryObject('FIDOCONFIG_IMAGE', IPC_SOURCES)
+
+#----------------------------------------------------------------------------
+# Headers to be cleaned up
+#----------------------------------------------------------------------------
+IPC_HEADERS = [
+      '${BUILDPATH}/src/COEMFidoConfig_open.h',
+]
+env.CleanPack('FIDOCONFIG_IMAGE', IPC_HEADERS)
+
+#----------------------------------------------------------------------------
+# Config, OEM can modify it
+#----------------------------------------------------------------------------
+CONFIG_SOURCES = [
+      '${BUILDPATH}/src/FidoConfig.c',
+]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddObject('FIDOCONFIG_IMAGE', CONFIG_SOURCES)
+
+
+#-------------------------------------------------------------------------------
+# Add metadata to image
+#-------------------------------------------------------------------------------
+md = {
+   'appName':    'fidoconfig',
+   'privileges': ['default'],
+   'services':   ['OEMFidoConfig'],
+   'acceptBufSize': 12228,
+}
+
+env.AddSecureAppMetadata('FIDOCONFIG_IMAGE', md )
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()
+env.LoadAPIUnits()

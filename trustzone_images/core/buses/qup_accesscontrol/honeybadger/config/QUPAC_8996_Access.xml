@@ -1,0 +1,299 @@
+//===========================================================================
+//
+// FILE:         qupac_access.xml
+//
+// DESCRIPTION:  This file lists access permission for al QUPS
+//
+//===========================================================================
+//
+//                             Edit History
+//
+// $Header:  $
+//
+// when       who     what, where, why
+// 12/18/15   dpk     Enabled GPIO protection for BLSP2_QUP5
+// 01/14/15   sk      created
+//
+//===========================================================================
+//             Copyright c 2015 QUALCOMM Technologies, Incorporated.
+//                    All Rights Reserved.
+//                  QUALCOMM Confidential & Proprietary
+//===========================================================================
+#include "QupACCommonIds.h"
+
+
+//All QUPs have to be listed below. Any QUP not present cannot be accesssed by any subsystem. 
+//It's designed to be flexible enough to list only available QUPs on a particular platform.
+
+<driver name="NULL">
+   <device id=BLSP1_QUP0_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_QUP0 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 0, 1 ,2, 3, end </props> //Lock 0 to n GPIOs connected to this QUP. Number of GPIS listed here depends on use case.
+       <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_HLOS, end
+        </props>
+   </device>
+   <device id=BLSP1_UART0_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_UART0 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> //Lock n GPIOs connected to this QUP. Number of GPIS listed here depends on use case.
+       <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+       </props>
+   </device>
+ 
+   <device id=BLSP1_QUP1_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_QUP1 </props>
+      //<props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 41, 42, 43, 44, end </props> //GPIO 41,42,43,44 are connected to this QUP
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+         AC_HLOS, end //DEFAULT = skip any config and retain static config from build, if any. REsoruce not assigned to any owner if no static value (likely) and AC_DEFAULT here.
+       </props>
+   </device>
+   <device id=BLSP1_UART1_DEV_ACCESS>
+     <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_UART1 </props>
+     <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_HLOS, end
+       </props>
+   </device>
+ 
+   <device id=BLSP1_QUP2_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_QUP2 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 45, 46, 47, 48, end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+         AC_HLOS, end 
+      </props>
+   </device>
+   <device id=BLSP1_UART2_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_UART2 </props>      
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_ADSP_Q6_ELF, end
+      </props>
+   </device>
+
+   <device id=BLSP1_QUP3_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_QUP3 </props>
+      //<props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 65, 66, 67, 68, end </props> 
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+            AC_DEFAULT, end
+        </props>
+   </device>
+   <device id=BLSP1_UART3_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_UART3 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=BLSP1_QUP4_DEV_ACCESS>
+     <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_QUP4 </props>
+     //<props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 81, 82, 83, 84, end </props> 
+     <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_ADSP_Q6_ELF, end 
+       </props>
+   </device>
+   <device id=BLSP1_UART4_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_UART4 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+         AC_ADSP_Q6_ELF, end
+       </props>
+   </device>
+
+
+   <device id=BLSP1_QUP5_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_QUP5 </props>
+      //<props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 25, 26, 27, 28, end </props> 
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_HLOS, end
+        </props>
+   </device>
+   <device id=BLSP1_UART5_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP1_UART5 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=BLSP2_QUP0_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_QUP0 </props>
+      //<props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 53, 54, 55, 56, end </props> 
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_HLOS, end
+          //SMB1357 power chip, EEprom
+        </props>
+   </device>
+   <device id=BLSP2_UART0_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_UART0 </props>
+      //<props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+       </props>
+   </device>
+
+   <device id=BLSP2_QUP1_DEV_ACCESS> //BLSP8
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_QUP1 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 4, 5, 6, 7, end </props> 
+     <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_HLOS, end
+        </props>
+   </device>
+   <device id=BLSP2_UART1_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_UART1 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_HLOS, end
+        </props>
+   </device>
+
+   <device id=BLSP2_QUP2_DEV_ACCESS> //BLSP9
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_QUP2 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 49, 50, 51, 52, end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+   <device id=BLSP2_UART2_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_UART2 </props>      
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=BLSP2_QUP3_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_QUP3 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 8, 9, 10, 11, end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+         AC_DEFAULT, end
+      </props>
+   </device>
+   <device id=BLSP2_UART3_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_UART3 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+      </props>
+   </device>
+
+   <device id=BLSP2_QUP4_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_QUP4 </props>
+      //<props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 58, 59, 60, 61, end </props> 
+      <props name = "GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props>
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+   <device id=BLSP2_UART4_DEV_ACCESS>
+     <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_UART4 </props>
+     <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=BLSP2_QUP5_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_QUP5 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 85, 86, 87, 88, end </props> 
+      //<props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_HLOS, end
+        </props>
+   </device>
+   <device id=BLSP2_UART5_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> BLSP2_UART5 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=SSC_QUP0_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> SSC_QUP0 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> //TODO: GPIO scramlbing on SSC complicates this. Check values here
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=SSC_UART0_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> SSC_UART0 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> //TODO: GPIO scramlbing on SSC complicates this. Check values here
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=SSC_QUP1_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> SSC_QUP1 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> 
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=SSC_UART1_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> SSC_UART1 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> //TODO: GPIO scramlbing on SSC complicates this. Check values here
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+
+   <device id=SSC_QUP2_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> SSC_QUP2 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> //SSC_2 and SSC_3 are used by I2c3
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+ 
+   <device id=SSC_UART2_DEV_ACCESS>
+      <props name="PERIPH ID"  type=DALPROP_ATTR_TYPE_UINT32> SSC_UART2 </props>
+      <props name="GPIO range" type=DALPROP_ATTR_TYPE_BYTE_SEQ> end </props> //TODO: GPIO scramlbing on SSC complicates this. Check values here
+      <props name="RW_ACCESS_LIST" type=DALPROP_ATTR_TYPE_BYTE_SEQ> 
+          AC_DEFAULT, end
+        </props>
+   </device>
+ 
+   <device id="BLSP_GLOBAL_PROP"> // TODO: Most of these value can go to a new private TZ xml as OEMs don't have to change nay value here.
+      <props name="PERIPH_BLSP1QUP_RG_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 13 </props> // Resource group index obtained from TZ team. 
+      <props name="PERIPH_BLSP2QUP_RG_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 13 </props> // Resource group index obtained from TZ team. 
+      <props name="PERIPH_BLSP1UART_RG_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 7 </props> // Resource group index obtained from TZ team. 
+      <props name="PERIPH_BLSP2UART_RG_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 7 </props> // Resource group index obtained from TZ team. 
+      <props name="SSC_BLSPQUP_RG_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 10 </props> // Just one BLSP in SSC
+      <props name="SSC_BLSPUART_RG_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 7 </props> // Just one BLSP in SSC
+      <props name="PERIPH_GPIO_RG_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 0 </props> // TLMM.APU value obtained from TZ team
+      <props name="NUM_PERIPH_BLSP_CORES" type=DALPROP_ATTR_TYPE_UINT32> 2 </props> // Number of peripheral BLSP cores
+      <props name="NUM_BLSP_MINICORES" type=DALPROP_ATTR_TYPE_UINT32> 6 </props> // 6 QUPs/UARTS per BLSP core in this target
+      <props name="NUM_SSC_MINICORES" type=DALPROP_ATTR_TYPE_UINT32> 3 </props> // 3 QUPs/UARTS per SSC core in this target
+      <props name="PERIPH_SS_BLSP1_BLSP_BAM BASE" type=DALPROP_ATTR_TYPE_UINT32> 0x7544000 </props>
+      <props name="PERIPH_SS_BLSP2_BLSP_BAM BASE" type=DALPROP_ATTR_TYPE_UINT32> 0x7584000 </props>
+      <props name="SSC_BLSP_BLSP_BAM BASE" type=DALPROP_ATTR_TYPE_UINT32> 0x1E84000 </props>
+      <props name="PERIPH_SS_BLSP1_BAMPIPE_SID_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 0x80 </props>
+      <props name="PERIPH_SS_BLSP2_BAMPIPE_SID_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 0xC0 </props>
+      <props name="SSC_BLSP_BAMPIPE_SID_INDEX_START" type=DALPROP_ATTR_TYPE_UINT32> 0x8 </props>
+      <props name="PERIPH_SS_BLSP_SMMU_INSTANCE" type=DALPROP_ATTR_TYPE_UINT32> 24 </props> //SMMU_INSTANCE_ANOC1
+      <props name="SSC_BLSP_SMMU_INSTANCE" type=DALPROP_ATTR_TYPE_UINT32> 25 </props> //SMMU_INSTANCE_ANOC2
+      //The values above can be found in internal wiki by following links at go/8996ac, go/istartisids
+   </device>
+
+
+</driver>
+
+
+
+
+
+
+
+
+

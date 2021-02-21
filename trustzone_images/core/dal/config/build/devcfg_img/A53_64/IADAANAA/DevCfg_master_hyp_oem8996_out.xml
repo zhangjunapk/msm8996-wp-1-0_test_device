@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<dal>
+<module name="oem">
+<driver name="NULL">
+   <device id="/dev/buses/qup/blsp1_qup0">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_QUP0 </props>
+      <props name="GPIO range" type="0x00000008">0, 1, 2, 3, end </props>
+       <props name="RW_ACCESS_LIST" type="0x00000008">
+          3, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/blsp1_uart0">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_UART0 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+       <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+       </props>
+   </device>
+   <device id="/dev/buses/qup/blsp1_qup1">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_QUP1 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+         3, end
+       </props>
+   </device>
+   <device id="/dev/buses/uart/blsp1_uart1">
+     <props name="PERIPH ID" type="0x00000002"> BLSP1_UART1 </props>
+     <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          3, end
+       </props>
+   </device>
+   <device id="/dev/buses/qup/blsp1_qup2">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_QUP2 </props>
+      <props name="GPIO range" type="0x00000008">45, 46, 47, 48, end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+         3, end
+      </props>
+   </device>
+   <device id="/dev/buses/uart/blsp1_uart2">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_UART2 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          6, end
+      </props>
+   </device>
+   <device id="/dev/buses/qup/blsp1_qup3">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_QUP3 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+            0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/blsp1_uart3">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_UART3 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/qup/blsp1_qup4">
+     <props name="PERIPH ID" type="0x00000002"> BLSP1_QUP4 </props>
+     <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          6, end
+       </props>
+   </device>
+   <device id="/dev/buses/uart/blsp1_uart4">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_UART4 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+         6, end
+       </props>
+   </device>
+   <device id="/dev/buses/qup/blsp1_qup5">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_QUP5 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          3, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/blsp1_uart5">
+      <props name="PERIPH ID" type="0x00000002"> BLSP1_UART5 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/qup/blsp2_qup0">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_QUP0 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          3, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/blsp2_uart0">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_UART0 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+       </props>
+   </device>
+   <device id="/dev/buses/qup/blsp2_qup1">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_QUP1 </props>
+      <props name="GPIO range" type="0x00000008">4, 5, 6, 7, end </props>
+     <props name="RW_ACCESS_LIST" type="0x00000008">
+          3, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/blsp2_uart1">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_UART1 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          3, end
+        </props>
+   </device>
+   <device id="/dev/buses/qup/blsp2_qup2">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_QUP2 </props>
+      <props name="GPIO range" type="0x00000008">49, 50, 51, 52, end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/blsp2_uart2">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_UART2 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/qup/blsp2_qup3">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_QUP3 </props>
+      <props name="GPIO range" type="0x00000008">8, 9, 10, 11, end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+         0xFF, end
+      </props>
+   </device>
+   <device id="/dev/buses/uart/blsp2_uart3">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_UART3 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+      </props>
+   </device>
+   <device id="/dev/buses/qup/blsp2_qup4">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_QUP4 </props>
+      <props name = "GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/blsp2_uart4">
+     <props name="PERIPH ID" type="0x00000002"> BLSP2_UART4 </props>
+     <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/qup/blsp2_qup5">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_QUP5 </props>
+      <props name="GPIO range" type="0x00000008">85, 86, 87, 88, end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          3, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/blsp2_uart5">
+      <props name="PERIPH ID" type="0x00000002"> BLSP2_UART5 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/qup/ssc_qup0">
+      <props name="PERIPH ID" type="0x00000002"> SSC_QUP0 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/ssc_uart0">
+      <props name="PERIPH ID" type="0x00000002"> SSC_UART0 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/qup/ssc_qup1">
+      <props name="PERIPH ID" type="0x00000002"> SSC_QUP1 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/ssc_uart1">
+      <props name="PERIPH ID" type="0x00000002"> SSC_UART1 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/qup/ssc_qup2">
+      <props name="PERIPH ID" type="0x00000002"> SSC_QUP2 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="/dev/buses/uart/ssc_uart2">
+      <props name="PERIPH ID" type="0x00000002"> SSC_UART2 </props>
+      <props name="GPIO range" type="0x00000008"> end </props>
+      <props name="RW_ACCESS_LIST" type="0x00000008">
+          0xFF, end
+        </props>
+   </device>
+   <device id="BLSP_GLOBAL_PROP">
+      <props name="PERIPH_BLSP1QUP_RG_INDEX_START" type="0x00000002"> 13 </props>
+      <props name="PERIPH_BLSP2QUP_RG_INDEX_START" type="0x00000002"> 13 </props>
+      <props name="PERIPH_BLSP1UART_RG_INDEX_START" type="0x00000002"> 7 </props>
+      <props name="PERIPH_BLSP2UART_RG_INDEX_START" type="0x00000002"> 7 </props>
+      <props name="SSC_BLSPQUP_RG_INDEX_START" type="0x00000002"> 10 </props>
+      <props name="SSC_BLSPUART_RG_INDEX_START" type="0x00000002"> 7 </props>
+      <props name="PERIPH_GPIO_RG_INDEX_START" type="0x00000002"> 0 </props>
+      <props name="NUM_PERIPH_BLSP_CORES" type="0x00000002"> 2 </props>
+      <props name="NUM_BLSP_MINICORES" type="0x00000002"> 6 </props>
+      <props name="NUM_SSC_MINICORES" type="0x00000002"> 3 </props>
+      <props name="PERIPH_SS_BLSP1_BLSP_BAM BASE" type="0x00000002"> 0x7544000 </props>
+      <props name="PERIPH_SS_BLSP2_BLSP_BAM BASE" type="0x00000002"> 0x7584000 </props>
+      <props name="SSC_BLSP_BLSP_BAM BASE" type="0x00000002"> 0x1E84000 </props>
+      <props name="PERIPH_SS_BLSP1_BAMPIPE_SID_INDEX_START" type="0x00000002"> 0x80 </props>
+      <props name="PERIPH_SS_BLSP2_BAMPIPE_SID_INDEX_START" type="0x00000002"> 0xC0 </props>
+      <props name="SSC_BLSP_BAMPIPE_SID_INDEX_START" type="0x00000002"> 0x8 </props>
+      <props name="PERIPH_SS_BLSP_SMMU_INSTANCE" type="0x00000002"> 24 </props>
+      <props name="SSC_BLSP_SMMU_INSTANCE" type="0x00000002"> 25 </props>
+   </device>
+</driver>
+<driver name="System_OEM">
+    <global_def>
+        <var_seq name="g_target_cfg" type="0x00000003">
+            0x8996, 0x2070, end
+        </var_seq>
+    </global_def>
+    <device id="0x1">
+        <props name="DalEnv" type="0x00000002">
+            0x80000002
+        </props>
+        <props name="TargetCfg" type="0x00000014">
+          g_target_cfg
+        </props>
+    </device>
+</driver>
+<driver name="NULL">
+ <global_def>
+ </global_def>
+ <device id="/ac/smmu">
+  <props name="disable_smmu_ac" type="0x00000002">
+   0
+  </props>
+ </device>
+</driver>
+<driver name="NULL">
+   <device id="/pmic/hyp/cfg">
+      <props name="spmi_channel_cfg" type="0x00000012">
+        pm_hyp_spmi_cfg
+      </props>
+      <props name="spmi_channel_cfg_size" type="0x00000012">
+         pm_hyp_spmi_cfg_sz
+      </props>
+   </device>
+</driver>
+</module>
+</dal>

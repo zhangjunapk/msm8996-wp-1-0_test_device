@@ -1,0 +1,93 @@
+#===============================================================================
+#
+# Biometric Library
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+#===========================================================================
+#  Copyright (c) 2015 Qualcomm Technologies, Incorporated.
+# All Rights Reserved.
+#  Qualcomm Technologies Confidential and Proprietary
+#===========================================================================
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/core.tz/1.0.3.c1/securemsm/trustzone/qsapps/libs/biometric/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Author: pwbldsvc $
+#  $Change: 11896995 $
+#                      EDIT HISTORY FOR FILE
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# Jul/23/15  cb      Add lib to fidocrypto and sampleauth
+# Apr/15/15  el      Initial Implementation
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/trustzone/qsapps/libs/biometric"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' -marm')
+
+env.PublishPublicApi('BIOMETRIC', [
+   "${COREBSP_ROOT}/securemsm/trustzone/qsapps/libs/biometric/inc/",
+])
+
+#-------------------------------------------------------------------------------
+# Internal depends within CoreBSP
+#-------------------------------------------------------------------------------
+CBSP_API = [
+   'SERVICES',
+   'SECUREMSM',
+   'MINK',
+   'KERNEL',
+]
+
+env.RequirePublicApi(CBSP_API)
+
+INC_PATH_QSEE = [
+      "${INC_ROOT}/core/api/kernel/libstd/stringl",
+	  "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+      "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/biometric/inc/",
+]
+env.Append(CPPPATH = INC_PATH_QSEE)
+
+#----------------------------------------------------------------------------
+# CONFIG Shared Library
+#----------------------------------------------------------------------------
+
+BIOMETRIC_LIB_SOURCES = [
+        '${BUILDPATH}/src/biometric.c',
+		'${BUILDPATH}/src/biometric_serializer.c',
+]
+
+biometric_lib = '${BUILDPATH}/biometric_lib'
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddBinaryLibrary (['FIDOCRYPTO_IMAGE'],biometric_lib, [BIOMETRIC_LIB_SOURCES])
+env.AddBinaryLibrary (['SAMPLEAPP_IMAGE'],biometric_lib, [BIOMETRIC_LIB_SOURCES])
+env.AddBinaryLibrary (['SAMPLEAPP64_IMAGE'],biometric_lib, [BIOMETRIC_LIB_SOURCES])
+env.AddBinaryLibrary (['FINGERPRINT_IMAGE'],biometric_lib, [BIOMETRIC_LIB_SOURCES])
+env.AddBinaryLibrary (['FINGERPRINT64_IMAGE'],biometric_lib, [BIOMETRIC_LIB_SOURCES])
+env.AddBinaryLibrary (['IRIS_IMAGE'],biometric_lib, [BIOMETRIC_LIB_SOURCES])
+env.AddBinaryLibrary (['SAMPLEAUTH_IMAGE'],biometric_lib, [BIOMETRIC_LIB_SOURCES])
+env.AddBinaryLibrary (['KEYMASTER_IMAGE'],biometric_lib, [BIOMETRIC_LIB_SOURCES])
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

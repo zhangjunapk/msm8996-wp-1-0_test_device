@@ -1,0 +1,109 @@
+//============================================================================
+//  Name:                                                                     
+//    std_debug_tz.cmm 
+//
+//  Description:                                                              
+//    Trustzone debug script
+//                                                                            
+// Copyright (c) 2012 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who             what, where, why
+// --------   ---             ---------------------------------------------------------
+// 04/21/2015 JBILLING      Fixed command line / silent functionality
+// 04/01/2015 JBILLING      Ported for 8996
+// 05/12/2014 AJCheriyan    Moved to the new design
+// 10/10/2012 AJCheriyan    Moved to actual reset based debug mechanism
+// 08/14/2012 AJCheriyan    Fixed typo.
+// 07/19/2012 AJCheriyan    Created for B-family.
+
+//* Arguments passed *//
+ENTRY %LINE &ArgumentLine
+LOCAL &SubRoutine &Port
+LOCAL &Unused1 &targetprocessor &targetprocessorport &bootprocessor &bootprocessorport &peripheral_processor &processortimeoutvalue &debugscript &symbolloadscript &imagebuildroot &entry_bkpt &error_bkpts &lpm_option &sleep_disable_command &extraoption &Unused2 &Unused3
+LOCAL &BootProcessor &DefBkpts
+
+
+//* Check if we need to call for help or do some work *//
+IF ("&ArgumentLine"=="")
+(
+    &SubRoutine="HELP"
+)
+ELSE
+(
+    &SubRoutine="MAIN"
+)
+
+GOSUB &SubRoutine
+
+GOTO EXIT
+
+
+MAIN:
+
+    LOCAL &image &targetprocessor &targetprocessorport &bootprocessor &bootprocessorport &peripheral_processor &processortimeoutvalue &debugscript &symbolloadscript &imagebuildroot &entry_bkpt &error_bkpts &lpm_option &sleep_disable_command &cti_enable &multi_elf_option &alternateelf &extraoption
+    //note that optextract has a limit of 10 entries
+    do optextract Img,Lpm,Bkpts,CTI_Enable,alternateelf,extraoption &ArgumentLine
+        ENTRY &image &lpm_option &user_defined_bkpts &cti_enable &alternateelf &extraoption //expect 6 returns from optextract
+
+    // Get the target processor for this port
+    do std_debug_&CHIPSET GETDEBUGDEFAULTS NONE &image &lpm_option &cti_enable &alternateelf &extraoption
+    ENTRY &image &targetprocessor &targetprocessorport &bootprocessor &bootprocessorport &peripheral_processor &processortimeoutvalue &debugscript &symbolloadscript &imagebuildroot &entry_bkpt &error_bkpts &lpm_option &sleep_disable_command &cti_enable &multi_elf_option &alternateelf &extraoption
+    
+
+        // We have work to do if it is SBL
+    IF ("&image"=="tz")
+    (
+
+        // Load the symbols on the remote session
+        //do std_intercom_do &targetprocessorport std_loadsyms_tz tz &imagebuildroot
+        
+        // Attach to Apps Core 0 and break
+        //do std_intercom_do &targetprocessorport std_utils BREAKPROC
+
+        // Clear the debug cookie
+        //do std_debug_&CHIPSET SETDEBUGCOOKIE clear &image
+
+        // Set the breakpoints specified by the user
+        IF ("&user_defined_bkpts"!="NULL")
+        (
+            
+            do std_intercom_do &targetprocessorport std_utils SETBREAKPOINTS ONCHIP &user_defined_bkpts 
+        )
+        WINCLEAR
+        // Now set the entry and exit breakpoints, and let it go
+        do std_intercom_cmds &targetprocessorport WAIT BREAK.DELETE &entry_bkpt
+        do std_intercom_cmds &targetprocessorport NOWAIT Break.Set &entry_bkpt &error_bkpts /onchip, GO
+        
+        //This will load secondary elfs to all open apps windows
+        //Keep it silent, so append 'silent' option to whatever was given in extraoption
+        do std_loadsyms_tz_secondary_elfs NULL remotely notliveattach NULL NULL &extraoption,silent
+        
+        
+        WINPOS 0. 0. 
+        DATA.LIST
+        WINPOS 0. 50%
+        REGISTER /SL
+    )
+
+    RETURN
+    
+HELP:
+    AREA
+    PRINT "This is helpful"
+    RETURN
+    
+EXIT:
+    ENDDO
+
+FATALEXIT:
+    END
+
+
+        

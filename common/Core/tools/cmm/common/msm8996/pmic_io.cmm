@@ -1,0 +1,178 @@
+; ============================================================================
+;
+;  pmic_io.cmm
+;
+;  Script to Read/Write PMIC register.
+;
+;  Execution:
+;    pmic_io.cmm [ Read/Write ] [ slaveid ] [ Register ] [ Value ]
+;
+;
+;  ====================================================================
+;
+;  Copyright (c) 2013-2015 Qualcomm Technologies Incorporated.  All Rights Reserved.
+;  QUALCOMM Proprietary and Confidential.
+;
+;  ====================================================================
+;
+;
+; ============================================================================
+;
+
+ENTRY &rw &sid &reg &val
+
+;-----------------------------------------------------------------------------
+; SPMI variables
+;-----------------------------------------------------------------------------
+
+&PMIC_ARB_CHNLn_CMD=0x4400000
+&PMIC_ARB_CHNLn_STATUS=0x4400008
+&PMIC_ARB_CHNLn_WDATA0=0x4400010
+&PMIC_ARB_CHNLn_RDATA0=0x4400018
+&PMIC_ARB_CHNLn_ADDR=0x400f800
+&PMIC_ARB_PERIPHn_OWNER_ADDR=0x400a700
+&CHNLn_OFFSET=0x8000
+&OWNERn_OFFSET=0x1000
+&MAX_SPMI_CHANNELS=255.
+
+&SPMIOwnerChannel=3  ; LPASS Channel by default
+
+;-----------------------------------------------------------------------------
+; Default bus access mode
+;-----------------------------------------------------------------------------
+
+&BusAccessMode="EZAXI"
+
+&main_status="true"
+
+if "&rw"=="" 
+(
+      print "Error: SPMI operation not specified!"
+      &main_status="false"
+      goto MAIN_RETURN
+)
+if ("&rw"=="Read")||("&rw"=="READ")||("&rw"=="read") 
+(
+      GOSUB SPMIRead &sid &reg 
+      ENTRY &rd_status &rd_data
+      ENDDO &rd_status &rd_data	  
+      goto MAIN_RETURN
+)
+else if ("&rw"=="Write")||("&rw"=="WRITE")||("&rw"=="write")
+(
+      GOSUB SPMIWrite &sid &reg &val
+      goto MAIN_RETURN
+)
+
+
+MAIN_RETURN:
+if ("&main_status"=="false")
+(
+   GOSUB USAGE
+)
+ENDDO
+
+
+;=============================================================================
+; SUB: SPMIRead
+;=============================================================================
+
+SPMIRead:
+  LOCAL &status 
+  ENTRY &SlaveId &RegisterAddress
+
+  &RegisterOffset=(&RegisterAddress)&0xFF
+  &RegisterBase=((&RegisterAddress)&0xFF00)|(&SlaveId<<0x10)
+  &RegisterOwner=(((&RegisterAddress<<0x8)&0xFF0000)|(&SlaveId<<0x8))|&SPMIOwnerChannel
+  &SPMIChannel=&MAX_SPMI_CHANNELS
+  &breakFlag=0
+
+  IF (STATE.RUN()&&(SYSTEM.MODE()>0x5)&&("&BusAccessMode"=="A"))
+  (
+    &breakFlag=1
+    b
+    WAIT 1.ms
+  )
+
+  DATA.SET &BusAccessMode:&PMIC_ARB_CHNLn_ADDR+(4*&SPMIChannel) %LONG &RegisterBase
+
+  DATA.SET &BusAccessMode:&PMIC_ARB_PERIPHn_OWNER_ADDR+(4*&SPMIChannel) %LONG &RegisterOwner
+
+  &cmd=(0x1<<0x1B)|(&RegisterOffset<<0x4)
+
+  DATA.SET &BusAccessMode:&PMIC_ARB_CHNLn_CMD+&OWNERn_OFFSET*&SPMIOwnerChannel+&CHNLn_OFFSET*&SPMIChannel %LONG &cmd
+
+  &status=0
+  &data=0
+
+  WHILE (&status==0)
+  (
+    WAIT 1.ms
+    &status=DATA.LONG(&BusAccessMode:&PMIC_ARB_CHNLn_STATUS+&OWNERn_OFFSET*&SPMIOwnerChannel+&CHNLn_OFFSET*&SPMIChannel)
+  )
+
+  &data=DATA.LONG(&BusAccessMode:&PMIC_ARB_CHNLn_RDATA0+&OWNERn_OFFSET*&SPMIOwnerChannel+&CHNLn_OFFSET*&SPMIChannel)
+  PRINT &SlaveId " 0x"+format.hex(4,&RegisterAddress)  "    0x"+format.hex(2,&data)
+
+  IF (&breakFlag==1)
+  (
+    g
+  )
+
+  RETURN &status &data
+
+
+;=============================================================================
+; SUB: SPMIWrite
+;=============================================================================
+
+SPMIWrite:
+  LOCAL &status
+  ENTRY &SlaveId &RegisterAddress &Data
+
+  &RegisterOffset=(&RegisterAddress)&0xFF
+  &RegisterBase=((&RegisterAddress)&0xFF00)|(&SlaveId<<0x10)
+  &RegisterOwner=(((&RegisterAddress<<0x8)&0xFF0000)|(&SlaveId<<0x8))|&SPMIOwnerChannel
+  &SPMIChannel=&MAX_SPMI_CHANNELS
+  &breakFlag=0
+
+  IF (STATE.RUN()&&(SYSTEM.MODE()>0x5)&&("&BusAccessMode"=="A"))
+  (
+    &breakFlag=1
+    b
+    WAIT 1.ms
+  )
+
+  DATA.SET &BusAccessMode:&PMIC_ARB_CHNLn_ADDR+(4*&SPMIChannel) %LONG &RegisterBase
+
+  DATA.SET &BusAccessMode:&PMIC_ARB_PERIPHn_OWNER_ADDR+(4*&SPMIChannel) %LONG &RegisterOwner
+
+  DATA.SET &BusAccessMode:&PMIC_ARB_CHNLn_WDATA0+&OWNERn_OFFSET*&SPMIOwnerChannel+&CHNLn_OFFSET*&SPMIChannel %LONG (&Data&0xFF)
+
+  &cmd=(0x0<<0x1B)|(&RegisterOffset<<0x4)
+
+  DATA.SET &BusAccessMode:&PMIC_ARB_CHNLn_CMD+&OWNERn_OFFSET*&SPMIOwnerChannel+&CHNLn_OFFSET*&SPMIChannel %LONG &cmd
+  IF (&RegisterAddress==0x864)
+  (
+    ENDDO
+  )
+
+  &status=0
+  WHILE (&status==0)
+  (
+    WAIT 1.ms
+    &status=DATA.LONG(&BusAccessMode:&PMIC_ARB_CHNLn_STATUS+&OWNERn_OFFSET*&SPMIOwnerChannel+&CHNLn_OFFSET*&SPMIChannel)
+  )
+   
+  PRINT &SlaveId " 0x"+format.hex(4,&RegisterAddress)  "    0x"+format.hex(2,&Data)
+
+  IF (&breakFlag==1)
+  (
+    g
+  )
+
+  RETURN &status
+  
+ERROR_RETURN:
+ ENDDO 0 0
+

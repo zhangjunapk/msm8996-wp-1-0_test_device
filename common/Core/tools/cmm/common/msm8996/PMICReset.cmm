@@ -1,0 +1,103 @@
+; ============================================================================
+;
+;  PMICReset.cmm
+;
+; Script to control PMIC Resets
+;
+;  Execution:
+;    PMICReset.cmm [SOFTRESET, WARMRESET, SHUTDOWN, HARDRESET, DVDD_HARDRESET, XVDD_HARDRESET, SYSUP]
+;
+;  This script will perform PMIC reset using PMIC_IO script
+;  
+;  Usage: 
+;     PMICReset.cmm SOFTRESET -> Perform a Soft reset 
+;     PMICReset.cmm WARMRESET -> Perform a warm reset from PMIC
+;     PMICReset.cmm SHUTDOWN  -> Perform a power off
+;     PMICReset.cmm HARDRESET -> Perform a hard reset 
+;     PMICReset.cmm DVDD_HARDRESET -> Perform a dVdd [MainBatt removal] hard reset 
+;     PMICReset.cmm XVDD_HARDRESET -> Perform a xVdd [Main batt and Coin cell removal] hard reset 
+;     PMICReset.cmm SYSUP     -> Perform any settings needed prior to T32 sys.up command
+;
+;  ====================================================================
+;
+;  Copyright (c) 2015 QUALCOMM Technologies Incorporated. All Rights Reserved.
+;  QUALCOMM Proprietary and Confidential.
+;
+;  ====================================================================
+;
+;
+; ============================================================================
+;
+
+ENTRY &type
+
+LOCAL &res_cmd &option_pin &rst_spmi_stat &pm_model
+
+IF ("&type"=="SOFTRESET")
+(
+  &res_cmd=0x0
+)
+ELSE IF ("&type"=="WARMRESET")
+(
+  &res_cmd=0x1
+)
+ELSE IF ("&type"=="SHUTDOWN")
+(
+  &res_cmd=0x2
+)
+ELSE IF ("&type"=="HARDRESET")
+(
+  &res_cmd=0x7
+)
+ELSE IF ("&type"=="DVDD_HARDRESET")
+(
+  &res_cmd=0x8
+)
+ELSE IF ("&type"=="XVDD_HARDRESET")
+(
+  &res_cmd=0x9
+)
+ELSE IF ("&type"=="SYSUP")
+(
+  &res_cmd=0
+  do pmic_io READ 2 0x105                      ;Read Secondary PMIC ID
+  ENTRY &rst_spmi_stat &pm_model
+
+  IF ((&rst_spmi_stat!=0)&&(&pm_model==0xA))
+  (
+     do pmic_io write 0 0xD346 0x80            ;Enable GPIO20 on PM8994
+
+     do pmic_io READ 0 0x108                   ;Read Option Pin on PM8994
+     ENTRY &rst_spmi_stat &option_pin
+
+     IF ((&option_pin&0x3)==0x3)               ;Check Bit0 and bit 1
+     (
+       do pmic_io write 0 0xD340 0x11          ;GPIO20 on PM8994 Output High
+     )
+     ELSE
+     (
+       do pmic_io write 0 0xD340 0x10          ;GPIO20 on PM8994 Output Low
+     )
+  )
+)
+ELSE
+(
+  PRINT %ERROR "Error! Reset type specified is not supported "
+  ENDDO
+)
+
+; If 0 or none is passed disable the WDOG; else Enable the WDOG
+  
+IF &res_cmd!=0
+(
+  do pmic_io write 0xE 0x863 0x0       ;Disable SW Reset
+  WAIT 1.ms
+  do pmic_io write 0xE 0x862 &res_cmd  ;Config SW Reset to desired need
+  WAIT 1.ms
+  do pmic_io write 0xE 0x863 0x80      ;Enable SW Reset
+  WAIT 1.ms
+  do pmic_io write 0xE 0x864 0xA5      ;Issue Reset and Go
+)
+
+ENDDO
+ 

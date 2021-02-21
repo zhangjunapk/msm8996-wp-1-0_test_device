@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<configuration>
+  <parser_instructions>
+    <!-- NOTE: entries here are used by the parser when generating output -->
+    <!-- NOTE: each filename must be on it's own line as in variable=value --> 
+    WRITE_PROTECT_BOUNDARY_IN_KB = 65536
+    GROW_LAST_PARTITION_TO_FILL_DISK= true
+    DISK_SIGNATURE = 0xA8E1B9D2
+    ALIGN_PARTITIONS_TO_PERFORMANCE_BOUNDARY = true
+    PERFORMANCE_BOUNDARY_IN_KB = 2048
+  </parser_instructions>
+  
+  <!-- NOTE: "physical_partition" are listed in order and apply to devices such as eMMC cards that have (for example) 3 physical partitions -->
+  <!-- This is physical partition 0 --> 
+  <physical_partition>
+    <!-- NOTE: Define information for each partition, which will be created in order listed here -->
+    <!-- NOTE: Place all "readonly=true" partitions side by side for optimum space usage -->
+    <!-- NOTE: If OPTIMIZE_READONLY_PARTITIONS=true, then partitions won't be in the order listed here -->
+    <!--       they will instead be placed side by side at the beginning of the disk -->
+    <partition label="DPP" size_in_kb="8192" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" bootable="false" readonly="false" align="true"/>
+    <partition label="MODEM_FSG" size_in_kb="2048" type="638FF8E2-22C9-E33B-8F5D-0E81686A68CB" bootable="false" readonly="false" align="true"/>
+    <partition label="MODEM_FS1" size_in_kb="2048" type="EBBEADAF-22C9-E33B-8F5D-0E81686A68CB" bootable="false" readonly="false" align="true" />
+    <partition label="MODEM_FS2" size_in_kb="2048" type="0A288B1F-22C9-E33B-8F5D-0E81686A68CB" bootable="false" readonly="false" align="true"/>
+    <partition label="MODEM_FSC" size_in_kb="16" type="57B90A16-22C9-E33B-8F5D-0E81686A68CB" bootable="false" readonly="false" align="true"/>
+    <partition label="DDR" size_in_kb="1024" type="20A0C19C-286A-42FA-9CE7-F64C3226A794" bootable="false" readonly="false" align="true"/>
+    <partition label="SEC" size_in_kb="128" type="303E6AC3-AF15-4C54-9E9B-D9A8FBECF401" bootable="false" readonly="false" align="true"/>
+    <partition label="APDP" size_in_kb="256" type="E6E98DA2-E22A-4D12-AB33-169E7DEAA507" bootable="false" readonly="false" align="true"/>
+    <partition label="MSADP" size_in_kb="256" type="ED9E8101-05FA-46B7-82AA-8D58770D200B" bootable="false" readonly="false" align="true"/>
+    <partition label="DPO" size_in_kb="1" type="11406F35-1173-4869-807B-27DF71802812" bootable="false" readonly="false" align="true"/>
+    <partition label="LogFS" size_in_kb="16384" type="BC0330EB-3410-4951-A617-03898DBE3372" bootable="false" readonly="false" align="true"/>
+    <partition label="SSD" size_in_kb="8" type="2C86E742-745E-4FDD-BFD8-B6A7AC638772" bootable="false" readonly="false" align="true"/>
+    <partition label="UEFI_BS_NV" size_in_kb="256" type="F0B4F48B-AEBA-4ECF-9142-5DC30CDC3E77" bootable="false" readonly="false" align="true"/>
+    <partition label="UEFI_RT_NV" size_in_kb="256" type="6BB94537-7D1C-44D0-9DFE-6D77C011DBFC" bootable="false" readonly="false" align="true"/>
+    <partition label="XBL" size_in_kb="2048" type="DEA0BA2C-CBDD-4805-B4F9-F428251C3E98" bootable="false" readonly="false" filename="xbl.elf"/>
+    <partition label="PMIC" size_in_kb="512" type="C00EEF24-7709-43D6-9799-DD2B411E7A3C" bootable="false"  readonly="false" filename="pmic.elf"/>
+	<partition label="RPM" size_in_kb="500" type="098DF793-D712-413D-9D4E-89D711772228" bootable="false" readonly="false" filename="rpm.mbn"/>
+	<partition label="TZ" size_in_kb="2048" type="A053AA7F-40B8-4B1C-BA08-2F68AC71A4F4" bootable="false" readonly="false" filename="tz.mbn"/>
+	<partition filename="devcfg.mbn" readonly="false" bootable="false" type="F65D4B16-343D-4E25-AAFC-BE99B6556A6D" size_in_kb="128" label="config1"/>
+	<partition label="HYP" size_in_kb="500" type="E1A6A689-0C8D-4CC6-B4E8-55A4320FBD8A" bootable="false" readonly="false" filename="hyp.mbn"/>
+    <partition label="TZAPPS" size_in_kb="16384" type="14D11C40-2A3D-4F97-882D-103A1EC09333" bootable="false" readonly="false" align="true" filename="tzapps.bin"/>
+    <partition label="BACKUP_XBL1" size_in_kb="2048" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="false" filename="xbl.elf"/>
+    <partition label="BACKUP_PMIC" size_in_kb="512" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false"  readonly="false" filename="pmic.elf"/>
+    <partition label="BACKUP_RPM" size_in_kb="500" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="false" filename="rpm.mbn"/>
+	<partition label="BACKUP_TZ" size_in_kb="2048" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="false" filename="tz.mbn"/>
+	<partition label="BACKUP_HYP" size_in_kb="500" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="false" align="true"/>
+    <partition label="BACKUP_TZAPPS" size_in_kb="16384" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="false" align="true"/>
+
+    <partition label="PLAT" size_in_kb="8192" type="543C031A-4CB6-4897-BFFE-4B485768A8AD" bootable="false" readonly="false" filename="fat16.bin" align="true" PERFORMANCE_BOUNDARY_IN_KB="2048"/>
+    <partition label="EFIESP" size_in_kb="32768" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" uniqueguid="8183040A-8B44-4592-92F7-C6D9EE0560F7" bootable="false" readonly="false" filename="EFIESP.bin" align="true" />
+
+    <partition label="CrashDump" size_in_kb="2359296" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" bootable="false" readonly="false" align="true"/>
+    <partition label="MMOS" size_in_kb="13096" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" uniqueguid="27A47557-8243-4C8E-9D30-846844C29C52" bootable="false" readonly="false" align="true" PERFORMANCE_BOUNDARY_IN_KB="2048"/>
+    <partition label="MainOS" size_in_kb="671744" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" uniqueguid="A76B8CE2-0187-4C13-8FCA-8651C9B0620A" bootable="false" readonly="false" align="true" PERFORMANCE_BOUNDARY_IN_KB="8192"/>
+    
+    <partition label="Data" size_in_kb="6387712" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" bootable="false" readonly="false" align="true" PERFORMANCE_BOUNDARY_IN_KB="8192"/>
+	<partition label="sti" size_in_kb="2048" type="AA9A5C4C-4F1F-7D3A-014A-22BD33BF7191" bootable="false" readonly="false" filename=""/>
+  </physical_partition>
+</configuration>
+

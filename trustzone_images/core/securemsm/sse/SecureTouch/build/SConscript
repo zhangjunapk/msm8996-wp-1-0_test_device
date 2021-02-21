@@ -1,0 +1,40 @@
+#===============================================================================
+#
+# SSE
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2012 Qualcomm Technologies, Inc. 
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/core.tz/1.0.3.c1/securemsm/sse/SecureTouch/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Author: pwbldsvc $
+#  $Change: 11896995 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 12/12/12           Initial Version
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+env.PublishPrivateApi('SECUREMSM', [
+   "${INC_ROOT}/core/api/services",
+   "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+   "${INC_ROOT}/core/securemsm/secrsa/shared/inc",
+   "${INC_ROOT}/core/securemsm/secmath/shared/inc",
+])
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

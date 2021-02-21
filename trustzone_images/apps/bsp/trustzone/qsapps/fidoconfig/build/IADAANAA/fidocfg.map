@@ -1,0 +1,635 @@
+Archive member included because of file (symbol)
+
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o (get_app_md)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o (qsee_log)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (minkIPC)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (qsee_open)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (qsee_prng_getdata)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o (app_export_init_info_to_qsee)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (CApp_invoke)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o) (mink_generic_syscall)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o (memscpy)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (secure_memset)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o) (memset)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o) (memcpy)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (strlen)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o) (vsnprintf)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o) (memchr)
+
+Allocating common symbols
+Common symbol       size              file
+
+apps_request_resp   0x28              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .group         0x0000000000000000        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .text.tz_module_open
+                0x0000000000000000        0xc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000000000000     0x3ae8
+ *\tzapp_entry.o(SORT(TZAPPENTRYCODE))
+ TZAPPENTRYCODE
+                0x0000000000000000       0x58 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000000000                __main
+                0x0000000000000000                TZAPPENTRY
+                0x0000000000000000                _main
+                0x000000000000003c                get_cmnlib_ctx_ptr
+ *(SORT(.text) SORT(.text.*) SORT(kthread_shared))
+ .text          0x0000000000000058       0xa0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+                0x0000000000000058                tz_module_open
+                0x00000000000000c8                tz_app_init
+                0x00000000000000d8                tz_app_cmd_handler
+                0x00000000000000e8                tz_app_shutdown
+ .text          0x00000000000000f8      0x144 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+                0x00000000000000f8                COEMFidoConfig_open
+ .text          0x000000000000023c      0x9b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x000000000000023c                qsee_err_fatal
+                0x000000000000025c                platform_err_fatal
+                0x0000000000000260                platform_get_random
+                0x0000000000000264                __stack_chk_fail
+                0x0000000000000268                _sys_command_string
+                0x0000000000000274                get_app_req_resp
+                0x0000000000000280                qsee_read_register
+                0x00000000000002a4                qsee_request_service
+                0x0000000000000364                qsee_prepare_shared_buf_for_nosecure_read
+                0x0000000000000388                qsee_prepare_shared_buf_for_secure_read
+                0x00000000000003ac                qsee_set_global_flag
+                0x00000000000003d0                qsee_get_global_flag
+                0x00000000000003f0                qsee_oem_process_cmd
+                0x000000000000041c                qsee_enforce_hdmi_hdcp_encryption
+                0x0000000000000440                qsee_write_hdcp2p2_key_riv_enable
+                0x0000000000000470                qsee_read_hdcp2p2_min_encryption_level
+                0x0000000000000494                qsee_write_hdcp2p2_min_encryption_level
+                0x00000000000004b8                qsee_get_hdcp_min_enc_level
+                0x00000000000004dc                qsee_set_hdcp_min_enc_level
+                0x0000000000000500                qsee_write_hdcp1_key
+                0x0000000000000524                qsee_set_hdcp_cpi_assert
+                0x0000000000000548                qsee_get_secure_state
+                0x000000000000056c                qsee_malloc
+                0x000000000000057c                qsee_realloc
+                0x00000000000005cc                qsee_realloc_common
+                0x0000000000000684                qsee_free
+                0x00000000000006b0                qsee_cmnlib_malloc
+                0x00000000000006e0                qsee_cmnlib_free
+                0x000000000000070c                tzlib_app_entry
+                0x0000000000000864                get_ta_app_name
+                0x0000000000000874                get_app_md
+ .text          0x0000000000000bec      0x6e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                0x0000000000000bec                qsee_kdf
+                0x0000000000000c18                qsee_log
+                0x0000000000000d28                qsee_log_set_mask
+                0x0000000000000d50                qsee_log_get_mask
+                0x0000000000000d7c                open
+                0x0000000000000dd4                read
+                0x0000000000000e00                write
+                0x0000000000000e2c                close
+                0x0000000000000e58                lstat
+                0x0000000000000e84                mkdir
+                0x0000000000000eb0                frename
+                0x0000000000000edc                opendir
+                0x0000000000000f08                readdir
+                0x0000000000000f34                rmdir
+                0x0000000000000f60                testdir
+                0x0000000000000f8c                file_get_partition_free_size
+                0x0000000000000fb8                fstat
+                0x0000000000000fe4                lseek
+                0x0000000000001010                time_getsystime
+                0x000000000000103c                time_getutcsec
+                0x0000000000001068                time_is_leap_year
+                0x0000000000001094                remove
+                0x00000000000010c0                unlink
+                0x00000000000010ec                link
+                0x0000000000001118                telldir
+                0x0000000000001144                fsync
+                0x0000000000001170                openat
+                0x00000000000011c4                unlinkat
+                0x00000000000011f0                fcntl
+                0x0000000000001248                creat
+                0x0000000000001274                file_dir_chown_chmod
+                0x00000000000012a8                get_error_number
+ .text          0x00000000000012d4      0x3e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                0x00000000000012d4                UThread_syscall
+                0x00000000000012fc                minkIPC
+                0x0000000000001488                minkServerLoop
+                0x0000000000001694                minkServerEntry
+ .text          0x00000000000016bc      0x430 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                0x00000000000016bc                qsee_set_env
+                0x00000000000016ec                qsee_open
+                0x000000000000178c                qsee_open_singleton
+                0x0000000000001994                qsee_printf_ap
+                0x0000000000001a44                qsee_printf
+ .text          0x0000000000001aec       0x8c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                0x0000000000001aec                qsee_prng_getdata
+ .text          0x0000000000001b78       0xfc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                0x0000000000001b78                get_app_stack_base
+                0x0000000000001b84                get_app_stack_size
+                0x0000000000001b9c                get_app_heap_base
+                0x0000000000001ba8                get_app_heap_size
+                0x0000000000001bc0                CApp_handleRequest
+                0x0000000000001bf4                CApp_invoke
+                0x0000000000001c44                secure_app_init
+                0x0000000000001c5c                secure_app_shutdown
+ .text          0x0000000000001c74       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                0x0000000000001c74                memscpy
+ .text          0x0000000000001ca4       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                0x0000000000001ca4                secure_memset
+ .text          0x0000000000001cd4       0x68 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+                0x0000000000001cd4                memset
+ .text          0x0000000000001d3c      0x3f8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+                0x0000000000001d3c                memcpy
+ .text          0x0000000000002134       0x70 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+                0x0000000000002134                strlen
+ .text          0x00000000000021a4     0x12d8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+                0x00000000000021a4                __towrite
+                0x00000000000021f0                __fwritex
+                0x00000000000022e8                vfprintf
+                0x0000000000002ebc                vsnprintf
+                0x0000000000003010                snprintf
+ .text          0x000000000000347c       0xd4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+                0x000000000000347c                memchr
+ kthread_shared
+                0x0000000000003550       0x98 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+                0x0000000000003550                mink_generic_syscall
+ *(SORT(tzapp_syscall_asm))
+ *fill*         0x00000000000035e8       0x18 
+ tzapp_syscall_asm
+                0x0000000000003600      0x200 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+                0x0000000000003600                app_export_init_info_to_qsee
+                0x0000000000003614                qsee_wait_default_signal_syscall
+                0x00000000000036a4                qsee_generic_syscall
+ *(SORT(.rodata))
+ .rodata        0x0000000000003800        0x4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+                0x0000000000003800                TA_ACCEPT_BUF_SIZE
+ .rodata        0x0000000000003804      0x1d0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ *(SORT(EXCLUDE_FILE(*metadata.o) .rodata.*))
+ .rodata.str1.1
+                0x00000000000039d4       0x83 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .rodata.str1.1
+                0x0000000000003a57       0x5c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .rodata.str1.1
+                0x0000000000003ab3        0x9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .rodata.str1.1
+                0x0000000000003abc       0x11 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .rodata.cst16  0x0000000000003acd       0x10 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ *metadata.o(SORT(.rodata.str1.1))
+ .rodata.str1.1
+                0x0000000000003add        0xb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+
+.plt            0x0000000000003ae8        0x0
+ .plt           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.sentinel       0x0000000000003ae8       0x32
+ *(SORT(.rodata.sentinel))
+ .rodata.sentinel
+                0x0000000000003ae8       0x32 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+                0x0000000000003ae8                TA_METADATA
+                0x0000000000000001                ASSERT ((SIZEOF (.sentinel) != 0x0), No sentinel section defined.)
+
+.gnu.version_d  0x0000000000003b20        0x0
+ .gnu.version_d
+                0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.version    0x0000000000003b1a        0x0
+ .gnu.version   0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.version_r  0x0000000000003b20        0x0
+ .gnu.version_r
+                0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.metadata_check
+                0x0000000000003b1a        0x0
+ *metadata.o(SORT(.rodata.*))
+                0x0000000000000001                ASSERT ((SIZEOF (.metadata_check) == 0x0), New metadata not accounted for here)
+
+.data           0x0000000000004000     0x59a0
+ *(SORT(.data) SORT(TZAPPENTRYSTACK) SORT(.bss) SORT(COMMON))
+ TZAPPENTRYSTACK
+                0x0000000000004000       0x80 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000004080                app_entry_stack_start
+ .data          0x0000000000004080      0x290 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000004080                magic_num
+                0x0000000000004094                magic_num_index_array
+                0x00000000000040a0                mem_magic_number
+                0x00000000000040b8                __stack_chk_guard
+ .bss           0x0000000000004310       0x84 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000004310                pgCmnlib
+ *fill*         0x0000000000004394        0x4 
+ COMMON         0x0000000000004398       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000004398                apps_request_resp
+ .bss           0x00000000000043c0      0x1e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .data          0x00000000000045a0     0x243c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+                0x00000000000045a0                g_fido_config
+ .bss           0x00000000000069dc     0x2fc4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+                0x00000000000069dc                ta_acceptBuf
+
+.rel.text
+ *(SORT(.rel.text))
+
+.rel.rodata
+ *(SORT(.rel.rodata))
+
+.data.rel.ro.local
+                0x00000000000099a0       0xe0
+ *(SORT(.data.rel.ro.local))
+ .data.rel.ro.local
+                0x00000000000099a0       0xe0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+
+.data.rel.ro
+ *(SORT(.data.rel.ro))
+
+.rel.data
+ *(SORT(.rel.data))
+
+.rel.plt
+ *(SORT(.rel.plt))
+
+.data.rel
+ *(SORT(.data.rel))
+
+.data.rel.local
+                0x0000000000009a80       0x10
+ *(SORT(.data.rel.local))
+ .data.rel.local
+                0x0000000000009a80        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+                0x0000000000009a80                TA_APP_NAME
+ .data.rel.local
+                0x0000000000009a88        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000009a88                dummy_str
+
+TZ_APP_STACK    0x0000000000009a90     0x4000
+                0x0000000000009a90                Image$$TZ_APP_STACK$$ZI$$Base = .
+                0x000000000000da90                . = (. + 0x4000)
+ *fill*         0x0000000000009a90     0x4000 
+                0x000000000000da90                Image$$TZ_APP_STACK$$ZI$$Limit = .
+
+TZ_APP_HEAP     0x000000000000da90     0x4000
+                0x000000000000da90                Image$$TZ_APP_HEAP$$ZI$$Base = .
+                0x0000000000011a90                . = (. + 0x4000)
+ *fill*         0x000000000000da90     0x4000 
+                0x0000000000011a90                Image$$TZ_APP_HEAP$$ZI$$Limit = .
+
+.got            0x0000000000012000       0xe8
+ *(SORT(.got.plt))
+ .got.plt       0x0000000000012000       0x18 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ *(SORT(.igot.plt))
+ *(SORT(.got))
+ .got           0x0000000000012018       0xd0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000012018                _GLOBAL_OFFSET_TABLE_
+ *(SORT(.igot))
+
+.dynamic        0x0000000000013000       0xa0
+ *(SORT(.dynamic))
+ .dynamic       0x0000000000013000       0xa0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000013000                _DYNAMIC
+
+.rela.dyn       0x0000000000014000      0x2b8
+ *(SORT(.rela.dyn))
+ .rela.got      0x0000000000014000      0x258 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.plt      0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.ifunc    0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .relaTZAPPENTRYCODE
+                0x0000000000014258       0x18 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.data.rel.local
+                0x0000000000014270       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.data.rel.ro.local
+                0x00000000000142a0       0x18 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.dynbss         0x00000000000142b8        0x0
+ .dynbss        0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.attributes
+ *(SORT(.gnu.attributes))
+
+.note.gnu.arm.ident
+ *(SORT(.note.gnu.arm.ident))
+
+/DISCARD/
+ *(SORT(.hash))
+ *(SORT(.dynsym))
+ *(SORT(.dynstr))
+ *(SORT(.ARM.exidx*))
+ *(SORT(.note.GNU-stack))
+ *(SORT(.gnu_debuglink))
+ *(SORT(.gnu.lto_*))
+ *(SORT(.init))
+ *(SORT(.fini))
+START GROUP
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib
+LOAD /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a
+LOAD /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/lib/clang/3.5.2/lib/linux/libclang_rt.builtins-arm.a
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+END GROUP
+OUTPUT(/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/bsp/trustzone/qsapps/fidoconfig/build/IADAANAA/fidocfg.elf elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0x6d8a
+ .debug_info    0x0000000000000000      0x246 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .debug_info    0x0000000000000246      0x2c0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .debug_info    0x0000000000000506      0x2c7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .debug_info    0x00000000000007cd       0xb5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .debug_info    0x0000000000000882     0x14d3 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_info    0x0000000000001d55     0x2d55 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_info    0x0000000000004aaa      0x5c8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_info    0x0000000000005072      0x67e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_info    0x00000000000056f0      0x2c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_info    0x00000000000059b4      0x3c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_info    0x0000000000005d78       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_info    0x0000000000005e20       0xbe /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_info    0x0000000000005ede       0xb5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_info    0x0000000000005f93       0xfc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_info    0x000000000000608f       0xa2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_info    0x0000000000006131      0xb5e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_info    0x0000000000006c8f       0xfb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+.debug_abbrev   0x0000000000000000     0x12f2
+ .debug_abbrev  0x0000000000000000       0xf1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .debug_abbrev  0x00000000000000f1      0x110 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .debug_abbrev  0x0000000000000201       0x8f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .debug_abbrev  0x0000000000000290       0x63 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .debug_abbrev  0x00000000000002f3      0x2f4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_abbrev  0x00000000000005e7      0x232 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_abbrev  0x0000000000000819      0x16b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_abbrev  0x0000000000000984      0x18c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_abbrev  0x0000000000000b10      0x124 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_abbrev  0x0000000000000c34      0x11a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_abbrev  0x0000000000000d4e       0x8a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_abbrev  0x0000000000000dd8       0x92 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_abbrev  0x0000000000000e6a       0x85 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_abbrev  0x0000000000000eef       0x98 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_abbrev  0x0000000000000f87       0x76 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_abbrev  0x0000000000000ffd      0x26a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_abbrev  0x0000000000001267       0x8b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+.debug_line     0x0000000000000000     0x34cf
+ .debug_line    0x0000000000000000      0x1d9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .debug_line    0x00000000000001d9      0x215 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .debug_line    0x00000000000003ee      0x1c7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .debug_line    0x00000000000005b5       0xe4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .debug_line    0x0000000000000699      0x7d4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_line    0x0000000000000e6d      0xc27 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_line    0x0000000000001a94      0x3a5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_line    0x0000000000001e39      0x317 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_line    0x0000000000002150      0x29b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_line    0x00000000000023eb      0x226 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_line    0x0000000000002611      0x12a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_line    0x000000000000273b      0x132 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_line    0x000000000000286d      0x145 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_line    0x00000000000029b2      0x26a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_line    0x0000000000002c1c      0x151 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_line    0x0000000000002d6d      0x5e4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_line    0x0000000000003351      0x17e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+.debug_pubnames
+                0x0000000000000000      0xd05
+ .debug_pubnames
+                0x0000000000000000       0x60 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .debug_pubnames
+                0x0000000000000060       0x5c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .debug_pubnames
+                0x00000000000000bc       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .debug_pubnames
+                0x00000000000000e0       0x5a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .debug_pubnames
+                0x000000000000013a      0x4ee /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_pubnames
+                0x0000000000000628      0x1cd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_pubnames
+                0x00000000000007f5       0x9c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_pubnames
+                0x0000000000000891      0x1e5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_pubnames
+                0x0000000000000a76       0x4b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_pubnames
+                0x0000000000000ac1       0xbf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_pubnames
+                0x0000000000000b80       0x1e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_pubnames
+                0x0000000000000b9e       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_pubnames
+                0x0000000000000bc2       0x1d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_pubnames
+                0x0000000000000bdf       0x1d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_pubnames
+                0x0000000000000bfc       0x1d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_pubnames
+                0x0000000000000c19       0xcf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_pubnames
+                0x0000000000000ce8       0x1d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+.debug_pubtypes
+                0x0000000000000000     0x1ecf
+ .debug_pubtypes
+                0x0000000000000000       0xd9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .debug_pubtypes
+                0x00000000000000d9       0xd9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .debug_pubtypes
+                0x00000000000001b2       0xb7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .debug_pubtypes
+                0x0000000000000269       0x2c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .debug_pubtypes
+                0x0000000000000295      0x48a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_pubtypes
+                0x000000000000071f     0x10d1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_pubtypes
+                0x00000000000017f0      0x11b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_pubtypes
+                0x000000000000190b      0x112 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_pubtypes
+                0x0000000000001a1d       0xf7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_pubtypes
+                0x0000000000001b14       0xe6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_pubtypes
+                0x0000000000001bfa       0x33 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_pubtypes
+                0x0000000000001c2d       0x59 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_pubtypes
+                0x0000000000001c86       0x4d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_pubtypes
+                0x0000000000001cd3       0x63 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_pubtypes
+                0x0000000000001d36       0x3c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_pubtypes
+                0x0000000000001d72      0x110 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_pubtypes
+                0x0000000000001e82       0x4d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+.debug_str      0x0000000000000000     0x4585
+ .debug_str     0x0000000000000000      0x213 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+                                        0x248 (size before relaxing)
+ .debug_str     0x0000000000000213      0x108 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+                                        0x264 (size before relaxing)
+ .debug_str     0x000000000000031b      0x324 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+                                        0x379 (size before relaxing)
+ .debug_str     0x000000000000063f       0xfc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+                                        0x1b0 (size before relaxing)
+ .debug_str     0x000000000000073b      0xd3d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                                        0xf9a (size before relaxing)
+ .debug_str     0x0000000000001478     0x230d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                                       0x2d42 (size before relaxing)
+ .debug_str     0x0000000000003785      0x178 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                                        0x30c (size before relaxing)
+ .debug_str     0x00000000000038fd      0x1fa /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                                        0x3f0 (size before relaxing)
+ .debug_str     0x0000000000003af7       0xdb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                                        0x28b (size before relaxing)
+ .debug_str     0x0000000000003bd2      0x306 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                                        0x46d (size before relaxing)
+ .debug_str     0x0000000000003ed8       0xc8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                                        0x179 (size before relaxing)
+ .debug_str     0x0000000000003fa0       0xc0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                                        0x195 (size before relaxing)
+ .debug_str     0x0000000000004060       0xa4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+                                        0x172 (size before relaxing)
+ .debug_str     0x0000000000004104       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+                                        0x18a (size before relaxing)
+ .debug_str     0x00000000000041ac       0xa6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+                                        0x15e (size before relaxing)
+ .debug_str     0x0000000000004252      0x28d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+                                        0x480 (size before relaxing)
+ .debug_str     0x00000000000044df       0xa6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+                                        0x173 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x388f
+ .debug_loc     0x0000000000000000       0xc5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .debug_loc     0x00000000000000c5      0x237 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .debug_loc     0x00000000000002fc        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .debug_loc     0x00000000000002fc        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .debug_loc     0x00000000000002fc      0x964 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_loc     0x0000000000000c60      0x40a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_loc     0x000000000000106a      0x385 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_loc     0x00000000000013ef      0x36b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_loc     0x000000000000175a       0x6c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_loc     0x00000000000017c6      0x11e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_loc     0x00000000000018e4       0x7c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_loc     0x0000000000001960       0x8f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_loc     0x00000000000019ef       0xc8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_loc     0x0000000000001ab7      0x650 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_loc     0x0000000000002107       0x8f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_loc     0x0000000000002196     0x15a2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_loc     0x0000000000003738      0x157 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+.debug_ranges   0x0000000000000000      0x720
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .debug_ranges  0x0000000000000000       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .debug_ranges  0x0000000000000030        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .debug_ranges  0x0000000000000030        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .debug_ranges  0x0000000000000030      0x240 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_ranges  0x0000000000000270        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_ranges  0x0000000000000270      0x1e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_ranges  0x0000000000000450       0xa0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_ranges  0x00000000000004f0       0xc0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_ranges  0x00000000000005b0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_ranges  0x00000000000005b0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_ranges  0x00000000000005b0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_ranges  0x00000000000005b0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_ranges  0x00000000000005b0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_ranges  0x00000000000005b0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_ranges  0x00000000000005b0      0x170 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_ranges  0x0000000000000720        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+.comment        0x0000000000000000       0x23
+ .comment       0x0000000000000000       0x23 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/FidoConfig.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/metadata.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)
+
+.debug_frame    0x0000000000000000      0xd20
+ .debug_frame   0x0000000000000000       0x80 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/app_main.o
+ .debug_frame   0x0000000000000080       0x60 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/fidoconfig/build/fidoconfig/A53_64/IADAANAA/src/COEMFidoConfig.o
+ .debug_frame   0x00000000000000e0      0x3b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_frame   0x0000000000000490      0x340 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/fidoconfig/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_frame   0x00000000000007d0       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_frame   0x0000000000000878       0xc8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_frame   0x0000000000000940       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_frame   0x0000000000000978       0xe8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/fidoconfig/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_frame   0x0000000000000a60       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_frame   0x0000000000000a98       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_frame   0x0000000000000ad0       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_frame   0x0000000000000af8       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_frame   0x0000000000000b20       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_frame   0x0000000000000b48      0x1b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_frame   0x0000000000000cf8       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/fidoconfig/A53_64/IADAANAA/libstd.lib(memchr.o)

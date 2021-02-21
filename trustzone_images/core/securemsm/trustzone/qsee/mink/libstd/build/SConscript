@@ -1,0 +1,128 @@
+#===============================================================================
+#                    Copyright 2010 - 2015 QUALCOMM Technologies, Incorporated.
+#                           All Rights Reserved.
+#                         QUALCOMM Proprietary/GTDR
+#===============================================================================
+# STD Libs
+#-------------------------------------------------------------------------------
+Import('env')
+#env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/trustzone/qsee/mink/libstd"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# External depends within CoreBSP
+#-------------------------------------------------------------------------------
+env.RequireExternalApi([
+])
+
+#-------------------------------------------------------------------------------
+# Internal depends within CoreBSP
+#-------------------------------------------------------------------------------
+CBSP_API = [
+   'SERVICES',
+   'KERNEL',
+   'MINK_LK',
+]
+
+env.RequirePublicApi(CBSP_API)
+env.RequireRestrictedApi(CBSP_API)
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = '${BUILDPATH}/src/'
+
+#-------------------------------------------------------------------------------
+# Sources, libraries
+#-------------------------------------------------------------------------------
+
+LIBSTD_SOURCES =  [
+   SRCPATH + 'libstd_std_scanul.c',
+   SRCPATH + 'memscpy.c',
+   SRCPATH + 'memsmove.c',
+   SRCPATH + 'strcasecmp.c',
+   SRCPATH + 'strncasecmp.c',
+   SRCPATH + 'strlcat.c',
+   SRCPATH + 'wcslcat.c',
+   SRCPATH + 'wstrlcat.c',
+   SRCPATH + 'strlcpy.c',
+   SRCPATH + 'wcslcpy.c',
+   SRCPATH + 'wstrlcpy.c',
+   SRCPATH + 'wstrlen.c',
+   SRCPATH + 'wstrcmp.c',
+   SRCPATH + 'wstrncmp.c',
+   SRCPATH + 'secure_memset.c',
+   SRCPATH + 'timesafe_memcmp.c',
+   SRCPATH + 'timesafe_strncmp.c',
+   SRCPATH + 'strnlen.c',
+   SRCPATH + 'memset.c',
+   SRCPATH + 'memcmp.c',
+   SRCPATH + 'memcpy.c',
+   SRCPATH + 'memmove.c',
+   SRCPATH + 'memchr.c',
+   SRCPATH + 'memrchr.c',
+   SRCPATH + 'strlen.c',
+   SRCPATH + 'strcmp.c',
+   SRCPATH + 'strncmp.c',
+   SRCPATH + 'strstr.c',
+   SRCPATH + 'strchr.c',
+   SRCPATH + 'strchrnul.c',
+   SRCPATH + 'strrchr.c',
+   SRCPATH + 'qsort.c',
+   SRCPATH + 'printf.c',
+   SRCPATH + 'abort.c',
+   SRCPATH + 'clock.c',
+]
+
+# XBL_SEC compiles required functions only due to memory size constraints
+LIBSTD_XBL_SEC_SOURCES = [
+   SRCPATH + 'memset.c',
+   SRCPATH + 'secure_memset.c',
+]
+
+# Uncomment this line to define key LIBSTD_TEST which builds LIBSTD test lib
+# Alternatively, define this at command line when building as a coreimage
+# build using USES_FLAGS=LIBSTD_TEST,....
+#env.Replace(LIBSTD_TEST = "yes")
+LIBSTD_TEST_SOURCES =  [
+    '${BUILDPATH}/test/libstd_test_internal.c',
+    '${BUILDPATH}/test/libstd_test_main.c',
+]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+
+images = ['TZOS_IMAGE', 'MONITOR_IMAGE', 'HYPERVISOR_IMAGE', 
+          'CTZL_IMAGE', 'CTZL64_IMAGE', 'TZTESTEXEC_IMAGE',
+          'WIDEVINE_IMAGE', 'PLAYREADY_IMAGE', 'MACCHIATO_SAMPLE_IMAGE', 
+          'GPSAMPLE', 'GPTEST_IMAGE', 'TTAARI1', 'TTACAPI1', 'TTACAPI2', 'TTACAPI3',  
+          'TTACAPI4',  'TTACAPI5',  'TTACRP1',  'TTADS1',  'TTATIME1',  
+          'TTATCF1',  'TTATCF2',  'TTATCF3',  'TTATCF4',  'TTATCF5',
+          'SAMPLEAPP_IMAGE', 'SMPLSERV_IMAGE', 'SMPLCERT_IMAGE', 'UEFISECAPP_IMAGE', 
+          'HDCP2P2_IMAGE', 'WINSECAPP_IMAGE', 'ISDBTMM_IMAGE', 
+          'ASSURANCETEST_IMAGE','SECURITYTEST_IMAGE','DXHDCP2_IMAGE',
+          'DXHDCP2DBG_IMAGE', 'HDCP1_IMAGE', 'HDCPSRM_IMAGE', 'TQS_IMAGE', 
+          'RETSTAPP_IMAGE', 'APTTESTAPP_IMAGE', 'APTTESTAPP64_IMAGE', 
+          'APTCRYPTOTESTAPP_IMAGE', 'APTCRYPTOTESTAPP64_IMAGE', 
+          'CRIKEYMGMTAPP_IMAGE', 'CRIKEYMGMTAPP64_IMAGE',
+          'APTLKSECAPP_IMAGE', 'APTLKSECAPP64_IMAGE', 'SAMPLEAUTH_IMAGE', 
+          'CHAMOMILE_IMAGE', 'FIDOCRYPTO_IMAGE', 'SECUREMM_IMAGE', 'FIDOCONFIG_IMAGE',
+          'SECUREINDICATOR_IMAGE', 'SECOTACL_IMAGE', 'SAMPLEEXTAUTH_IMAGE',
+		  'MDTP_IMAGE', 'QMPSECAPP_IMAGE', 'KEYMASTER_IMAGE',
+		  'DHSECAPP_IMAGE', 'CPPF_IMAGE', 'SSMAPP_IMAGE', 'PR_3_0_IMAGE', 'QPAY_IMAGE']
+
+env.AddBinaryLibrary(images, '${BUILDPATH}/libstd',  LIBSTD_SOURCES)
+
+env.AddBinaryLibrary('XBL_SEC_IMAGE', '${BUILDPATH}/libstd',  LIBSTD_XBL_SEC_SOURCES)
+
+if 'LIBSTD_TEST' in env:
+   env.AddBinaryLibrary(images, '${BUILDPATH}/libstd_test', LIBSTD_TEST_SOURCES)
+else:
+  env.CleanPack(images, LIBSTD_TEST_SOURCES)

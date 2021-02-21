@@ -1,0 +1,316 @@
+;============================================================================
+;  Name:
+;    interrupt_setup.cmm
+;
+;  Description:
+;    This script lets the user configure interrupts on the main interrupt 
+;    controller. 
+;  
+; Copyright (c) 2014 Qualcomm Technologies Incorporated.
+; All Rights Reserved.
+; Qualcomm Technologies Confidential and Proprietary
+;
+;----------------------------------------------------------------------------
+;============================================================================
+;
+;                        EDIT HISTORY FOR MODULE
+;
+;
+;
+;  when         who     what, where, why
+; ----------    ---     ------------------------------------------------------
+; 2014-08-12    vk      Branch for 8996
+; 2014-04-10    na      Initial Version
+;============================================================================;
+
+
+
+;============================================================================
+; Set up some defaults for some variables
+;============================================================================
+GLOBAL &IntrTrigger &IntTrigger &MaxIRQ &INTRSET &nIdx &IntCnt &IntrVal &Prod &Choice &MaxPriVal
+GLOBAL &nMask &nResult &IPriority
+&PlatformSet=1  
+&GICDBASE=0x09BC0000
+&GICCBASE=0x065C0000
+; We are setting the TZ configuration here. If APPS config has to be set please change this PlatformNum to 4
+&PlatformNum=0xA
+&MaxPriVal=0xFE
+&Interrupt=0
+; On 8996 we have 473 interrupts destined to APPS
+&MaxIRQ=0x1D9
+&INTRSET=0
+&PlatformSet=1
+&PrnRes=0
+
+;============================================================================
+; Get the arguments passed in.
+;============================================================================
+ENTRY
+DISPLAYMENU:
+AREA.RESet
+WINPOS 0. 0. 100% 100%
+AREA.Create INTRMENU
+AREA.view INTRMENU
+
+
+;on error gosub
+;(
+;  print "An Error has Occured"
+;  enddo (1==0)
+;)
+
+
+AREA.CLEAR INTRMENU
+AREA.view INTRMENU
+AREA.Select INTRMENU
+
+&Choice=0x10
+if &Choice==0x10
+(
+
+  &IntCnt=0
+  if &PlatformNum==0x4
+  (
+    ;******************************************************************************
+    ;  For the APPS processor we are in trust zone mode. ALL interrupts are secure.
+    ;******************************************************************************
+  
+    while &IntCnt<=&MaxIRQ
+    (  
+
+      ;******************************************************************************
+      ;  Set the trigger to edge.
+      ;******************************************************************************
+
+      &nIdx=((&IntCnt)>>4)
+      &Prod=((&IntCnt)&(0xF))
+      &nMask=(1<<((2*(&Prod))+1))
+      &TriggerReg=((&GICDBASE)+(0xc00+(4*(&nIdx))))
+      &TriggerVal=data.long(a:&TriggerReg)
+      &nResult=(&TriggerVal)|(&nMask)
+      data.set a:&TriggerReg %LONG &nResult
+
+      ;******************************************************************************
+      ;  Set all the interrupt to secure interrupts for the applications processor.
+      ;******************************************************************************
+
+      &nIdx=((&IntCnt)>>5)
+      &Prod=(1<<((&IntCnt)&0x1F))
+      &SecurityReg=(&GICDBASE)+(0x80+(4*(&nIdx)))
+      &SecurityVal=data.long(a:&SecurityReg)
+      &nResult=(&SecurityVal)&(~(&Prod))
+      data.set a:&SecurityReg %LONG &nResult
+ 
+      ;******************************************************************************
+      ;  Set the target cpu to cpu id 0x1
+      ;******************************************************************************
+
+      &nIdx=((&IntCnt)/4)
+      &Prod=((&IntCnt)&(0x3))*8
+      &nMask=(0xFF<<(&Prod))
+      &TargetReg=((&GICDBASE)+(0x800+(4*(&nIdx))))
+      &TargetVal=data.long(a:&TargetReg)
+      &TargetVal=(&TargetVal)&(~(&nMask))
+      &nResult=(&TargetVal)|((0x1<<(&Prod))&(&nMask))
+      data.set a:&TargetReg %LONG &nResult
+      &IntCnt=(&IntCnt)+1
+    )
+
+    ;******************************************************************************
+    ;  Enable the Secure distributor on the GIC Distributor.
+    ;******************************************************************************
+    &GICDVal=data.long(a:&GICDBASE)
+    &IsDist=(&GICDVal)|(0x1)
+    data.set a:&GICDBASE %LONG &IsDist
+
+    ;******************************************************************************
+    ; Enable the secure interrupts on the GIC controller.
+    ;******************************************************************************
+    &GICCVal=data.long(ZSD:&GICCBASE)
+    &IsInt=(&GICCVal)|(0x1)
+    data.set ZSD:&GICCBASE %LONG &IsInt
+
+
+    ;*******************************************************************************
+    ; Set the priority mask for recieving the interrupts
+    ;*******************************************************************************
+    &PmrReg=&GICCBASE+0x4
+    &nMask=0xFF
+    data.set ZSD:&PmrReg %LONG &nMask
+    &PmrVal=data.long(ZSD:&PmrReg)
+
+    print "The QGIC Distributor Configuration is set to the following :"
+    print "****************************************************************************************"
+    print "The secure distributor has been enabled."
+    print "The secure interrupts have been enabled."
+    print "IRQ port has been set as a secure destination."
+    print "The lowest priority interrupt mask set is &PmrVal"
+    print "All QGIC interrupts are by default configured to edge trigger as a result of running this script option. "
+
+  )
+  if &PlatformNum!=0x4
+  (
+
+    ;******************************************************************************
+    ;  For the APPS processor we are in trust zone mode. ALL interrupts are non 
+    ;  secure excepting the FIQ interrupts. FIQs are all marked as secure.
+    ;  In this script however we mark all interrupts as non secure since we do not
+    ;  have prior knowledge for the FIQ assignments.
+    ;******************************************************************************
+  
+    while &IntCnt<=&MaxIRQ
+    (  
+
+      ;********************************************************************************
+      ;  Set the trigger to edge.
+      ;********************************************************************************
+
+      &nIdx=((&IntCnt)>>4)
+      &Prod=((&IntCnt)&(0xF))
+      &nMask=(1<<((2*(&Prod))+1))
+      &TriggerReg=(&GICDBASE)+(0xc00+(4*(&nIdx)))
+      &TriggerVal=data.long(a:&TriggerReg)
+      &nResult=(&TriggerVal)|(&nMask)
+      data.set a:&TriggerReg %LONG &nResult
+      ;********************************************************************************
+      ;  Set all the interrupt to non secure interrupts for all other processors images such as TZ
+      ;  excepting the Applications processor.
+      ;********************************************************************************
+
+      &nIdx=((&IntCnt)>>5)
+      &Prod=(1<<((&IntCnt)&0x1F))
+      &SecurityReg=(&GICDBASE)+(0x80+(4*(&nIdx)))
+      &SecurityVal=data.long(a:&SecurityReg)
+      &nResult=(&SecurityVal)|(&Prod)
+      data.set a:&SecurityReg %LONG &nResult
+
+      ;********************************************************************************
+      ;  Set the target cpu to cpu id 0x1
+      ;********************************************************************************
+
+      &nIdx=((&IntCnt)/4)
+      &Prod=((&IntCnt)&(0x3))*8
+      &nMask=(0xFF<<(&Prod))
+      &TargetReg=(&GICDBASE)+(0x800+(4*(&nIdx)))
+      &TargetVal=data.long(a:&TargetReg)
+      &TargetVal=(&TargetVal)&(~(&nMask))
+      &nResult=(&TargetVal)|((0x1<<(&Prod))&(&nMask))
+      data.set a:&TargetReg %LONG &nResult
+      &IntCnt=(&IntCnt)+1
+    )
+
+    ;******************************************************************************
+    ;  Enable the Secure and non secure distributor on the GIC Distributor.
+    ;******************************************************************************
+    &GICDVal=data.long(a:&GICDBASE)
+    &IsDist=(&GICDVal)|(0x3)
+    data.set a:&GICDBASE %LONG &IsDist
+
+    ;**************************************************************************************
+    ; Enable the secure and non secure interrupts and the secure ack on the GIC controller.
+    ; Set the FIQ as a secure destination.
+    ;**************************************************************************************
+    &GICCVal=data.long(ZSD:&GICCBASE)
+    &IsInt=(&GICCVal)|(0xF)
+    data.set ZSD:&GICCBASE %LONG &IsInt
+
+    ;*******************************************************************************
+    ; Set the priority mask for receiving the interrupts
+    ;*******************************************************************************
+    &PmrReg=&GICCBASE+0x4
+    &nMask=0xFF
+    data.set ZSD:&PmrReg %LONG &nMask
+    &PmrVal=data.long(ZSD:&PmrReg)
+
+
+    print "The QGIC Distributor Configuration is set to the following :"
+    print "****************************************************************************************"
+    print "The secure and non secure distributor has been enabled."
+    print "The secure and non secure interrupts have been enabled."
+    print "The secure ack on the GIC controller has been set."
+    print "FIQ port has been set as a secure destination."
+    print "The lowest priority interrupt mask set is &PmrVal"
+    print "All QGIC interrupts are by default configured to edge trigger as a result of running this script option. "
+  )  
+
+  Area.clear INTRMENU
+  print
+  
+  
+  &GICDVal=data.long(a:&GICDBASE)
+  &IsDistNs=&GICDVal&(0x2)
+  &IsDist=&GICDVal&(0x1)
+  if &IsDist==0
+  (
+   print "The QGIC Distributor is not Enabled."
+  )
+  else
+  (
+    print "The QGIC Distributor is Enabled."
+  )
+  if &IsDistNs==0
+  (
+    print "The QGIC Non secure Distributor is not Enabled."
+  )
+  else
+  (
+    print "The QGIC Non Secure Distributor is Enabled."
+  )
+  print "****************************************************************************************"
+  print "The QGIC Controller Configuration is the following :"
+  print "****************************************************************************************"
+  &GICCVal=data.long(ZSD:&GICCBASE)
+  &IsIntNs=&GICCVal&(0x2)
+  &IsInt=&GICCVal&(0x1)
+  &ISecAck=&GICCVal&(0x4)
+  &ISecDest=&GICCVal&(0x8)
+ 
+
+  if &IsInt==0
+  (
+   print "The QGIC secure interrupts are not Enabled."
+  )
+  else
+  (
+    print "The QGIC secure interrupts are Enabled."
+  )
+  if &IsIntNs==0
+  (
+    print "The QGIC Non secure interrupts are not Enabled."
+  )
+  else
+  (
+    print "The QGIC Non Secure interrupts are Enabled."
+  )
+  if &ISecAck==0
+  (
+    print "The QGIC Secure domain ack of non secure interrupts (S_ACK) is not enabled ."
+  )
+  else
+  (
+    print "The QGIC Secure domain ack of non secure interrupts (S_ACK) is enabled ."
+  )
+
+  if &ISecDest==0
+  (
+    print "The QGIC Secure destination port (S_DEST) is set to IRQ."
+  )
+  else
+  (
+    print "The QGIC Secure destination port (S_DEST) is set to FIQ."
+  )
+  &PMRBASE=(ZSD:&GICCBASE)+0x4
+  &PmrVal=data.long(&PMRBASE)
+  &Pmr=&PmrVal&(0xFF)
+  print "The lowest priority interrupt mask set is &Pmr"
+  
+ 
+)
+term.close 
+
+enddo (0==0)
+
+
+
+

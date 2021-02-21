@@ -1,0 +1,85 @@
+#===============================================================================
+#
+# App Core
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/apps.tz/1.0.6/securemsm/trustzone/qsapps/gpsample/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:50:16 $
+#  $Author: pwbldsvc $
+#  $Change: 11897059 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+if env.has_key('USES_NO_CP'):
+  env.Append(CCFLAGS = ' -DUSES_NO_CP ')
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/gpsample/src"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' --arm')
+
+
+env.PublishPrivateApi('SECUREMSM', [
+   "${INC_ROOT}/core/api/services",
+   "${INC_ROOT}/core/api/securemsm/trustzone/gp",
+   "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/gptest/src",
+])
+
+INC_PATH_SECRSA_HEADER = ["${INC_ROOT}/core/securemsm/secrsa/shared/inc"]
+env.Append(CPPPATH = INC_PATH_SECRSA_HEADER)
+
+INC_PATH_SECMATH_HEADER = ["${INC_ROOT}/core/securemsm/secmath/shared/inc"]
+env.Append(CPPPATH = INC_PATH_SECMATH_HEADER)
+
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------
+APP_CORE_ENTRY_SOURCES = [
+        '${BUILDPATH}/gpsample.c',
+]
+
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddObject('GPSAMPLE', APP_CORE_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Add metadata to image
+#-------------------------------------------------------------------------------
+# privileges: all
+# services:   COEMUnwrapKeys_UID (60)
+md = {
+    'appName':      'gpsample',
+    'UUID':         '5AF8C3E6-D9DF-446E-4ff2-d4d58e8ca49b',
+    'privileges': [ 'default',
+                    'GPServices',
+                   ],
+}
+
+env.AddSecureAppMetadata('GPSAMPLE', md )
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

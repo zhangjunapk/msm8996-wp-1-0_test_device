@@ -1,0 +1,301 @@
+;============================================================================
+; Name: mmu_pt.cmm
+;
+; Description: Dump MMU Page tables into a file
+; Copyright (c) 2014-2016 Qualcomm Technologies, Inc.
+; All Rights Reserved.
+; Qualcomm Technologies Proprietary and Confidential.
+;
+;----------------------------------------------------------------------------
+
+;============================================================================
+;
+;                        EDIT HISTORY FOR MODULE
+;
+;
+;
+;  when         who     what, where, why
+;  ----------   ---     -----------------------------------------------------
+;  01-19-2016   vk      Change C15 to SPR for AARCH64 registers
+;  02-12-2015   bh      Changing RD: to A:
+;  05-07-2014   yg      Dump additional useful registers
+;  03-18-2014   yg      Initial version
+;============================================================================;
+
+;
+;
+;   Usage : do mmu_pt_64 <file_name>
+;
+;     file_name : is where the page tables are dumped into
+;     NOTE: currently the script uses hardcoded TTBR0 address
+;           TODO: automatically read TTBR value in script from the register
+;
+
+
+;
+;   Assumptions :
+;      - Assuming input/output address (IA/OA) is 32 bits only
+;      - Assuming page size to be 4k
+;
+;
+
+
+;------------------------------------------------------------------------------
+;Entry Point
+;------------------------------------------------------------------------------
+entry  &MmuPtFile
+
+local &Till
+local &PTaddr
+local &PTdat
+local &PTdath
+local &Saddr
+local &CurrentEL
+local &SCTLR_ELx
+local &TTBR0_ELx
+local &TCR_ELx
+local &TTBRx_ELx
+local &TTBR1_ELx
+local &PageSize
+local &TG0
+
+  OPEN #1 &MmuPtFile  /Write /Create
+
+  GOSUB GetRegValues
+;
+;  0th level pages here
+;
+  ;&PtBase=0x83FBB000
+
+  &PtBase=&TTBR0_ELx
+
+  &EndPtr=&PtBase+0x20
+
+  WRITE #1 " "
+  WRITE #1 "MMU Table TTBR @ &PtBase"
+
+  WRITE #1 "L1 Table:"
+
+  while (&PtBase<&EndPtr)
+  (
+    &PTdat=data.long(A:&PtBase)
+    &PTdath=data.long(A:&PtBase+4)
+
+    WRITE #1 %CONT " &PtBase : "
+    WRITE #1 %CONT " " FORMAT.HEX(8.,&PTdat)
+    WRITE #1 " " FORMAT.HEX(8.,&PTdath)
+
+    &PtBase=&PtBase+8
+  )
+
+  &PtBase=&TTBR0_ELx
+
+  &EndPtr=&PtBase+0x20
+
+  WRITE #1 " "
+
+  while (&PtBase<&EndPtr)
+  (
+    &PTdat=data.long(A:&PtBase)
+
+    &PType=&PTdat&0x3
+    &PTaddr=&PTdat&0xFFFFF000
+
+    if (((&PType&0x3)==3)&&(&PTaddr!=0))
+    (
+      WRITE #1 "L2 Table: at " FORMAT.HEX(8.,&PTaddr) " (Based on entry " FORMAT.HEX(8.,&PTdat) " @ " FORMAT.HEX(8.,&PtBase) ")"
+      gosub DumpL1L2Page &PTaddr
+    )
+    &PtBase=&PtBase+8
+  )
+  CLOSE #1
+  print "Done"
+
+enddo
+
+GetRegValues:
+
+  ;
+  ; Bit[3-0] => EL
+  ;
+  ; Bit[3-2] : EL level
+  ; Bit[1] = 0
+  ; Bit[0] : 1 => Handler, 0 => Thread
+  ;
+  &CurrentEL=data.quad(SPR:0x30422)
+  &CurrentEL=(&CurrentEL>>2)
+  WRITE #1 "Current EL  : &CurrentEL"
+  print "Current EL  : &CurrentEL"
+
+  &SCTLR_ELx=data.quad(SPR:0x30100)
+  WRITE #1 "SCTLR       : &SCTLR_ELx"
+  print "SCTLR       : &SCTLR_ELx"
+
+  &TCR_ELx=data.quad(SPR:0x30202)
+  WRITE #1 "TCR         : &TCR_ELx"
+  print "TCR         : &TCR_ELx"
+
+  ; TG0 is same in both EL1 & EL2 registers
+  &TG0=(&TCR_ELx>>14)&0x3
+  &PageSize=0x1000  ; Default 4k for TG0==0
+  if (&TG0==01)
+  (
+    &PageSize=0x10000
+  )
+  else if (&TG0==0x10)
+  (
+    &PageSize=0x4000
+  )
+
+  &TTBR0_ELx=data.quad(SPR:0x30200)
+  WRITE #1 "TTBR0       : &TTBR0_ELx"
+  print "TTBR0       : &TTBR0_ELx"
+
+  &TTBR1_ELx=data.quad(SPR:0x30201)
+  WRITE #1 "TTBR1       : &TTBR1_ELx"
+  print "TTBR1       : &TTBR1_ELx"
+
+  &MAIR_ELx=data.quad(SPR:0x30A20)
+  WRITE #1 "MAIR        : &MAIR_ELx"
+  print "MAIR        : &MAIR_ELx"
+
+return
+
+DumpPage:
+  entry &PgPtr
+
+  local &EndPtr
+  local &Dat
+  local &Dath
+  local &Cnt
+  local &PgPtrTemp
+
+  &PgPtrTemp=&PgPtr
+  &EndPtr=&PgPtrTemp+&PageSize
+  &Cnt=0
+
+  while (&PgPtrTemp<&EndPtr)
+  (
+    if (&Cnt==0)
+    (
+      WRITE #1  %CONT "    &PgPtrTemp : "
+    )
+    &Dat=data.long(A:&PgPtrTemp)
+    &Dath=data.long(A:&PgPtrTemp+4)
+
+    WRITE #1 %CONT " " FORMAT.HEX(8.,&Dat)
+    WRITE #1 %CONT " " FORMAT.HEX(8.,&Dath)
+
+    &PgPtrTemp=&PgPtrTemp+8
+    &Cnt=&Cnt+1
+    if (&Cnt>=4)
+    (
+      &Cnt=0
+      WRITE #1 " "
+    )
+  )
+  WRITE #1 " "
+return
+
+DumpL1L2Page:
+  entry &PgPtr
+
+  local &EndPtr
+  local &Dat
+  local &Dath
+  local &Cnt
+  local &PType
+  local &PTaddr
+  local &PgPtrTemp
+
+  &PgPtrTemp=&PgPtr
+  &EndPtr=&PgPtrTemp+&PageSize
+
+  GOSUB DumpPage &PgPtr
+
+  while (&PgPtrTemp<&EndPtr)
+  (
+    &Dat=data.long(A:&PgPtrTemp)
+    &Dath=data.long(A:&PgPtrTemp+4)
+
+    &PType=&Dat&0x3
+    &PTaddr=&Dat&0xFFFFF000
+    if ((&PType==3)&&(&PTaddr!=0))
+    (
+      WRITE #1 "L3 Table: at " FORMAT.HEX(8.,&PTaddr) " (Based on entry " FORMAT.HEX(8.,&Dat) " @ " FORMAT.HEX(8.,&PgPtrTemp) ")"
+      gosub DumpPage &PTaddr
+    )
+
+    &PgPtrTemp=&PgPtrTemp+8
+  )
+
+return
+enddo
+
+
+
+
+;
+;  T32 commands:
+;
+;  SPR:    op0    op1    CRn    CRm   op2
+;         17:16  14:12   11:8   7:4   2:0
+;
+;  MRS  Xt, S     op1     Cn     Cm    op2
+;  MSR      S     op1     Cn     Cm    op2, Xt
+;
+;
+;  Example:
+;  VTTBR_EL2   : spr0x34210
+;    op0 = 11 (0x3)
+;    op1 = 100 (0x4)
+;    CRn = 0010 (0x2)
+;    CRm = 0001 (0x1)
+;    op2 = 000  (0x0)
+;
+;    write to VTTBR_EL2    data.set SPR:0x34210   %Quad 0x2008000000
+;
+;
+;   IFSR32_EL2   : spr:0x34501
+;    op0 = 11 (0x3)
+;    op1 = 100 (0x4)
+;    CRn = 0101 (0x5)
+;    CRm = 0000 (0x0)
+;    op2 = 001 (0x1)
+;
+;   Read from IFSR_EL2  data.in SPR:0x34501 /long
+;
+;
+;
+;  Registers this script depends on
+;
+;   TTBR0_EL1   op0   op1    CRn   CRm    op2
+;   MRS  Xt,     11   000    0010  0000   000   Read
+;   SPR:0x30200
+;
+;   TTBR1_EL1   op0   op1    CRn   CRm    op2
+;   MRS  Xt     11    000   0010   0000   001
+;   SPR:0x30201
+;
+;
+;   SCTLR_EL1   op0   op1    CRn   CRm    op2
+;   MSR Xt      11    000    0001  0000   000
+;   SPR:0x30100
+;
+;
+;   TCR_EL1   op0   op1    CRn   CRm    op2
+;   MSR Xt    11    000    0010  0000   010
+;   SPR:0x30202
+;
+;
+;   MAIR_EL1   op0   op1    CRn   CRm    op2
+;   MSR Xt     11    000    1010  0010   000
+;   SPR:0x30A20
+;
+;   Current_EL  op0   op1    CRn   CRm    op2
+;   MSR Xt      11    000    0100  0010   010
+;   SPR:0x30422
+;
+;
+
+

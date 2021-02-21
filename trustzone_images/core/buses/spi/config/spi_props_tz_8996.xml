@@ -1,0 +1,354 @@
+//===========================================================================
+//
+// FILE:         spi_props_tz_8996.xml
+//
+// DESCRIPTION:  This file contains the DAL XML properties for SPI
+//
+//===========================================================================
+//
+//                             Edit History
+//
+// $Header:  $
+//
+// when       who     what, where, why
+// 07/16/15   vmk     Added SSC SPI ports
+// 06/30/14   ms      Created for TZ SPI Porting 
+//
+//===========================================================================
+//             Copyright (c) 2014 QUALCOMM Incorporated.
+//                    All Rights Reserved.
+//                  Qualcomm Confidential and Proprietary
+//===========================================================================
+#include "tzbsp_spi.h"
+
+<driver name="Spi">
+   <global_def>
+     <var_seq name = "spiqup1_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>0,1,2,3,end </var_seq>
+	 <var_seq name = "spiqup2_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>41,42,43,44end </var_seq>
+	 <var_seq name = "spiqup3_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>45,46,47,48,end </var_seq>
+	 <var_seq name = "spiqup4_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>65,66,67,68,end </var_seq>
+	 <var_seq name = "spiqup5_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>81,82,83,84,end </var_seq>   
+	 <var_seq name = "spiqup6_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>25,26,27,28,end </var_seq>
+	 <var_seq name = "spiqup7_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>53,54,55,56,end </var_seq>   
+	 <var_seq name = "spiqup8_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>4,5,6,7,end </var_seq>
+	 <var_seq name = "spiqup9_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>49,50,51,52,end </var_seq>
+	 <var_seq name = "spiqup10_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>8,9,10,11,end </var_seq>
+	 <var_seq name = "spiqup11_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>58,59,60,61,end </var_seq>
+	 <var_seq name = "spiqup12_gpio_number_arr" type=DALPROP_DATA_TYPE_UINT32_SEQ>85.86,87,88,end </var_seq>
+
+	 <string name="gpio_spi1_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[1]</string>
+	 <string name="gpio_spi1_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[1]</string>
+	 <string name="gpio_spi1_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[1]</string>
+	 <string name="gpio_spi1_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[1]</string>
+	 <string name="gpio_spi2_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[2]</string>
+	 <string name="gpio_spi2_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[2]</string>
+	 <string name="gpio_spi2_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[2]</string>
+	 <string name="gpio_spi2_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[2]</string>
+	 <string name="gpio_spi3_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[3]</string>
+	 <string name="gpio_spi3_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[3]</string>
+	 <string name="gpio_spi3_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[3]</string>
+	 <string name="gpio_spi3_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[3]</string>
+	 <string name="gpio_spi4_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[4]</string>
+	 <string name="gpio_spi4_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[4]</string>
+	 <string name="gpio_spi4_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[4]</string>
+	 <string name="gpio_spi4_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[4]</string>
+	 <string name="gpio_spi5_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[5]</string>
+	 <string name="gpio_spi5_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[5]</string>
+	 <string name="gpio_spi5_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[5]</string>
+	 <string name="gpio_spi5_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[5]</string>
+	 <string name="gpio_spi6_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[6]</string>
+	 <string name="gpio_spi6_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[6]</string>
+	 <string name="gpio_spi6_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[6]</string>
+	 <string name="gpio_spi6_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[6]</string>
+	 <string name="gpio_spi7_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[7]</string>
+	 <string name="gpio_spi7_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[7]</string>
+	 <string name="gpio_spi7_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[7]</string>
+	 <string name="gpio_spi7_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[7]</string>
+	 <string name="gpio_spi8_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[8]</string>
+	 <string name="gpio_spi8_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[8]</string>
+	 <string name="gpio_spi8_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[8]</string>
+	 <string name="gpio_spi8_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[8]</string>
+	 <string name="gpio_spi9_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[9]</string>
+	 <string name="gpio_spi9_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[9]</string>
+	 <string name="gpio_spi9_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[9]</string>
+	 <string name="gpio_spi9_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[9]</string>
+	 <string name="gpio_spi10_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[10]</string>
+	 <string name="gpio_spi10_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[10]</string>
+	 <string name="gpio_spi10_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[10]</string>
+	 <string name="gpio_spi10_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[10]</string>
+	 <string name="gpio_spi11_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[11]</string>
+	 <string name="gpio_spi11_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[11]</string>
+	 <string name="gpio_spi11_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[11]</string>
+	 <string name="gpio_spi11_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[11]</string>
+	 <string name="gpio_spi12_clk_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_clk[12]</string>
+	 <string name="gpio_spi12_cs_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_cs_n[12]</string>
+	 <string name="gpio_spi12_mosi_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_mosi[12]</string>
+	 <string name="gpio_spi12_miso_str" type=DALPROP_DATA_TYPE_STRING>blsp_spi_miso[12]</string>
+
+     <var_seq name="spiqup1_appclk_name"   type=DALPROP_DATA_TYPE_STRING>  gcc_blsp1_qup1_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup2_appclk_name"   type=DALPROP_DATA_TYPE_STRING>  gcc_blsp1_qup2_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup3_appclk_name"   type=DALPROP_DATA_TYPE_STRING>  gcc_blsp1_qup3_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup4_appclk_name"  type=DALPROP_DATA_TYPE_STRING>   gcc_blsp1_qup4_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup5_appclk_name"  type=DALPROP_DATA_TYPE_STRING>   gcc_blsp1_qup5_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup6_appclk_name"  type=DALPROP_DATA_TYPE_STRING>   gcc_blsp1_qup6_spi_apps_clk   </var_seq>
+	 
+     <var_seq name="spiqup7_appclk_name"   type=DALPROP_DATA_TYPE_STRING>   gcc_blsp2_qup1_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup8_appclk_name"   type=DALPROP_DATA_TYPE_STRING>   gcc_blsp2_qup2_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup9_appclk_name"   type=DALPROP_DATA_TYPE_STRING>   gcc_blsp2_qup3_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup10_appclk_name"  type=DALPROP_DATA_TYPE_STRING>   gcc_blsp2_qup4_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup11_appclk_name"  type=DALPROP_DATA_TYPE_STRING>   gcc_blsp2_qup5_spi_apps_clk   </var_seq>
+	 <var_seq name="spiqup12_appclk_name"  type=DALPROP_DATA_TYPE_STRING>   gcc_blsp2_qup6_spi_apps_clk   </var_seq>
+	 
+	 <var_seq name="spi_blsp1_hclk_name"     type=DALPROP_DATA_TYPE_STRING>   gcc_blsp1_ahb_clk             </var_seq>
+     <var_seq name="spi_blsp2_hclk_name"     type=DALPROP_DATA_TYPE_STRING>   gcc_blsp2_ahb_clk            </var_seq>
+
+    </global_def>
+
+    <device id=DALDEVICEID_SPI_DEVICE_1>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07575000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32>   1 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07544000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 12 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 13 </props>
+        <props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup1_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi1_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi1_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi1_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi1_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup1_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp1_hclk_name   </props>
+    </device>
+	
+    <device id=DALDEVICEID_SPI_DEVICE_2>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 2 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07576000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32>   1 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07544000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 14 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 15 </props>
+        <props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup2_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi2_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi2_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi2_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi2_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup2_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp1_hclk_name   </props>
+    </device>
+	
+    <device id=DALDEVICEID_SPI_DEVICE_3>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 3 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07577000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32>   1 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07544000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 16 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 17 </props>
+        <props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup3_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi3_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi3_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi3_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi3_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup3_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp1_hclk_name   </props>
+    </device>
+
+    <device id=DALDEVICEID_SPI_DEVICE_4>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07578000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32>   1 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07544000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 18 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 19 </props>
+        <props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup4_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi4_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi4_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi4_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi4_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup4_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp1_hclk_name   </props>		
+    </device>
+	
+    <device id=DALDEVICEID_SPI_DEVICE_5>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 5 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07579000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07544000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 20 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 21 </props>
+		<props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup5_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi5_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi5_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi5_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi5_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup5_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp1_hclk_name   </props>		
+    </device>    
+
+    <device id=DALDEVICEID_SPI_DEVICE_6>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 6 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x0757A000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07544000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 22 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 23 </props>
+		<props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup6_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi6_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi6_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi6_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi6_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup6_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp1_hclk_name   </props>		
+    </device>    
+    
+    <device id=DALDEVICEID_SPI_DEVICE_7>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 7 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x075B5000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32> 2 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07584000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 271 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 12 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 13 </props>
+		<props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup7_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi7_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi7_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi7_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi7_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup7_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp2_hclk_name   </props>		
+    </device>
+	
+    <device id=DALDEVICEID_SPI_DEVICE_8>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 8 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x075B6000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32> 2 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07584000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 271 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 14 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 15 </props>
+		<props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup8_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi8_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi8_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi8_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi8_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup8_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp2_hclk_name   </props>		
+    </device>
+
+    <device id=DALDEVICEID_SPI_DEVICE_9>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 9 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x075B7000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32> 2 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07584000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 271 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 16 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 17 </props>
+		<props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup9_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi9_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi9_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi9_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi9_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup9_appclk_name   </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp2_hclk_name   </props>		
+    </device>
+
+    <device id=DALDEVICEID_SPI_DEVICE_10>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 10 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x075B8000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32> 2 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07584000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 271 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 18 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 19 </props>
+		<props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup10_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi10_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi10_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi10_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi10_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup10_appclk_name  </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp2_hclk_name   </props>		
+    </device>
+	    <device id=DALDEVICEID_SPI_DEVICE_11>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 11 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x075B9000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32> 2 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07584000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 271 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 20 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 21 </props>
+		<props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup11_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi11_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi11_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi11_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi11_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup11_appclk_name  </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp2_hclk_name   </props>		
+    </device>
+	    <device id=DALDEVICEID_SPI_DEVICE_12>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 12 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x075BA000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32> 2 </props>
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x07584000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 271 </props>    
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 22 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 23 </props>
+		<props name="GPIO_NUM_ARR" type=DALPROP_ATTR_TYPE_UINT32_SEQ_PTR> spiqup12_gpio_number_arr</props>
+		<props name="gpio_spi_clk_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi12_clk_str</props>
+		<props name="gpio_spi_cs_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi12_cs_str</props>
+		<props name="gpio_spi_mosi_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi12_mosi_str</props>
+		<props name="gpio_spi_miso_str" type=DALPROP_ATTR_TYPE_STRING_PTR>gpio_spi12_miso_str</props>
+        <props name="CHIP_APP_CLK_NAME"   type=DALPROP_ATTR_TYPE_STRING_PTR>   spiqup12_appclk_name  </props>
+        <props name="CHIP_HCLK_NAME"      type=DALPROP_ATTR_TYPE_STRING_PTR>   spi_blsp2_hclk_name   </props>		
+    </device>
+		
+  // SSC SPI device
+    <device id=DALDEVICEID_SPI_SSC_DEVICE_1>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x1EB5000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32>   1 </props> //dont care
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x1E84000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    //dont care, poll for BAM interrupt
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 6 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 7 </props>
+    </device>
+    <device id=DALDEVICEID_SPI_SSC_DEVICE_2>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 2 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x1EB6000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32>   1 </props> //dont care
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x1E84000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    //dont care, poll for BAM interrupt
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 8 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 9 </props>
+    </device>
+    <device id=DALDEVICEID_SPI_SSC_DEVICE_3>
+        <props name="QUP_CORE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 3 </props>
+        <props name="QUP_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x1EB7000 </props>
+        <props name="SW_ENABLE_BAM" type=DALPROP_ATTR_TYPE_UINT32> 1 </props>
+        <props name="BAM_BLSP_ID" type=DALPROP_ATTR_TYPE_UINT32>   1 </props> //dont care
+        <props name="BAM_BASE_ADDR" type=DALPROP_ATTR_TYPE_UINT32> 0x1E84000 </props>
+        <props name="BAM_INTERRUPT_ID" type=DALPROP_ATTR_TYPE_UINT32> 270 </props>    //dont care, poll for BAM interrupt
+        <props name="BAM_TX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 10 </props>    
+        <props name="BAM_RX_PIPE_NUM" type=DALPROP_ATTR_TYPE_UINT32> 11 </props>
+    </device>
+  
+</driver>
+ 

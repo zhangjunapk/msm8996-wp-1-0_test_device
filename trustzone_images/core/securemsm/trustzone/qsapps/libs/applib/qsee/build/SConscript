@@ -1,0 +1,357 @@
+#===============================================================================
+#
+# TZ applib
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header:  $
+#  $DateTime: $
+#  $Author: $
+#  $Change: $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+# when         who     what, where, why
+# --------     ---     ---------------------------------------------------------
+# 08/10/15   	 dc      Added eSE Service
+# 06/04/15     el      Added qsee_bulletin_board_shim.c file
+# 02/10/14     cz      Added qsee_cfg_prop_shim.c file
+# 07/16/14     tp      Changed DRM sconscripts to use the prxy_services
+#                      library instead of linking to qsee_services.
+# 01/28/14     sa      Add HDCPSRM_IMAGE
+# 10/17/13     ib      Add SECUREMM
+# 03/11/13     bbs     Add ISDBTMM to TZ common lib
+# 01/15/2013   cz      removed drmprov
+#===============================================================================
+Import('env')
+import copy
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/qsee"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' -marm')
+
+CBSP_API = [
+   'SERVICES',
+   'DAL',
+   'MINK',
+   'MINK_LK',
+]
+
+env.RequirePublicApi(CBSP_API)
+env.RequireRestrictedApi(CBSP_API)
+
+INC_PATH_QSEE_API = ["${INC_ROOT}/core/api/securemsm/trustzone/qsee"]
+env.Append(CPPPATH = INC_PATH_QSEE_API)
+INC_PATH_MINK_API = ["${INC_ROOT}/core/securemsm/trustzone/qsee/mink/app_mgr/inc"]
+env.Append(CPPPATH = INC_PATH_MINK_API)
+INC_PATH_GP_API = ["${INC_ROOT}/core/api/securemsm/trustzone/gp"]
+env.Append(CPPPATH = INC_PATH_GP_API)
+INC_PATH_QSEE_SRC = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/qsee/src"]
+env.Append(CPPPATH = INC_PATH_QSEE_SRC)
+INC_PATH_COMDEF = ["${INC_ROOT}/core/api/services"]
+env.Append(CPPPATH = INC_PATH_COMDEF)
+INC_PATH_SYSCALL = ["${INC_ROOT}/core/securemsm/trustzone/qsee/include"]
+env.Append(CPPPATH = INC_PATH_SYSCALL)
+INC_PATH_CTZLIB = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/common/src",
+                   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/services/src",
+                   "${INC_ROOT}/core/api/kernel/libstd/stringl",]
+env.Append(CPPPATH = INC_PATH_CTZLIB)
+INC_PATH_KER = ["${INC_ROOT}/core/api/kernel/libstd"]
+env.Append(CPPPATH = INC_PATH_KER)
+INC_PATH_COMMON_APPLIB = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/common_applib/src"]
+env.Append(CPPPATH = INC_PATH_COMMON_APPLIB)
+INC_PATH_MACC = [
+        "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+        "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/services/src",
+        "${INC_ROOT}/core/securemsm/trustzone/qsee/services/keyprov/macchiato/shared/inc",
+]
+env.Append(CPPPATH = INC_PATH_MACC)
+INC_PATH_GP_PO_API = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/common_applib/inc/"]
+env.Append(CPPPATH = INC_PATH_GP_PO_API)
+INC_PATH_GP_SRC = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/gp/src/"]
+env.Append(CPPPATH = INC_PATH_GP_SRC)
+INC_PATH_GP_INC = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/gp/inc/"]
+env.Append(CPPPATH = INC_PATH_GP_INC)
+
+#----------------------------------------------------------------------------
+# TZ Exec Shared Objects
+#----------------------------------------------------------------------------
+LIB_ENTRY_SOURCES = [
+    '${BUILDPATH}/src/kthread_shared.s',
+    '${BUILDPATH}/src/mink_shared_code.c',
+    '${BUILDPATH}/src/qsee_env.c',
+    '${BUILDPATH}/src/qsee_core_shim.c',
+    '${BUILDPATH}/src/qsee_deviceid.c',
+    '${BUILDPATH}/src/qsee_prng.c',
+    '${BUILDPATH}/src/qsee_secdisp.c',
+    '${BUILDPATH}/src/qsee_nsmem.c',
+    '${BUILDPATH}/src/qsee_cmac.c',
+    '${BUILDPATH}/src/qsee_crypto_shim.c',
+    '${BUILDPATH}/src/qsee_timer_shim.c',
+    '${BUILDPATH}/src/qsee_boot_shim.c',
+    '${BUILDPATH}/src/qsee_int_shim.c',
+    '${BUILDPATH}/src/qsee_ese_service.c',
+    '${BUILDPATH}/src/qsee_securechannel_shim.c',
+    '${BUILDPATH}/src/tzapp_syscall.s',
+    '${BUILDPATH}/src/qsee_comstr.c',
+    '${BUILDPATH}/src/stor.c',
+    '${BUILDPATH}/src/stor_gpt.c',
+    '${BUILDPATH}/src/stor_rpmbw.c',
+    '${BUILDPATH}/src/qsee_counter_shim.c',
+    '${BUILDPATH}/src/qsee_cfg_prop_shim.c',
+    '${BUILDPATH}/src/qsee_keyprov.c',
+    '${BUILDPATH}/src/qsee_cipher.c',
+    '${BUILDPATH}/src/qsee_hash.c',
+    '${BUILDPATH}/src/qsee_hmac.c',
+    '${BUILDPATH}/src/qsee_ontario_shim.c',
+    '${BUILDPATH}/src/qsee_km_shim.c',
+    '${BUILDPATH}/src/qsee_i2c.c',
+    '${BUILDPATH}/src/qsee_spi.c',
+    '${BUILDPATH}/src/qsee_hw_fuse.c',
+    '${BUILDPATH}/src/qsee_bulletin_board_shim.c',
+    '${BUILDPATH}/src/qsee_tlmm.c',
+    '${BUILDPATH}/src/qsee_hw_fuse.c',
+    '${BUILDPATH}/src/qsee_bulletin_board_shim.c',
+    '${BUILDPATH}/src/qsee_sync.c',
+    '${BUILDPATH}/src/qsee_dcache.c',
+    '${BUILDPATH}/src/qsee_shared_buffer.c',
+    '${BUILDPATH}/src/qsee_oem_buffer.c',
+    '${BUILDPATH}/src/qsee_intmask.c',
+    '${BUILDPATH}/src/qsee_trans_ns_addr.c',
+    '${BUILDPATH}/src/qsee_appmessage.c',
+]
+IMG_ENTRY_SOURCES = [
+    '${BUILDPATH}/src/tzapp_entry.s',
+]
+
+# For GP apps: add qsee app lib w/o main to GP apps
+LIB_ENTRY_SOURCES_FOR_GP_APPS = copy.deepcopy(LIB_ENTRY_SOURCES)
+
+# For sfs, we need to include gp wrappers
+LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/sfs_api.c',]
+LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/gpPersistObjPanic.c',]
+
+if env.has_key('KEYMASTER_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('SAMPLEAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('QPAY_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('ASSURANCETEST_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('ISDBTMM_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('SECUREUISAMPLE_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('APTTESTAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('APTLKSECAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('APTCRYPTOTESTAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('HDCP1_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('HDCPSRM_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('QMPSECAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('LKSECAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('SSMAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('SBTEST_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('FINGERPRINT_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('VOICEPRINT_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('IRIS_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('SECUREINDICATOR_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('FIDOSUI_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('RETSTAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('CRIKEYMGMTAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('DHSECAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('WINSECAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('UEFISECAPP_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('HDCP2P2_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+elif env.has_key('PR_3_0_IMAGE'):
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main.c',]
+else:
+   LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/tzapp_lib_main_legacy.c',]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddBinaryObject('SAMPLEAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('SAMPLEAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('QMPSECAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('QMPSECAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('SMPLSERV_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('SMPLSERV_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('SMPLCERT_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('SMPLCERT_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('KEYMASTER_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('KEYMASTER_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('ASSURANCETEST_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('ASSURANCETEST_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('APTTESTAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('APTTESTAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('APTLKSECAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('APTLKSECAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('APTCRYPTOTESTAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('APTCRYPTOTESTAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('SECURITYTEST_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('SECURITYTEST_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('WINSECAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('WINSECAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('ISDBTMM_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('ISDBTMM_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('HDCP1_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('HDCP1_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('SECUREUISAMPLE_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('SECUREUISAMPLE_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('SECUREINDICATOR_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('SECUREINDICATOR_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('FIDOSUI_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('FIDOSUI_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('HDCPSRM_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('HDCPSRM_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('LKSECAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('LKSECAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('UEFISECAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('UEFISECAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('SSMAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('SSMAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('HDCP2P2_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('HDCP2P2_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('SBTEST_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('SBTEST_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('RETSTAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('RETSTAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('CRIKEYMGMTAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('CRIKEYMGMTAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('DHSECAPP_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('DHSECAPP_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('PR_3_0_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('PR_3_0_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('QPAY_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('QPAY_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Add Image entry and Lib src, except tzapp_lib_main.c, to GP apps
+#-------------------------------------------------------------------------------
+env.AddBinaryObject('GPSAMPLE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('GPSAMPLE', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('GPTEST_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('GPTEST_IMAGE', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('GPTEST2', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('GPTEST2', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTAARI1', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTAARI1', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTACAPI1', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI1', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTACAPI2', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI2', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTACAPI3', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI3', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTACAPI4', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI4', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTACAPI5', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI5', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTACRP1', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACRP1', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTADS1', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTADS1', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTATIME1', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATIME1', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTATCF1', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF1', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTATCF2', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF2', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTATCF3', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF3', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTATCF4', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF4', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('TTATCF5', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF5', '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES_FOR_GP_APPS)
+
+env.AddBinaryObject('FINGERPRINT_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('FINGERPRINT_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('VOICEPRINT_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('VOICEPRINT_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+env.AddBinaryObject('IRIS_IMAGE', IMG_ENTRY_SOURCES)
+env.AddBinaryLibrary('IRIS_IMAGE', '${BUILDPATH}/tzapp_entrylib', LIB_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

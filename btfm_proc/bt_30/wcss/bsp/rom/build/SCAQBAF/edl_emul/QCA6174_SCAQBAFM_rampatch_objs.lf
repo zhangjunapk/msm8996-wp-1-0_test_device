@@ -1,0 +1,29 @@
+#============================================================================
+#  Name:                                                                     
+#    QCA6174_SCAQBAFM_rampatch_objs.lf 
+#
+#  Description:                                                              
+#    None 
+#                                                                            
+# Copyright (c) 2016 by QUALCOMM, Incorporated.  All Rights Reserved.        
+#============================================================================
+#                                                                            
+# *** AUTO GENERATED FILE - DO NOT EDIT                                      
+#                                                                            
+# GENERATED: Wed Nov 16 00:01:53 2016 
+#============================================================================
+../../../../rampatch/bt/platform/dbg/build/wcss_ram_edl/cortex-m0/SCAQBAF/src/patch_PFAL_DBG_hci_vendor.o
+../../../../rampatch/bt/platform/dbg/build/wcss_ram_edl/cortex-m0/SCAQBAF/src/patch_PFAL_DBG.o
+../../../../rampatch/bt/platform/pfal/aes/build/wcss_ram_edl/cortex-m0/SCAQBAF/src/patch_PFAL_AES.o
+../../../../rampatch/bt/platform/pfal/eeprom/build/wcss_ram_edl/cortex-m0/SCAQBAF/src/patch_PFAL_EEPROM.o
+../../../../rampatch/bt/platform/pfal/gpio/build/wcss_ram_edl/cortex-m0/SCAQBAF/src/patch_PFAL_GPIO_MUX.o
+../../../../rampatch/bt/platform/pfal/lc/build/wcss_ram_edl/cortex-m0/SCAQBAF/src/patch_PFAL_LC.o
+../../../../rampatch/bt/platform/pfal/lc/build/wcss_ram_edl/cortex-m0/SCAQBAF/src/patch_PFAL_LC_State.o
+../../../../rampatch/bt/platform/pfal/rm/build/wcss_ram_edl/cortex-m0/SCAQBAF/common/src/patch_PFAL_RM_HW.o
+../../../../rampatch/bt/platform/pfal/rm/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/src/patch_PFAL_RM_HW_EXT.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_edl/cortex-m0/SCAQBAF/common/src/patch_PFAL_SYS_Init.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_edl/cortex-m0/SCAQBAF/6174/src/patch_PFAL_SYS_CLK_EXT.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_edl/cortex-m0/SCAQBAF/common/src/patch_PFAL_SYS_EDL.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_edl/cortex-m0/SCAQBAF/common/src/patch_PFAL_SYS.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_edl/cortex-m0/SCAQBAF/patch_llm_eptm.o
+../../../../rampatch/build/wcss_ram_edl/cortex-m0/SCAQBAF/rampatch_main.o

@@ -1,0 +1,78 @@
+#===========================================================================
+#  Copyright (c) 2014-2015 QUALCOMM Incorporated.
+#  All Rights Reserved.
+#  Qualcomm Confidential and Proprietary
+#===========================================================================
+#
+# Secure Indicator
+#
+# GENERAL DESCRIPTION
+#    build script
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/secureindicator/src"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' --arm')
+
+env.PublishPrivateApi('SECUREMSM', [
+   "${INC_ROOT}/core/api/services",
+   "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/services/src",
+   "${INC_ROOT}/apps/securemsm/trustzone/qsapps/secureindicator/inc",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/libpng/include",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/zlib/include",
+   "${INC_ROOT}/core/api/kernel/libstd/stringl",
+])
+
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------   
+APP_CORE_ENTRY_SOURCES = [      
+        '${BUILDPATH}/si_main.c',
+        '${BUILDPATH}/si.c'
+]
+
+env.Append(CCFLAGS = " -DPNG_SEQUENTIAL_READ_SUPPORTED")
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddBinaryObject('SECUREINDICATOR_IMAGE', APP_CORE_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Add metadata to image
+#-------------------------------------------------------------------------------
+md = {
+    'appName':    'secureindicator',
+    'privileges': ['default'],
+}
+
+env.AddSecureAppMetadata('SECUREINDICATOR_IMAGE', md )
+
+#-------------------------------------------------------------------------------
+# Pack out files
+#-------------------------------------------------------------------------------
+
+NOSHIP_SOURCES = env.FindFiles("*", "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/secureindicator/inc")
+env.CleanPack('SECUREINDICATOR_IMAGE', NOSHIP_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

@@ -1,0 +1,217 @@
+//============================================================================
+//  Name:                                                                     
+//    std_do_apps.cmm 
+//
+//  Description:                                                              
+//    Tool for multi T32 window help on apps
+//                                                                            
+// Copyright (c) 2012 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who     		what, where, why
+// --------   ---     		---------------------------------------------------------
+// 12/03/2014 JBilling      Created
+//
+
+//
+//
+
+//###################Arguments passed #####################
+LOCAL &ArgumentLine
+ENTRY %LINE &ArgumentLine
+LOCAL &UTILITY &OPTION &IARG0 &IARG1 &IARG2 &IARG3 &IARG4 &IARG5 &IARG6 &IARG7 &IARG8 &IARG9 &IARG10 &IARG11
+ENTRY &UTILITY &OPTION &IARG0 &IARG1 &IARG2 &IARG3 &IARG4 &IARG5 &IARG6 &IARG7 &IARG8 &IARG9 &IARG10 &IARG11
+
+IF (STRING.SCAN("&AliveT32ScandumpList","Al",0)!=-1)
+(
+    GLOBAL &AliveT32ScandumpList &AliveT32ScandumpPorts
+    &AliveT32ScandumpList=""
+    &AliveT32ScandumpPorts=""
+)
+
+
+//#####################Select Subroutine###################
+// Name of the utility we are calling
+LOCAL &SUBROUTINE
+// Any subroutine specific options
+// Default exists for each subroutine
+
+AREA.SELECT
+// Input Argument 0 is the name of the utility
+&SUBROUTINE=STR.UPR("&UTILITY")
+IF !(("&SUBROUTINE"=="SYMBOLS")||("&SUBROUTINE"=="SYM")||("&SUBROUTINE"=="TRACE")||("&SUBROUTINE"=="CHECKSESSIONS")||("&SUBROUTINE"=="SESSIONS")||("&SUBROUTINE"=="RIGHT")||("&SUBROUTINE"=="R")||("&SUBROUTINE"=="LEFT")||("&SUBROUTINE"=="L")||("&SUBROUTINE"=="FULLSCREEN")||("&SUBROUTINE"=="F")||("&SUBROUTINE"=="FULL")||("&SUBROUTINE"=="GETCORENUMBER")||("&SUBROUTINE"=="DOALL")||("&SUBROUTINE"=="HELP"))
+(
+    &SUBROUTINE="MAIN"   
+    GOSUB MAIN &ArgumentLine
+)
+ELSE
+(
+   GOSUB &SUBROUTINE &OPTION &IARG0 &IARG1 &IARG2 &IARG3 &IARG4 &IARG5 &IARG6 &IARG7 &IARG8 &IARG9 &IARG10 &IARG11
+ 
+
+)
+
+    LOCAL &rvalue
+    ENTRY %LINE &rvalue
+
+    ENDDO &rvalue
+
+
+////////////////////////////////////////
+//
+//            MAIN
+//            Main std_apps logic
+//          Expected input:
+//
+/////////////////////////////////////////
+MAIN:
+DOALL:
+LOCAL &ArgumentLine
+ENTRY %LINE &ArgumentLine
+
+
+
+    //LOCAL &corelist &portlist
+    GOSUB CHECKSESSIONS
+    
+
+    LOCAL &count &maxcount &current_core &size_of_core &string_length &string_size &value_to_cut 
+    
+    &Rvalue= ""
+    &current_string="&AliveT32ScandumpPorts"
+    &count=0
+    &maxcount=30 
+    
+    //parse out corelist
+    while (&count<&maxcount)
+    (
+        &string_length=String.Length("&current_string")
+        &string_size=string.scan("&current_string",",",0)
+        
+        IF (&string_size!=-1)
+        (
+            &value_to_cut=&string_size-&string_length    
+            //separate the first master from the rest of the string
+            &current_core=string.cut("&current_string",&value_to_cut)
+            &size_of_core=STRING.LENGTH("&current_core")
+            &current_string=STRING.CUT("&current_string",&size_of_core+1) //remove comma
+        )
+        ELSE //if no "," found
+        (
+            &current_core="&current_string"
+            &count=&maxcount
+        )
+        
+        do std_intercom_cmds &(&current_core) NOWAIT SYS.M.NODEBUG
+        do std_intercom_cmds &(&current_core) NOWAIT sys.config.debugporttype jtag
+        do std_intercom_cmds &APPS0_PORT NOWAIT SYS.M.A
+        
+        &count=&count+1
+    )    
+
+RETURN
+
+
+
+////////////////////////////////////////
+//
+//            CHECKSESSIONS
+//            returns a string list of current windows.
+//
+/////////////////////////////////////////
+CHECKSESSIONS:
+SESSIONS:
+
+    
+    LOCAL &corelist
+    do std_apps_&CHIPSET GETALLCORELIST
+        ENTRY &corelist
+        
+    do std_utils SANITIZEQUOTATIONS none &corelist
+        ENTRY &corelist
+    
+    LOCAL &count &maxcount &current_core &size_of_core &string_length &string_size &value_to_cut 
+    LOCAL &intercom_alive &Rvalue1 &Rvalue2
+    &Rvalue1= ""
+    &Rvalue2= ""
+    &current_string="&corelist"
+    &count=0
+    &maxcount=30 
+    
+    //parse out corelist
+    while (&count<&maxcount)
+    (
+        &string_length=String.Length("&current_string")
+        &string_size=string.scan("&current_string",",",0)
+        
+        IF (&string_size!=-1)
+        (
+            &value_to_cut=&string_size-&string_length    
+            //separate the first master from the rest of the string
+            &current_core=string.cut("&current_string",&value_to_cut)
+            &size_of_core=STRING.LENGTH("&current_core")
+            &current_string=STRING.CUT("&current_string",&size_of_core+1) //remove comma
+        )
+        ELSE //if no "," found
+        (
+            &current_core="&current_string"
+            &count=&maxcount
+        )
+        
+        //Function to call here:
+        do std_intercom_init CHECKSESSION 1 &current_core
+            ENTRY &intercom_alive
+        IF (&intercom_alive==1.)
+        (
+            IF ("&Rvalue1"=="")
+            (
+                &Rvalue1="&current_core"
+                &Rvalue2="&current_core"+"_PORT"
+                
+            )
+            ELSE
+            (
+                &Rvalue1="&Rvalue1"+","+"&current_core"
+                &Rvalue2="&Rvalue2"+","+"&current_core"+"_PORT"
+            )
+        )
+
+        &count=&count+1
+    )
+    
+    //Update Globals    
+    &AliveT32ScandumpList="&Rvalue1"
+    &AliveT32ScandumpPorts="&Rvalue2"
+    
+    RETURN &Rvalue1 &Rvalue2
+
+
+
+
+EXIT:
+    LOCAL &rvalue
+    ENTRY %LINE &rvalue
+    ENDDO &rvalue
+    
+
+//Should never get here. 
+FATALEXIT:
+    LOCAL &rvalue
+    ENTRY %LINE &rvalue
+    IF STRING.SCAN("&FAILUREKEYWORD","FAILUREKEYWORD",0)==-1
+    (
+        GOSUB EXIT &FAILUREKEYWORD - &rvalue
+    )
+    ELSE
+    (
+        GOSUB EXIT &rvalue
+    )
+    
+//Should never get here
+    END

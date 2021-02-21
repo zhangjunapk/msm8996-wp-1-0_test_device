@@ -1,0 +1,46 @@
+l1_file_name = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Encryption\Unified\default\l1_key.bin
+l2_file_name = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Encryption\Unified\default\l2_key.bin
+l3_file_name = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Encryption\Unified\default\l3_key.bin
+Signing image: R:\boot_images\Build\Msm8996_Core_32\RELEASE_RVCT501\FV\uefi.mbn
+attestation_certificate_extensions = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\General_Assets\Signing\openssl\v3_attest.ext
+ca_certificate_extensions = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\General_Assets\Signing\openssl\v3.ext
+openssl_configfile = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\General_Assets\Signing\openssl\opensslroot.cfg
+Using a predefined Root certificate and a predefined key
+Key Used: R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Signing\Local\qc_presigned_certs-key2048_exp65537\qpsa_rootca.key
+Certificate Used: R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Signing\Local\qc_presigned_certs-key2048_exp65537\qpsa_rootca.cer
+Using a predefined Attestation CA certificate and a predefined key
+Key Used: R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Signing\Local\qc_presigned_certs-key2048_exp65537\qpsa_attestca.key
+Certificate Used: R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Signing\Local\qc_presigned_certs-key2048_exp65537\qpsa_attestca.cer
+Generating new Attestation certificate and a random key
+
+Attestation Certificate Properties:
+| SW_ID     | 0x0000000000000009  |
+| HW_ID     | 0x0000000000000000  |
+| DEBUG     | 0x0000000000000002  |
+| OEM_ID    | 0x0000              |
+| SW_SIZE   | 136                 |
+| MODEL_ID  | 0x0000              |
+| SHA256    | True                |
+| APP_ID    | None                |
+| CRASH_DUMP| None                |
+| ROT_EN    | None                |
+| Exponent  | 65537               |
+| TCG_MIN   | None                |
+| TCG_MAX   | None                |
+| FID_MIN   | None                |
+| FID_MAX   | None                |
+
+Encrypted image is stored at R:\boot_images\QcomPkg\Msm8996Pkg\Bin32\sign_and_encrypt\default\uefi\uefi.mbn
+Image R:\boot_images\QcomPkg\Msm8996Pkg\Bin32\sign_and_encrypt\default\uefi\uefi.mbn is encrypted
+Image c:\windows\temp\tmp5jxkwl signature is valid
+
+| Integrity Check                 | False  |
+| Signed                          | False  |
+| Encrypted                       | True   |
+| Size of signature               | 256    |
+| Size of one cert                | 2048   |
+| Num of certs in cert chain      | 3      |
+| Number of root certs            | 1      |
+| Hash Page Segments as segments  | False  |
+| Cert chain size                 | 6144   |
+

@@ -1,0 +1,147 @@
+#===============================================================================
+#
+# QSEE Secure UI Service
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2015 Qualcomm Technologies, Inc.  All Rights Reserved.
+# Qualcomm Technologies Proprietary and Confidential.
+#
+#-------------------------------------------------------------------------------
+#
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 08/19/15   ng      Added secure_ui_sample64
+# 06/15/15   sn      Added chipset specific definition header
+# 05/05/15   sn      Moved the layouts to dedicated lib
+# 26/01/15   gs      Modified layouts for 8994 compatibility
+# 25/06/14   rz      Added secure indicator support
+# 05/09/13   sn      Initial version
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/sse/qsee/SecureUI/src"
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Publish Private APIs
+#-------------------------------------------------------------------------------
+
+env.PublishPrivateApi('SECUREMSM', [
+   "${INC_ROOT}/core/securemsm/accesscontrol/api",
+   "${INC_ROOT}/core/kernel/smmu/v2/inc/",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUI/inc",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUI/layouts/inc",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUI/src",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUI/src/chipset/${CHIPSET}/inc",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/services/src",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/libgd/include",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/libpng/include",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/zlib/include",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUILib/include",
+])
+
+# Logging APIs
+env.PublishPrivateApi('SSE_LOG_API', [
+   '${INC_ROOT}/core/securemsm/sse/log/inc',
+])
+
+# Common includes
+env.PublishPrivateApi('SSE_COMMON_API', [
+   '${INC_ROOT}/core/securemsm/sse/common/include',
+])
+
+# Secure Touch includes
+env.PublishPrivateApi('SSE_SECURE_TOUCH_API', [
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/common/include',
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/layout/include',
+])
+env.PublishPrivateApi('SSE_TOUCH_CONTROLLER_API', [
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/controller/inc',
+])
+env.PublishPrivateApi('SSE_TOUCH_CONTROLLER_QSEE_API', [
+   '${INC_ROOT}/core/securemsm/sse/qsee/SecureTouch/drTs/include',
+])
+env.PublishPrivateApi('SSE_TOUCH_SIDE_CHANNELS_QSEE_API', [
+   '${INC_ROOT}/core/securemsm/sse/qsee/SecureTouch/sidechannels/include',
+   '${INC_ROOT}/core/securemsm/sse/qsee/SecureTouch/sidechannels/modules/include',
+])
+env.PublishPrivateApi('SECURE_INDICATOR_QSEE_API', [
+   '${INC_ROOT}/apps/securemsm/trustzone/qsapps/secureindicator/inc',
+])
+
+CBSP_API = [
+   'SERVICES',
+   'SECUREMSM',
+]
+env.RequirePublicApi(CBSP_API, area='core')
+#-------------------------------------------------------------------------------
+# Sources, libraries
+#-------------------------------------------------------------------------------
+
+INC_PATH_API = ["${INC_ROOT}/core/api/kernel/libstd/stringl"]
+env.Append(CPPPATH = INC_PATH_API)
+
+env.Append(CCFLAGS = " -DPNG_SEQUENTIAL_READ_SUPPORTED")
+
+
+SOURCES_LIB = [
+  '${BUILDPATH}/SecureUI.c',
+]
+
+SOURCES_TUI = [
+  '${BUILDPATH}/secure_display_renderer.c',
+  '${BUILDPATH}/layout_manager.c',
+  '${BUILDPATH}/font_manager.c',
+  '${BUILDPATH}/qsee_tui_dialogs.c',
+]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddBinaryLibrary([
+   'SECUREUISAMPLE_IMAGE',
+   'SECUREUISAMPLE64_IMAGE',
+   'FIDOSUI_IMAGE',
+   'SAMPLEAPP_IMAGE',
+   'SAMPLEAPP64_IMAGE',
+   ],
+   '${BUILDPATH}/secure_ui',
+   SOURCES_LIB)
+
+env.AddBinaryLibrary([
+   'SECUREUISAMPLE_IMAGE',
+   'SECUREUISAMPLE64_IMAGE',
+   'FIDOSUI_IMAGE',
+   'PKCS11_IMAGE',
+   ],
+   '${BUILDPATH}/secure_ui_tui',
+   SOURCES_TUI)
+
+#-------------------------------------------------------------------------------
+# Pack out files
+#-------------------------------------------------------------------------------
+NOSHIP_SOURCES = env.FindFiles("*", SRCPATH)
+NOSHIP_SOURCES += env.FindFiles("*", "${BUILD_ROOT}/core/securemsm/sse/qsee/SecureUI/scripts")
+env.CleanPack([
+   'SECUREUISAMPLE_IMAGE',
+   'SECUREUISAMPLE64_IMAGE',
+   'SECUREPIN_IMAGE',
+   'PKCS11_IMAGE'
+   'SAMPLEAPP_IMAGE',
+   'SAMPLEAPP64_IMAGE',
+   ], NOSHIP_SOURCES)
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

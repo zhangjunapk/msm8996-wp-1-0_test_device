@@ -1,0 +1,132 @@
+#===============================================================================
+#
+# GP applib
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/core.tz/1.0.3.c1/securemsm/trustzone/qsapps/libs/applib/gp/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Author: pwbldsvc $
+#  $Change: 11896995 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+# when         who     what, where, why
+# --------     ---     ---------------------------------------------------------
+# 12/19/13      dp     Initial revision to separate GP and QSEE app lib src
+#===============================================================================
+Import('env')
+import copy
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/gp"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' --arm')
+
+env.PublishPrivateApi('SERVICES', [
+   "${INC_ROOT}/core/api/securemsm/trustzone/gp",
+])
+
+CBSP_API = [
+   'SERVICES',
+   'DAL',
+   'MINK',
+   'MINK_LK',
+]
+
+env.RequirePublicApi(CBSP_API)
+env.RequireRestrictedApi(CBSP_API)
+
+INC_PATH_UFAES_HEADER = ["${INC_ROOT}/core/securemsm/unifiedcrypto/shared/aes/inc",
+                         "${INC_ROOT}/core/securemsm/unifiedcrypto/core/aes/inc",
+                         "${INC_ROOT}/core/securemsm/unifiedcrypto/environment/inc"]
+env.Append(CPPPATH = INC_PATH_UFAES_HEADER)
+INC_PATH_SECRSA_HEADER = ["${INC_ROOT}/core/securemsm/secrsa/shared/inc"]
+env.Append(CPPPATH = INC_PATH_SECRSA_HEADER)
+INC_PATH_SECMATH_HEADER = ["${INC_ROOT}/core/securemsm/secmath/shared/inc"]
+env.Append(CPPPATH = INC_PATH_SECMATH_HEADER)
+INC_PATH_SECMATH_UTILS_HEADER = ["${INC_ROOT}/core/securemsm/secmath/shared/src"]
+env.Append(CPPPATH = INC_PATH_SECMATH_UTILS_HEADER)
+INC_PATH_GP_API = ["${INC_ROOT}/core/api/securemsm/trustzone/gp"]
+env.Append(CPPPATH = INC_PATH_GP_API)
+INC_PATH_QSEE_API = ["${INC_ROOT}/core/api/securemsm/trustzone/qsee"]
+env.Append(CPPPATH = INC_PATH_QSEE_API)
+INC_PATH_QSEE_SRC = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/qsee/src"]
+env.Append(CPPPATH = INC_PATH_QSEE_SRC)
+INC_PATH_COMDEF = ["${INC_ROOT}/core/api/services"]
+env.Append(CPPPATH = INC_PATH_COMDEF)
+INC_PATH_SYSCALL = ["${INC_ROOT}/core/securemsm/trustzone/qsee/include"]
+env.Append(CPPPATH = INC_PATH_SYSCALL)
+INC_PATH_CTZLIB = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/common/src",
+                   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/services/src",
+                   "${INC_ROOT}/core/api/kernel/libstd/stringl",]
+env.Append(CPPPATH = INC_PATH_CTZLIB)
+INC_PATH_KER = ["${INC_ROOT}/core/api/kernel/libstd"]
+env.Append(CPPPATH = INC_PATH_KER)
+INC_PATH_COMMON_APPLIB = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/common_applib/src"]
+env.Append(CPPPATH = INC_PATH_COMMON_APPLIB)
+INC_PATH_SECARITHLIB = ["${INC_ROOT}/core/securemsm/secarith/shared/inc",
+             "${INC_ROOT}/core/securemsm/secarith/env/qsapps/inc"]
+env.Append(CPPPATH = INC_PATH_SECARITHLIB)
+INC_PATH_GP_PO_API = ["${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/common_applib/inc/"]
+env.Append(CPPPATH = INC_PATH_GP_PO_API)
+
+#----------------------------------------------------------------------------
+# TZ Exec Shared Objects
+#----------------------------------------------------------------------------
+LIB_ENTRY_SOURCES = [
+    '${BUILDPATH}/src/gpArithmetic.c',
+    '${BUILDPATH}/src/gpCancellations.c',
+    '${BUILDPATH}/src/gpCrypto.c',
+    '${BUILDPATH}/src/gpGenericObjects.c',
+    '${BUILDPATH}/src/gpMemoryMgmt.c',
+    '${BUILDPATH}/src/gpPanics.c',
+    '${BUILDPATH}/src/gpPropertyAccess.c',
+    '${BUILDPATH}/src/gpSessionMgmt.c',
+    '${BUILDPATH}/src/gpTime.c',
+    '${BUILDPATH}/src/gpTransientObjects.c',
+    '${BUILDPATH}/src/gpUtils.c',
+]
+
+LIB_ENTRY_SOURCES += [ '${BUILDPATH}/src/gpAppLibMain.c',]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddBinaryLibrary('GPSAMPLE',      '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('GPTEST_IMAGE',  '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('GPTEST2',       '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTAARI1',       '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI1',      '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI2',      '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI3',      '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI4',      '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACAPI5',      '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTACRP1',       '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTADS1',        '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATIME1',      '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF1',       '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF2',       '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF3',       '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF4',       '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+env.AddBinaryLibrary('TTATCF5',       '${BUILDPATH}/gpapp_lib', LIB_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

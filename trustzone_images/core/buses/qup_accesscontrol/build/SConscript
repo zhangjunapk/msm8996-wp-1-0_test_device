@@ -1,0 +1,19 @@
+#===============================================================================
+# SPMI Libs
+#
+# GENERAL DESCRIPTION
+#    SPMI Build Script
+#
+# Copyright (c) 2015 by Qualcomm Technologies Incorporated. All Rights Reserved.
+#-------------------------------------------------------------------------------
+#  $Header: //components/rel/core.tz/1.0.3.c1/buses/qup_accesscontrol/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Change: 11896995 $
+#===============================================================================
+Import('env')
+
+if env['TARGET_FAMILY'] in ['honeybadger']:
+   env.LoadSoftwareUnits(dir_patterns='../honeybadger/build')
+elif env['TARGET_FAMILY'] in ['bear']:
+   env.LoadSoftwareUnits(dir_patterns='../bear/build')
+

@@ -1,0 +1,1171 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: SCAQBAF/edl_emul/QCA6174_SCAQBAFM_rampatch.elf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x00019b09
+    Flags: EF_ARM_HASENTRY (0x05000002)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Built with
+    ARM C/C++ Compiler, 4.1 [Build 791]
+    ARM Linker, 4.1 [Build 791] 
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 16
+
+    Program header offset: 1509336 (0x001707d8)
+    Section header offset: 1509368 (0x001707f8)
+
+    Section header string table index: 15
+
+========================================================================
+
+** Program header #0 (PT_LOAD) [PF_X + PF_W + PF_R + PF_ARM_ENTRY]
+    Size : 2320 bytes (2276 bytes in file)
+    Virtual address: 0x00019b08 (Alignment 8)
+
+
+========================================================================
+
+** Section #1 'EXEC_ENTRY' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 368 bytes (alignment 4)
+    Address: 0x00019b08
+
+    $t
+    ENTRY_POINT
+    patch_entry
+        0x00019b08:    b570        p.      PUSH     {r4-r6,lr}
+        0x00019b0a:    4829        )H      LDR      r0,[pc,#164] ; [0x19bb0] = 0x2c
+        0x00019b0c:    b281        ..      UXTH     r1,r0
+        0x00019b0e:    4829        )H      LDR      r0,[pc,#164] ; [0x19bb4] = 0x27b0c
+        0x00019b10:    f000f88e    ....    BL       $Ven$TT$L$$__aeabi_memclr4 ; 0x19c30
+        0x00019b14:    4a28        (J      LDR      r2,[pc,#160] ; [0x19bb8] = 0x1
+        0x00019b16:    4929        )I      LDR      r1,[pc,#164] ; [0x19bbc] = 0x1a3e8
+        0x00019b18:    4829        )H      LDR      r0,[pc,#164] ; [0x19bc0] = 0x27b08
+        0x00019b1a:    f000f88f    ....    BL       $Ven$TT$L$$__aeabi_memcpy4 ; 0x19c3c
+        0x00019b1e:    4829        )H      LDR      r0,[pc,#164] ; [0x19bc4] = 0x110fc
+        0x00019b20:    6800        .h      LDR      r0,[r0,#0]
+        0x00019b22:    4780        .G      BLX      r0
+        0x00019b24:    b282        ..      UXTH     r2,r0
+        0x00019b26:    0c01        ..      LSRS     r1,r0,#16
+        0x00019b28:    a027        '.      ADR      r0,{pc}+0xa0 ; 0x19bc8
+        0x00019b2a:    f000f88d    ....    BL       $Ven$TT$L$$__2printf ; 0x19c48
+        0x00019b2e:    4936        6I      LDR      r1,[pc,#216] ; [0x19c08] = 0xfee0
+        0x00019b30:    4834        4H      LDR      r0,[pc,#208] ; [0x19c04] = 0x1a3c5
+        0x00019b32:    6148        Ha      STR      r0,[r1,#0x14]
+        0x00019b34:    f000fb1f    ....    BL       PFAL_COEX_MCI_patch_apply ; 0x1a176
+        0x00019b38:    f000fb99    ....    BL       PFAL_RM_HW_patch_apply ; 0x1a26e
+        0x00019b3c:    f000fbe9    ....    BL       PFAL_SYS_EDL_patch_apply ; 0x1a312
+        0x00019b40:    4932        2I      LDR      r1,[pc,#200] ; [0x19c0c] = 0xc0000100
+        0x00019b42:    2001        .       MOVS     r0,#1
+        0x00019b44:    6108        .a      STR      r0,[r1,#0x10]
+        0x00019b46:    4832        2H      LDR      r0,[pc,#200] ; [0x19c10] = 0xe000e280
+        0x00019b48:    2410        .$      MOVS     r4,#0x10
+        0x00019b4a:    6004        .`      STR      r4,[r0,#0]
+        0x00019b4c:    b672        r.      CPSID    i
+        0x00019b4e:    f000f881    ....    BL       $Ven$TT$L$$PFAL_SYS_TOP_IsBTMode ; 0x19c54
+        0x00019b52:    2800        .(      CMP      r0,#0
+        0x00019b54:    d102        ..      BNE      0x19b5c ; patch_entry + 84
+        0x00019b56:    492f        /I      LDR      r1,[pc,#188] ; [0x19c14] = 0x156d8
+        0x00019b58:    2091        .       MOVS     r0,#0x91
+        0x00019b5a:    8108        ..      STRH     r0,[r1,#8]
+        0x00019b5c:    4a2e        .J      LDR      r2,[pc,#184] ; [0x19c18] = 0x19278
+        0x00019b5e:    492f        /I      LDR      r1,[pc,#188] ; [0x19c1c] = 0x19258
+        0x00019b60:    7c50        P|      LDRB     r0,[r2,#0x11]
+        0x00019b62:    07c3        ..      LSLS     r3,r0,#31
+        0x00019b64:    d009        ..      BEQ      0x19b7a ; patch_entry + 114
+        0x00019b66:    4b2e        .K      LDR      r3,[pc,#184] ; [0x19c20] = 0x191f8
+        0x00019b68:    0783        ..      LSLS     r3,r0,#30
+        0x00019b6a:    d506        ..      BPL      0x19b7a ; patch_entry + 114
+        0x00019b6c:    4b2c        ,K      LDR      r3,[pc,#176] ; [0x19c20] = 0x191f8
+        0x00019b6e:    0603        ..      LSLS     r3,r0,#24
+        0x00019b70:    d503        ..      BPL      0x19b7a ; patch_entry + 114
+        0x00019b72:    4b2b        +K      LDR      r3,[pc,#172] ; [0x19c20] = 0x191f8
+        0x00019b74:    7dcb        .}      LDRB     r3,[r1,#0x17]
+        0x00019b76:    06db        ..      LSLS     r3,r3,#27
+        0x00019b78:    d418        ..      BMI      0x19bac ; patch_entry + 164
+        0x00019b7a:    2383        .#      MOVS     r3,#0x83
+        0x00019b7c:    4318        .C      ORRS     r0,r0,r3
+        0x00019b7e:    7450        Pt      STRB     r0,[r2,#0x11]
+        0x00019b80:    7dc8        .}      LDRB     r0,[r1,#0x17]
+        0x00019b82:    4320         C      ORRS     r0,r0,r4
+        0x00019b84:    75c8        .u      STRB     r0,[r1,#0x17]
+        0x00019b86:    2001        .       MOVS     r0,#1
+        0x00019b88:    f000f86a    ..j.    BL       $Ven$TT$L$$PFAL_OTP_Open ; 0x19c60
+        0x00019b8c:    2800        .(      CMP      r0,#0
+        0x00019b8e:    d10d        ..      BNE      0x19bac ; patch_entry + 164
+        0x00019b90:    4c25        %L      LDR      r4,[pc,#148] ; [0x19c28] = 0x114b0
+        0x00019b92:    2201        ."      MOVS     r2,#1
+        0x00019b94:    6825        %h      LDR      r5,[r4,#0]
+        0x00019b96:    4b23        #K      LDR      r3,[pc,#140] ; [0x19c24] = 0x19289
+        0x00019b98:    2191        .!      MOVS     r1,#0x91
+        0x00019b9a:    47a8        .G      BLX      r5
+        0x00019b9c:    2201        ."      MOVS     r2,#1
+        0x00019b9e:    2177        w!      MOVS     r1,#0x77
+        0x00019ba0:    6824        $h      LDR      r4,[r4,#0]
+        0x00019ba2:    4b22        "K      LDR      r3,[pc,#136] ; [0x19c2c] = 0x1926f
+        0x00019ba4:    2000        .       MOVS     r0,#0
+        0x00019ba6:    47a0        .G      BLX      r4
+        0x00019ba8:    f000f860    ..`.    BL       $Ven$TT$L$$PFAL_OTP_Close ; 0x19c6c
+        0x00019bac:    bd70        p.      POP      {r4-r6,pc}
+    $d
+        0x00019bae:    0000        ..      DCW    0
+        0x00019bb0:    0000002c    ,...    DCD    44
+        0x00019bb4:    00027b0c    .{..    DCD    162572
+        0x00019bb8:    00000001    ....    DCD    1
+        0x00019bbc:    0001a3e8    ....    DCD    107496
+        0x00019bc0:    00027b08    .{..    DCD    162568
+        0x00019bc4:    000110fc    ....    DCD    69884
+        0x00019bc8:    656d6f52    Rome    DCD    1701670738
+        0x00019bcc:    74615020     Pat    DCD    1952534560
+        0x00019bd0:    2e2e6863    ch..    DCD    774793315
+        0x00019bd4:    6f72202e    . ro    DCD    1869750318
+        0x00019bd8:    65765f6d    m_ve    DCD    1702256493
+        0x00019bdc:    6f697372    rsio    DCD    1869181810
+        0x00019be0:    7830286e    n(0x    DCD    2016421998
+        0x00019be4:    78343025    %04x    DCD    2016686117
+        0x00019be8:    62202c29    ), b    DCD    1646275625
+        0x00019bec:    646c6975    uild    DCD    1684826485
+        0x00019bf0:    7265765f    _ver    DCD    1919252063
+        0x00019bf4:    6e6f6973    sion    DCD    1852795251
+        0x00019bf8:    25783028    (0x%    DCD    628633640
+        0x00019bfc:    29783430    04x)    DCD    695743536
+        0x00019c00:    0000000a    ....    DCD    10
+        0x00019c04:    0001a3c5    ....    DCD    107461
+        0x00019c08:    0000fee0    ....    DCD    65248
+        0x00019c0c:    c0000100    ....    DCD    3221225728
+        0x00019c10:    e000e280    ....    DCD    3758154368
+        0x00019c14:    000156d8    .V..    DCD    87768
+        0x00019c18:    00019278    x...    DCD    103032
+        0x00019c1c:    00019258    X...    DCD    103000
+        0x00019c20:    000191f8    ....    DCD    102904
+        0x00019c24:    00019289    ....    DCD    103049
+        0x00019c28:    000114b0    ....    DCD    70832
+        0x00019c2c:    0001926f    o...    DCD    103023
+    $t
+    $Ven$TT$L$$__aeabi_memclr4
+        0x00019c30:    b403        ..      PUSH     {r0,r1}
+        0x00019c32:    4801        .H      LDR      r0,[pc,#4] ; [0x19c38] = 0x10097e8b
+        0x00019c34:    9001        ..      STR      r0,[sp,#4]
+        0x00019c36:    bd01        ..      POP      {r0,pc}
+    $d
+        0x00019c38:    10097e8b    .~..    DCD    269057675
+    $t
+    $Ven$TT$L$$__aeabi_memcpy4
+        0x00019c3c:    b403        ..      PUSH     {r0,r1}
+        0x00019c3e:    4801        .H      LDR      r0,[pc,#4] ; [0x19c44] = 0x10000a6d
+        0x00019c40:    9001        ..      STR      r0,[sp,#4]
+        0x00019c42:    bd01        ..      POP      {r0,pc}
+    $d
+        0x00019c44:    10000a6d    m...    DCD    268438125
+    $t
+    $Ven$TT$L$$__2printf
+        0x00019c48:    b403        ..      PUSH     {r0,r1}
+        0x00019c4a:    4801        .H      LDR      r0,[pc,#4] ; [0x19c50] = 0x1009775d
+        0x00019c4c:    9001        ..      STR      r0,[sp,#4]
+        0x00019c4e:    bd01        ..      POP      {r0,pc}
+    $d
+        0x00019c50:    1009775d    ]w..    DCD    269055837
+    $t
+    $Ven$TT$L$$PFAL_SYS_TOP_IsBTMode
+        0x00019c54:    b403        ..      PUSH     {r0,r1}
+        0x00019c56:    4801        .H      LDR      r0,[pc,#4] ; [0x19c5c] = 0x10005493
+        0x00019c58:    9001        ..      STR      r0,[sp,#4]
+        0x00019c5a:    bd01        ..      POP      {r0,pc}
+    $d
+        0x00019c5c:    10005493    .T..    DCD    268457107
+    $t
+    $Ven$TT$L$$PFAL_OTP_Open
+        0x00019c60:    b403        ..      PUSH     {r0,r1}
+        0x00019c62:    4801        .H      LDR      r0,[pc,#4] ; [0x19c68] = 0x1001ff75
+        0x00019c64:    9001        ..      STR      r0,[sp,#4]
+        0x00019c66:    bd01        ..      POP      {r0,pc}
+    $d
+        0x00019c68:    1001ff75    u...    DCD    268566389
+    $t
+    $Ven$TT$L$$PFAL_OTP_Close
+        0x00019c6c:    b403        ..      PUSH     {r0,r1}
+        0x00019c6e:    4801        .H      LDR      r0,[pc,#4] ; [0x19c74] = 0x1001ff95
+        0x00019c70:    9001        ..      STR      r0,[sp,#4]
+        0x00019c72:    bd01        ..      POP      {r0,pc}
+    $d
+        0x00019c74:    1001ff95    ....    DCD    268566421
+
+** Section #2 'EXEC_ENTITY' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 1904 bytes (alignment 4)
+    Address: 0x00019c78
+
+    $t
+    .text
+    patch_MCI_Prio_Convert
+        0x00019c78:    b510        ..      PUSH     {r4,lr}
+        0x00019c7a:    461c        .F      MOV      r4,r3
+        0x00019c7c:    f000fb56    ..V.    BL       $Ven$TT$L$$rom_MCI_Prio_Convert ; 0x1a32c
+        0x00019c80:    2101        .!      MOVS     r1,#1
+        0x00019c82:    281d        .(      CMP      r0,#0x1d
+        0x00019c84:    d001        ..      BEQ      0x19c8a ; patch_MCI_Prio_Convert + 18
+        0x00019c86:    281c        .(      CMP      r0,#0x1c
+        0x00019c88:    d100        ..      BNE      0x19c8c ; patch_MCI_Prio_Convert + 20
+        0x00019c8a:    7021        !p      STRB     r1,[r4,#0]
+        0x00019c8c:    bd10        ..      POP      {r4,pc}
+    patch_PFAL_COEX_MCI_PRIO_SET
+        0x00019c8e:    b5f8        ..      PUSH     {r3-r7,lr}
+        0x00019c90:    4605        .F      MOV      r5,r0
+        0x00019c92:    2001        .       MOVS     r0,#1
+        0x00019c94:    4669        iF      MOV      r1,sp
+        0x00019c96:    7008        .p      STRB     r0,[r1,#0]
+        0x00019c98:    48fb        .H      LDR      r0,[pc,#1004] ; [0x1a088] = 0x1090c
+        0x00019c9a:    6800        .h      LDR      r0,[r0,#0]
+        0x00019c9c:    4780        .G      BLX      r0
+        0x00019c9e:    2800        .(      CMP      r0,#0
+        0x00019ca0:    d04a        J.      BEQ      0x19d38 ; patch_PFAL_COEX_MCI_PRIO_SET + 170
+        0x00019ca2:    48fa        .H      LDR      r0,[pc,#1000] ; [0x1a08c] = 0x1003e
+        0x00019ca4:    7800        .x      LDRB     r0,[r0,#0]
+        0x00019ca6:    2800        .(      CMP      r0,#0
+        0x00019ca8:    d046        F.      BEQ      0x19d38 ; patch_PFAL_COEX_MCI_PRIO_SET + 170
+        0x00019caa:    48f9        .H      LDR      r0,[pc,#996] ; [0x1a090] = 0x2688
+        0x00019cac:    4ffa        .O      LDR      r7,[pc,#1000] ; [0x1a098] = 0x10d34
+        0x00019cae:    7085        .p      STRB     r5,[r0,#2]
+        0x00019cb0:    48f8        .H      LDR      r0,[pc,#992] ; [0x1a094] = 0x2668
+        0x00019cb2:    4cfa        .L      LDR      r4,[pc,#1000] ; [0x1a09c] = 0x15f50
+        0x00019cb4:    6800        .h      LDR      r0,[r0,#0]
+        0x00019cb6:    2800        .(      CMP      r0,#0
+        0x00019cb8:    d02c        ,.      BEQ      0x19d14 ; patch_PFAL_COEX_MCI_PRIO_SET + 134
+        0x00019cba:    6f86        .o      LDR      r6,[r0,#0x78]
+        0x00019cbc:    2e00        ..      CMP      r6,#0
+        0x00019cbe:    d029        ).      BEQ      0x19d14 ; patch_PFAL_COEX_MCI_PRIO_SET + 134
+        0x00019cc0:    683f        ?h      LDR      r7,[r7,#0]
+        0x00019cc2:    466b        kF      MOV      r3,sp
+        0x00019cc4:    2200        ."      MOVS     r2,#0
+        0x00019cc6:    4631        1F      MOV      r1,r6
+        0x00019cc8:    4628        (F      MOV      r0,r5
+        0x00019cca:    47b8        .G      BLX      r7
+        0x00019ccc:    7720         w      STRB     r0,[r4,#0x1c]
+        0x00019cce:    4bf4        .K      LDR      r3,[pc,#976] ; [0x1a0a0] = 0x10d28
+        0x00019cd0:    4601        .F      MOV      r1,r0
+        0x00019cd2:    36a0        .6      ADDS     r6,r6,#0xa0
+        0x00019cd4:    466a        jF      MOV      r2,sp
+        0x00019cd6:    681b        .h      LDR      r3,[r3,#0]
+        0x00019cd8:    7b70        p{      LDRB     r0,[r6,#0xd]
+        0x00019cda:    7812        .x      LDRB     r2,[r2,#0]
+        0x00019cdc:    4798        .G      BLX      r3
+        0x00019cde:    7760        `w      STRB     r0,[r4,#0x1d]
+        0x00019ce0:    7f21        !.      LDRB     r1,[r4,#0x1c]
+        0x00019ce2:    291d        .)      CMP      r1,#0x1d
+        0x00019ce4:    d001        ..      BEQ      0x19cea ; patch_PFAL_COEX_MCI_PRIO_SET + 92
+        0x00019ce6:    291c        .)      CMP      r1,#0x1c
+        0x00019ce8:    d109        ..      BNE      0x19cfe ; patch_PFAL_COEX_MCI_PRIO_SET + 112
+        0x00019cea:    7b71        q{      LDRB     r1,[r6,#0xd]
+        0x00019cec:    4aed        .J      LDR      r2,[pc,#948] ; [0x1a0a4] = 0x12a54
+        0x00019cee:    0109        ..      LSLS     r1,r1,#4
+        0x00019cf0:    1889        ..      ADDS     r1,r1,r2
+        0x00019cf2:    7849        Ix      LDRB     r1,[r1,#1]
+        0x00019cf4:    2901        .)      CMP      r1,#1
+        0x00019cf6:    d102        ..      BNE      0x19cfe ; patch_PFAL_COEX_MCI_PRIO_SET + 112
+        0x00019cf8:    2180        .!      MOVS     r1,#0x80
+        0x00019cfa:    4308        .C      ORRS     r0,r0,r1
+        0x00019cfc:    7760        `w      STRB     r0,[r4,#0x1d]
+        0x00019cfe:    2d05        .-      CMP      r5,#5
+        0x00019d00:    d012        ..      BEQ      0x19d28 ; patch_PFAL_COEX_MCI_PRIO_SET + 154
+        0x00019d02:    2d06        .-      CMP      r5,#6
+        0x00019d04:    d010        ..      BEQ      0x19d28 ; patch_PFAL_COEX_MCI_PRIO_SET + 154
+        0x00019d06:    2d0b        .-      CMP      r5,#0xb
+        0x00019d08:    d00e        ..      BEQ      0x19d28 ; patch_PFAL_COEX_MCI_PRIO_SET + 154
+        0x00019d0a:    2d2d        --      CMP      r5,#0x2d
+        0x00019d0c:    d00c        ..      BEQ      0x19d28 ; patch_PFAL_COEX_MCI_PRIO_SET + 154
+        0x00019d0e:    2d0c        .-      CMP      r5,#0xc
+        0x00019d10:    d00a        ..      BEQ      0x19d28 ; patch_PFAL_COEX_MCI_PRIO_SET + 154
+        0x00019d12:    e00f        ..      B        0x19d34 ; patch_PFAL_COEX_MCI_PRIO_SET + 166
+        0x00019d14:    2200        ."      MOVS     r2,#0
+        0x00019d16:    683e        >h      LDR      r6,[r7,#0]
+        0x00019d18:    466b        kF      MOV      r3,sp
+        0x00019d1a:    4611        .F      MOV      r1,r2
+        0x00019d1c:    4628        (F      MOV      r0,r5
+        0x00019d1e:    47b0        .G      BLX      r6
+        0x00019d20:    49e1        .I      LDR      r1,[pc,#900] ; [0x1a0a8] = 0x1356
+        0x00019d22:    7720         w      STRB     r0,[r4,#0x1c]
+        0x00019d24:    5c40        @\      LDRB     r0,[r0,r1]
+        0x00019d26:    e7e9        ..      B        0x19cfc ; patch_PFAL_COEX_MCI_PRIO_SET + 110
+        0x00019d28:    b2c0        ..      UXTB     r0,r0
+        0x00019d2a:    2880        .(      CMP      r0,#0x80
+        0x00019d2c:    d202        ..      BCS      0x19d34 ; patch_PFAL_COEX_MCI_PRIO_SET + 166
+        0x00019d2e:    2180        .!      MOVS     r1,#0x80
+        0x00019d30:    4308        .C      ORRS     r0,r0,r1
+        0x00019d32:    7760        `w      STRB     r0,[r4,#0x1d]
+        0x00019d34:    49dd        .I      LDR      r1,[pc,#884] ; [0x1a0ac] = 0x15f74
+        0x00019d36:    7348        Hs      STRB     r0,[r1,#0xd]
+        0x00019d38:    bdf8        ..      POP      {r3-r7,pc}
+    patch_PFAL_COEX_MCI_UpdatePerformanceState
+        0x00019d3a:    b570        p.      PUSH     {r4-r6,lr}
+        0x00019d3c:    2817        .(      CMP      r0,#0x17
+        0x00019d3e:    d218        ..      BCS      0x19d72 ; patch_PFAL_COEX_MCI_UpdatePerformanceState + 56
+        0x00019d40:    4ddb        .M      LDR      r5,[pc,#876] ; [0x1a0b0] = 0x2ba0
+        0x00019d42:    00c4        ..      LSLS     r4,r0,#3
+        0x00019d44:    592b        +Y      LDR      r3,[r5,r4]
+        0x00019d46:    2b00        .+      CMP      r3,#0
+        0x00019d48:    d013        ..      BEQ      0x19d72 ; patch_PFAL_COEX_MCI_UpdatePerformanceState + 56
+        0x00019d4a:    1964        d.      ADDS     r4,r4,r5
+        0x00019d4c:    7924        $y      LDRB     r4,[r4,#4]
+        0x00019d4e:    2c03        .,      CMP      r4,#3
+        0x00019d50:    d10f        ..      BNE      0x19d72 ; patch_PFAL_COEX_MCI_UpdatePerformanceState + 56
+        0x00019d52:    2901        .)      CMP      r1,#1
+        0x00019d54:    d00d        ..      BEQ      0x19d72 ; patch_PFAL_COEX_MCI_UpdatePerformanceState + 56
+        0x00019d56:    2505        .%      MOVS     r5,#5
+        0x00019d58:    6b5c        \k      LDR      r4,[r3,#0x34]
+        0x00019d5a:    01ed        ..      LSLS     r5,r5,#7
+        0x00019d5c:    42ac        .B      CMP      r4,r5
+        0x00019d5e:    d300        ..      BCC      0x19d62 ; patch_PFAL_COEX_MCI_UpdatePerformanceState + 40
+        0x00019d60:    2101        .!      MOVS     r1,#1
+        0x00019d62:    8c9b        ..      LDRH     r3,[r3,#0x24]
+        0x00019d64:    2b00        .+      CMP      r3,#0
+        0x00019d66:    d004        ..      BEQ      0x19d72 ; patch_PFAL_COEX_MCI_UpdatePerformanceState + 56
+        0x00019d68:    2506        .%      MOVS     r5,#6
+        0x00019d6a:    436c        lC      MULS     r4,r5,r4
+        0x00019d6c:    42a3        .B      CMP      r3,r4
+        0x00019d6e:    d200        ..      BCS      0x19d72 ; patch_PFAL_COEX_MCI_UpdatePerformanceState + 56
+        0x00019d70:    2101        .!      MOVS     r1,#1
+        0x00019d72:    f000fae1    ....    BL       $Ven$TT$L$$rom_PFAL_COEX_MCI_UpdatePerformanceState ; 0x1a338
+        0x00019d76:    bd70        p.      POP      {r4-r6,pc}
+    patch_MCI_UpdateTopology
+        0x00019d78:    b5f7        ..      PUSH     {r0-r2,r4-r7,lr}
+        0x00019d7a:    2500        .%      MOVS     r5,#0
+        0x00019d7c:    b086        ..      SUB      sp,sp,#0x18
+        0x00019d7e:    4616        .F      MOV      r6,r2
+        0x00019d80:    462c        ,F      MOV      r4,r5
+        0x00019d82:    2701        .'      MOVS     r7,#1
+        0x00019d84:    f3ef8110    ....    MRS      r1,PRIMASK
+        0x00019d88:    48ca        .H      LDR      r0,[pc,#808] ; [0x1a0b4] = 0x1b8
+        0x00019d8a:    9504        ..      STR      r5,[sp,#0x10]
+        0x00019d8c:    6802        .h      LDR      r2,[r0,#0]
+        0x00019d8e:    0052        R.      LSLS     r2,r2,#1
+        0x00019d90:    430a        .C      ORRS     r2,r2,r1
+        0x00019d92:    6002        .`      STR      r2,[r0,#0]
+        0x00019d94:    b672        r.      CPSID    i
+        0x00019d96:    2e00        ..      CMP      r6,#0
+        0x00019d98:    d078        x.      BEQ      0x19e8c ; patch_MCI_UpdateTopology + 276
+        0x00019d9a:    48c7        .H      LDR      r0,[pc,#796] ; [0x1a0b8] = 0x18700
+        0x00019d9c:    7e01        .~      LDRB     r1,[r0,#0x18]
+        0x00019d9e:    2900        .)      CMP      r1,#0
+        0x00019da0:    d074        t.      BEQ      0x19e8c ; patch_MCI_UpdateTopology + 276
+        0x00019da2:    7f80        ..      LDRB     r0,[r0,#0x1e]
+        0x00019da4:    49c5        .I      LDR      r1,[pc,#788] ; [0x1a0bc] = 0x18380
+        0x00019da6:    2800        .(      CMP      r0,#0
+        0x00019da8:    d170        p.      BNE      0x19e8c ; patch_MCI_UpdateTopology + 276
+        0x00019daa:    9806        ..      LDR      r0,[sp,#0x18]
+        0x00019dac:    2817        .(      CMP      r0,#0x17
+        0x00019dae:    d233        3.      BCS      0x19e18 ; patch_MCI_UpdateTopology + 160
+        0x00019db0:    4abf        .J      LDR      r2,[pc,#764] ; [0x1a0b0] = 0x2ba0
+        0x00019db2:    00c1        ..      LSLS     r1,r0,#3
+        0x00019db4:    5850        PX      LDR      r0,[r2,r1]
+        0x00019db6:    2800        .(      CMP      r0,#0
+        0x00019db8:    d02e        ..      BEQ      0x19e18 ; patch_MCI_UpdateTopology + 160
+        0x00019dba:    1889        ..      ADDS     r1,r1,r2
+        0x00019dbc:    7909        .y      LDRB     r1,[r1,#4]
+        0x00019dbe:    2901        .)      CMP      r1,#1
+        0x00019dc0:    d12a        *.      BNE      0x19e18 ; patch_MCI_UpdateTopology + 160
+        0x00019dc2:    4604        .F      MOV      r4,r0
+        0x00019dc4:    2e05        ..      CMP      r6,#5
+        0x00019dc6:    d11a        ..      BNE      0x19dfe ; patch_MCI_UpdateTopology + 134
+        0x00019dc8:    49bd        .I      LDR      r1,[pc,#756] ; [0x1a0c0] = 0x10ce0
+        0x00019dca:    6809        .h      LDR      r1,[r1,#0]
+        0x00019dcc:    4788        .G      BLX      r1
+        0x00019dce:    2800        .(      CMP      r0,#0
+        0x00019dd0:    d015        ..      BEQ      0x19dfe ; patch_MCI_UpdateTopology + 134
+        0x00019dd2:    49bc        .I      LDR      r1,[pc,#752] ; [0x1a0c4] = 0x12a44
+        0x00019dd4:    4620         F      MOV      r0,r4
+        0x00019dd6:    6809        .h      LDR      r1,[r1,#0]
+        0x00019dd8:    4788        .G      BLX      r1
+        0x00019dda:    4605        .F      MOV      r5,r0
+        0x00019ddc:    6940        @i      LDR      r0,[r0,#0x14]
+        0x00019dde:    68c1        .h      LDR      r1,[r0,#0xc]
+        0x00019de0:    31e0        .1      ADDS     r1,r1,#0xe0
+        0x00019de2:    7b49        I{      LDRB     r1,[r1,#0xd]
+        0x00019de4:    2900        .)      CMP      r1,#0
+        0x00019de6:    d008        ..      BEQ      0x19dfa ; patch_MCI_UpdateTopology + 130
+        0x00019de8:    2700        .'      MOVS     r7,#0
+        0x00019dea:    6900        .i      LDR      r0,[r0,#0x10]
+        0x00019dec:    6b80        .k      LDR      r0,[r0,#0x38]
+        0x00019dee:    3060        `0      ADDS     r0,r0,#0x60
+        0x00019df0:    7ac0        .z      LDRB     r0,[r0,#0xb]
+        0x00019df2:    07c0        ..      LSLS     r0,r0,#31
+        0x00019df4:    0fc0        ..      LSRS     r0,r0,#31
+        0x00019df6:    9004        ..      STR      r0,[sp,#0x10]
+        0x00019df8:    e00e        ..      B        0x19e18 ; patch_MCI_UpdateTopology + 160
+        0x00019dfa:    2701        .'      MOVS     r7,#1
+        0x00019dfc:    e7f5        ..      B        0x19dea ; patch_MCI_UpdateTopology + 114
+        0x00019dfe:    68e0        .h      LDR      r0,[r4,#0xc]
+        0x00019e00:    30e0        .0      ADDS     r0,r0,#0xe0
+        0x00019e02:    7b40        @{      LDRB     r0,[r0,#0xd]
+        0x00019e04:    2800        .(      CMP      r0,#0
+        0x00019e06:    d023        #.      BEQ      0x19e50 ; patch_MCI_UpdateTopology + 216
+        0x00019e08:    2700        .'      MOVS     r7,#0
+        0x00019e0a:    6920         i      LDR      r0,[r4,#0x10]
+        0x00019e0c:    6b80        .k      LDR      r0,[r0,#0x38]
+        0x00019e0e:    3060        `0      ADDS     r0,r0,#0x60
+        0x00019e10:    7ac0        .z      LDRB     r0,[r0,#0xb]
+        0x00019e12:    07c0        ..      LSLS     r0,r0,#31
+        0x00019e14:    0fc0        ..      LSRS     r0,r0,#31
+        0x00019e16:    9004        ..      STR      r0,[sp,#0x10]
+        0x00019e18:    4668        hF      MOV      r0,sp
+        0x00019e1a:    9005        ..      STR      r0,[sp,#0x14]
+        0x00019e1c:    2000        .       MOVS     r0,#0
+        0x00019e1e:    9000        ..      STR      r0,[sp,#0]
+        0x00019e20:    9001        ..      STR      r0,[sp,#4]
+        0x00019e22:    9002        ..      STR      r0,[sp,#8]
+        0x00019e24:    9003        ..      STR      r0,[sp,#0xc]
+        0x00019e26:    48a8        .H      LDR      r0,[pc,#672] ; [0x1a0c8] = 0x12c60
+        0x00019e28:    6800        .h      LDR      r0,[r0,#0]
+        0x00019e2a:    4780        .G      BLX      r0
+        0x00019e2c:    9000        ..      STR      r0,[sp,#0]
+        0x00019e2e:    210c        .!      MOVS     r1,#0xc
+        0x00019e30:    4668        hF      MOV      r0,sp
+        0x00019e32:    7101        .q      STRB     r1,[r0,#4]
+        0x00019e34:    2105        .!      MOVS     r1,#5
+        0x00019e36:    7141        Aq      STRB     r1,[r0,#5]
+        0x00019e38:    7186        .q      STRB     r6,[r0,#6]
+        0x00019e3a:    9a06        ..      LDR      r2,[sp,#0x18]
+        0x00019e3c:    71c2        .q      STRB     r2,[r0,#7]
+        0x00019e3e:    7247        Gr      STRB     r7,[r0,#9]
+        0x00019e40:    9a04        ..      LDR      r2,[sp,#0x10]
+        0x00019e42:    7282        .r      STRB     r2,[r0,#0xa]
+        0x00019e44:    9a07        ..      LDR      r2,[sp,#0x1c]
+        0x00019e46:    7202        .r      STRB     r2,[r0,#8]
+        0x00019e48:    9807        ..      LDR      r0,[sp,#0x1c]
+        0x00019e4a:    2801        .(      CMP      r0,#1
+        0x00019e4c:    d002        ..      BEQ      0x19e54 ; patch_MCI_UpdateTopology + 220
+        0x00019e4e:    e09b        ..      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019e50:    2701        .'      MOVS     r7,#1
+        0x00019e52:    e7da        ..      B        0x19e0a ; patch_MCI_UpdateTopology + 146
+        0x00019e54:    2e07        ..      CMP      r6,#7
+        0x00019e56:    d243        C.      BCS      0x19ee0 ; patch_MCI_UpdateTopology + 360
+        0x00019e58:    0030        0.      MOVS     r0,r6
+        0x00019e5a:    4478        xD      ADD      r0,r0,pc
+        0x00019e5c:    7900        .y      LDRB     r0,[r0,#4]
+        0x00019e5e:    1800        ..      ADDS     r0,r0,r0
+        0x00019e60:    4487        .D      ADD      pc,pc,r0
+    $d
+        0x00019e62:    7792        .w      DCW    30610
+        0x00019e64:    0377775e    ^ww.    DCD    58160990
+        0x00019e68:    0003        ..      DCW    3
+    $t
+        0x00019e6a:    2d00        .-      CMP      r5,#0
+        0x00019e6c:    d00f        ..      BEQ      0x19e8e ; patch_MCI_UpdateTopology + 278
+        0x00019e6e:    4628        (F      MOV      r0,r5
+        0x00019e70:    3020         0      ADDS     r0,r0,#0x20
+        0x00019e72:    7d43        C}      LDRB     r3,[r0,#0x15]
+        0x00019e74:    466a        jF      MOV      r2,sp
+        0x00019e76:    8193        ..      STRH     r3,[r2,#0xc]
+        0x00019e78:    7d83        .}      LDRB     r3,[r0,#0x16]
+        0x00019e7a:    7393        .s      STRB     r3,[r2,#0xe]
+        0x00019e7c:    782a        *x      LDRB     r2,[r5,#0]
+        0x00019e7e:    2a00        .*      CMP      r2,#0
+        0x00019e80:    d00d        ..      BEQ      0x19e9e ; patch_MCI_UpdateTopology + 294
+        0x00019e82:    2a03        .*      CMP      r2,#3
+        0x00019e84:    d01f        ..      BEQ      0x19ec6 ; patch_MCI_UpdateTopology + 334
+        0x00019e86:    2a02        .*      CMP      r2,#2
+        0x00019e88:    d037        7.      BEQ      0x19efa ; patch_MCI_UpdateTopology + 386
+        0x00019e8a:    e07d        }.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019e8c:    e081        ..      B        0x19f92 ; patch_MCI_UpdateTopology + 538
+        0x00019e8e:    4a8f        .J      LDR      r2,[pc,#572] ; [0x1a0cc] = 0x108a4
+        0x00019e90:    21ff        .!      MOVS     r1,#0xff
+        0x00019e92:    310d        .1      ADDS     r1,r1,#0xd
+        0x00019e94:    6812        .h      LDR      r2,[r2,#0]
+        0x00019e96:    2000        .       MOVS     r0,#0
+        0x00019e98:    4790        .G      BLX      r2
+        0x00019e9a:    f000fa53    ..S.    BL       $Ven$TT$L$$abort ; 0x1a344
+        0x00019e9e:    7c00        .|      LDRB     r0,[r0,#0x10]
+        0x00019ea0:    2805        .(      CMP      r0,#5
+        0x00019ea2:    d004        ..      BEQ      0x19eae ; patch_MCI_UpdateTopology + 310
+        0x00019ea4:    2806        .(      CMP      r0,#6
+        0x00019ea6:    d006        ..      BEQ      0x19eb6 ; patch_MCI_UpdateTopology + 318
+        0x00019ea8:    2807        .(      CMP      r0,#7
+        0x00019eaa:    d16d        m.      BNE      0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019eac:    e007        ..      B        0x19ebe ; patch_MCI_UpdateTopology + 326
+        0x00019eae:    2000        .       MOVS     r0,#0
+        0x00019eb0:    4669        iF      MOV      r1,sp
+        0x00019eb2:    72c8        .r      STRB     r0,[r1,#0xb]
+        0x00019eb4:    e068        h.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019eb6:    2101        .!      MOVS     r1,#1
+        0x00019eb8:    4668        hF      MOV      r0,sp
+        0x00019eba:    72c1        .r      STRB     r1,[r0,#0xb]
+        0x00019ebc:    e064        d.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019ebe:    2002        .       MOVS     r0,#2
+        0x00019ec0:    4669        iF      MOV      r1,sp
+        0x00019ec2:    72c8        .r      STRB     r0,[r1,#0xb]
+        0x00019ec4:    e060        `.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019ec6:    7c00        .|      LDRB     r0,[r0,#0x10]
+        0x00019ec8:    2806        .(      CMP      r0,#6
+        0x00019eca:    d006        ..      BEQ      0x19eda ; patch_MCI_UpdateTopology + 354
+        0x00019ecc:    2807        .(      CMP      r0,#7
+        0x00019ece:    d00c        ..      BEQ      0x19eea ; patch_MCI_UpdateTopology + 370
+        0x00019ed0:    280c        .(      CMP      r0,#0xc
+        0x00019ed2:    d006        ..      BEQ      0x19ee2 ; patch_MCI_UpdateTopology + 362
+        0x00019ed4:    280d        .(      CMP      r0,#0xd
+        0x00019ed6:    d157        W.      BNE      0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019ed8:    e00b        ..      B        0x19ef2 ; patch_MCI_UpdateTopology + 378
+        0x00019eda:    2006        .       MOVS     r0,#6
+        0x00019edc:    4669        iF      MOV      r1,sp
+        0x00019ede:    72c8        .r      STRB     r0,[r1,#0xb]
+        0x00019ee0:    e052        R.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019ee2:    2007        .       MOVS     r0,#7
+        0x00019ee4:    4669        iF      MOV      r1,sp
+        0x00019ee6:    72c8        .r      STRB     r0,[r1,#0xb]
+        0x00019ee8:    e04e        N.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019eea:    2108        .!      MOVS     r1,#8
+        0x00019eec:    4668        hF      MOV      r0,sp
+        0x00019eee:    72c1        .r      STRB     r1,[r0,#0xb]
+        0x00019ef0:    e04a        J.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019ef2:    2109        .!      MOVS     r1,#9
+        0x00019ef4:    4668        hF      MOV      r0,sp
+        0x00019ef6:    72c1        .r      STRB     r1,[r0,#0xb]
+        0x00019ef8:    e046        F.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019efa:    7c00        .|      LDRB     r0,[r0,#0x10]
+        0x00019efc:    2807        .(      CMP      r0,#7
+        0x00019efe:    d004        ..      BEQ      0x19f0a ; patch_MCI_UpdateTopology + 402
+        0x00019f00:    280c        .(      CMP      r0,#0xc
+        0x00019f02:    d006        ..      BEQ      0x19f12 ; patch_MCI_UpdateTopology + 410
+        0x00019f04:    280d        .(      CMP      r0,#0xd
+        0x00019f06:    d13f        ?.      BNE      0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019f08:    e007        ..      B        0x19f1a ; patch_MCI_UpdateTopology + 418
+        0x00019f0a:    2003        .       MOVS     r0,#3
+        0x00019f0c:    4669        iF      MOV      r1,sp
+        0x00019f0e:    72c8        .r      STRB     r0,[r1,#0xb]
+        0x00019f10:    e03a        :.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019f12:    2004        .       MOVS     r0,#4
+        0x00019f14:    4669        iF      MOV      r1,sp
+        0x00019f16:    72c8        .r      STRB     r0,[r1,#0xb]
+        0x00019f18:    e036        6.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019f1a:    4668        hF      MOV      r0,sp
+        0x00019f1c:    72c1        .r      STRB     r1,[r0,#0xb]
+        0x00019f1e:    e033        3.      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019f20:    2c00        .,      CMP      r4,#0
+        0x00019f22:    d031        1.      BEQ      0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019f24:    2094        .       MOVS     r0,#0x94
+        0x00019f26:    5d00        .]      LDRB     r0,[r0,r4]
+        0x00019f28:    0781        ..      LSLS     r1,r0,#30
+        0x00019f2a:    d507        ..      BPL      0x19f3c ; patch_MCI_UpdateTopology + 452
+        0x00019f2c:    0740        @.      LSLS     r0,r0,#29
+        0x00019f2e:    4a68        hJ      LDR      r2,[pc,#416] ; [0x1a0d0] = 0x10de8
+        0x00019f30:    17c1        ..      ASRS     r1,r0,#31
+        0x00019f32:    6812        .h      LDR      r2,[r2,#0]
+        0x00019f34:    1c49        I.      ADDS     r1,r1,#1
+        0x00019f36:    9806        ..      LDR      r0,[sp,#0x18]
+        0x00019f38:    4790        .G      BLX      r2
+        0x00019f3a:    e00c        ..      B        0x19f56 ; patch_MCI_UpdateTopology + 478
+        0x00019f3c:    4865        eH      LDR      r0,[pc,#404] ; [0x1a0d4] = 0x1274
+        0x00019f3e:    8900        ..      LDRH     r0,[r0,#8]
+        0x00019f40:    0780        ..      LSLS     r0,r0,#30
+        0x00019f42:    d508        ..      BPL      0x19f56 ; patch_MCI_UpdateTopology + 478
+        0x00019f44:    4b6a        jK      LDR      r3,[pc,#424] ; [0x1a0f0] = 0x1089c
+        0x00019f46:    2101        .!      MOVS     r1,#1
+        0x00019f48:    681b        .h      LDR      r3,[r3,#0]
+        0x00019f4a:    a263        c.      ADR      r2,{pc}+0x18e ; 0x1a0d8
+        0x00019f4c:    2003        .       MOVS     r0,#3
+        0x00019f4e:    4798        .G      BLX      r3
+        0x00019f50:    e001        ..      B        0x19f56 ; patch_MCI_UpdateTopology + 478
+        0x00019f52:    2c00        .,      CMP      r4,#0
+        0x00019f54:    d018        ..      BEQ      0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019f56:    4967        gI      LDR      r1,[pc,#412] ; [0x1a0f4] = 0x12c54
+        0x00019f58:    4620         F      MOV      r0,r4
+        0x00019f5a:    6809        .h      LDR      r1,[r1,#0]
+        0x00019f5c:    4788        .G      BLX      r1
+        0x00019f5e:    2800        .(      CMP      r0,#0
+        0x00019f60:    d00f        ..      BEQ      0x19f82 ; patch_MCI_UpdateTopology + 522
+        0x00019f62:    6920         i      LDR      r0,[r4,#0x10]
+        0x00019f64:    6b80        .k      LDR      r0,[r0,#0x38]
+        0x00019f66:    8a01        ..      LDRH     r1,[r0,#0x10]
+        0x00019f68:    4668        hF      MOV      r0,sp
+        0x00019f6a:    8181        ..      STRH     r1,[r0,#0xc]
+        0x00019f6c:    6920         i      LDR      r0,[r4,#0x10]
+        0x00019f6e:    6b80        .k      LDR      r0,[r0,#0x38]
+        0x00019f70:    89c1        ..      LDRH     r1,[r0,#0xe]
+        0x00019f72:    4668        hF      MOV      r0,sp
+        0x00019f74:    7381        .s      STRB     r1,[r0,#0xe]
+        0x00019f76:    6920         i      LDR      r0,[r4,#0x10]
+        0x00019f78:    6b80        .k      LDR      r0,[r0,#0x38]
+        0x00019f7a:    8981        ..      LDRH     r1,[r0,#0xc]
+        0x00019f7c:    4668        hF      MOV      r0,sp
+        0x00019f7e:    73c1        .s      STRB     r1,[r0,#0xf]
+        0x00019f80:    e002        ..      B        0x19f88 ; patch_MCI_UpdateTopology + 528
+        0x00019f82:    2000        .       MOVS     r0,#0
+        0x00019f84:    4669        iF      MOV      r1,sp
+        0x00019f86:    8188        ..      STRH     r0,[r1,#0xc]
+        0x00019f88:    4a5b        [J      LDR      r2,[pc,#364] ; [0x1a0f8] = 0x129d0
+        0x00019f8a:    2080        .       MOVS     r0,#0x80
+        0x00019f8c:    6812        .h      LDR      r2,[r2,#0]
+        0x00019f8e:    9905        ..      LDR      r1,[sp,#0x14]
+        0x00019f90:    4790        .G      BLX      r2
+        0x00019f92:    4848        HH      LDR      r0,[pc,#288] ; [0x1a0b4] = 0x1b8
+        0x00019f94:    6801        .h      LDR      r1,[r0,#0]
+        0x00019f96:    07c9        ..      LSLS     r1,r1,#31
+        0x00019f98:    0fc9        ..      LSRS     r1,r1,#31
+        0x00019f9a:    f3818810    ....    MSR      PRIMASK,r1
+        0x00019f9e:    6801        .h      LDR      r1,[r0,#0]
+        0x00019fa0:    0849        I.      LSRS     r1,r1,#1
+        0x00019fa2:    6001        .`      STR      r1,[r0,#0]
+        0x00019fa4:    b009        ..      ADD      sp,sp,#0x24
+        0x00019fa6:    bdf0        ..      POP      {r4-r7,pc}
+    MCI_Update_BD_Link_Status
+        0x00019fa8:    b5f3        ..      PUSH     {r0,r1,r4-r7,lr}
+        0x00019faa:    4843        CH      LDR      r0,[pc,#268] ; [0x1a0b8] = 0x18700
+        0x00019fac:    b083        ..      SUB      sp,sp,#0xc
+        0x00019fae:    7e01        .~      LDRB     r1,[r0,#0x18]
+        0x00019fb0:    2900        .)      CMP      r1,#0
+        0x00019fb2:    d046        F.      BEQ      0x1a042 ; MCI_Update_BD_Link_Status + 154
+        0x00019fb4:    7f80        ..      LDRB     r0,[r0,#0x1e]
+        0x00019fb6:    2800        .(      CMP      r0,#0
+        0x00019fb8:    d143        C.      BNE      0x1a042 ; MCI_Update_BD_Link_Status + 154
+        0x00019fba:    4e50        PN      LDR      r6,[pc,#320] ; [0x1a0fc] = 0x18a00
+        0x00019fbc:    6b70        pk      LDR      r0,[r6,#0x34]
+        0x00019fbe:    6844        Dh      LDR      r4,[r0,#4]
+        0x00019fc0:    42a0        .B      CMP      r0,r4
+        0x00019fc2:    d03e        >.      BEQ      0x1a042 ; MCI_Update_BD_Link_Status + 154
+        0x00019fc4:    9d04        ..      LDR      r5,[sp,#0x10]
+        0x00019fc6:    35a0        .5      ADDS     r5,r5,#0xa0
+        0x00019fc8:    4620         F      MOV      r0,r4
+        0x00019fca:    3808        .8      SUBS     r0,r0,#8
+        0x00019fcc:    78c1        .x      LDRB     r1,[r0,#3]
+        0x00019fce:    2900        .)      CMP      r1,#0
+        0x00019fd0:    d033        3.      BEQ      0x1a03a ; MCI_Update_BD_Link_Status + 146
+        0x00019fd2:    7b69        i{      LDRB     r1,[r5,#0xd]
+        0x00019fd4:    2917        .)      CMP      r1,#0x17
+        0x00019fd6:    d230        0.      BCS      0x1a03a ; MCI_Update_BD_Link_Status + 146
+        0x00019fd8:    4b35        5K      LDR      r3,[pc,#212] ; [0x1a0b0] = 0x2ba0
+        0x00019fda:    00ca        ..      LSLS     r2,r1,#3
+        0x00019fdc:    589f        .X      LDR      r7,[r3,r2]
+        0x00019fde:    2f00        ./      CMP      r7,#0
+        0x00019fe0:    d02b        +.      BEQ      0x1a03a ; MCI_Update_BD_Link_Status + 146
+        0x00019fe2:    18d2        ..      ADDS     r2,r2,r3
+        0x00019fe4:    7912        .y      LDRB     r2,[r2,#4]
+        0x00019fe6:    2a01        .*      CMP      r2,#1
+        0x00019fe8:    d127        '.      BNE      0x1a03a ; MCI_Update_BD_Link_Status + 146
+        0x00019fea:    7800        .x      LDRB     r0,[r0,#0]
+        0x00019fec:    4288        .B      CMP      r0,r1
+        0x00019fee:    d124        $.      BNE      0x1a03a ; MCI_Update_BD_Link_Status + 146
+        0x00019ff0:    9803        ..      LDR      r0,[sp,#0xc]
+        0x00019ff2:    2800        .(      CMP      r0,#0
+        0x00019ff4:    d015        ..      BEQ      0x1a022 ; MCI_Update_BD_Link_Status + 122
+        0x00019ff6:    2801        .(      CMP      r0,#1
+        0x00019ff8:    d11f        ..      BNE      0x1a03a ; MCI_Update_BD_Link_Status + 146
+        0x00019ffa:    9804        ..      LDR      r0,[sp,#0x10]
+        0x00019ffc:    2200        ."      MOVS     r2,#0
+        0x00019ffe:    6900        .i      LDR      r0,[r0,#0x10]
+        0x0001a000:    6b80        .k      LDR      r0,[r0,#0x38]
+        0x0001a002:    89c7        ..      LDRH     r7,[r0,#0xe]
+        0x0001a004:    8a03        ..      LDRH     r3,[r0,#0x10]
+        0x0001a006:    9702        ..      STR      r7,[sp,#8]
+        0x0001a008:    9301        ..      STR      r3,[sp,#4]
+        0x0001a00a:    9200        ..      STR      r2,[sp,#0]
+        0x0001a00c:    8980        ..      LDRH     r0,[r0,#0xc]
+        0x0001a00e:    4f3c        <O      LDR      r7,[pc,#240] ; [0x1a100] = 0x10cd4
+        0x0001a010:    b2c3        ..      UXTB     r3,r0
+        0x0001a012:    9804        ..      LDR      r0,[sp,#0x10]
+        0x0001a014:    683f        ?h      LDR      r7,[r7,#0]
+        0x0001a016:    68c0        .h      LDR      r0,[r0,#0xc]
+        0x0001a018:    30e0        .0      ADDS     r0,r0,#0xe0
+        0x0001a01a:    7b42        B{      LDRB     r2,[r0,#0xd]
+        0x0001a01c:    9803        ..      LDR      r0,[sp,#0xc]
+        0x0001a01e:    47b8        .G      BLX      r7
+        0x0001a020:    e00b        ..      B        0x1a03a ; MCI_Update_BD_Link_Status + 146
+        0x0001a022:    2000        .       MOVS     r0,#0
+        0x0001a024:    9a04        ..      LDR      r2,[sp,#0x10]
+        0x0001a026:    9000        ..      STR      r0,[sp,#0]
+        0x0001a028:    9001        ..      STR      r0,[sp,#4]
+        0x0001a02a:    9002        ..      STR      r0,[sp,#8]
+        0x0001a02c:    68d2        .h      LDR      r2,[r2,#0xc]
+        0x0001a02e:    4f34        4O      LDR      r7,[pc,#208] ; [0x1a100] = 0x10cd4
+        0x0001a030:    32e0        .2      ADDS     r2,r2,#0xe0
+        0x0001a032:    683f        ?h      LDR      r7,[r7,#0]
+        0x0001a034:    7b52        R{      LDRB     r2,[r2,#0xd]
+        0x0001a036:    4603        .F      MOV      r3,r0
+        0x0001a038:    47b8        .G      BLX      r7
+        0x0001a03a:    6864        dh      LDR      r4,[r4,#4]
+        0x0001a03c:    6b70        pk      LDR      r0,[r6,#0x34]
+        0x0001a03e:    42a0        .B      CMP      r0,r4
+        0x0001a040:    d1c2        ..      BNE      0x19fc8 ; MCI_Update_BD_Link_Status + 32
+        0x0001a042:    b005        ..      ADD      sp,sp,#0x14
+        0x0001a044:    bdf0        ..      POP      {r4-r7,pc}
+    patch_PFAL_COEX_MCI_TxConnUpdate
+        0x0001a046:    b570        p.      PUSH     {r4-r6,lr}
+        0x0001a048:    b084        ..      SUB      sp,sp,#0x10
+        0x0001a04a:    9e0a        ..      LDR      r6,[sp,#0x28]
+        0x0001a04c:    9d09        ..      LDR      r5,[sp,#0x24]
+        0x0001a04e:    9c08        ..      LDR      r4,[sp,#0x20]
+        0x0001a050:    9602        ..      STR      r6,[sp,#8]
+        0x0001a052:    9501        ..      STR      r5,[sp,#4]
+        0x0001a054:    9400        ..      STR      r4,[sp,#0]
+        0x0001a056:    2a00        .*      CMP      r2,#0
+        0x0001a058:    d004        ..      BEQ      0x1a064 ; patch_PFAL_COEX_MCI_TxConnUpdate + 30
+        0x0001a05a:    2200        ."      MOVS     r2,#0
+        0x0001a05c:    f000f978    ..x.    BL       $Ven$TT$L$$rom_PFAL_COEX_MCI_TxConnUpdate ; 0x1a350
+        0x0001a060:    b004        ..      ADD      sp,sp,#0x10
+        0x0001a062:    bd70        p.      POP      {r4-r6,pc}
+        0x0001a064:    2201        ."      MOVS     r2,#1
+        0x0001a066:    e7f9        ..      B        0x1a05c ; patch_PFAL_COEX_MCI_TxConnUpdate + 22
+    patch_PFAL_COEX_MCI_BT_CAL_Complete
+        0x0001a068:    4826        &H      LDR      r0,[pc,#152] ; [0x1a104] = 0x85c
+        0x0001a06a:    7800        .x      LDRB     r0,[r0,#0]
+        0x0001a06c:    2803        .(      CMP      r0,#3
+        0x0001a06e:    d051        Q.      BEQ      0x1a114 ; patch_PFAL_COEX_MCI_BT_CAL_Complete + 172
+        0x0001a070:    4825        %H      LDR      r0,[pc,#148] ; [0x1a108] = 0x27b08
+        0x0001a072:    7800        .x      LDRB     r0,[r0,#0]
+        0x0001a074:    2801        .(      CMP      r0,#1
+        0x0001a076:    d04d        M.      BEQ      0x1a114 ; patch_PFAL_COEX_MCI_BT_CAL_Complete + 172
+        0x0001a078:    4a25        %J      LDR      r2,[pc,#148] ; [0x1a110] = 0x110d4
+        0x0001a07a:    4824        $H      LDR      r0,[pc,#144] ; [0x1a10c] = 0x583
+        0x0001a07c:    2101        .!      MOVS     r1,#1
+        0x0001a07e:    6812        .h      LDR      r2,[r2,#0]
+        0x0001a080:    04c9        ..      LSLS     r1,r1,#19
+        0x0001a082:    7800        .x      LDRB     r0,[r0,#0]
+        0x0001a084:    4710        .G      BX       r2
+    $d
+        0x0001a086:    0000        ..      DCW    0
+        0x0001a088:    0001090c    ....    DCD    67852
+        0x0001a08c:    0001003e    >...    DCD    65598
+        0x0001a090:    00002688    .&..    DCD    9864
+        0x0001a094:    00002668    h&..    DCD    9832
+        0x0001a098:    00010d34    4...    DCD    68916
+        0x0001a09c:    00015f50    P_..    DCD    89936
+        0x0001a0a0:    00010d28    (...    DCD    68904
+        0x0001a0a4:    00012a54    T*..    DCD    76372
+        0x0001a0a8:    00001356    V...    DCD    4950
+        0x0001a0ac:    00015f74    t_..    DCD    89972
+        0x0001a0b0:    00002ba0    .+..    DCD    11168
+        0x0001a0b4:    000001b8    ....    DCD    440
+        0x0001a0b8:    00018700    ....    DCD    100096
+        0x0001a0bc:    00018380    ....    DCD    99200
+        0x0001a0c0:    00010ce0    ....    DCD    68832
+        0x0001a0c4:    00012a44    D*..    DCD    76356
+        0x0001a0c8:    00012c60    `,..    DCD    76896
+        0x0001a0cc:    000108a4    ....    DCD    67748
+        0x0001a0d0:    00010de8    ....    DCD    69096
+        0x0001a0d4:    00001274    t...    DCD    4724
+        0x0001a0d8:    54445641    AVDT    DCD    1413764673
+        0x0001a0dc:    4f522050    P RO    DCD    1330782288
+        0x0001a0e0:    4e20454c    LE N    DCD    1310737740
+        0x0001a0e4:    4420544f    OT D    DCD    1142969423
+        0x0001a0e8:    43455445    ETEC    DCD    1128617029
+        0x0001a0ec:    00444554    TED.    DCD    4474196
+        0x0001a0f0:    0001089c    ....    DCD    67740
+        0x0001a0f4:    00012c54    T,..    DCD    76884
+        0x0001a0f8:    000129d0    .)..    DCD    76240
+        0x0001a0fc:    00018a00    ....    DCD    100864
+        0x0001a100:    00010cd4    ....    DCD    68820
+        0x0001a104:    0000085c    \...    DCD    2140
+        0x0001a108:    00027b08    .{..    DCD    162568
+        0x0001a10c:    00000583    ....    DCD    1411
+        0x0001a110:    000110d4    ....    DCD    69844
+    $t
+        0x0001a114:    4770        pG      BX       lr
+    patch_PFAL_COEX_MCI_Bootup_Sequence
+        0x0001a116:    b510        ..      PUSH     {r4,lr}
+        0x0001a118:    4923        #I      LDR      r1,[pc,#140] ; [0x1a1a8] = 0x182fc
+        0x0001a11a:    2001        .       MOVS     r0,#1
+        0x0001a11c:    8008        ..      STRH     r0,[r1,#0]
+        0x0001a11e:    f000f91d    ....    BL       $Ven$TT$L$$rom_PFAL_COEX_MCI_Bootup_Sequence ; 0x1a35c
+        0x0001a122:    bd10        ..      POP      {r4,pc}
+    patch_PFAL_COEX_MCI_Schedule
+        0x0001a124:    b5ff        ..      PUSH     {r0-r7,lr}
+        0x0001a126:    b081        ..      SUB      sp,sp,#4
+        0x0001a128:    4607        .F      MOV      r7,r0
+        0x0001a12a:    4616        .F      MOV      r6,r2
+        0x0001a12c:    2a02        .*      CMP      r2,#2
+        0x0001a12e:    d11a        ..      BNE      0x1a166 ; patch_PFAL_COEX_MCI_Schedule + 66
+        0x0001a130:    4d1e        .M      LDR      r5,[pc,#120] ; [0x1a1ac] = 0x15f74
+        0x0001a132:    6928        (i      LDR      r0,[r5,#0x10]
+        0x0001a134:    2800        .(      CMP      r0,#0
+        0x0001a136:    d116        ..      BNE      0x1a166 ; patch_PFAL_COEX_MCI_Schedule + 66
+        0x0001a138:    4c1d        .L      LDR      r4,[pc,#116] ; [0x1a1b0] = 0x27b0c
+        0x0001a13a:    6020         `      STR      r0,[r4,#0]
+        0x0001a13c:    6060        ``      STR      r0,[r4,#4]
+        0x0001a13e:    60a0        .`      STR      r0,[r4,#8]
+        0x0001a140:    60e0        .`      STR      r0,[r4,#0xc]
+        0x0001a142:    6120         a      STR      r0,[r4,#0x10]
+        0x0001a144:    6160        `a      STR      r0,[r4,#0x14]
+        0x0001a146:    61a0        .a      STR      r0,[r4,#0x18]
+        0x0001a148:    61e0        .a      STR      r0,[r4,#0x1c]
+        0x0001a14a:    6220         b      STR      r0,[r4,#0x20]
+        0x0001a14c:    6260        `b      STR      r0,[r4,#0x24]
+        0x0001a14e:    62a0        .b      STR      r0,[r4,#0x28]
+        0x0001a150:    4818        .H      LDR      r0,[pc,#96] ; [0x1a1b4] = 0x1274
+        0x0001a152:    8900        ..      LDRH     r0,[r0,#8]
+        0x0001a154:    0780        ..      LSLS     r0,r0,#30
+        0x0001a156:    d505        ..      BPL      0x1a164 ; patch_PFAL_COEX_MCI_Schedule + 64
+        0x0001a158:    4b1e        .K      LDR      r3,[pc,#120] ; [0x1a1d4] = 0x1089c
+        0x0001a15a:    2102        .!      MOVS     r1,#2
+        0x0001a15c:    681b        .h      LDR      r3,[r3,#0]
+        0x0001a15e:    a216        ..      ADR      r2,{pc}+0x5a ; 0x1a1b8
+        0x0001a160:    2003        .       MOVS     r0,#3
+        0x0001a162:    4798        .G      BLX      r3
+        0x0001a164:    612c        ,a      STR      r4,[r5,#0x10]
+        0x0001a166:    4632        2F      MOV      r2,r6
+        0x0001a168:    4638        8F      MOV      r0,r7
+        0x0001a16a:    9b04        ..      LDR      r3,[sp,#0x10]
+        0x0001a16c:    9902        ..      LDR      r1,[sp,#8]
+        0x0001a16e:    f000f8fb    ....    BL       $Ven$TT$L$$rom_PFAL_COEX_MCI_Schedule ; 0x1a368
+        0x0001a172:    b005        ..      ADD      sp,sp,#0x14
+        0x0001a174:    bdf0        ..      POP      {r4-r7,pc}
+    PFAL_COEX_MCI_patch_apply
+        0x0001a176:    4919        .I      LDR      r1,[pc,#100] ; [0x1a1dc] = 0x10d34
+        0x0001a178:    4817        .H      LDR      r0,[pc,#92] ; [0x1a1d8] = 0x19c79
+        0x0001a17a:    6008        .`      STR      r0,[r1,#0]
+        0x0001a17c:    4919        .I      LDR      r1,[pc,#100] ; [0x1a1e4] = 0x10d58
+        0x0001a17e:    4818        .H      LDR      r0,[pc,#96] ; [0x1a1e0] = 0x19c8f
+        0x0001a180:    6008        .`      STR      r0,[r1,#0]
+        0x0001a182:    491a        .I      LDR      r1,[pc,#104] ; [0x1a1ec] = 0x10d9c
+        0x0001a184:    4818        .H      LDR      r0,[pc,#96] ; [0x1a1e8] = 0x19d3b
+        0x0001a186:    6008        .`      STR      r0,[r1,#0]
+        0x0001a188:    491a        .I      LDR      r1,[pc,#104] ; [0x1a1f4] = 0x12a18
+        0x0001a18a:    4819        .H      LDR      r0,[pc,#100] ; [0x1a1f0] = 0x1a117
+        0x0001a18c:    6008        .`      STR      r0,[r1,#0]
+        0x0001a18e:    491b        .I      LDR      r1,[pc,#108] ; [0x1a1fc] = 0x10ce4
+        0x0001a190:    4819        .H      LDR      r0,[pc,#100] ; [0x1a1f8] = 0x19d79
+        0x0001a192:    6008        .`      STR      r0,[r1,#0]
+        0x0001a194:    491b        .I      LDR      r1,[pc,#108] ; [0x1a204] = 0x10cd4
+        0x0001a196:    481a        .H      LDR      r0,[pc,#104] ; [0x1a200] = 0x1a047
+        0x0001a198:    6008        .`      STR      r0,[r1,#0]
+        0x0001a19a:    491c        .I      LDR      r1,[pc,#112] ; [0x1a20c] = 0x10de0
+        0x0001a19c:    481a        .H      LDR      r0,[pc,#104] ; [0x1a208] = 0x1a069
+        0x0001a19e:    6008        .`      STR      r0,[r1,#0]
+        0x0001a1a0:    491c        .I      LDR      r1,[pc,#112] ; [0x1a214] = 0x10dd0
+        0x0001a1a2:    481b        .H      LDR      r0,[pc,#108] ; [0x1a210] = 0x1a125
+        0x0001a1a4:    6008        .`      STR      r0,[r1,#0]
+        0x0001a1a6:    4770        pG      BX       lr
+    $d
+        0x0001a1a8:    000182fc    ....    DCD    99068
+        0x0001a1ac:    00015f74    t_..    DCD    89972
+        0x0001a1b0:    00027b0c    .{..    DCD    162572
+        0x0001a1b4:    00001274    t...    DCD    4724
+        0x0001a1b8:    54534946    FIST    DCD    1414744390
+        0x0001a1bc:    47534d20     MSG    DCD    1196641568
+        0x0001a1c0:    20534920     IS     DCD    542329120
+        0x0001a1c4:    41445055    UPDA    DCD    1094996053
+        0x0001a1c8:    45204554    TE E    DCD    1159742804
+        0x0001a1cc:    4954444e    NDTI    DCD    1230259278
+        0x0001a1d0:    0021454d    ME!.    DCD    2180429
+        0x0001a1d4:    0001089c    ....    DCD    67740
+        0x0001a1d8:    00019c79    y...    DCD    105593
+        0x0001a1dc:    00010d34    4...    DCD    68916
+        0x0001a1e0:    00019c8f    ....    DCD    105615
+        0x0001a1e4:    00010d58    X...    DCD    68952
+        0x0001a1e8:    00019d3b    ;...    DCD    105787
+        0x0001a1ec:    00010d9c    ....    DCD    69020
+        0x0001a1f0:    0001a117    ....    DCD    106775
+        0x0001a1f4:    00012a18    .*..    DCD    76312
+        0x0001a1f8:    00019d79    y...    DCD    105849
+        0x0001a1fc:    00010ce4    ....    DCD    68836
+        0x0001a200:    0001a047    G...    DCD    106567
+        0x0001a204:    00010cd4    ....    DCD    68820
+        0x0001a208:    0001a069    i...    DCD    106601
+        0x0001a20c:    00010de0    ....    DCD    69088
+        0x0001a210:    0001a125    %...    DCD    106789
+        0x0001a214:    00010dd0    ....    DCD    69072
+    $t
+    .text
+    patch_PFAL_RM_RUN_BT_STARTUP_CALIBRATIONS
+        0x0001a218:    b510        ..      PUSH     {r4,lr}
+        0x0001a21a:    4604        .F      MOV      r4,r0
+        0x0001a21c:    2200        ."      MOVS     r2,#0
+        0x0001a21e:    4817        .H      LDR      r0,[pc,#92] ; [0x1a27c] = 0x27b08
+        0x0001a220:    4917        .I      LDR      r1,[pc,#92] ; [0x1a280] = 0x17c
+        0x0001a222:    7002        .p      STRB     r2,[r0,#0]
+        0x0001a224:    2c02        .,      CMP      r4,#2
+        0x0001a226:    d003        ..      BEQ      0x1a230 ; patch_PFAL_RM_RUN_BT_STARTUP_CALIBRATIONS + 24
+        0x0001a228:    7808        .x      LDRB     r0,[r1,#0]
+        0x0001a22a:    2801        .(      CMP      r0,#1
+        0x0001a22c:    d004        ..      BEQ      0x1a238 ; patch_PFAL_RM_RUN_BT_STARTUP_CALIBRATIONS + 32
+        0x0001a22e:    e00d        ..      B        0x1a24c ; patch_PFAL_RM_RUN_BT_STARTUP_CALIBRATIONS + 52
+        0x0001a230:    700a        .p      STRB     r2,[r1,#0]
+        0x0001a232:    2101        .!      MOVS     r1,#1
+        0x0001a234:    7001        .p      STRB     r1,[r0,#0]
+        0x0001a236:    e009        ..      B        0x1a24c ; patch_PFAL_RM_RUN_BT_STARTUP_CALIBRATIONS + 52
+        0x0001a238:    4812        .H      LDR      r0,[pc,#72] ; [0x1a284] = 0x1274
+        0x0001a23a:    8900        ..      LDRH     r0,[r0,#8]
+        0x0001a23c:    0780        ..      LSLS     r0,r0,#30
+        0x0001a23e:    d505        ..      BPL      0x1a24c ; patch_PFAL_RM_RUN_BT_STARTUP_CALIBRATIONS + 52
+        0x0001a240:    4b16        .K      LDR      r3,[pc,#88] ; [0x1a29c] = 0x1089c
+        0x0001a242:    2102        .!      MOVS     r1,#2
+        0x0001a244:    681b        .h      LDR      r3,[r3,#0]
+        0x0001a246:    a210        ..      ADR      r2,{pc}+0x42 ; 0x1a288
+        0x0001a248:    2003        .       MOVS     r0,#3
+        0x0001a24a:    4798        .G      BLX      r3
+        0x0001a24c:    4620         F      MOV      r0,r4
+        0x0001a24e:    f000f891    ....    BL       $Ven$TT$L$$rom_PFAL_RM_RUN_BT_STARTUP_CALIBRATIONS ; 0x1a374
+        0x0001a252:    bd10        ..      POP      {r4,pc}
+    patch_PFAL_RM_HW_Setup_TempCalibration
+        0x0001a254:    b510        ..      PUSH     {r4,lr}
+        0x0001a256:    f000f893    ....    BL       $Ven$TT$L$$rom_PFAL_RM_HW_Setup_TempCalibration ; 0x1a380
+        0x0001a25a:    4811        .H      LDR      r0,[pc,#68] ; [0x1a2a0] = 0x4d68
+        0x0001a25c:    7c00        .|      LDRB     r0,[r0,#0x10]
+        0x0001a25e:    07c0        ..      LSLS     r0,r0,#31
+        0x0001a260:    d004        ..      BEQ      0x1a26c ; patch_PFAL_RM_HW_Setup_TempCalibration + 24
+        0x0001a262:    4a10        .J      LDR      r2,[pc,#64] ; [0x1a2a4] = 0x1113c
+        0x0001a264:    2101        .!      MOVS     r1,#1
+        0x0001a266:    6812        .h      LDR      r2,[r2,#0]
+        0x0001a268:    2000        .       MOVS     r0,#0
+        0x0001a26a:    4790        .G      BLX      r2
+        0x0001a26c:    bd10        ..      POP      {r4,pc}
+    PFAL_RM_HW_patch_apply
+        0x0001a26e:    490f        .I      LDR      r1,[pc,#60] ; [0x1a2ac] = 0x11178
+        0x0001a270:    480d        .H      LDR      r0,[pc,#52] ; [0x1a2a8] = 0x1a219
+        0x0001a272:    6008        .`      STR      r0,[r1,#0]
+        0x0001a274:    490f        .I      LDR      r1,[pc,#60] ; [0x1a2b4] = 0x11190
+        0x0001a276:    480e        .H      LDR      r0,[pc,#56] ; [0x1a2b0] = 0x1a255
+        0x0001a278:    6008        .`      STR      r0,[r1,#0]
+        0x0001a27a:    4770        pG      BX       lr
+    $d
+        0x0001a27c:    00027b08    .{..    DCD    162568
+        0x0001a280:    0000017c    |...    DCD    380
+        0x0001a284:    00001274    t...    DCD    4724
+        0x0001a288:    72617453    Star    DCD    1918989395
+        0x0001a28c:    61432074    t Ca    DCD    1631789172
+        0x0001a290:    7262696c    libr    DCD    1919052140
+        0x0001a294:    6f697461    atio    DCD    1869182049
+        0x0001a298:    0000216e    n!..    DCD    8558
+        0x0001a29c:    0001089c    ....    DCD    67740
+        0x0001a2a0:    00004d68    hM..    DCD    19816
+        0x0001a2a4:    0001113c    <...    DCD    69948
+        0x0001a2a8:    0001a219    ....    DCD    107033
+        0x0001a2ac:    00011178    x...    DCD    70008
+        0x0001a2b0:    0001a255    U...    DCD    107093
+        0x0001a2b4:    00011190    ....    DCD    70032
+    $t
+    .text
+    patch_PFAL_SYS_EDL_ProcessCommand
+        0x0001a2b8:    b538        8.      PUSH     {r3-r5,lr}
+        0x0001a2ba:    460c        .F      MOV      r4,r1
+        0x0001a2bc:    7809        .x      LDRB     r1,[r1,#0]
+        0x0001a2be:    466a        jF      MOV      r2,sp
+        0x0001a2c0:    7011        .p      STRB     r1,[r2,#0]
+        0x0001a2c2:    7863        cx      LDRB     r3,[r4,#1]
+        0x0001a2c4:    7053        Sp      STRB     r3,[r2,#1]
+        0x0001a2c6:    8812        ..      LDRH     r2,[r2,#0]
+        0x0001a2c8:    0a93        ..      LSRS     r3,r2,#10
+        0x0001a2ca:    2b3f        ?+      CMP      r3,#0x3f
+        0x0001a2cc:    d108        ..      BNE      0x1a2e0 ; patch_PFAL_SYS_EDL_ProcessCommand + 40
+        0x0001a2ce:    2a00        .*      CMP      r2,#0
+        0x0001a2d0:    d000        ..      BEQ      0x1a2d4 ; patch_PFAL_SYS_EDL_ProcessCommand + 28
+        0x0001a2d2:    2201        ."      MOVS     r2,#1
+        0x0001a2d4:    466b        kF      MOV      r3,sp
+        0x0001a2d6:    801a        ..      STRH     r2,[r3,#0]
+        0x0001a2d8:    2965        e)      CMP      r1,#0x65
+        0x0001a2da:    d005        ..      BEQ      0x1a2e8 ; patch_PFAL_SYS_EDL_ProcessCommand + 48
+        0x0001a2dc:    2966        f)      CMP      r1,#0x66
+        0x0001a2de:    d003        ..      BEQ      0x1a2e8 ; patch_PFAL_SYS_EDL_ProcessCommand + 48
+        0x0001a2e0:    4621        !F      MOV      r1,r4
+        0x0001a2e2:    f000f853    ..S.    BL       $Ven$TT$L$$rom_PFAL_SYS_EDL_ProcessCommand ; 0x1a38c
+        0x0001a2e6:    bd38        8.      POP      {r3-r5,pc}
+        0x0001a2e8:    2002        .       MOVS     r0,#2
+        0x0001a2ea:    f000f855    ..U.    BL       $Ven$TT$L$$PFAL_SYS_TOP_SetBTMode ; 0x1a398
+        0x0001a2ee:    7820         x      LDRB     r0,[r4,#0]
+        0x0001a2f0:    2865        e(      CMP      r0,#0x65
+        0x0001a2f2:    d00c        ..      BEQ      0x1a30e ; patch_PFAL_SYS_EDL_ProcessCommand + 86
+        0x0001a2f4:    2002        .       MOVS     r0,#2
+        0x0001a2f6:    f000f855    ..U.    BL       $Ven$TT$L$$PFAL_SYS_TOP_SetBTInterface ; 0x1a3a4
+        0x0001a2fa:    4b08        .K      LDR      r3,[pc,#32] ; [0x1a31c] = 0x1088c
+        0x0001a2fc:    2200        ."      MOVS     r2,#0
+        0x0001a2fe:    681b        .h      LDR      r3,[r3,#0]
+        0x0001a300:    4611        .F      MOV      r1,r2
+        0x0001a302:    2090        .       MOVS     r0,#0x90
+        0x0001a304:    4798        .G      BLX      r3
+        0x0001a306:    4806        .H      LDR      r0,[pc,#24] ; [0x1a320] = 0x1130c
+        0x0001a308:    6800        .h      LDR      r0,[r0,#0]
+        0x0001a30a:    4780        .G      BLX      r0
+        0x0001a30c:    bd38        8.      POP      {r3-r5,pc}
+        0x0001a30e:    2001        .       MOVS     r0,#1
+        0x0001a310:    e7f1        ..      B        0x1a2f6 ; patch_PFAL_SYS_EDL_ProcessCommand + 62
+    PFAL_SYS_EDL_patch_apply
+        0x0001a312:    4905        .I      LDR      r1,[pc,#20] ; [0x1a328] = 0x11354
+        0x0001a314:    4803        .H      LDR      r0,[pc,#12] ; [0x1a324] = 0x1a2b9
+        0x0001a316:    6008        .`      STR      r0,[r1,#0]
+        0x0001a318:    4770        pG      BX       lr
+    $d
+        0x0001a31a:    0000        ..      DCW    0
+        0x0001a31c:    0001088c    ....    DCD    67724
+        0x0001a320:    0001130c    ....    DCD    70412
+        0x0001a324:    0001a2b9    ....    DCD    107193
+        0x0001a328:    00011354    T...    DCD    70484
+    $t
+    $Ven$TT$L$$rom_MCI_Prio_Convert
+        0x0001a32c:    b403        ..      PUSH     {r0,r1}
+        0x0001a32e:    4801        .H      LDR      r0,[pc,#4] ; [0x1a334] = 0x1000d859
+        0x0001a330:    9001        ..      STR      r0,[sp,#4]
+        0x0001a332:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a334:    1000d859    Y...    DCD    268490841
+    $t
+    $Ven$TT$L$$rom_PFAL_COEX_MCI_UpdatePerformanceState
+        0x0001a338:    b403        ..      PUSH     {r0,r1}
+        0x0001a33a:    4801        .H      LDR      r0,[pc,#4] ; [0x1a340] = 0x1000d279
+        0x0001a33c:    9001        ..      STR      r0,[sp,#4]
+        0x0001a33e:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a340:    1000d279    y...    DCD    268489337
+    $t
+    $Ven$TT$L$$abort
+        0x0001a344:    b403        ..      PUSH     {r0,r1}
+        0x0001a346:    4801        .H      LDR      r0,[pc,#4] ; [0x1a34c] = 0x10097b0d
+        0x0001a348:    9001        ..      STR      r0,[sp,#4]
+        0x0001a34a:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a34c:    10097b0d    .{..    DCD    269056781
+    $t
+    $Ven$TT$L$$rom_PFAL_COEX_MCI_TxConnUpdate
+        0x0001a350:    b403        ..      PUSH     {r0,r1}
+        0x0001a352:    4801        .H      LDR      r0,[pc,#4] ; [0x1a358] = 0x1000bf79
+        0x0001a354:    9001        ..      STR      r0,[sp,#4]
+        0x0001a356:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a358:    1000bf79    y...    DCD    268484473
+    $t
+    $Ven$TT$L$$rom_PFAL_COEX_MCI_Bootup_Sequence
+        0x0001a35c:    b403        ..      PUSH     {r0,r1}
+        0x0001a35e:    4801        .H      LDR      r0,[pc,#4] ; [0x1a364] = 0x10039f01
+        0x0001a360:    9001        ..      STR      r0,[sp,#4]
+        0x0001a362:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a364:    10039f01    ....    DCD    268672769
+    $t
+    $Ven$TT$L$$rom_PFAL_COEX_MCI_Schedule
+        0x0001a368:    b403        ..      PUSH     {r0,r1}
+        0x0001a36a:    4801        .H      LDR      r0,[pc,#4] ; [0x1a370] = 0x1000e2c9
+        0x0001a36c:    9001        ..      STR      r0,[sp,#4]
+        0x0001a36e:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a370:    1000e2c9    ....    DCD    268493513
+    $t
+    $Ven$TT$L$$rom_PFAL_RM_RUN_BT_STARTUP_CALIBRATIONS
+        0x0001a374:    b403        ..      PUSH     {r0,r1}
+        0x0001a376:    4801        .H      LDR      r0,[pc,#4] ; [0x1a37c] = 0x10017b6f
+        0x0001a378:    9001        ..      STR      r0,[sp,#4]
+        0x0001a37a:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a37c:    10017b6f    o{..    DCD    268532591
+    $t
+    $Ven$TT$L$$rom_PFAL_RM_HW_Setup_TempCalibration
+        0x0001a380:    b403        ..      PUSH     {r0,r1}
+        0x0001a382:    4801        .H      LDR      r0,[pc,#4] ; [0x1a388] = 0x100184e3
+        0x0001a384:    9001        ..      STR      r0,[sp,#4]
+        0x0001a386:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a388:    100184e3    ....    DCD    268535011
+    $t
+    $Ven$TT$L$$rom_PFAL_SYS_EDL_ProcessCommand
+        0x0001a38c:    b403        ..      PUSH     {r0,r1}
+        0x0001a38e:    4801        .H      LDR      r0,[pc,#4] ; [0x1a394] = 0x1001cf33
+        0x0001a390:    9001        ..      STR      r0,[sp,#4]
+        0x0001a392:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a394:    1001cf33    3...    DCD    268554035
+    $t
+    $Ven$TT$L$$PFAL_SYS_TOP_SetBTMode
+        0x0001a398:    b403        ..      PUSH     {r0,r1}
+        0x0001a39a:    4801        .H      LDR      r0,[pc,#4] ; [0x1a3a0] = 0x100054cf
+        0x0001a39c:    9001        ..      STR      r0,[sp,#4]
+        0x0001a39e:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a3a0:    100054cf    .T..    DCD    268457167
+    $t
+    $Ven$TT$L$$PFAL_SYS_TOP_SetBTInterface
+        0x0001a3a4:    b403        ..      PUSH     {r0,r1}
+        0x0001a3a6:    4801        .H      LDR      r0,[pc,#4] ; [0x1a3ac] = 0x10005507
+        0x0001a3a8:    9001        ..      STR      r0,[sp,#4]
+        0x0001a3aa:    bd01        ..      POP      {r0,pc}
+    $d
+        0x0001a3ac:    10005507    .U..    DCD    268457223
+    $d.realdata
+    .constdata
+    __tagsym$$used
+    gBuildDate
+        0x0001a3b0:    20766f4e    Nov     DCD    544632654
+        0x0001a3b4:    32203631    16 2    DCD    840971825
+        0x0001a3b8:    00363130    016.    DCD    3551536
+    __tagsym$$used
+    gBuildTime
+        0x0001a3bc:    303a3030    00:0    DCD    809119792
+        0x0001a3c0:    30333a30    0:30    DCD    808663600
+        0x0001a3c4:    00          .       DCB    0
+    __tagsym$$used
+    gBuildLabel
+        0x0001a3c5:    425446      BTF     DCB    66,84,70
+        0x0001a3c8:    4d522e4d    M.RM    DCD    1297231437
+        0x0001a3cc:    322e322e    .2.2    DCD    841888302
+        0x0001a3d0:    3130302d    -001    DCD    825241645
+        0x0001a3d4:    512d3336    63-Q    DCD    1361916726
+        0x0001a3d8:    54424143    CABT    DCD    1413628227
+        0x0001a3dc:    57534d46    FMSW    DCD    1465077062
+        0x0001a3e0:    312d5a50    PZ-1    DCD    825055824
+        0x0001a3e4:    00000000    ....    DCD    0
+
+** Section #3 'PATCH_SSRAM' (SHT_PROGBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 4 bytes (alignment 8)
+    Address: 0x00027b08
+
+
+** Section #4 'PATCH_SSRAM' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 44 bytes (alignment 4)
+    Address: 0x00027b0c
+
+
+** Section #5 '.debug_abbrev' (SHT_PROGBITS)
+    Size   : 1380 bytes
+
+
+** Section #6 '.debug_frame' (SHT_PROGBITS)
+    Size   : 496 bytes
+
+
+** Section #7 '.debug_info' (SHT_PROGBITS)
+    Size   : 862044 bytes
+
+
+** Section #8 '.debug_line' (SHT_PROGBITS)
+    Size   : 2908 bytes
+
+
+** Section #9 '.debug_loc' (SHT_PROGBITS)
+    Size   : 1668 bytes
+
+
+** Section #10 '.debug_pubnames' (SHT_PROGBITS)
+    Size   : 141832 bytes
+
+
+** Section #11 '.symtab' (SHT_SYMTAB)
+    Size   : 150304 bytes (alignment 4)
+    String table #12 '.strtab'
+    Last local symbol no. 67
+
+
+** Section #12 '.strtab' (SHT_STRTAB)
+    Size   : 242460 bytes
+
+
+** Section #13 '.note' (SHT_NOTE)
+    Size   : 32 bytes (alignment 4)
+
+
+** Section #14 '.comment' (SHT_PROGBITS)
+    Size   : 103728 bytes
+
+
+** Section #15 '.shstrtab' (SHT_STRTAB)
+    Size   : 156 bytes
+
+

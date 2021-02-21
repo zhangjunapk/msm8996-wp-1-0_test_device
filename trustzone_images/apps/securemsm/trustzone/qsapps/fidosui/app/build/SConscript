@@ -1,0 +1,108 @@
+#===============================================================================
+#
+# App Core
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/apps.tz/1.0.6/securemsm/trustzone/qsapps/fidosui/app/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:50:16 $
+#  $Author: pwbldsvc $
+#  $Change: 11897059 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/app/src"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' --arm')
+
+env.PublishPrivateApi('SECUREMSM_SUI', [
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/libgd/include",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/libpng/include",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureDisplay/zlib/include",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUI/inc",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUILib/include",
+])
+
+# Secure Touch includes
+env.PublishPrivateApi('SSE_SECURE_TOUCH_API', [
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/common/include',
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/layout/include',
+])
+env.PublishPrivateApi('SSE_TOUCH_CONTROLLER_API', [
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/controller/inc',
+])
+env.PublishPrivateApi('SSE_TOUCH_CONTROLLER_QSEE_API', [
+   '${INC_ROOT}/core/securemsm/sse/qsee/SecureTouch/drTs/include',
+])
+
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/app/include")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/app/src/private")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/config/include")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/locale/include")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/ipc/inc")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/ipc/src")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidocrypto/authentication/include")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidocrypto/app/fido")
+env.Append(CPPPATH = "${COREBSP_ROOT}/securemsm/trustzone/qsee")
+env.Append(CPPPATH = "${COREBSP_ROOT}/securemsm/trustzone/qsee/mink/include")
+
+
+env.Append(CPPDEFINES = '-D_AEABI_PORTABILITY_LEVEL=1')
+env.Append(CPPDEFINES = '-D_AEABI_LC_CTYPE=C')
+
+INC_PATH_API = ["${INC_ROOT}/core/api/kernel/libstd/stringl"]
+env.Append(CPPPATH = INC_PATH_API)
+
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------
+APP_CORE_ENTRY_SOURCES = [
+        '${BUILDPATH}/app_main.c',
+
+        '${BUILDPATH}/functions/01_Initialize.c',
+        '${BUILDPATH}/functions/08_ShowMessageSui.c',
+
+        '${BUILDPATH}/functions.c',
+        '${BUILDPATH}/fsLocale.c',
+        '${BUILDPATH}/fsSecureUI.c',
+]
+
+
+HEADERS = [
+        '${BUILDPATH}/private/fsSecureUI.h',
+        '${BUILDPATH}/private/glob.h',
+]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddBinaryLibrary('FIDOSUI_IMAGE', '${BUILDPATH}/fidosui_app', APP_CORE_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Pack out files
+#-------------------------------------------------------------------------------
+env.CleanPack('FIDOSUI_IMAGE', HEADERS)
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

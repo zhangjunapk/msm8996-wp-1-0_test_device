@@ -1,0 +1,70 @@
+#===========================================================================
+#  Copyright (c) 2011-2014 QUALCOMM Incorporated.
+#  All Rights Reserved.
+#  Qualcomm Confidential and Proprietary
+#===========================================================================
+#
+# App Core
+#
+# GENERAL DESCRIPTION
+#    build script
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 01/13/14    wt     Created
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/trustzone/qsapps/smplserv"
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+INC_PATH = [
+  "${INC_ROOT}/core/api/services",
+  "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+  "${INC_ROOT}/core/securemsm/trustzone/qsee/mink/include",
+  "${INC_ROOT}/core/api/kernel/libstd/stringl",
+  "${INC_ROOT}/core/securemsm/trustzone/qsapps/smplserv/src",
+]
+env.Append(CPPPATH = INC_PATH)
+env.RequireRestrictedApi('SMPLSERV')
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------
+APP_CORE_ENTRY_SOURCES = [
+      '${BUILDPATH}/src/app_main.c',
+      '${BUILDPATH}/src/COEMUnwrapKeys.c',
+]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddObject('SMPLSERV_IMAGE', APP_CORE_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Add metadata to image
+#-------------------------------------------------------------------------------
+md = {
+   'appName':    'smplserv',
+   'privileges': ['default'],
+   'services':   ['OEMUnwrapKeys'],
+   #'memoryType':  'Unprotected',
+}
+
+env.AddSecureAppMetadata('SMPLSERV_IMAGE', md )
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()
+env.LoadAPIUnits()

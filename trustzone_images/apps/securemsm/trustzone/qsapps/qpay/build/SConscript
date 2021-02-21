@@ -1,0 +1,72 @@
+#===============================================================================
+#
+# App Core
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/apps.tz/1.0.6/securemsm/trustzone/qsapps/qpay/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:50:16 $
+#  $Author: pwbldsvc $
+#  $Change: 11897059 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/qpay/src"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+env.RequirePrivateApi('SECUREMSM')
+
+INC_PATH = [
+   "${INC_ROOT}/core/api/services",
+   "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+   "${INC_ROOT}/core/api/kernel/libstd/stringl",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/tee_se_api/inc",
+]
+
+env.Append(CPPPATH = INC_PATH)
+
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------
+SOURCES = [
+         '${BUILDPATH}/app_main.c',
+]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddLibrary('QPAY_IMAGE', '${BUILDPATH}/qpay_app', SOURCES)
+
+#-------------------------------------------------------------------------------
+# Add metadata to image
+#-------------------------------------------------------------------------------
+
+md = {
+   'appName':    'qpay',
+   'privileges': [ 'default', 'ESEService' ],
+}
+
+
+env.AddSecureAppMetadata('QPAY_IMAGE', md )
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

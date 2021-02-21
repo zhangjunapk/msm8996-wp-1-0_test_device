@@ -1,0 +1,181 @@
+#===========================================================================
+#  Copyright (c) 2011-2015 QUALCOMM Incorporated.
+#  All Rights Reserved.
+#  Qualcomm Confidential and Proprietary
+#===========================================================================
+#
+# App Core
+#
+# GENERAL DESCRIPTION
+#    build script
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 01/13/14    wt     Created
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+if env.has_key('USES_NO_CP'):
+	env.Append(CCFLAGS = ' -DUSES_NO_CP ')
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/trustzone/qsapps/sampleapp/src"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' -marm')
+
+env.RequireRestrictedApi('SMPLSERV')
+env.RequireRestrictedApi('SMPLCERT')
+env.RequireRestrictedApi('BIOMETRIC')
+env.RequirePrivateApi('SECUREMSM')
+
+INC_PATH = [
+   "${INC_ROOT}/core/api/boot/qfprom/",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/sampleapp/inc/${CHIPSET}",
+   "${INC_ROOT}/core/api/services",
+   "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+   "${INC_ROOT}/core/api/securemsm/trustzone/gp",
+   "${INC_ROOT}/core/api/kernel/libstd/stringl",
+   "${INC_ROOT}/core/securemsm/accesscontrol/api",
+   "${INC_ROOT}/core/kernel/smmu/v2/inc/",
+   "${INC_ROOT}/core/kernel/smmu/smmu500/inc/",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/sampleapp/src",
+   "${INC_ROOT}/core/securemsm/secrsa/shared/inc",
+   "${INC_ROOT}/core/securemsm/secmath/shared/inc",
+   "${INC_ROOT}/core/securemsm/unifiedcrypto/core/ecc/inc",
+   "${INC_ROOT}/core/securemsm/unifiedcrypto/shared/ecc/inc",
+   "${INC_ROOT}/core/securemsm/unifiedcrypto/shared/aes/inc",
+   "${INC_ROOT}/core/securemsm/unifiedcrypto/core/aes/inc",
+   "${INC_ROOT}/core/securemsm/unifiedcrypto/shared/sha/inc",
+   "${INC_ROOT}/core/securemsm/unifiedcrypto/core/sha/inc",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/services/src",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/common_applib/inc",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/gp/inc",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/qsee/inc",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/applib/qsee/src",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/sampleapp/inc",
+   "${INC_ROOT}/core/securemsm/trustzone/qsee/mink/include",
+   "${INC_ROOT}/core/securemsm/trustzone/qsapps/libs/biometric/inc",
+]
+
+# Logging APIs
+env.PublishPrivateApi('SSE_LOG_API', [
+   '${INC_ROOT}/core/securemsm/sse/log/inc',
+])
+
+# Common includes
+env.PublishPrivateApi('SSE_COMMON_API', [
+   '${INC_ROOT}/core/securemsm/sse/common/include',
+])
+
+# Secure Touch includes
+env.PublishPrivateApi('SSE_SECURE_TOUCH_API', [
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/common/include',
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/layout/include',
+])
+env.PublishPrivateApi('SSE_TOUCH_CONTROLLER_API', [
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/controller/inc',
+])
+env.PublishPrivateApi('SSE_TOUCH_CONTROLLER_QSEE_API', [
+   '${INC_ROOT}/core/securemsm/sse/qsee/SecureTouch/drTs/include',
+])
+env.Append(CPPPATH = INC_PATH)
+
+# Secure UI includes
+env.PublishPrivateApi('SSE_SECURE_UI_QSEE_API', [
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUI/inc",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUILib/include",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUILib/lib/include",
+])
+
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------   
+if env.has_key('USES_NO_CP'):
+	APP_CORE_ENTRY_SOURCES = [      
+        '${BUILDPATH}/app_main.c',
+        '${BUILDPATH}/app_smplserv_test.c',
+        '${BUILDPATH}/app_smplcert_test.c',
+        '${BUILDPATH}/app_crypto.c',
+        '${BUILDPATH}/app_sfs.c',
+        '${BUILDPATH}/app_rsa.c',
+        '${BUILDPATH}/qsee_api_tests.c',
+        '${BUILDPATH}/app_cmnlib.c',
+        '${BUILDPATH}/app_message_passing.c',
+        '${BUILDPATH}/app_fuses.c',
+        '${BUILDPATH}/app_stor.c',
+        '${BUILDPATH}/app_content_protection.c',
+        '${BUILDPATH}/app_content_protection_noship.c',
+        '${BUILDPATH}/app_secure_ui.c',
+		'${BUILDPATH}/app_bio_lib.c',
+		'${BUILDPATH}/app_bulletin_board.c',
+]
+
+else:
+  APP_CORE_ENTRY_SOURCES = [      
+        '${BUILDPATH}/app_main.c',
+        '${BUILDPATH}/app_smplserv_test.c',
+        '${BUILDPATH}/app_smplcert_test.c',
+        '${BUILDPATH}/app_crypto.c',
+        '${BUILDPATH}/app_sfs.c',
+        '${BUILDPATH}/app_rsa.c',
+        '${BUILDPATH}/qsee_api_tests.c',
+        '${BUILDPATH}/app_cmnlib.c',
+        '${BUILDPATH}/app_message_passing.c',
+        '${BUILDPATH}/app_fuses.c',
+        '${BUILDPATH}/app_stor.c',
+        '${BUILDPATH}/app_content_protection.c',
+        '${BUILDPATH}/app_secure_ui.c',
+		'${BUILDPATH}/app_bio_lib.c',
+		'${BUILDPATH}/app_bulletin_board.c',
+]
+
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddObject('SAMPLEAPP64_IMAGE', APP_CORE_ENTRY_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Add metadata to image
+#-------------------------------------------------------------------------------
+md = {
+   'appName':    'SampleApp64',
+   'privileges': ['default',
+                  'I2C',
+                  'OEMUnwrapKeys',
+                  'CertValidate',
+                  'SPI',
+                  'TLMM',
+                  'SecureDisplay',
+                  'IntMask',
+                  'OEMBuf',
+                  'TransNSAddr',
+                 ],
+}
+
+env.AddSecureAppMetadata('SAMPLEAPP64_IMAGE', md )
+
+#-------------------------------------------------------------------------------
+# Pack out files
+#-------------------------------------------------------------------------------
+NOSHIP_SOURCES = SRCPATH + "/app_content_protection_noship.c"
+env.CleanPack('SAMPLEAPP64_IMAGE', NOSHIP_SOURCES)
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

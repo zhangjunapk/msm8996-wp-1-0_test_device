@@ -1,0 +1,95 @@
+l1_file_name = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Encryption\Unified\default\l1_key.bin
+l2_file_name = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Encryption\Unified\default\l2_key.bin
+l3_file_name = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Encryption\Unified\default\l3_key.bin
+Signing image: R:\boot_images\Build\Msm8996_Loader\RELEASE_LLVMWIN\AARCH64\pmic.elf
+attestation_certificate_extensions = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\General_Assets\Signing\openssl\v3_attest.ext
+ca_certificate_extensions = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\General_Assets\Signing\openssl\v3.ext
+openssl_configfile = R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\General_Assets\Signing\openssl\opensslroot.cfg
+Using a predefined Root certificate and a predefined key
+Key Used: R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Signing\Local\qc_presigned_certs-key2048_exp65537\qpsa_rootca.key
+Certificate Used: R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Signing\Local\qc_presigned_certs-key2048_exp65537\qpsa_rootca.cer
+Using a predefined Attestation CA certificate and a predefined key
+Key Used: R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Signing\Local\qc_presigned_certs-key2048_exp65537\qpsa_attestca.key
+Certificate Used: R:\boot_images\QcomPkg\Tools\sectools\resources\data_prov_assets\Signing\Local\qc_presigned_certs-key2048_exp65537\qpsa_attestca.cer
+Generating new Attestation certificate and a random key
+
+Attestation Certificate Properties:
+| SW_ID     | 0x0000000000000016  |
+| HW_ID     | 0x0000000000000000  |
+| DEBUG     | 0x0000000000000002  |
+| OEM_ID    | 0x0000              |
+| SW_SIZE   | 136                 |
+| MODEL_ID  | 0x0000              |
+| SHA256    | True                |
+| APP_ID    | None                |
+| CRASH_DUMP| None                |
+| ROT_EN    | None                |
+| Exponent  | 65537               |
+| TCG_MIN   | None                |
+| TCG_MAX   | None                |
+| FID_MIN   | None                |
+| FID_MAX   | None                |
+
+Signed & Encrypted image is stored at R:\boot_images\QcomPkg\Msm8996Pkg\Bin64\sign_and_encrypt\default\pmic\pmic.elf
+Image R:\boot_images\QcomPkg\Msm8996Pkg\Bin64\sign_and_encrypt\default\pmic\pmic.elf signature is valid
+Image R:\boot_images\QcomPkg\Msm8996Pkg\Bin64\sign_and_encrypt\default\pmic\pmic.elf is encrypted
+
+Base Properties: 
+| Integrity Check                 | True  |
+| Signed                          | True  |
+| Encrypted                       | True  |
+| Size of signature               | 256   |
+| Size of one cert                | 2048  |
+| Num of certs in cert chain      | 3     |
+| Number of root certs            | 1     |
+| Hash Page Segments as segments  | False |
+| Cert chain size                 | 6144  |
+
+ELF Properties: 
+Elf Header: 
+| Magic                      | ELF                           |
+| Class                      | ELF64                          |
+| Data                       | 2's complement, little endian  |
+| Version                    | 1 (Current)                    |
+| OS/ABI                     | No extensions or unspecified   |
+| ABI Version                | 0                              |
+| Type                       | EXEC (Executable file)         |
+| Machine                    | 183                            |
+| Version                    | 0x1                            |
+| Entry address              | 0x00207030                     |
+| Program headers offset     | 0x00000040                     |
+| Section headers offset     | 0x00000000                     |
+| Flags                      | 0x00000000                     |
+| ELF header size            | 64                             |
+| Program headers size       | 56                             |
+| Number of program headers  | 1                              |
+| Section headers size       | 0                              |
+| Number of section headers  | 0                              |
+| String table section index | 0                              |
+
+Elf Program Headers: 
+| S.No | Type | Offset | VirtAddr | PhysAddr | FileSize | MemSize | Flags |  Align   |
+|------|------|--------|----------|----------|----------|---------|-------|----------|
+|  1   | LOAD | 0x3000 | 0x207000 | 0x207000 |  0x8b60  |  0x8b60 |  0x7  | 0x10000  |
+
+Hash Segment Properties: 
+| Header Size  | 40B  |
+
+Header: 
+| cert_chain_ptr  | 0xffffffff  |
+| cert_chain_size | 0x00001800  |
+| code_size       | 0x00000060  |
+| data_is_none    | 0x00000000  |
+| flash_parti_ver | 0x00000003  |
+| image_dest_ptr  | 0xffffffff  |
+| image_id        | 0x00000005  |
+| image_size      | 0x00001960  |
+| image_src       | 0x00000000  |
+| sig_ptr         | 0xffffffff  |
+| sig_size        | 0x00000100  |
+
+SecElf Properties: 
+| image_type        | 0     |
+| max_elf_segments  | 100   |
+| testsig_serialnum | None  |
+

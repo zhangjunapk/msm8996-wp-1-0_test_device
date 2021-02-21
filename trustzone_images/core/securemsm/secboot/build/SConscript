@@ -1,0 +1,113 @@
+#===============================================================================
+#
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2013 by Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# QUALCOMM Proprietary/GTDR
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //source/qcom/qct/core/bsp/config/scmm/main/latest/securemsm/secboot/build/SConscript#1 $
+#  $DateTime: 2009/10/02 00:38:04 $
+#  $Author: cbirch $
+#  $Change: $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 01/03/2014  hw     add secboot_img_util.c
+# 01/17/2013  hw     Initial Version
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/securemsm/secboot"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Internal depends within CoreBSP
+#-------------------------------------------------------------------------------
+CBSP_API = [
+   'SECUREMSM',
+   'SERVICES',
+   'SYSTEMDRIVERS',
+   'BOOT',
+   'BOOT_TOOLS',
+   'SECUREFUSES',
+   # needs to be last also contains wrong comdef.h
+   'KERNEL',
+]
+
+env.RequirePublicApi(CBSP_API)
+env.RequireRestrictedApi(CBSP_API)
+
+
+INC_PATH = [
+    "${BUILDPATH}/${TARGET_FAMILY}/src",
+]
+
+env.Append(CPPPATH = INC_PATH)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+env.PublishPrivateApi('SECUREMSM', [
+   "${COREBSP_ROOT}/api/dal/",
+])
+
+#-------------------------------------------------------------------------------
+# Sources, libraries
+#-------------------------------------------------------------------------------
+
+
+SECBOOT_LIB_SOURCES = [
+    '${BUILDPATH}/${TARGET_FAMILY}/src/secboot.c',
+    '${BUILDPATH}/${TARGET_FAMILY}/src/secboot_asn1.c',
+    '${BUILDPATH}/${TARGET_FAMILY}/src/secboot_x509.c',
+    '${BUILDPATH}/${TARGET_FAMILY}/oem/secboot_img_util.c',
+]	
+
+if env['CHIPSET'] in ['msm8996','msm8998']:
+   SECBOOT_LIB_SOURCES += [ '${BUILDPATH}/${TARGET_FAMILY}/hw/secctrl/src/secboot_hw.c',
+                            '${BUILDPATH}/${TARGET_FAMILY}/hw/secctrl/src/secboot_hw_apps.c']
+else:							
+   SECBOOT_LIB_SOURCES += [ '${BUILDPATH}/${TARGET_FAMILY}/hw/secctrl/src/${CHIPSET}/secboot_hw.c',
+                            '${BUILDPATH}/${TARGET_FAMILY}/hw/secctrl/src/${CHIPSET}/secboot_hw_apps.c']
+
+if env['CHIPSET'] in ['msm8996','msm8998']:
+  if 'USES_DEVCFG' in env:
+    DEVCFG_IMG = ['DAL_DEVCFG_OEM_QSEE_IMG']
+    env.AddDevCfgInfo(
+      DEVCFG_IMG,
+      {
+        'devcfg_xml' : ['${BUILD_ROOT}/core/securemsm/secboot/${TARGET_FAMILY}/oem/secboot_oem.xml',
+                        '${BUILD_ROOT}/core/securemsm/secboot/${TARGET_FAMILY}/oem/secboot_oem_secapp.xml']
+      }
+    )
+else:
+  if 'USES_DEVCFG' in env:
+    DEVCFG_IMG = ['DAL_DEVCFG_OEM_QSEE_IMG']
+    env.AddDevCfgInfo(
+      DEVCFG_IMG,
+      {
+        'devcfg_xml' : ['${BUILD_ROOT}/core/securemsm/secboot/${TARGET_FAMILY}/oem/secboot_oem.xml']
+                        
+      }
+    )	
+
+#-------------------------------------------------------------------------------
+# Add Libraries to MBA Image
+#-------------------------------------------------------------------------------
+env.AddBinaryLibrary(['TZOS_IMAGE', 'UEFISECAPP_IMAGE'], '${BUILDPATH}/secboot_auth',  SECBOOT_LIB_SOURCES)
+

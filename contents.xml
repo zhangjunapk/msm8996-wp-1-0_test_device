@@ -1,0 +1,516 @@
+<?xml version="1.0" ?>
+<contents>
+  <product_flavors cmm_pf_var="PRODUCT_FLAVORS">
+    <pf>
+      <name>asic</name>
+      <component>
+        <name>common</name>
+        <flavor>asic</flavor>
+      </component>
+      <component>
+        <name>boot</name>
+        <flavor>xbl_64</flavor>
+      </component>
+      <component>
+        <name>modem</name>
+        <flavor>asic</flavor>
+      </component>
+    </pf>
+    <pf>
+      <name>asic_32</name>
+      <component>
+        <name>common</name>
+        <flavor>asic</flavor>
+      </component>
+      <component>
+        <name>boot</name>
+        <flavor>xbl_32</flavor>
+      </component>
+      <component>
+        <name>modem</name>
+        <flavor>asic</flavor>
+      </component>
+    </pf>
+    <pf>
+      <name>virtio</name>
+      <component>
+        <name>common</name>
+        <flavor>virtio</flavor>
+      </component>
+      <component>
+        <name>modem</name>
+        <flavor>virtio</flavor>
+      </component>
+    </pf>
+  </product_flavors>
+  <product_info>
+    <product_name>MSM8996.WP.1.0</product_name>
+    <hlos_type cmm_var="HLOS_TYPE">WP</hlos_type>
+    <chipid cmm_var="CHIPID">msm8996</chipid>
+  </product_info>
+  <builds_flat>
+    <build>
+      <name>common</name>
+      <role>common</role>
+      <chipset>msm8996</chipset>
+      <build_id>MSM8996.WP.1.0-52029-STD.PROD-1</build_id>
+      <windows_root_path>.\</windows_root_path>
+      <linux_root_path>./</linux_root_path>
+      <image_dir>common</image_dir>
+      <release_path/>
+      <partition_file storage_type="emmc">
+        <file_name>rawprogram0.xml</file_name>
+        <file_path>common/build/emmc/</file_path>
+      </partition_file>
+      <partition_patch_file storage_type="emmc">
+        <file_name>patch0.xml</file_name>
+        <file_path>common/build/emmc/</file_path>
+      </partition_patch_file>
+      <partition_patch_file storage_type="ufs">
+        <file_name>patch0.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_patch_file>
+      <partition_file storage_type="ufs">
+        <file_name>rawprogram1.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_file>
+      <partition_patch_file storage_type="ufs">
+        <file_name>patch1.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_patch_file>
+      <partition_file storage_type="ufs">
+        <file_name>rawprogram2.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_file>
+      <partition_patch_file storage_type="ufs">
+        <file_name>patch2.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_patch_file>
+      <partition_file storage_type="ufs">
+        <file_name>rawprogram3.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_file>
+      <partition_patch_file storage_type="ufs">
+        <file_name>patch3.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_patch_file>
+      <partition_patch_file storage_type="ufs">
+        <file_name>patch4.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_patch_file>
+      <partition_file storage_type="ufs">
+        <file_name>rawprogram5.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_file>
+      <partition_patch_file storage_type="ufs">
+        <file_name>patch5.xml</file_name>
+        <file_path>common/build/ufs/</file_path>
+      </partition_patch_file>
+    </build>
+    <build>
+      <name>glue</name>
+      <role>glue</role>
+      <chipset>msm8996</chipset>
+      <build_id/>
+      <windows_root_path>.\</windows_root_path>
+      <linux_root_path>./</linux_root_path>
+      <release_path/>
+      <image_dir>common</image_dir>
+    </build>
+    <build>
+      <name>apps</name>
+      <role>apps</role>
+      <chipset>msm8996</chipset>
+      <build_id>M8996AAATTNWZA10520029.1</build_id>
+      <windows_root_path cmm_root_path_var="APPS_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="APPS_BUILDROOT">./</linux_root_path>
+      <image_dir>WP</image_dir>
+      <release_path>HY22</release_path>
+      <file_ref ignore="true" minimized="true">
+        <file_name>wp8.ffu</file_name>
+        <file_path>WP/prebuilt/8996/ffu/wtt_mtp/</file_path>
+      </file_ref>
+      <file_ref ignore="true" minimized="true">
+        <file_name>*</file_name>
+        <file_path>WP/EastTools/main/latest/offTarget/Merlin/</file_path>
+      </file_ref>
+      <file_ref ignore="true" minimized="true">
+        <file_name>wp8.ffu</file_name>
+        <file_path>WP/prebuilt/8996/ffu/health_mtp/</file_path>
+      </file_ref>
+      <download_file cmm_file_var="APPSCONFIG_BINARY" ignore="true" minimized="true">
+        <file_name>fat16.bin</file_name>
+        <file_path>WP/prebuilt/8996/firmware/8996/8996_MTP_WP/</file_path>
+      </download_file>
+      <download_file cmm_file_var="EFIESP_BINARY" ignore="true" minimized="true">
+        <file_name>EFIESP.bin</file_name>
+        <file_path>WP/prebuilt/8996/firmware/</file_path>
+      </download_file>
+      <download_file cmm_file_var="UEFISEC_BINARY" ignore="true" minimized="true">
+        <file_name>tzapps.bin</file_name>
+        <file_path>WP/prebuilt/8996/firmware/</file_path>
+      </download_file>
+      <buildfile_path>WP/tools/rel/9.4/</buildfile_path>
+      <build_command>build.cmd -uefi 10520029.M8996AAATTNWZA10520029 -setenv &quot;QCDomain:WOA&quot; -setenv &quot;QCProjId:1799&quot; -setenv &quot;QCProjVersion:1163&quot; -img MSM8996A_AATTNWZA_Release -CRMBLD -ffu MTP_Health;MTP_WTT;MTP_ProductionOS</build_command>
+    </build>
+    <build>
+      <name>modem</name>
+      <role>modem</role>
+      <chipset>msm8996</chipset>
+      <build_id>MPSS.TH.2.0.c1-00288-M8996FAAAANAZM-1</build_id>
+      <windows_root_path cmm_root_path_var="MPSS_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="MPSS_BUILDROOT">./</linux_root_path>
+      <image_dir>modem_proc</image_dir>
+      <release_path>PCT/SRC</release_path>
+      <file_ref pil_split="mba">
+        <file_name>mba.mbn</file_name>
+        <file_path>modem_proc/build/ms/bin/8996.gen.prod/</file_path>
+      </file_ref>
+      <file_ref pil_split="modem">
+        <file_name>qdsp6sw.mbn</file_name>
+        <file_path flavor="asic">modem_proc/build/ms/bin/8996.gen.prod/</file_path>
+      </file_ref>
+      <file_ref minimized="true">
+        <file_name>efs1.bin</file_name>
+        <file_path>modem_proc/build/ms/bin/8996.gen.prod/</file_path>
+      </file_ref>
+      <file_ref minimized="true">
+        <file_name>efs2.bin</file_name>
+        <file_path>modem_proc/build/ms/bin/8996.gen.prod/</file_path>
+      </file_ref>
+      <file_ref minimized="true">
+        <file_name>efs3.bin</file_name>
+        <file_path>modem_proc/build/ms/bin/8996.gen.prod/</file_path>
+      </file_ref>
+      <file_ref symbol="modem">
+        <file_name>M8996${modem_bid:8996.gen.prod}*.elf</file_name>
+        <file_path>modem_proc/build/ms/</file_path>
+      </file_ref>
+      <file_ref debug_script="load_coredump">
+        <file_name>load_coredump.cmm</file_name>
+        <file_path>modem_proc/core/debugtools/err/cmm/</file_path>
+      </file_ref>
+      <file_ref debug_script="recover_f3_messages">
+        <file_name>recover_f3.cmm</file_name>
+        <file_path>modem_proc/core/services/diag/f3_trace/cmm/</file_path>
+      </file_ref>
+      <file_ref debug_script="recover_smem_messages">
+        <file_name>smemlog.cmm</file_name>
+        <file_path>modem_proc/core/mproc/smem/tools/</file_path>
+      </file_ref>
+      <file_ref debug_script="recover_ulog_dumps">
+        <file_name>ULogDump.cmm</file_name>
+        <file_path>modem_proc/core/power/ulog/scripts/</file_path>
+      </file_ref>
+      <file_ref debug_script="recover_npa_dumps">
+        <file_name>NPADump.cmm</file_name>
+        <file_path>modem_proc/core/power/npa/scripts/</file_path>
+      </file_ref>
+      <file_ref debug_script="analyze_qurt_kernel_error_info">
+        <file_name>analy_qurt_error.cmm</file_name>
+        <file_path>modem_proc/core/kernel/qurt/scripts/</file_path>
+      </file_ref>
+      <file_ref debug_script="parse_smem_messages">
+        <file_name>smem_log.pl</file_name>
+        <file_path>modem_proc/core/mproc/smem/tools/</file_path>
+      </file_ref>
+      <download_file cmm_file_var="MBA_BINARY" minimized="true">
+        <file_name>mba.mbn</file_name>
+        <file_path>modem_proc/build/ms/bin/8996.gen.prod/</file_path>
+      </download_file>
+      <download_file cmm_file_var="MPSS_BINARY" minimized="true">
+        <file_name>qdsp6sw.mbn</file_name>
+        <file_path>modem_proc/build/ms/bin/8996.gen.prod/</file_path>
+      </download_file>
+      <buildfile_path>modem_proc/build/ms/</buildfile_path>
+      <build_command>build_client.py 8996.gengps.pack -v 00288 bparams=-k</build_command>
+    </build>
+    <build>
+      <name>boot</name>
+      <role>boot</role>
+      <chipset>msm8996</chipset>
+      <build_id>BOOT.XF.1.1.c1-00010-M8996WZB-1</build_id>
+      <windows_root_path cmm_root_path_var="BOOT_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="BOOT_BUILDROOT">./</linux_root_path>
+      <image_dir>boot_images</image_dir>
+      <release_path>HY11_CompileTest</release_path>
+      <buildfile_path>boot_images/</buildfile_path>
+      <build_command>pack_build_32.bat Msm8996</build_command>
+      <device_programmer minimized="true">
+        <file_name>prog_emmc_firehose_8996_ddr.elf</file_name>
+        <file_path>boot_images/QcomPkg/Msm8996Pkg/Bin64</file_path>
+      </device_programmer>
+      <flash_programmer get_binary="true" minimized="true">
+        <file_name>DeviceProgrammerDDR.elf</file_name>
+        <file_path>boot_images/QcomPkg/Msm8996Pkg/Bin64/</file_path>
+      </flash_programmer>
+      <file_ref minimized="true">
+        <file_name>JtagProgrammer.elf</file_name>
+        <file_path>boot_images/QcomPkg/Msm8996Pkg/Bin64/unsigned/</file_path>
+      </file_ref>
+      <file_ref storage_type="emmc" minimized="true">
+        <file_name>JtagProgrammer.cmm</file_name>
+        <file_path>boot_images/QcomPkg/Tools/storage/eMMC</file_path>
+      </file_ref>
+      <file_ref storage_type="ufs" minimized="true">
+        <file_name>JtagProgrammer.cmm</file_name>
+        <file_path>boot_images/QcomPkg/Tools/storage/UFS</file_path>
+      </file_ref>
+      <file_ref minimized="true">
+        <file_name>*</file_name>
+        <file_path>boot_images/QcomPkg/Tools/cmm/</file_path>
+      </file_ref>
+      <file_ref minimized="true">
+        <file_name>*</file_name>
+        <file_path>boot_images/QcomPkg/Tools/partition_load_pt/</file_path>
+      </file_ref>
+      <download_file cmm_file_var="BOOT_BINARY" minimized="true">
+        <file_name>xbl.elf</file_name>
+        <file_path flavor="xbl_64">boot_images/QcomPkg/Msm8996Pkg/Bin64/</file_path>
+        <file_path flavor="xbl_32">boot_images/QcomPkg/Msm8996Pkg/Bin64_Core32/</file_path>
+      </download_file>
+      <download_file cmm_file_var="PMIC_BINARY" minimized="true">
+        <file_name>pmic.elf</file_name>
+        <file_path>boot_images/QcomPkg/Msm8996Pkg/Bin64/</file_path>
+      </download_file>
+      <download_file cmm_file_var="BOOT_ELF" ignore="true" minimized="true">
+        <file_name>XBLLoader.dll</file_name>
+        <file_path>boot_images/Build/Msm8996/RELEASE_LLVMLINUX/AARCH64/QcomPkg/XBLLoader/XBLLoader/DEBUG</file_path>
+      </download_file>
+    </build>
+    <build>
+      <name>tz</name>
+      <role>tz</role>
+      <chipset>msm8996</chipset>
+      <build_id>TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1</build_id>
+      <short_build_path cmm_var="TZ_BUILDID">${tz_bid:IADAANAA}</short_build_path>
+      <windows_root_path cmm_root_path_var="TZ_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="TZ_BUILDROOT">./</linux_root_path>
+      <image_dir>trustzone_images</image_dir>
+      <release_path>HY11_CompileTest</release_path>
+      <download_file cmm_file_var="BOOT_TZ_MBN" fastboot_complete="false" minimized="true">
+        <file_name>tz.mbn</file_name>
+        <file_path>trustzone_images/build/ms/bin/IADAANAA/</file_path>
+      </download_file>
+      <download_file cmm_file_var="HYP_BINARY" minimized="true">
+        <file_name>hyp.mbn</file_name>
+        <file_path>trustzone_images/build/ms/bin/IADAANAA/</file_path>
+      </download_file>
+      <download_file cmm_file_var="TZ_BINARY" minimized="true">
+        <file_name>tz.mbn</file_name>
+        <file_path>trustzone_images/build/ms/bin/IADAANAA/</file_path>
+      </download_file>
+      <download_file cmm_file_var="TZDEVCFG_BINARY" minimized="true">
+        <file_name>devcfg.mbn</file_name>
+        <file_path>trustzone_images/build/ms/bin/IADAANAA/</file_path>
+      </download_file>
+      <download_file cmm_file_var="WINSECAPP_BINARY" ignore="true" minimized="true">
+        <file_name>winsecap.mbn</file_name>
+        <file_path>trustzone_images/build/ms/bin/IADAANAA/</file_path>
+      </download_file>
+      <download_file cmm_file_var="UEFISECAPP_BINARY" ignore="true" minimized="true">
+        <file_name>uefi_sec.mbn</file_name>
+        <file_path>trustzone_images/build/ms/bin/IADAANAA/</file_path>
+      </download_file>
+      <buildfile_path>trustzone_images/build/ms/</buildfile_path>
+      <build_command>cleanpack_8996.sh trustzone_images/build/ms/cleanpack_8996.sh</build_command>
+    </build>
+    <build>
+      <name>adsp</name>
+      <role>adsp</role>
+      <chipset>msm8996</chipset>
+      <build_id>ADSP.8996.2.7-00562-00000-1</build_id>
+      <windows_root_path cmm_root_path_var="ADSP_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="ADSP_BUILDROOT">./</linux_root_path>
+      <image_dir>adsp_proc</image_dir>
+      <release_path>HY11_CompileTest</release_path>
+      <file_ref cmm_file_var="ADSP_BINARY" fat_file="true" pil_split="adsp" minimized="true">
+        <file_name>adsp.mbn</file_name>
+        <file_path>adsp_proc/obj/qdsp6v5_ReleaseG/signed/</file_path>
+      </file_ref>
+      <buildfile_path>unset/</buildfile_path>
+      <build_command>unset LD_LIBRARY_PATH; python ./adsp_proc/build/build.py -c msm8996 -o all &gt; LOG_build.txt</build_command>
+    </build>
+    <build>
+      <name>slpi</name>
+      <role>slpi</role>
+      <chipset>msm8996</chipset>
+      <build_id>SLPI.HB.1.0.c2-00011-M8996AZL-1</build_id>
+      <windows_root_path cmm_root_path_var="SLPI_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="SLPI_BUILDROOT">./</linux_root_path>
+      <image_dir>slpi_proc</image_dir>
+      <release_path>HY11_CompileTest</release_path>
+      <file_ref cmm_file_var="SLPI_BINARY" fat_file="true" pil_split="slpi" minimized="true">
+        <file_name>slpi.mbn</file_name>
+        <file_path>slpi_proc/obj/qdsp6v5_ReleaseG/</file_path>
+      </file_ref>
+      <buildfile_path>./slpi_proc/build/</buildfile_path>
+      <build_command>build.py -c msm8996 -o all 2&amp;gt;&amp;amp;1 | tee LOG_build.txt</build_command>
+    </build>
+    <build>
+      <name>rpm</name>
+      <role>rpm</role>
+      <chipset>msm8996</chipset>
+      <build_id>RPM.BF.1.6.c2-00015-M8996AAAAANAZR-1</build_id>
+      <windows_root_path cmm_root_path_var="RPM_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="RPM_BUILDROOT">./</linux_root_path>
+      <image_dir>rpm_proc</image_dir>
+      <release_path>HY11_CompileTest</release_path>
+      <file_ref debug_script="recover_ulog_dumps">
+        <file_name>rpm_ulogdump.cmm</file_name>
+        <file_path>rpm_proc/core/power/ulog/scripts</file_path>
+      </file_ref>
+      <file_ref debug_script="parse_merged_logs">
+        <file_name>rpm_log_bfam.py</file_name>
+        <file_path>rpm_proc/core/power/rpm/debug/scripts</file_path>
+      </file_ref>
+      <file_ref debug_script="recover_npa_dumps">
+        <file_name>rpm_npadump.cmm</file_name>
+        <file_path>rpm_proc/core/power/npa/scripts</file_path>
+      </file_ref>
+      <download_file cmm_file_var="RPM_BINARY" minimized="true">
+        <file_name>rpm.mbn</file_name>
+        <file_path>rpm_proc/build/ms/bin/AAAAANAAR/</file_path>
+      </download_file>
+      <download_file cmm_file_var="RPM_ELF" minimized="true">
+        <file_name>RPM_AAAAANAAR.elf</file_name>
+        <file_path>rpm_proc/core/bsp/rpm/build/</file_path>
+      </download_file>
+      <buildfile_path>rpm_proc/build/</buildfile_path>
+      <build_command>build_packed.bat 8996</build_command>
+    </build>
+    <build>
+      <name>wlan</name>
+      <role>wlan</role>
+      <chipset>msm8996</chipset>
+      <build_id>WLAN.RM.4.2-00050.1-QCARMSWPZ-1</build_id>
+      <windows_root_path cmm_root_path_var="WLAN_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="WLAN_BUILDROOT">./</linux_root_path>
+      <image_dir>cnss_proc</image_dir>
+      <release_path/>
+      <file_ref fat_file="true">
+        <file_name>qca61x4.bin</file_name>
+        <file_path>cnss_proc/wlan/fw/target/.output/AR6320/hw.3/bin/</file_path>
+      </file_ref>
+      <file_ref fat_file="true">
+        <file_name>eeprom_ar6320_3p0_wb294xp_customfem_2G_5G_CLPC_Golden.bin</file_name>
+        <file_path>cnss_proc/wlan/fw/target/halphy/ftm/host/systemtools/tools/eepromUtil/qc6174/</file_path>
+      </file_ref>
+      <buildfile_path>cd/</buildfile_path>
+      <build_command>cd ./cnss_proc/build; source ./rome_crm_build.sh BUILD_VER=00050</build_command>
+    </build>
+    <build>
+      <name>btfm</name>
+      <role>btfm</role>
+      <chipset>msm8996</chipset>
+      <build_id>BTFM.RM.2.2-00163-QCABTFMSWPZ-1</build_id>
+      <windows_root_path cmm_root_path_var="BTFM_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="BTFM_BUILDROOT">./</linux_root_path>
+      <image_dir>btfm_proc</image_dir>
+      <release_path/>
+      <file_ref fat_file="true">
+        <file_name>nvm_tlv_3.0.bin</file_name>
+        <file_path>btfm_proc/bt_30/wcss/bsp/rom/build/SCAQBAF/Test_Files/Linux/</file_path>
+      </file_ref>
+      <file_ref fat_file="true">
+        <file_name>rampatch_tlv_3.0.tlv</file_name>
+        <file_path>btfm_proc/bt_30/wcss/bsp/rom/build/SCAQBAF/Test_Files/Linux/</file_path>
+      </file_ref>
+      <buildfile_path>cd/</buildfile_path>
+      <build_command>cd ./btfm_proc/build; source ./rome_crm_build_bt.sh BUILD_VER=00163</build_command>
+    </build>
+    <build>
+      <name>video</name>
+      <role>video</role>
+      <chipset>msm8996</chipset>
+      <build_id>VIDEO.VE.4.0-00121-PROD-1</build_id>
+      <windows_root_path cmm_root_path_var="VENUS_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="VENUS_BUILDROOT">./</linux_root_path>
+      <image_dir>venus_proc</image_dir>
+      <release_path>HK11</release_path>
+      <download_file cmm_file_var="VENUS_BINARY" pil_split="venus" minimized="true">
+        <file_name>venus.mbn</file_name>
+        <file_path>venus_proc/build/bsp/asic/build/PROD/mbn/reloc/signed/</file_path>
+      </download_file>
+      <buildfile_path>build_prod.cmd/</buildfile_path>
+      <build_command>build_prod.cmd build_prod.cmd</build_command>
+    </build>
+    <build>
+      <name>cpe</name>
+      <role>cpe</role>
+      <chipset>msm8996</chipset>
+      <build_id>CPE.TSF.1.0-00035-W9335AAAAAAAZQ-1</build_id>
+      <windows_root_path cmm_root_path_var="CPE_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="CPE_BUILDROOT">./</linux_root_path>
+      <image_dir>cpe_proc</image_dir>
+      <release_path>HK11</release_path>
+      <file_ref cmm_file_var="CPE_BINARY" pil_split="cpe_9335" minimized="true">
+        <file_name>cpe_9335.mbn</file_name>
+        <file_path>cpe_proc/build/ms/bin/AAAAAAA*/</file_path>
+      </file_ref>
+      <buildfile_path>python/</buildfile_path>
+      <build_command>python cpe_proc/build/build.py -c wcd9335 --pkg --hy22</build_command>
+    </build>
+    <build>
+      <name>wgig</name>
+      <role>wgig</role>
+      <chipset>msm8996</chipset>
+      <build_id>WGIG.SPR.1.0-10009-WGIGSWZ-2</build_id>
+      <windows_root_path cmm_root_path_var="WGIG_BUILDROOT">.\</windows_root_path>
+      <linux_root_path cmm_root_path_var="WGIG_BUILDROOT">./</linux_root_path>
+      <image_dir>wgig_proc</image_dir>
+      <release_path>HY11_CompileTest</release_path>
+      <file_ref fat_file="true">
+        <file_name>wil6210.fw</file_name>
+        <file_path>wgig_proc/wgig/</file_path>
+      </file_ref>
+      <file_ref fat_file="true">
+        <file_name>wil6210.brd</file_name>
+        <file_path>wgig_proc/wgig/</file_path>
+      </file_ref>
+      <buildfile_path>echo/</buildfile_path>
+      <build_command>echo ./BuildProducts.txt &gt; ./BuildProducts.txt</build_command>
+    </build>
+  </builds_flat>
+  <build_tools>
+    <tool>
+      <name>msp</name>
+      <build>boot</build>
+      <path>QcomPkg/Tools/partition_load_pt/</path>
+    </tool>
+  </build_tools>
+  <external_tools>
+    <tool>
+      <name>trace32</name>
+      <version>S.2011.04.000029708</version>
+      <path>//qcdfs/qct/qctdata/CoreBSPTarget/8960/T32_recommended</path>
+    </tool>
+    <tool>
+      <name>qpst</name>
+      <version>QPST 2.7.373</version>
+      <path>TBD</path>
+    </tool>
+    <tool>
+      <name>qxdm</name>
+      <version>TBD</version>
+      <path>TBD</path>
+    </tool>
+  </external_tools>
+  <workflow>
+    <tool>
+      <name>ptool.py</name>
+      <build>common</build>
+      <path>./common/config/storage</path>
+    </tool>
+    <step type="exec">
+      <exec_dir>./emmc</exec_dir>
+      <params>python @tool_name -x ./../../config/emmc/partition.xml</params>
+      <tool_name>ptool.py</tool_name>
+    </step>
+    <step type="exec">
+      <exec_dir>./ufs</exec_dir>
+      <params>python @tool_name -x ./../../config/ufs/partition.xml</params>
+      <tool_name>ptool.py</tool_name>
+    </step>
+  </workflow>
+</contents>

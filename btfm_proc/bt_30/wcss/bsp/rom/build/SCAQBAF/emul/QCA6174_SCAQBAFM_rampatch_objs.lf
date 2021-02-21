@@ -1,0 +1,82 @@
+#============================================================================
+#  Name:                                                                     
+#    QCA6174_SCAQBAFM_rampatch_objs.lf 
+#
+#  Description:                                                              
+#    None 
+#                                                                            
+# Copyright (c) 2016 by QUALCOMM, Incorporated.  All Rights Reserved.        
+#============================================================================
+#                                                                            
+# *** AUTO GENERATED FILE - DO NOT EDIT                                      
+#                                                                            
+# GENERATED: Wed Nov 16 00:01:22 2016 
+#============================================================================
+../../../../rampatch/bt/apps/wipower/BleStack/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/le/gap/patch_gap.o
+../../../../rampatch/bt/apps/wipower/BleStack/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/SAL/patch_BLE_SAL_Interface.o
+../../../../rampatch/bt/apps/wipower/BleStack/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/bth_router/patch_bth_stack.o
+../../../../rampatch/bt/apps/wipower/a4wp/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_pru.o
+../../../../rampatch/bt/platform/core/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PF_OS.o
+../../../../rampatch/bt/platform/dbg/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_DBG_hci_vendor.o
+../../../../rampatch/bt/platform/dbg/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_DBG.o
+../../../../rampatch/bt/platform/pfal/aes/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_AES.o
+../../../../rampatch/bt/platform/pfal/eeprom/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_EEPROM.o
+../../../../rampatch/bt/platform/pfal/gpio/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_GPIO_MUX.o
+../../../../rampatch/bt/platform/pfal/lc/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_LC.o
+../../../../rampatch/bt/platform/pfal/lc/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_LC_State.o
+../../../../rampatch/bt/platform/pfal/owi/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_HUTCH.o
+../../../../rampatch/bt/platform/pfal/rm/build/wcss_ram_uart/cortex-m0/SCAQBAF/common/src/patch_PFAL_RM_HW.o
+../../../../rampatch/bt/platform/pfal/rm/build/wcss_ram_uart/cortex-m0/SCAQBAF/6174/src/patch_PFAL_RM_HW_EXT.o
+../../../../rampatch/bt/platform/pfal/sleep/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_SLEEP.o
+../../../../rampatch/bt/platform/pfal/sleep/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_SLEEP_Recover.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_uart/cortex-m0/SCAQBAF/common/src/patch_PFAL_SYS_Init.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_uart/cortex-m0/SCAQBAF/6174/src/patch_PFAL_SYS_CLK_EXT.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_uart/cortex-m0/SCAQBAF/common/src/patch_PFAL_SYS_EDL.o
+../../../../rampatch/bt/platform/pfal/sys/build/wcss_ram_uart/cortex-m0/SCAQBAF/common/src/patch_PFAL_SYS.o
+../../../../rampatch/bt/platform/pfal/uart/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_UART_Common.o
+../../../../rampatch/bt/platform/pfal/uart/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_UART_IOP_Rx.o
+../../../../rampatch/bt/platform/pfal/uart/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_UART.o
+../../../../rampatch/bt/platform/pfal/usb/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_USB.o
+../../../../rampatch/bt/platform/pfal/voice/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_VOICE_NBS.o
+../../../../rampatch/bt/platform/pfal/voice/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_VOICE_WBS.o
+../../../../rampatch/bt/platform/pfal/wpr/build/wcss_ram_uart/cortex-m0/SCAQBAF/src/patch_PFAL_PRUHAL.o
+../../../../rampatch/bt/services/ant/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_qcom_ant_interface.o
+../../../../rampatch/bt/services/hif/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_hif_profileDetect.o
+../../../../rampatch/bt/services/hif/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_hif_server.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_server.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_lnkmngr.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_hcicommand.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_lmp_pdu.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_eptm.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_data.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_fra.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_filter.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_security.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_sco.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_LLM_multislot.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_afh.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_le_connmngr.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_LLM_lp_sniff.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_timer.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_LLM_CQDDR.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_connmngr.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_pca.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_chanassess.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_conndb.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_LLM_HCI_LE_command.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_LLM_role_switch.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_rmcdCommand.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_LLM_LE_control_pdu.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_LLM_SyncLinkMngr.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_LLM_LE_encryption.o
+../../../../rampatch/bt/services/llm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_llm_hcievent.o
+../../../../rampatch/bt/services/pf/rm/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_PF_RM.o
+../../../../rampatch/bt/services/slc/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_SLC_utils.o
+../../../../rampatch/bt/services/slc/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_SLC_dispatcher.o
+../../../../rampatch/bt/services/slc/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_SLC_FrameInt.o
+../../../../rampatch/bt/services/slc/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_SLC_AFH.o
+../../../../rampatch/bt/services/slc/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_SLC_poll.o
+../../../../rampatch/bt/services/slc/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_SLC_Schedule.o
+../../../../rampatch/bt/services/sys/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_SYS_pollmgr.o
+../../../../rampatch/bt/services/sys/build/wcss_ram_uart/cortex-m0/SCAQBAF/patch_SYS_database.o
+../../../../rampatch/build/wcss_ram_uart/cortex-m0/SCAQBAF/rampatch_main.o

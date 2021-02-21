@@ -1,0 +1,10 @@
+#define pm_arb_priorities pm_arb_priorities_8996_xml_tz
+#define pm_num_prio pm_num_prio_8996_xml_tz
+#define pm_num_pvc_port pm_num_pvc_port_8996_xml_tz
+#define pm_arb_pvc_cfg pm_arb_pvc_cfg_8996_xml_tz
+#define pm_spmi_pheriph_cfg pm_spmi_pheriph_cfg_8996_xml_tz
+#define pm_spmi_pheriph_cfg_sz pm_spmi_pheriph_cfg_sz_8996_xml_tz
+#define pm_mpu_rg_cfg pm_mpu_rg_cfg_8996_xml_tz
+#define pm_spmi_rg_sz pm_spmi_rg_sz_8996_xml_tz
+#define pm_hal_id_xpu pm_hal_id_xpu_8996_xml_tz
+#define pm_spmi_rg_cfg pm_spmi_rg_cfg_8996_xml_tz

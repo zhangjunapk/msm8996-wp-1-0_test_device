@@ -1,0 +1,33 @@
+//===========================================================================
+//
+// FILE:         ontario_config_8996.xml
+//
+// DESCRIPTION:  This file contains the DAL XML properties for the Ontario
+//
+//
+//===========================================================================
+//
+// $Header:  $
+//
+//
+//===========================================================================
+//             Copyright c 2015 QUALCOMM Incorporated.
+//                    All Rights Reserved.
+//                  QUALCOMM Proprietary/GTDR
+//===========================================================================
+// #include "tzbsp_spi.h"
+#define ONTARIO_SPI_DEVICE_5 4 //  (BLSP1 QUP 5)
+#define ONTARIO_SPI_DEVICE_SSC_1 12 // (SSC SPI_1)
+#define ONTARIO_SPI_DEVICE_SSC_2 13 // (SSC SPI_2)
+<driver name="NULL">
+  <global_def>
+      <var_seq name = "gcc_blsp_ahb_clk" type=DALPROP_DATA_TYPE_STRING>gcc_blsp1_ahb_clk</var_seq>
+      <var_seq name = "gcc_blsp_qup_spi_apps_clk" type=DALPROP_DATA_TYPE_STRING>gcc_blsp1_qup5_spi_apps_clk</var_seq>
+  </global_def>
+  <device id="/dev/ont">
+      <props name="spi_device_id" type=DALPROP_ATTR_TYPE_UINT32>ONTARIO_SPI_DEVICE_SSC_2</props>
+      <props name="gcc_blsp_ahb_clk" type=DALPROP_ATTR_TYPE_STRING_PTR>gcc_blsp_ahb_clk</props>
+      <props name="gcc_blsp_qup_spi_apps_clk" type=DALPROP_ATTR_TYPE_STRING_PTR>gcc_blsp_qup_spi_apps_clk</props>
+      <props name="clock-frequency" type=DALPROP_ATTR_TYPE_UINT32>15000000</props>
+  </device>
+</driver>

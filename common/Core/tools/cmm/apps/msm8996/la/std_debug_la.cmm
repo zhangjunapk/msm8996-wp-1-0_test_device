@@ -1,0 +1,72 @@
+//============================================================================
+//  Name:                                                                     
+//    std_debug_la.cmm 
+//
+//  Description:                                                              
+//    Boot debug script
+//                                                                            
+// Copyright (c) 2012 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who             what, where, why
+// --------   ---             ---------------------------------------------------------
+// 02/04/2014 JBILLING      Ported for Istari, PBL workaround added for UFS
+// 07/09/2014 AJCheriyan    Created for Elessar.
+
+//* Arguments passed *//
+LOCAL &ArgumentLine
+ENTRY %LINE &ArgumentLine
+LOCAL &SubRoutine &Port
+ENTRY &SubRoutine %LINE &remainder
+LOCAL &TargetProcessor &TargetProcessorPort  &BootProc &BootProcPort &UsesCTI &ProcessorTimeoutValue &DebugScript &SymbolLoadScript &BuildPath &EntryBkpt &ErrBkpts &LpmOpt &SleepDisableCmd &extraoption &Unused1 &Unused2 &Unused3
+
+//* Check if we need to call for help or do some work *//
+IF ("&ArgumentLine"=="")
+(
+    &SubRoutine="HELP"
+)
+ELSE IF ("&SubRoutine"=="GETAPPSENTRYBREAKPOINT")
+(
+    &SubRoutine="GETAPPSENTRYBREAKPOINT"
+)
+ELSE
+(
+    &SubRoutine="MAIN"
+)
+
+GOSUB &SubRoutine
+
+
+MAIN:
+    //note that optextract has a limit of 10 entries
+    do optextract Img,Lpm,Bkpts,CTI_Enable,alternateelf,extraoption &ArgumentLine
+    LOCAL &image &lpm_option &user_defined_bkpts &cti_enable &alternateelf &extraoption
+    ENTRY &image &lpm_option &user_defined_bkpts &cti_enable &alternateelf &extraoption //expect 6 returns from optextract
+
+    // Get the target processor for this port
+    do std_debug_&CHIPSET GETDEBUGDEFAULTS NONE &image
+    ENTRY &Unused1 &TargetProcessor &TargetProcessorPort &BootProc &BootProcPort &UsesCTI &ProcessorTimeoutValue &DebugScript &SymbolLoadScript &BuildPath &EntryBkpt &ErrBkpts &LpmOpt &SleepDisableCmd  &extraoption &Unused2 &Unused3
+
+    //Work is already done in std_debug_&CHIPSET
+    do std_debug_&CHIPSET APPSBOOT_BKPT
+
+
+GETAPPSENTRYBREAKPOINT:
+
+ENDDO start_kernel
+
+EXIT:
+    ENDDO
+
+FATALEXIT:
+    END
+
+
+    
+        

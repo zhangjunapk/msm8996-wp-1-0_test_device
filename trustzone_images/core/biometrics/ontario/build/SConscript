@@ -1,0 +1,26 @@
+#===============================================================================
+#
+# GENERAL DESCRIPTION
+#    Public build script for Ontario 2.0 driver.
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/core.tz/1.0.3.c1/biometrics/ontario/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Author: pwbldsvc $
+#  $Change: 11896995 $
+#                      EDIT HISTORY FOR FILE
+#                      
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#  
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 11/12      kbuska  Initial development of Ontario 2.0.
+# 12/15      uday    Ontario 2.0 directory structure re-org. 
+#===============================================================================
+Import('env')
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

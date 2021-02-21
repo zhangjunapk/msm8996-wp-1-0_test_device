@@ -1,0 +1,29 @@
+#===============================================================================
+#
+# teetest main build script
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2015 Qualcomm Technologies, Inc. 
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/core.tz/1.0.3.c1/securemsm/trustzone/qsapps/teetest/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Author: pwbldsvc $
+#  $Change: 11896995 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

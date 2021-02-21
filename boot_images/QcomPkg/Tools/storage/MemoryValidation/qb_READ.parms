@@ -1,0 +1,96 @@
+# QBlizzard Version 2.30 Memory Benchmark Test
+# Parameters list below can be changed or overwritten by the cmd line
+#            Note: cmd line options are same a parms below with a dash at the front
+
+# perf                  flag for read/write/copy performance tests
+perf
+# startSize             start size for tests, usually 2K, not used when sizeList is set
+startSize 2KB
+# endSize               end size for tests, usually 4M, not used when sizeList is set
+#			startSize/endSize control size of data buffer which controls cache level/DDR
+#			To test DDR, using 2x-4x the largest cache size is required.
+#			Use a 4X min if caches are no-write-allocate
+endSize 4MB
+# totalSize             Controls accuracy/repeatability by looping a test algorithm.
+#			where Loops = totalSize / buffer Size
+totalSize 128MB
+# errorCheck            Enables data buffers to be checked for errors before and after a test
+#			Errors are diagnosed down to the bit level.
+#			Usually FALSE for Stress/False for Perf
+#			Error checking slows testing by almost 2x
+errorCheck FALSE
+# sizeList              comma separated list of test size to run.  ie:  4k,1M,4M,16M
+#			Note: no spaces allowed
+#			start and end size don't need to be set when sizeList is used
+# cacheSize             max cache size, used to determine the cache size for warm up test
+cacheSize 2MB
+# statSamples           Defines how many times the complete set of tests are run:
+#			Performance - Number of statistical samples to accumulate
+#			              Typical perf usage is to run 4-10 samples of each test
+#			Stress - Number of seconds to generate random tests. No stats are taken
+#			         Typical stress usage is to set high and use CTRL-C to stop the test.
+statSamples 4
+# secs                  Same as -statSamples:
+#			Performance - Number of statistical samples to accumulate
+#			              Typical perf usage is to run 4-10 samples of each test
+#			Stress - Number of seconds to generate random tests. No stats are taken
+#			         Typical stress usage is to set high and use CTRL-C to stop the test.
+secs 4
+# numThreads            Number of parallel test threads, usually set to 1 for perf, 2 for stress
+numThreads 1
+# randSeed              0=generate seed, >0=set seed
+randSeed 0x00000000
+# pattern               0=random data, >0=alternate pattern,~pattern
+pattern 0x00000000
+# repeatCount           usually set to 0, ie run once per sample, set to large value for HW debug
+#			Repeats the data transfer algorithm of a test in a tight loop
+#			Used to create a long, steady traffic flow using one algorithm
+#			The algorithm to use is selected using the 'testfile'
+repeatCount 0
+
+testcases:
+# Enable / Disable test algorithms.
+# Format is:
+# test_name  performance_mode_enable  stress_mode_enable  small_perf_mode
+#
+RD_CLIB                  FALSE      FALSE     FALSE     
+RD_ASM_NOPLD             FALSE      FALSE     FALSE     
+RD_ASM_PLD               FALSE      FALSE     FALSE     
+RD_VNUM_NOPLD            FALSE      FALSE     FALSE     
+RD_VNUM_PLD64            FALSE      FALSE     FALSE     
+RD_VNUM_PLD128           FALSE      FALSE     FALSE     
+RD_VNMMUL_NOPLD          FALSE      FALSE     FALSE     
+RD_VNMMUL_PLD            FALSE      FALSE     FALSE     
+RD_VNUM_ST2_PLD          FALSE      FALSE     FALSE     
+RD_PLD64                 FALSE      FALSE     FALSE     
+WR_CLIB                  FALSE      FALSE     FALSE     
+WR_ASM                   FALSE      FALSE     FALSE     
+WR_VNUM                  FALSE      FALSE     FALSE     
+CP_CLIB                  FALSE      FALSE      FALSE      
+CP_ASM_NOPLD             FALSE      FALSE     FALSE      
+CP_ASM_PLD               FALSE      FALSE     FALSE      
+CP_VNUM_NOPLD            FALSE      FALSE     FALSE      
+CP_VNUM_PLD64            FALSE      FALSE     FALSE      
+CP_VNUM_PLD128           FALSE      FALSE     FALSE      
+CP_VNMMUL_NOPLD          FALSE      FALSE     FALSE     
+CP_VNMMUL_PLD            FALSE      FALSE     FALSE     
+CP_VNUM_BIONICS          FALSE      FALSE     FALSE      
+CP_VNUM_BIONICK          FALSE      FALSE      FALSE      
+CP4I_CLIB                FALSE     FALSE      FALSE     
+CP4I_ASM                 FALSE     FALSE      FALSE     
+CP4I_VNUM                FALSE     FALSE      FALSE     
+CP4S_CLIB                FALSE     FALSE      FALSE     
+CP4S_ASM                 FALSE     FALSE      FALSE     
+CP4S_VNUM                FALSE     FALSE      FALSE     
+CP4I_COHERENCY           FALSE     FALSE      FALSE     
+BW_MEM_RD                TRUE      FALSE     FALSE     
+BW_MEM_WR                FALSE      FALSE     FALSE     
+BW_MEM_CP                FALSE      FALSE     FALSE     
+BW_MEM_RDWR              FALSE      FALSE     FALSE     
+BW_MEM_FRD               FALSE      FALSE     FALSE     
+BW_MEM_FWR               FALSE      FALSE     FALSE     
+BW_MEM_BCOPY             FALSE      FALSE     FALSE     
+BW_MEM_BZERO             FALSE      FALSE     FALSE     
+PcFx_CLIB                FALSE     FALSE     FALSE     
+PcFx_ASM                 FALSE     FALSE     FALSE     
+MEMTEST_IFA13            FALSE     FALSE     FALSE     

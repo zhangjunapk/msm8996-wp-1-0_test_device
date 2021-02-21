@@ -1,0 +1,30 @@
+#/** @file TargetTools.inf
+#  
+#  INF used by packit.py for including target tools files into packed build.
+#  
+#  Copyright (c) 2015, Qualcomm Technologies Inc. All rights reserved.
+#
+#**/
+#==============================================================================
+#                              EDIT HISTORY
+#
+#
+# when       who        what, where, why
+# --------   ---        ----------------------------------------------------------
+# 03/30/15   ck         Initial release
+#==============================================================================
+
+[Sources]
+
+[UserExtensions.PackIt.PackIn]
+  boot_debug_target_data.cmm
+  debug_uefi.cmm
+  interrupt_setup.cmm
+  log_save.cmm
+  pre_sil.cmm
+  runtime_symbol_load.cmm
+  symbol_Load.cmm
+  clock\testclock.cmm
+
+[UserExtensions.PackIt.PackOut]
+  ../../../OvmfPkg/build.sh  

@@ -1,0 +1,139 @@
+//============================================================================
+//  Name:                                                                     
+//    std_loadbuild.cmm 
+//
+//  Description:                                                              
+//    Top level build loading script
+//                                                                            
+// Copyright (c) 2012 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who             what, where, why
+// --------   ---             ---------------------------------------------------------
+// 04/01/2015 JBILLING      Added device programmer
+// 07/19/2012 AJCheriyan    Created for B-family 
+
+// ARG0 - Load option - Supported : ERASEONLY, LOADCOMMON, LOADFULL, LOADIMG
+// ARG1 - IMAGE OPTION (appsboot, tz, xbl, rpm)
+// ARG2 - Load method (Jtag or device programmer)
+
+LOCAL &LOAD_OPTION &LOAD_IMG &LOAD_METHOD
+ENTRY &LOAD_OPTION &LOAD_IMG &LOAD_METHOD
+    
+LOCAL &PROGRAMMER_DEVPROG 
+&PROGRAMMER_DEVPROG="&METASCRIPTSDIR/../deviceprogrammer/deviceprogrammer.cmm"
+&ContentsXML="&METASCRIPTSDIR/../../../../contents.xml"
+    
+MAIN:
+
+    // Reset the chip
+    do std_reset 
+    
+    LOCAL &Result &JTagFallBack
+    
+    
+    IF ("&LOAD_METHOD"=="DEVPROG")&&(FILE.EXIST("&PROGRAMMER_DEVPROG"))
+    (
+        cd.do &PROGRAMMER_DEVPROG --contentsxml="&ContentsXML"
+            ENTRY &Result
+        
+        //Regardless, get device to sys.u to boot up gracefully 
+        //(PMIC reset already occured in std_reset call above)
+        do std_reset NOPMIC
+        
+        IF (STRING.TRIM("&Result")=="FAIL")
+        (
+            GOSUB DEVPROGFAIL_DIALOG
+            ENTRY &JTagFallBack
+            
+            IF (&JTagFallBack==TRUE())
+            (
+                &LOAD_METHOD="JTAG"
+            )
+            ELSE
+            (
+                PRINT %ERROR "Device Programmer Error! Exiting."
+                GO
+                GOTO FATALEXIT
+            )
+        )
+        //If file could not be found default to JTag
+        ELSE IF ("&Result"=="NOFILE")
+        (
+            &LOAD_METHOD="JTAG"
+        )
+    )
+    
+    //Device Programmer may default back to Jtag
+    IF ("&LOAD_METHOD"=="JTAG")
+    (
+        // Call the HLOS specific load script
+        &HLOS_LOADSCRIPT="std_loadbuild_"+STR.LWR("&HLOS")
+        do &HLOS_LOADSCRIPT &LOAD_OPTION &LOAD_IMG
+        
+        // Now reset the chip to complete whatever loading remains
+        do std_reset
+    )
+    
+    // Let the system run and boot
+    do std_utils ATTACHPROC
+    
+    GOTO EXIT
+
+    
+    
+DEVPROGFAIL_DIALOG:
+    LOCAL &Rvalue
+    WINPOS 40% 10% 44. 6.
+    DIALOG
+    (
+        HEADER "Device Programmer Failure"
+        POS 1. 0. 40. 2.
+        TEXT "Device Programmer has detected an error during loading. "
+        TEXT "Do you wish to load using JTag?"
+        
+        POS 6. 4. 15. 2.
+        YESBUTTON: DEFBUTTON "YES" 
+                            (
+                                &Rvalue=TRUE()
+                                CONTINUE
+                            )
+        POS 24. 4. 15. 2.
+        NOBUTTON: DEFBUTTON "NO"
+                            (
+                                &Rvalue=FALSE()
+                                CONTINUE
+                            )  
+    
+    
+    )
+    STOP
+    
+    DIALOG.END
+    RETURN &Rvalue
+    
+DEVPROGFAIL_DIALOG_RETURN:
+    LOCAL &arg0
+    ENTRY &arg0
+    DIALOG.END
+    
+    
+    IF ("&arg0"=="YES")
+        ENDDO TRUE()
+    ELSE
+        ENDDO FALSE()
+
+
+    RETURN
+
+EXIT:
+    ENDDO
+
+FATALEXIT:
+    END

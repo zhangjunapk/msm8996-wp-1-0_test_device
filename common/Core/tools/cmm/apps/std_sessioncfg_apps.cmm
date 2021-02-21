@@ -1,0 +1,77 @@
+//============================================================================
+//  Name:                                                                     
+//    std_sessioncfg_rpm.cmm 
+//
+//  Description:                                                              
+//    Script to setup sub-system level features
+//                                                                            
+// Copyright (c) 2012 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who     		what, where, why
+// --------   ---     		---------------------------------------------------------
+// 07/10/2012 AJCheriyan    Created for B-family 
+//
+
+// We support only one argument for all session config scripts
+// ARG0 - Chipset Name. Can be used to setup sub-system according to target if needed 
+// Using this argument should be avoided unless absolutely necessary
+ENTRY &ARG0
+
+LOCAL &FILE
+
+MAIN:
+
+    // Do common environment setup
+    do std_setupenv.cmm
+
+    
+    //Setup apps register options
+    &FILE="&METASCRIPTSDIR"+"/apps/&CHIPSET/hydra/hydra.men"
+    if FILE.EXIST("&FILE")
+    (
+        &PATH="&METASCRIPTSDIR"+"/apps/&CHIPSET/hydra"
+        PATH + "&PATH"
+        do std_utils EXECUTESCRIPT EXIT &FILE
+        
+    )
+    
+    //setup core apps options
+    MENU.REPROGRAM std_commands_apps_&CHIPSET.men
+    
+
+    // Clear the windows
+    WINCLEAR
+
+    // Now APPS specific setup
+    // APPS Build should be populated already
+    IF ("&APPS_BUILDROOT"!="")
+    (
+        IF ("&HLOS"=="LA")
+        (
+            // Load the LINUX menu file
+             &FILE=OS.PSD()+"/demo/arm/kernel/linux/linux-3.x/linux.men"
+            do std_utils EXECUTESCRIPT EXIT &FILE
+        )
+    )
+    ELSE
+    (
+        PRINT %ERROR "APPS Build Information not populated"
+        GOTO FATALEXIT
+    )
+
+    do std_versionchecker
+	
+FATALEXIT:
+	END
+
+EXIT:
+   ENDDO
+   
+

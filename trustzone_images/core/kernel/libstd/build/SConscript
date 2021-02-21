@@ -1,0 +1,84 @@
+#===============================================================================
+# Copyright (c) 2010-2016 by Qualcomm Technologies, Inc.  All Rights Reserved.
+#===============================================================================
+# STD Libs
+#-------------------------------------------------------------------------------
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/core/kernel/libstd"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# External depends within CoreBSP
+#-------------------------------------------------------------------------------
+env.RequireExternalApi([
+])
+
+#-------------------------------------------------------------------------------
+# Internal depends within CoreBSP
+#-------------------------------------------------------------------------------
+CBSP_API = [
+   'SERVICES',
+   'KERNEL',
+]
+
+env.RequirePublicApi(CBSP_API)
+env.RequireRestrictedApi(CBSP_API)
+
+#-------------------------------------------------------------------------------
+# Sources, libraries
+#-------------------------------------------------------------------------------
+
+LIBSTD_SOURCES =  [
+   '${BUILDPATH}/src/libstd_std_scanul.c',
+   '${BUILDPATH}/src/memscpy.c',
+   '${BUILDPATH}/src/memsmove.c',
+   '${BUILDPATH}/src/strcasecmp.c',
+   '${BUILDPATH}/src/strncasecmp.c',
+   '${BUILDPATH}/src/strlcat.c',
+   '${BUILDPATH}/src/wcslcat.c',
+   '${BUILDPATH}/src/wstrlcat.c',
+   '${BUILDPATH}/src/strlcpy.c',
+   '${BUILDPATH}/src/wcslcpy.c',
+   '${BUILDPATH}/src/wstrlcpy.c',
+   '${BUILDPATH}/src/wstrlen.c',
+   '${BUILDPATH}/src/wstrcmp.c',
+   '${BUILDPATH}/src/wstrncmp.c',
+   '${BUILDPATH}/src/secure_memset.c',
+   '${BUILDPATH}/src/secure_memset_dword.c',
+   '${BUILDPATH}/src/timesafe_memcmp.c',
+   '${BUILDPATH}/src/timesafe_strncmp.c',
+   '${BUILDPATH}/src/strnlen.c',
+]
+
+# Uncomment this line to define key LIBSTD_TEST which builds LIBSTD test lib
+# Alternatively, define this at command line when building as a coreimage
+# build using USES_FLAGS=LIBSTD_TEST,....
+#env.Replace(LIBSTD_TEST = "yes")
+if 'LIBSTD_TEST' in env:
+    LIBSTD_TEST_SOURCES =  [
+        '${BUILDPATH}/test/libstd_test_internal.c',
+        '${BUILDPATH}/test/libstd_test_main.c',
+    ]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+
+env.AddBinaryLibrary(['TZOS_IMAGE','MONITOR_IMAGE','HYPERVISOR_IMAGE', 'CTZL_IMAGE', 'CTZL64_IMAGE', 'TZTESTEXEC_IMAGE', 'WIDEVINE_IMAGE', 'PLAYREADY_IMAGE', 'MACCHIATO_SAMPLE_IMAGE', 'FIDOSUI_IMAGE',
+                      'GPSAMPLE', 'GPTEST_IMAGE', 'GPTEST2', 'TTAARI1', 'TTACAPI1', 'TTACAPI2', 'TTACAPI3',  'TTACAPI4',  'TTACAPI5',  'TTACRP1',  'TTADS1',  'TTATIME1',  'TTATCF1',  'TTATCF2',  'TTATCF3',  'TTATCF4', 'TTATCF5',
+                      'SAMPLEAPP_IMAGE', 'QMPSECAPP_IMAGE', 'SAMPLEAPP64_IMAGE', 'ISDBTMM_IMAGE', 'APTTESTAPP_IMAGE', 'APTCRYPTOTESTAPP_IMAGE', 'ASSURANCETEST_IMAGE', 'ASSURANCETEST64_IMAGE', 'SECURITYTEST_IMAGE','DXHDCP2_IMAGE', 'DXHDCP2DBG_IMAGE',
+                      'HDCPSRM_IMAGE', 'LKSECAPP_IMAGE', 'TZBSPTEST_IMAGE', 'APTTESTAPP64_IMAGE', 'APTCRYPTOTESTAPP64_IMAGE', 'LKSECAPP64_IMAGE', 'RETSTAPP_IMAGE', 'FINGERPRINT_IMAGE', 'FINGERPRINT64_IMAGE', 'SKELETON_IMAGE', 'VOICEPRINT_IMAGE', 'IRIS_IMAGE',
+                      'CRIKEYMGMTAPP_IMAGE', 'CRIKEYMGMTAPP64_IMAGE', 'APTLKSECAPP_IMAGE', 'APTLKSECAPP64_IMAGE', 'SECUREUISAMPLE_IMAGE', 'SECUREUISAMPLE64_IMAGE', 'SECOTACL_IMAGE', 'SSMAPP_IMAGE', 'PR_3_0_IMAGE', 'QPAY_IMAGE', 'QPAY64_IMAGE'],
+                     '${BUILDPATH}/libstd',
+                     LIBSTD_SOURCES)
+if 'LIBSTD_TEST' in env:
+   env.AddBinaryLibrary(['TZOS_IMAGE', 'HYPERVISOR_IMAGE', 'CTZL_IMAGE', 'CTZL64_IMAGE', 'TZTESTEXEC_IMAGE', 'SAMPLEAPP_IMAGE', 'SAMPLEAPP64_IMAGE', 'FINGERPRINT_IMAGE', 'FINGERPRINT64_IMAGE', 'IRIS_IMAGE', 'RETSTAPP_IMAGE',
+                         'TZBSPTEST_IMAGE', 'QPAY_IMAGE', 'QPAY64_IMAGE'],
+                         '${BUILDPATH}/libstd_test',
+                         LIBSTD_TEST_SOURCES)

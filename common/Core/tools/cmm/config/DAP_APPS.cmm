@@ -1,0 +1,178 @@
+//============================================================================
+//  Name:                                                                     
+//    DAP_APPS.cmm
+//
+//  Description:                                                              
+//    Setup script for the Apps Processor
+//                                                                            
+// Copyright (c) 2012 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who             what, where, why
+// --------   ---             ---------------------------------------------------------
+// 02/20/2015 JBILLING      Remove JTAG/SWD Hack
+// 02/01/2015 JBILLING      Ported for 8996 - SWD disabled
+// 04/15/2014 AJCheriyan    SWDTARGET removed
+// 04/04/2014 AJCheriyan    SWD support auto-detect
+// 11/21/2013 AJCheriyan    Update for Luxor
+// 04/25/2013 AJCheriyan    Updated Gandalf settings
+// 04/13/2013 AJCheriyan    Support for QDSS Gen 2
+// 04/02/2013 AJCheriyan    Added SWDP support
+// 02/11/2013 AJCheriyan    Added 8x26 support
+// 01/31/2013 AJCheriyan    Added support for Cortex A7
+// 08/26/2012 AJCheriyan    Dropped JTAG clock down to 20 MHz
+// 08/25/2012 AJCheriyan    Boosted JTAG clock speed
+// 07/10/2012 AJCheriyan    Created for B-family
+//
+
+// The script accepts two input arguments
+// ARG0 - Chipset name
+// ARG1 - Core number
+// Ideal case, the argument 'ARG0' would not have to be used
+// as the parameters for a sub-system should be the same
+// across the entire family of chipsets
+
+ENTRY &ARG0 &ARG1 &ARG2
+
+MAIN:
+
+    &ARG0=STR.UPR("&ARG0")
+    
+
+    IF (("&ARG0"=="MSM8996"))
+    (
+    
+        SYSTEM.RESET
+        SYSTEM.CPU HYDRA
+        SYSTEM.JTAGCLOCK 10.0MHZ
+        SYStem.Option EnReset ON
+        
+        SYStem.Option TRST ON
+        SYStem.Option ResBreak ON
+
+        // Core Specific Setup    
+        IF ("&ARG1"=="0")
+        (
+            SYStem.CONFIG SLAVE OFF
+            SYStem.CONFIG COREBASE     DAP:0x83810000
+            SYStem.CONFIG.CTIBASE      DAP:0x83820000
+            
+            //SYSTEM.CONFIG ETMBASE          DAP:0x83840000 
+            //SYSTEM.CONFIG ETMFUNNELPORT    0.
+    
+        )
+        IF ("&ARG1"=="1")
+        (
+            SYStem.CONFIG SLAVE ON
+            SYStem.CONFIG COREBASE     DAP:0x83910000
+            SYStem.CONFIG.CTIBASE      DAP:0x83920000
+            //SYSTEM.CONFIG ETMBASE          DAP:0x83940000 
+            //SYSTEM.CONFIG ETMFUNNELPORT    1.
+
+        )
+        IF ("&ARG1"=="2")
+        (
+        
+            SYStem.CONFIG SLAVE ON
+            SYStem.CONFIG COREBASE     DAP:0x83A10000
+            SYStem.CONFIG.CTIBASE      DAP:0x83A20000
+            //SYSTEM.CONFIG ETMBASE          DAP:0x83A40000 
+            //SYSTEM.CONFIG ETMFUNNELPORT    2.
+        )
+        IF ("&ARG1"=="3")
+        (
+            SYStem.CONFIG SLAVE ON
+            SYStem.CONFIG COREBASE     DAP:0x83B10000
+            SYStem.CONFIG.CTIBASE      DAP:0x83B20000
+            //SYSTEM.CONFIG ETMBASE          DAP:0x83B40000 
+            //SYSTEM.CONFIG ETMFUNNELPORT    3.
+
+        )
+
+        IF ("&ARG1"=="mp1")
+        (
+
+            SYSTEM.CONFIG CORENUMBER       4.
+            CORE.NUM 4.
+            THREAD.ASSIGN                    1. 2. 3. 4.
+            SYSTEM.CONFIG COREBASE         DAP:0x83810000 DAP:0x83910000 DAP:0x83A10000 DAP:0x83B10000 
+            //SYSTEM.CONFIG ETMBASE          DAP:0X83840000 DAP:0x83940000 
+            //SYSTEM.CONFIG ETMFUNNELPORT    0. 1.
+            SYStem.CONFIG.CTIBASE          DAP:0x83820000 DAP:0x83920000 DAP:0x83A20000 DAP:0x83B20000
+        )
+        
+
+        SYStem.CONFIG MEMORYACCESSPORT 0.
+        SYStem.CONFIG DEBUGACCESSPORT  1.
+        SYStem.CONFIG AHBACCESSPORT    3.
+        SYStem.CONFIG APBACCESSPORT    1.
+        SYStem.config AXIACCESSPORT    0.
+        SYSTEM.CONFIG CTICONFIG        ARMV8V1
+
+        SYStem.CONFIG DAPIRPOST 0.
+        SYStem.CONFIG DAPDRPOST 0.
+        SYStem.CONFIG DAPIRPOST 16.
+        SYStem.CONFIG DAPDRPOST 2.
+        SYStem.CONFIG MULTITAP NONE
+
+        //This allows true power down instead of emulated power down
+        SYSTEM.OPTION PWRDWN ON
+        
+
+        System.Option IMASKASM ON
+        System.Option IMASKHLL ON
+
+        SYStem.MEMACCESS DAP
+        
+        //For v1 silicon C5 reset vector catch issue
+        TRONCHIP.SET RESET OFF
+
+
+        
+        //SYSTEM.CONFIG.FUNNELBASE        DAP:0X83321000    
+        //SYSTEM.CONFIG.ETBBASE           DAP:0x83325000
+        //SYSTEM.CONFIG.FUNNEL2BASE       DAP:0x83322000
+        //SYSTEM.CONFIG.ETBFUNNELBASE     DAP:0x83230000
+        //SYSTEM.CONFIG.ETMETBFUNNELPORT  1.
+        // Turn off ETM 
+        //ETM.OFF 
+        
+        B.SEL PROGRAM onchip
+        RADIX HEX
+        SETUP.VAR %HEX.ON
+        MODE.HLL
+
+        autostore , history
+        
+        SYSTEM.STATE
+    )
+
+
+
+
+    // Common settings for all chipsets
+    IF ((("&ARG2"=="SWD")||("&ARG2"=="swd"))&&(CABLE.TWOWIRE()))
+    (
+        SYStem.Option TRST OFF
+        SYSTEM.CONFIG SWDP ON 
+        SYSTEM.CONFIG DEBUGPORTTYPE SWD
+        
+    )
+
+    // Launch startup scripts
+    IF (OS.ENV(STARTUPCMM)!="")
+    (
+        &STARTUPSCRIPT=OS.ENV(STARTUPCMM)
+        do &STARTUPSCRIPT
+    )
+
+    GOTO EXIT
+
+EXIT:
+    ENDDO

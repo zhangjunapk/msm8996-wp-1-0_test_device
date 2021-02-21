@@ -1,0 +1,230 @@
+#===============================================================================
+#
+# secure_ui_sample  build script
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2013, 2015 by Qualcomm technologies Inc.
+# All Rights Reserved.
+# QUALCOMM Proprietary/GTDR
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/apps.tz/1.0.6/bsp/trustzone/qsapps/secure_ui_sample64/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:50:16 $
+#  $Author: pwbldsvc $
+#  $Change: 11897059 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+#===============================================================================
+import os
+Import('env')
+
+env = env.Clone()
+
+#------------------------------------------------------------------------------
+# Check if we need to load this script or just bail-out
+#------------------------------------------------------------------------------
+# alias - First alias is always the target then the other possible aliases
+aliases = [
+   'secure_ui_sample',
+   'secure_ui_sample64',
+   'sse',
+   'all'
+]
+
+env.InitImageVars(
+   alias_list = aliases,       # list of aliases, unique name index [0]
+   proc = 'A53_64',          # proc settings
+   config = 'apps',            # config settings
+  build_tags = ['APPS_PROC',
+     'SECUREUISAMPLE64_IMAGE'],  # list of build tags for sub lib scripts
+  tools = [
+     "${BUILD_ROOT}/core/bsp/build/scripts/scl_builder.py",
+     "${BUILD_ROOT}/core/bsp/build/scripts/mbn_builder.py",
+     "buildspec_builder.py",
+     "${BUILD_ROOT}/tools/build/scons/sectools/sectools_builder.py",
+  ],
+
+)
+
+if not env.CheckAlias():
+   Return()
+
+#------------------------------------------------------------------------------
+# Configure and load in USES and path variables
+#------------------------------------------------------------------------------
+env.InitBuildConfig()
+
+#---------------------------------------------------------------------------
+# Load in the tools scripts
+#---------------------------------------------------------------------------
+env.LoadToolScript('llvm', toolpath = ['${BUILD_SCRIPTS_ROOT}'])
+env.LoadToolScript('apps_defs', toolpath = ['${BUILD_SCRIPTS_ROOT}'])
+
+#------------------------------------------------------------------------------
+# Add extension flags for secure_ui_sample64
+#------------------------------------------------------------------------------
+if env['BUILD_VER'] == "":
+   env.Replace(BUILD_VER = '0')
+
+env.Append(CCFLAGS = " -Wno-incompatible-library-redeclaration ")
+env.Append(CFLAGS = "-Werror ")
+
+# TODO Not sure why this is needed. secure_ui_sample must be added somewhere,
+# otherwise a CPU without TZ instructions is being used.
+# env.Replace(ARM_CPU_SCORPION = '7')
+env.Append(CFLAGS = ' -fPIC') # ' --apcs=/ropi/rwpi --lower_ropi --lower_rwpi')
+
+env.Append(CPPDEFINES = [
+   "SECUREUISAMPLE",
+   "QSAPP_BUILD",
+   "BUILD_BOOT_CHAIN",
+   "BUILD_BOOT_CHAIN_SPBL",
+   "BOOT_LOADER",
+   "BOOT_WATCHDOG_DISABLED",
+   "FLASH_NAND_SINGLE_THREADED",
+   "FLASH_CLIENT_BOOT",
+   "FLASH_USE_DM_PAGES",
+   "FEATURE_HS_USB_BASIC",
+   "BOOT_SBL_H=\\\"boot_comdef.h\\\"",
+   "BOOT_CUSTSBL_H=\\\"custsbl.h\\\"",
+   "BOOT_MODULE_BUILD_VERSION=" + env['BUILD_VER'],
+   "FEATURE_USES_TURBO",
+   "RUMIBUILD",
+   "PNG_INFLATE_BUF_SIZE=1024",
+   "PNG_ZBUF_SIZE=8192",
+])
+
+# enable logging in SSE libraries
+env.Append(CPPDEFINES = 'SSE_LOG_GLOBAL')
+env.Append(CPPDEFINES = 'SSE_LOG_FILE')
+env.Append(CPPDEFINES = 'LOG_TAG=secure_ui_sample')
+#------------------------------------------------------------------------------
+# Decide which build steps to perform
+#------------------------------------------------------------------------------
+# Regular build steps (no filter) is build everything, once a user starts
+# using filters we have to make decisions depending on user input.
+#
+# The LoadAUSoftwareUnits function will take care of filtering subsystem, units,
+# etc.  This is to take care of what steps to enable disable from the top level
+# script, such as building files specify in this script i.e. quartz, stubs, etc.
+
+do_local_files = True
+do_link = True
+do_post_link = True
+
+# Get user input from command line
+filter_opt = env.get('FILTER_OPT')
+
+# Limit build processing based on filter option
+if filter_opt is not None:
+   do_link = False
+   do_post_link = False
+
+   if not env.FilterMatch(os.getcwd()):
+      do_local_files = False
+
+#-------------------------------------------------------------------------------
+# Libraries Section
+#-------------------------------------------------------------------------------
+apps_libs, apps_objs = env.LoadAUSoftwareUnits('apps')
+core_libs, core_objs = env.LoadAUSoftwareUnits('core')
+secure_ui_sample_units = [core_objs, core_libs, apps_objs, apps_libs]
+
+if do_local_files:
+   #============================================================================
+   # secure_ui_sample Environment
+   #============================================================================
+
+   #----------------------------------------------------------------------------
+   # Begin building secure_ui_sample
+   #----------------------------------------------------------------------------
+   env.Replace(TARGET_NAME = 'secure_ui_sample64')
+   env.Replace(SECUREUISAMPLE_ROOT = '${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/secure_ui_sample64')
+
+   #----------------------------------------------------------------------------
+   # Generate Scatter Load File (SCL)
+   #----------------------------------------------------------------------------
+   target_ld = env.SclBuilder('${SHORT_BUILDPATH}/${TARGET_NAME}',
+      '${SECUREUISAMPLE_ROOT}/build/secure_ui_sample.ld')
+
+   secure_ui_sample_units.extend(target_ld)
+
+if do_link:
+   #----------------------------------------------------------------------------
+   # Generate secure_ui_sample ELF
+   #----------------------------------------------------------------------------
+   libs_path = env['INSTALL_LIBPATH']
+
+   arm_libs = [
+      File(env.SubstRealPath('${MUSLPATH}/lib/libc.a')),
+      File(env.SubstRealPath('${LLVMLIB}/libclang_rt.builtins-arm.a'))
+   ]
+
+   env.Append(LINKFLAGS = "-shared -Bsymbolic")
+   # Extend core library to include standard libraries
+   core_libs.extend(arm_libs)
+
+   secure_ui_sample_elf = env.Program('${SHORT_BUILDPATH}/${TARGET_NAME}',
+      source=[core_objs, apps_objs], LIBS=[core_libs, apps_libs], LIBPATH=libs_path)
+
+   env.Depends(secure_ui_sample_elf, target_ld)
+
+   env.Clean(secure_ui_sample_elf, env.subst('${SHORT_BUILDPATH}/${TARGET_NAME}.map'))
+   env.Clean(secure_ui_sample_elf, env.subst('${SHORT_BUILDPATH}/${TARGET_NAME}.sym'))
+
+if do_post_link:
+   #----------------------------------------------------------------------------
+   # Generate secure_ui_sample MBN
+   #----------------------------------------------------------------------------
+   secure_ui_sample_pbn = env.InstallAs('${SHORT_BUILDPATH}/${TARGET_NAME}.pbn',
+      secure_ui_sample_elf)
+   install_root = env.subst('${MBN_ROOT}')
+   image_name = "secure_ui_sample64"
+   install_unsigned_root = env.SectoolGetUnsignedInstallPath(install_base_dir = install_root)
+   env.Replace(MBN_FILE = os.path.join(install_unsigned_root, image_name))
+
+   secure_ui_sample_mbn = env.MbnBuilder('${SHORT_BUILDPATH}/${TARGET_NAME}',
+      secure_ui_sample_pbn, IMAGE_TYPE="secure_ui_sample64", MBN_TYPE="elf",
+      IMAGE_ID=4, FLASH_TYPE="sdcc")
+
+   #----------------------------------------------------------------------------
+   # Sectools signing
+   #----------------------------------------------------------------------------
+   pil_base_dir = '${BUILD_ROOT}/build/ms/bin/PIL_IMAGES/SPLITBINS_${QC_SHORT_BUILDPATH}'
+   sectools_signed_mbn = env.SectoolBuilder(
+            target_base_dir = '${SHORT_BUILDPATH}',
+            source=secure_ui_sample_mbn,
+            sign_id=image_name,
+            msmid = env.subst('${MSM_ID}'),
+            sectools_install_base_dir = install_root,
+            install_file_name = image_name + ".mbn",
+            config='${BUILD_ROOT}/apps/bsp/trustzone/qsapps/build/secimage.xml',
+            pilsplitter_target_base_dir=pil_base_dir)
+
+   #-------------------------------------------------------------------------
+   # Build files for PIL driver
+   #-------------------------------------------------------------------------
+   env.LoadToolScript('pil_splitter_builder', toolpath = ['${BUILD_ROOT}/core/bsp/build/scripts'])
+   unsigned_pil_dir = env.SectoolGetUnsignedInstallPath(install_base_dir = pil_base_dir)
+   secure_ui_sample_pil = env.PilSplitterBuilder(os.path.join(unsigned_pil_dir, 'secure_ui_sample64.mdt'), secure_ui_sample_mbn)
+   #secure_ui_sample_pil = env.PilSplitterBuilder('${BUILD_ROOT}/build/ms/bin/PIL_IMAGES/SPLITBINS_${QC_SHORT_BUILDPATH}/secure_ui_sample64.mdt', secure_ui_sample_mbn)
+
+   #============================================================================
+   # Define units that will be built
+   #============================================================================
+   secure_ui_sample_units = env.Alias ('arm11_secure_ui_sample_units', [
+      secure_ui_sample_elf,
+      secure_ui_sample_mbn,
+      secure_ui_sample_pil,
+      sectools_signed_mbn
+   ])
+
+# Add aliases
+for alias in aliases:
+   env.Alias(alias, secure_ui_sample_units)

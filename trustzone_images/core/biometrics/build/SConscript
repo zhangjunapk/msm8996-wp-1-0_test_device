@@ -1,0 +1,40 @@
+#===============================================================================
+#
+# GENERAL DESCRIPTION
+#    Public build script for Ontario 2.0 driver.
+#
+# Copyright (c) 2014 by QUALCOMM, Incorporated.
+# All Rights Reserved.
+# QUALCOMM Proprietary
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/core.tz/1.0.3.c1/biometrics/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:46:26 $
+#  $Author: pwbldsvc $
+#  $Change: 11896995 $
+#                      EDIT HISTORY FOR FILE
+#                      
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#  
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 11/12      kbuska  Initial development of Ontario 2.0.
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' --arm ')
+#env.Append(ARMCC_OPT = " --fpu vfpv3 ")
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()
+

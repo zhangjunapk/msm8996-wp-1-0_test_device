@@ -1,0 +1,3 @@
+Before shipping to customers, please STRIP
+tiotest32
+tiotest64

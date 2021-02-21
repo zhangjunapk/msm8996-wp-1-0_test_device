@@ -1,0 +1,1277 @@
+Archive member included because of file (symbol)
+
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o (get_app_md)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (minkIPC)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (qsee_open)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (qsee_prng_getdata)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o (app_export_init_info_to_qsee)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (CApp_invoke)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o) (mink_generic_syscall)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o) (vsnprintf)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memcpy.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o) (memcpy)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlen.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (strlen)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__errno_location.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o) (__errno_location)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__errno_location.o) (__libc)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o) (vfprintf)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memchr.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o) (memchr)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memset.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o) (memset)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strerror.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o) (strerror)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wctomb.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o) (wctomb)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lockfile.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o) (__lockfile)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(fwrite.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o) (__fwritex)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__wait.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lockfile.o) (__wait)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(syscall.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lockfile.o) (__syscall)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wcrtomb.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wctomb.o) (wcrtomb)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__towrite.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(fwrite.o) (__towrite)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__stdio_exit.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__towrite.o) (__stdio_exit)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lock.o)
+                              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__stdio_exit.o) (__lock)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o) (tz_app_cmd_handler)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o) (memscpy)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (secure_memset)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o) (qsee_log)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o) (TEE_SEChannelClose)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o) (CloseChannel)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o) (SCPCreate)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o) (SCP03Create)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o) (SCP11Create)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o) (SCPXCreate)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o) (ECCBIGNUM2Bin)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o) (APDUAuthenticate)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o) (SCPAESDecrypt)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o) (AESDecrypt)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(snprintf.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o) (snprintf)
+/afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlcpy.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o) (strlcpy)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o) (qsee_SW_GENERIC_ECC_bigval_to_binary)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o) (SW_CipherDESData)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o) (secmath_BIGINT_read_radix)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o) (ce_rsa_decrypt)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o) (ECC_hash_to_bigval)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o) (qsee_ese_service_handle_close)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o) (qsee_cipher_decrypt)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o) (qsee_hash)
+
+Allocating common symbols
+Common symbol       size              file
+
+apps_request_resp   0x28              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+__hwcap             0x8               /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+__libc              0x38              /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+__sysinfo           0x8               /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .group         0x0000000000000000        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memcpy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memcpy.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlen.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlen.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlen.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__errno_location.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__errno_location.o)
+ .text          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memchr.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memchr.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memchr.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memset.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memset.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memset.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strerror.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strerror.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strerror.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wctomb.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wctomb.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wctomb.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lockfile.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lockfile.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lockfile.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(fwrite.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(fwrite.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(fwrite.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__wait.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__wait.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__wait.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(syscall.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(syscall.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(syscall.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wcrtomb.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wcrtomb.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wcrtomb.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__towrite.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__towrite.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__towrite.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__stdio_exit.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__stdio_exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__stdio_exit.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lock.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lock.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lock.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(snprintf.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(snprintf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(snprintf.o)
+ .data          0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlcpy.o)
+ .bss           0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlcpy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlcpy.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000000000000    0x1098a
+ *\tzapp_entry.o(SORT(TZAPPENTRYCODE))
+ TZAPPENTRYCODE
+                0x0000000000000000       0x58 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000000000                __main
+                0x0000000000000000                TZAPPENTRY
+                0x0000000000000000                _main
+                0x000000000000003c                get_cmnlib_ctx_ptr
+ *(SORT(.text) SORT(.text.*) SORT(kthread_shared))
+ .text          0x0000000000000058      0x934 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000000058                qsee_err_fatal
+                0x0000000000000078                platform_err_fatal
+                0x000000000000007c                platform_get_random
+                0x0000000000000080                __stack_chk_fail
+                0x0000000000000084                _sys_command_string
+                0x0000000000000090                get_app_req_resp
+                0x000000000000009c                qsee_read_register
+                0x00000000000000c0                qsee_request_service
+                0x000000000000015c                qsee_prepare_shared_buf_for_nosecure_read
+                0x0000000000000180                qsee_prepare_shared_buf_for_secure_read
+                0x00000000000001a4                qsee_set_global_flag
+                0x00000000000001c8                qsee_get_global_flag
+                0x00000000000001e8                qsee_oem_process_cmd
+                0x0000000000000214                qsee_enforce_hdmi_hdcp_encryption
+                0x0000000000000238                qsee_write_hdcp2p2_key_riv_enable
+                0x0000000000000268                qsee_read_hdcp2p2_min_encryption_level
+                0x000000000000028c                qsee_write_hdcp2p2_min_encryption_level
+                0x00000000000002b0                qsee_get_hdcp_min_enc_level
+                0x00000000000002d4                qsee_set_hdcp_min_enc_level
+                0x00000000000002f8                qsee_write_hdcp1_key
+                0x000000000000031c                qsee_set_hdcp_cpi_assert
+                0x0000000000000340                qsee_get_secure_state
+                0x0000000000000364                qsee_malloc
+                0x0000000000000374                qsee_realloc
+                0x0000000000000398                qsee_realloc_common
+                0x0000000000000450                qsee_free
+                0x000000000000047c                qsee_cmnlib_malloc
+                0x00000000000004ac                qsee_cmnlib_free
+                0x00000000000004d8                tzlib_app_entry
+                0x0000000000000604                get_ta_app_name
+                0x0000000000000614                get_app_md
+ .text.tz_module_open
+                0x000000000000098c        0xc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x000000000000098c                tz_module_open
+ .text          0x0000000000000998      0x3e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                0x0000000000000998                UThread_syscall
+                0x00000000000009c0                minkIPC
+                0x0000000000000b4c                minkServerLoop
+                0x0000000000000d58                minkServerEntry
+ .text          0x0000000000000d80      0x3c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                0x0000000000000d80                qsee_set_env
+                0x0000000000000db0                qsee_open
+                0x0000000000000e2c                qsee_open_singleton
+                0x0000000000001034                qsee_printf_ap
+                0x00000000000010c0                qsee_printf
+ .text          0x0000000000001144       0x60 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                0x0000000000001144                qsee_prng_getdata
+ .text          0x00000000000011a4       0xfc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                0x00000000000011a4                get_app_stack_base
+                0x00000000000011b0                get_app_stack_size
+                0x00000000000011c8                get_app_heap_base
+                0x00000000000011d4                get_app_heap_size
+                0x00000000000011ec                CApp_handleRequest
+                0x0000000000001220                CApp_invoke
+                0x0000000000001270                secure_app_init
+                0x0000000000001288                secure_app_shutdown
+ .text          0x00000000000012a0      0x13c /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o)
+                0x00000000000012a0                vsnprintf
+ .text          0x00000000000013dc      0xa28 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memcpy.o)
+                0x00000000000013dc                memcpy
+ .text          0x0000000000001e04       0x78 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlen.o)
+                0x0000000000001e04                strlen
+ .text          0x0000000000001e7c       0x34 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__errno_location.o)
+                0x0000000000001e7c                __errno_location
+ .text          0x0000000000001eb0      0xe44 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+                0x0000000000001eb0                vfprintf
+ .text          0x0000000000002cf4       0xdc /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memchr.o)
+                0x0000000000002cf4                memchr
+ .text          0x0000000000002dd0       0xb0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memset.o)
+                0x0000000000002dd0                memset
+ .text          0x0000000000002e80       0x6c /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strerror.o)
+                0x0000000000002e80                strerror
+ .text          0x0000000000002eec       0x24 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wctomb.o)
+                0x0000000000002eec                wctomb
+ .text          0x0000000000002f10       0xd4 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lockfile.o)
+                0x0000000000002f10                __lockfile
+                0x0000000000002fac                __unlockfile
+ .text          0x0000000000002fe4      0x19c /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(fwrite.o)
+                0x0000000000002fe4                __fwritex
+                0x00000000000030dc                fwrite_unlocked
+                0x00000000000030dc                fwrite
+ .text          0x0000000000003180       0xa4 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__wait.o)
+                0x0000000000003180                __wait
+ .text          0x0000000000003224       0x40 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(syscall.o)
+                0x0000000000003224                __syscall
+ .text          0x0000000000003264       0xf0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wcrtomb.o)
+                0x0000000000003264                wcrtomb
+ .text          0x0000000000003354       0x68 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__towrite.o)
+                0x0000000000003354                __towrite
+                0x00000000000033b8                __flush_on_exit
+ .text          0x00000000000033bc       0xd4 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__stdio_exit.o)
+                0x00000000000033bc                __stdio_exit
+ .text          0x0000000000003490       0xa0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lock.o)
+                0x0000000000003490                __lock
+                0x00000000000034f4                __unlock
+ .text          0x0000000000003530     0x1580 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+                0x0000000000003530                tz_app_init
+                0x0000000000003574                tz_app_cmd_handler
+                0x0000000000004928                tz_app_shutdown
+ .text          0x0000000000004ab0       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                0x0000000000004ab0                memscpy
+ .text          0x0000000000004ae0       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                0x0000000000004ae0                secure_memset
+ .text          0x0000000000004b10      0x6e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                0x0000000000004b10                qsee_kdf
+                0x0000000000004b3c                qsee_log
+                0x0000000000004c4c                qsee_log_set_mask
+                0x0000000000004c74                qsee_log_get_mask
+                0x0000000000004ca0                open
+                0x0000000000004cf8                read
+                0x0000000000004d24                write
+                0x0000000000004d50                close
+                0x0000000000004d7c                lstat
+                0x0000000000004da8                mkdir
+                0x0000000000004dd4                frename
+                0x0000000000004e00                opendir
+                0x0000000000004e2c                readdir
+                0x0000000000004e58                rmdir
+                0x0000000000004e84                testdir
+                0x0000000000004eb0                file_get_partition_free_size
+                0x0000000000004edc                fstat
+                0x0000000000004f08                lseek
+                0x0000000000004f34                time_getsystime
+                0x0000000000004f60                time_getutcsec
+                0x0000000000004f8c                time_is_leap_year
+                0x0000000000004fb8                remove
+                0x0000000000004fe4                unlink
+                0x0000000000005010                link
+                0x000000000000503c                telldir
+                0x0000000000005068                fsync
+                0x0000000000005094                openat
+                0x00000000000050e8                unlinkat
+                0x0000000000005114                fcntl
+                0x000000000000516c                creat
+                0x0000000000005198                file_dir_chown_chmod
+                0x00000000000051cc                get_error_number
+ .text          0x00000000000051f8     0x1c84 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+                0x00000000000051f8                TEE_SEServiceOpen
+                0x0000000000005264                TEE_SEServiceOpen_cc
+                0x00000000000053e4                TEE_SEServiceClose
+                0x000000000000554c                TEE_SESessionClose
+                0x00000000000056f4                TEE_SEServiceGetReaders
+                0x0000000000005854                TEE_SEReaderGetProperties
+                0x00000000000058c0                TEE_SEReaderGetName
+                0x00000000000059ac                TEE_SEReaderOpenSession
+                0x0000000000005b00                TEE_SEReaderCloseSessions
+                0x0000000000005b9c                TEE_SESessionCloseChannels
+                0x0000000000005c64                TEE_SESessionGetATR
+                0x0000000000005d04                TEE_SESessionIsClosed
+                0x0000000000005d84                TEE_SESecureChannelClose
+                0x0000000000005e00                TEE_SEChannelClose
+                0x0000000000005e70                TEE_SEChannelClose_cc
+                0x0000000000005fdc                TEE_SESessionOpenBasicChannel
+                0x00000000000060a4                TEE_SESessionOpenBasicChannel_cc
+                0x000000000000625c                TEE_SESessionOpenLogicalChannel
+                0x0000000000006318                TEE_SESessionOpenLogicalChannel_cc
+                0x000000000000649c                TEE_SEChannelSelectNext
+                0x0000000000006520                TEE_SEChannelSelectNext_cc
+                0x0000000000006670                TEE_SEChannelGetSelectResponse
+                0x0000000000006790                TEE_SEChannelTransmit
+                0x0000000000006870                TEE_SEChannelTransmit_cc
+                0x0000000000006b14                TEE_SEChannelGetResponseLength
+                0x0000000000006bec                TEE_SESecureChannelOpen
+                0x0000000000006cdc                TEE_SESecureChannelOpen_cc
+                0x0000000000006d78                TEE_SESecureChannelGetSecurityLevel
+                0x0000000000006df4                TEE_SESecureChannelClose_cc
+ .text          0x0000000000006e7c     0x23a4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+                0x0000000000006e7c                OpenBasicChannel
+                0x0000000000006fb0                eSEServiceSpiOpen
+                0x0000000000007164                eseServiceWrite
+                0x0000000000007364                OpenLogicalChannel
+                0x000000000000763c                encodeApdu
+                0x0000000000007740                eseServiceTransceive
+                0x0000000000007918                eseSetChannelNumber
+                0x0000000000007924                eseGetChannelNumber
+                0x0000000000007930                CloseChannel
+                0x0000000000007ae0                selectNextApplet
+                0x0000000000007c30                checkCmdApdu
+                0x0000000000007e1c                setChannelToClassByte
+                0x0000000000007ecc                transmitCmdApdu
+                0x00000000000080d4                debugPrint
+                0x00000000000081ac                isChannelSecured
+                0x0000000000008204                translateToTeeError
+                0x0000000000008298                eSEServiceSpiClose
+                0x0000000000008320                eSEService_getATR
+                0x0000000000008328                eSEService_getReaders
+                0x0000000000008330                translateFromTeeError
+                0x00000000000083c4                VerifyReaderHandle
+                0x00000000000083e8                VerifySessionHandle
+                0x0000000000008430                VerifySEAID
+                0x000000000000845c                sendAcknowledge
+                0x0000000000008554                sendWtxResponse
+                0x000000000000866c                checkRapdu
+                0x00000000000088dc                eseServiceRead
+                0x0000000000008a5c                findChannelHandle
+                0x0000000000008a90                storeChannelInformation
+                0x0000000000008c6c                readFurtherResponse
+                0x0000000000008d98                findReaderHandle
+                0x0000000000008e94                removeChannelFromSession
+                0x0000000000008f30                eseCreateChannelHandle
+ .text          0x0000000000009220      0x2d4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+                0x0000000000009220                SCPCreate
+                0x00000000000093a4                SCPDestroy
+                0x00000000000093e8                SCPStart
+                0x0000000000009444                SCPProcessRAPDU
+                0x000000000000949c                SCPProcessCAPDU
+ .text          0x00000000000094f4      0x8e4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+                0x00000000000094f4                SCP03KDF
+                0x000000000000968c                SCP03ApplyCAPDUENCMAC
+                0x00000000000099cc                SCP03CheckRAPDUDECMAC
+                0x0000000000009c30                SCP03Create
+                0x0000000000009ca8                SCP03Destroy
+                0x0000000000009cf4                SCP03Start
+                0x0000000000009d40                SCP03ProcessRAPDU
+                0x0000000000009d8c                SCP03ProcessCAPDU
+ .text          0x0000000000009dd8      0x1c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+                0x0000000000009dd8                SCP11Create
+                0x0000000000009e6c                SCP11Destroy
+                0x0000000000009eb8                SCP11Start
+                0x0000000000009f04                SCP11ProcessRAPDU
+                0x0000000000009f50                SCP11ProcessCAPDU
+ .text          0x0000000000009f9c      0x7f8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+                0x0000000000009f9c                SCPXCreate
+                0x000000000000a070                SCPXDestroy
+                0x000000000000a0cc                SCPXStart
+                0x000000000000a260                SCPXProcessRAPDU
+                0x000000000000a318                SCPXProcessCAPDU
+                0x000000000000a3d4                SCPXDeriveMasterKey
+                0x000000000000a4fc                SCPXProcessRAPDU_GenerateKey
+                0x000000000000a5e4                SCPXProcessRAPDU_Authenticate
+ .text          0x000000000000a794      0x1b8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+                0x000000000000a794                ECCInit
+                0x000000000000a7f0                ECCKeyPairGen
+                0x000000000000a818                ECDSASign
+                0x000000000000a84c                ECDSAVerify
+                0x000000000000a880                ECDHDerive
+                0x000000000000a8b0                ECCBIGNUM2Bin
+                0x000000000000a8e8                ECCBin2BIGNUM
+                0x000000000000a914                ECCGetRandomBytes
+ .text          0x000000000000a94c      0x29c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+                0x000000000000a94c                APDUGetInfo
+                0x000000000000aa04                APDUGenerateKey
+                0x000000000000aa40                APDUAuthenticate
+                0x000000000000aac0                APDUSetStatus
+                0x000000000000ab78                APDUGetData
+ .text          0x000000000000abe8      0x96c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+                0x000000000000abe8                SCPMemCompare
+                0x000000000000ac30                SCPAllocSession
+                0x000000000000ac74                SCPFreeSession
+                0x000000000000acb4                SCPExtractECCPrivateKey
+                0x000000000000acbc                SCPSHA256Digest
+                0x000000000000acfc                SCPAESStart
+                0x000000000000adc8                SCPAESEnd
+                0x000000000000add4                SCPAESSetKey
+                0x000000000000ae04                SCPAESSetICV
+                0x000000000000ae48                SCPAESEncrypt
+                0x000000000000ae88                SCPAESDecrypt
+                0x000000000000aec8                SCPSHL
+                0x000000000000af04                SCPXOR
+                0x000000000000af48                SCPCMACSubkeys
+                0x000000000000b0a4                SCPCMACKey
+                0x000000000000b15c                SCPCMACAES
+                0x000000000000b334                SCPSend
+                0x000000000000b3f4                SCPTransceive
+ .text          0x000000000000b554      0x360 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+                0x000000000000b554                AESStartSession
+                0x000000000000b5bc                AESEndSession
+                0x000000000000b5c0                AESSetOption
+                0x000000000000b764                AESKeySet
+                0x000000000000b778                AESEncrypt
+                0x000000000000b814                AESDecrypt
+ .text          0x000000000000b8b4       0x80 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(snprintf.o)
+                0x000000000000b8b4                snprintf
+ .text          0x000000000000b934      0x120 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlcpy.o)
+                0x000000000000b934                strlcpy
+ .text          0x000000000000ba54      0x2c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+                0x000000000000ba54                qsee_rsa_key_gen
+                0x000000000000ba70                qsee_secpkcs8_parse
+                0x000000000000ba8c                qsee_rsa_sign_hash
+                0x000000000000baa8                qsee_rsa_verify_signature
+                0x000000000000bac4                qsee_rsa_encrypt
+                0x000000000000bae0                qsee_rsa_decrypt
+                0x000000000000bafc                qsee_BIGINT_read_unsigned_bin
+                0x000000000000bb18                qsee_util_init_s_bigint
+                0x000000000000bb34                qsee_util_free_s_bigint
+                0x000000000000bb38                qsee_BIGINT_read_radix
+                0x000000000000bb54                qsee_rsa_exptmod
+                0x000000000000bb70                qsee_util_count_bytes
+                0x000000000000bb74                qsee_SW_ECC_PubPrivate_Key_generate
+                0x000000000000bb90                qsee_SW_ECDH_Shared_Key_Derive
+                0x000000000000bbac                qsee_SW_ECDSA_Sign
+                0x000000000000bbc8                qsee_SW_ECDSA_Verify
+                0x000000000000bbe4                qsee_ECC_hash_to_bigval
+                0x000000000000bbe8                qsee_toggle_random_bit
+                0x000000000000bbec                qsee_get_random_bytes
+                0x000000000000bbf0                qsee_in_curveP
+                0x000000000000bc0c                qsee_SW_GENERIC_ECC_init
+                0x000000000000bc28                qsee_SW_GENERIC_ECDSA_sign
+                0x000000000000bc44                qsee_SW_GENERIC_ECDSA_verify
+                0x000000000000bc60                qsee_SW_GENERIC_ECDH_shared_key_derive
+                0x000000000000bc7c                qsee_SW_GENERIC_ECC_keypair_generate
+                0x000000000000bc98                qsee_SW_GENERIC_ECC_binary_to_bigval
+                0x000000000000bcb4                qsee_SW_GENERIC_ECC_bigval_to_binary
+                0x000000000000bcd0                qsee_SW_GENERIC_ECC_compare
+                0x000000000000bcec                qsee_SW_GENERIC_ECC_convert_input_to_bigval
+                0x000000000000bd08                qsee_SW_Cipher_DES_Init
+                0x000000000000bd0c                qsee_SW_Cipher_DES_DeInit
+                0x000000000000bd10                qsee_SW_CipherDESData
+                0x000000000000bd14                qsee_SW_Cipher_DES_SetParam
+ .text          0x000000000000bd18       0xb0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+                0x000000000000bd18                SW_Cipher_DES_Init
+                0x000000000000bd44                SW_Cipher_DES_DeInit
+                0x000000000000bd70                SW_CipherDESData
+                0x000000000000bd9c                SW_Cipher_DES_SetParam
+ .text          0x000000000000bdc8       0x58 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+                0x000000000000bdc8                secmath_BIGINT_read_unsigned_bin
+                0x000000000000bdf4                secmath_BIGINT_read_radix
+ .text          0x000000000000be20      0x1b4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+                0x000000000000be20                secpkcs8_parse
+                0x000000000000be4c                ce_rsa_key_gen
+                0x000000000000be78                ce_rsa_encrypt
+                0x000000000000bea4                ce_rsa_decrypt
+                0x000000000000bed0                ce_rsa_sign_hash
+                0x000000000000befc                ce_rsa_verify_signature
+                0x000000000000bf28                ce_util_init_s_bigint
+                0x000000000000bf54                ce_util_free_s_bigint
+                0x000000000000bf7c                ce_util_count_bytes
+                0x000000000000bfa8                ce_rsa_exptmod
+ .text          0x000000000000bfd4      0x2e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+                0x000000000000bfd4                SW_ECC_PubPrivate_Key_generate
+                0x000000000000c000                SW_ECDH_Shared_Key_Derive
+                0x000000000000c02c                SW_ECDSA_Sign
+                0x000000000000c058                SW_ECDSA_Verify
+                0x000000000000c084                ECC_hash_to_bigval
+                0x000000000000c0ac                toggle_random_bit
+                0x000000000000c0d8                in_curveP
+                0x000000000000c104                get_random_bytes
+                0x000000000000c130                SW_GENERIC_ECC_init
+                0x000000000000c15c                SW_GENERIC_ECDSA_sign
+                0x000000000000c188                SW_GENERIC_ECDSA_verify
+                0x000000000000c1b4                SW_GENERIC_ECDH_shared_key_derive
+                0x000000000000c1e0                SW_GENERIC_ECC_keypair_generate
+                0x000000000000c20c                SW_GENERIC_ECC_binary_to_bigval
+                0x000000000000c238                SW_GENERIC_ECC_bigval_to_binary
+                0x000000000000c264                SW_GENERIC_ECC_compare
+                0x000000000000c290                SW_GENERIC_ECC_convert_input_to_bigval
+ .text          0x000000000000c2bc      0x460 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+                0x000000000000c2bc                qsee_ese_service_start
+                0x000000000000c338                qsee_ese_service_stop
+                0x000000000000c374                qsee_ese_service_spi_open
+                0x000000000000c3e0                qsee_ese_service_spi_close
+                0x000000000000c444                qsee_ese_service_handle_open
+                0x000000000000c4a8                qsee_ese_service_handle_close
+                0x000000000000c50c                qsee_ese_service_transceive
+                0x000000000000c5bc                qsee_ese_service_write
+                0x000000000000c638                qsee_ese_service_read
+ .text          0x000000000000c71c      0x800 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+                0x000000000000c71c                qsee_cipher_init
+                0x000000000000c7e8                qsee_cipher_free_ctx
+                0x000000000000c838                qsee_cipher_set_param
+                0x000000000000ca70                qsee_cipher_get_param
+                0x000000000000cc78                qsee_cipher_encrypt
+                0x000000000000cd64                qsee_cipher_decrypt
+                0x000000000000ce50                qsee_cipher_reset
+ .text          0x000000000000cf1c      0x94c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+                0x000000000000cf1c                qsee_hash_init
+                0x000000000000cfe8                qsee_hash_free_ctx
+                0x000000000000d038                qsee_hash_update
+                0x000000000000d108                qsee_hash_final
+                0x000000000000d1d8                qsee_hash_set_param
+                0x000000000000d3e0                qsee_hash
+                0x000000000000d47c                qsee_hashcipher_encrypt
+                0x000000000000d60c                qsee_hashcipher_decrypt
+                0x000000000000d79c                qsee_hash_reset
+ kthread_shared
+                0x000000000000d868       0x98 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+                0x000000000000d868                mink_generic_syscall
+ *(SORT(tzapp_syscall_asm))
+ tzapp_syscall_asm
+                0x000000000000d900      0x200 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+                0x000000000000d900                app_export_init_info_to_qsee
+                0x000000000000d914                qsee_wait_default_signal_syscall
+                0x000000000000d9a4                qsee_generic_syscall
+ *(SORT(.rodata))
+ .rodata        0x000000000000db00       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .rodata        0x000000000000db30       0xd0 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o)
+ .rodata        0x000000000000dc00       0x38 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memcpy.o)
+ .rodata        0x000000000000dc38      0x390 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+ .rodata        0x000000000000dfc8        0x8 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__stdio_exit.o)
+                0x000000000000dfc8                __stdout_used
+                0x000000000000dfc8                __stdin_used
+                0x000000000000dfc8                __stderr_used
+ .rodata        0x000000000000dfd0        0x4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+                0x000000000000dfd0                TA_ACCEPT_BUF_SIZE
+ .rodata        0x000000000000dfd4        0x4 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__towrite.o)
+                0x000000000000dfd4                __towrite_used
+ .rodata        0x000000000000dfd8       0x58 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .rodata        0x000000000000e030       0x50 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .rodata        0x000000000000e080        0xc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+ .rodata        0x000000000000e08c      0x70c /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strerror.o)
+ .rodata        0x000000000000e798       0x2a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .rodata        0x000000000000e7c2       0x20 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ *(SORT(EXCLUDE_FILE(*\metadata.o) .rodata.*))
+ .rodata.str1.1
+                0x000000000000e7e2        0x9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .rodata.str1.1
+                0x000000000000e7eb       0x11 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+ .rodata.cst16  0x000000000000e7fc       0x10 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+ .rodata.str1.1
+                0x000000000000e80c       0x58 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strerror.o)
+ .rodata.str1.1
+                0x000000000000e864      0x8bf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .rodata.str1.1
+                0x000000000000f123      0x9fc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .rodata.str1.1
+                0x000000000000fb1f      0x9cc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+                                        0xa8b (size before relaxing)
+ .rodata.str1.1
+                0x00000000000104eb       0xa6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .rodata.str1.1
+                0x0000000000010591       0x48 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+                                         0x71 (size before relaxing)
+ .rodata.str1.1
+                0x00000000000105d9       0x92 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+                                         0xbb (size before relaxing)
+ .rodata.str1.1
+                0x000000000001066b      0x30c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .rodata.str1.1
+                0x0000000000010977        0xc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ *metadata.o(SORT(.rodata.str1.1))
+ .rodata.str1.1
+                0x0000000000010983        0x7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+
+.plt            0x000000000001098c        0x0
+ .plt           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.sentinel       0x000000000001098a       0x2b
+ *(SORT(.rodata.sentinel))
+ .rodata.sentinel
+                0x000000000001098a       0x2b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+                0x000000000001098a                TA_METADATA
+                0x0000000000000001                ASSERT ((SIZEOF (.sentinel) != 0x0), No sentinel section defined.)
+
+.gnu.version_d  0x00000000000109b8        0x0
+ .gnu.version_d
+                0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.version    0x00000000000109b6        0x0
+ .gnu.version   0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.version_r  0x00000000000109b8        0x0
+ .gnu.version_r
+                0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.metadata_check
+                0x00000000000109b5        0x0
+ *metadata.o(SORT(.rodata.*))
+                0x0000000000000001                ASSERT ((SIZEOF (.metadata_check) == 0x0), New metadata not accounted for here)
+
+.data           0x0000000000011000     0x1abc
+ *(SORT(.data) SORT(TZAPPENTRYSTACK) SORT(.bss) SORT(COMMON))
+ TZAPPENTRYSTACK
+                0x0000000000011000       0x80 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000011080                app_entry_stack_start
+ .data          0x0000000000011080      0x290 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000011080                magic_num
+                0x0000000000011094                magic_num_index_array
+                0x00000000000110a0                mem_magic_number
+                0x00000000000110b8                __stack_chk_guard
+ .bss           0x0000000000011310       0x84 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000011310                pgCmnlib
+ *fill*         0x0000000000011394        0x4 
+ COMMON         0x0000000000011398       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000011398                apps_request_resp
+ .bss           0x00000000000113c0      0x1e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .bss           0x00000000000115a0       0x10 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+                0x00000000000115a0                __progname
+                0x00000000000115a0                program_invocation_short_name
+                0x00000000000115a8                program_invocation_name
+                0x00000000000115a8                __progname_full
+ COMMON         0x00000000000115b0       0x48 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+                0x00000000000115b0                __hwcap
+                0x00000000000115b8                __libc
+                0x00000000000115f0                __sysinfo
+ .data          0x00000000000115f8       0x10 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .bss           0x0000000000011608       0x70 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .bss           0x0000000000011678      0x227 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+                0x0000000000011678                copyOfReaderHandle
+                0x0000000000011680                copyOfseServiceHandle
+                0x0000000000011688                manageChannelRsp
+ *fill*         0x000000000001189f        0x1 
+ .bss           0x00000000000118a0     0x1000 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+                0x00000000000118a0                ta_acceptBuf
+ .bss           0x00000000000128a0        0x4 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__errno_location.o)
+ .bss           0x00000000000128a4        0x4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .data          0x00000000000128a8      0x214 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+
+.rel.text
+ *(SORT(.rel.text))
+
+.rel.rodata
+ *(SORT(.rel.rodata))
+
+.data.rel.ro.local
+                0x0000000000012ac0       0xb0
+ *(SORT(.data.rel.ro.local))
+ .data.rel.ro.local
+                0x0000000000012ac0       0x40 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .data.rel.ro.local
+                0x0000000000012b00       0x70 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+
+.data.rel.ro
+ *(SORT(.data.rel.ro))
+
+.rel.data
+ *(SORT(.rel.data))
+
+.rel.plt
+ *(SORT(.rel.plt))
+
+.data.rel
+ *(SORT(.data.rel))
+
+.data.rel.local
+                0x0000000000012b70       0x10
+ *(SORT(.data.rel.local))
+ .data.rel.local
+                0x0000000000012b70        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+                0x0000000000012b70                TA_APP_NAME
+ .data.rel.local
+                0x0000000000012b78        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000012b78                dummy_str
+
+TZ_APP_STACK    0x0000000000012b80     0x2000
+                0x0000000000012b80                Image$$TZ_APP_STACK$$ZI$$Base = .
+                0x0000000000014b80                . = (. + 0x2000)
+ *fill*         0x0000000000012b80     0x2000 
+                0x0000000000014b80                Image$$TZ_APP_STACK$$ZI$$Limit = .
+
+TZ_APP_HEAP     0x0000000000014b80     0x2800
+                0x0000000000014b80                Image$$TZ_APP_HEAP$$ZI$$Base = .
+                0x0000000000017380                . = (. + 0x2800)
+ *fill*         0x0000000000014b80     0x2800 
+                0x0000000000017380                Image$$TZ_APP_HEAP$$ZI$$Limit = .
+
+.got            0x0000000000018000      0x158
+ *(SORT(.got.plt))
+ .got.plt       0x0000000000018000       0x18 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ *(SORT(.igot.plt))
+ *(SORT(.got))
+ .got           0x0000000000018018      0x140 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000018018                _GLOBAL_OFFSET_TABLE_
+ *(SORT(.igot))
+
+.dynamic        0x0000000000019000       0xb0
+ *(SORT(.dynamic))
+ .dynamic       0x0000000000019000       0xb0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000019000                _DYNAMIC
+
+.rela.dyn       0x000000000001a000      0xb70
+ *(SORT(.rela.dyn))
+ .rela.got      0x000000000001a000      0x3a8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.plt      0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.ifunc    0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .relaTZAPPENTRYCODE
+                0x000000000001a3a8       0x18 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.data.rel.local
+                0x000000000001a3c0       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.rodata   0x000000000001a3f0      0x600 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.data.rel.ro.local
+                0x000000000001a9f0      0x180 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.dynbss         0x000000000001ab70        0x0
+ .dynbss        0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.attributes
+ *(SORT(.gnu.attributes))
+
+.note.gnu.arm.ident
+ *(SORT(.note.gnu.arm.ident))
+
+/DISCARD/
+ *(SORT(.hash))
+ *(SORT(.dynsym))
+ *(SORT(.dynstr))
+ *(SORT(.ARM.exidx*))
+ *(SORT(.note.GNU-stack))
+ *(SORT(.gnu_debuglink))
+ *(SORT(.gnu.lto_*))
+ *(SORT(.init))
+ *(SORT(.fini))
+START GROUP
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib
+LOAD /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a
+LOAD /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/lib/clang/3.5.2/lib/linux/libclang_rt.builtins-arm.a
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+END GROUP
+OUTPUT(/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/bsp/trustzone/qsapps/qpay64/build/IADAANAA/qpay64.elf elf64-littleaarch64)
+
+.debug_info     0x0000000000000000    0x1d255
+ .debug_info    0x0000000000000000       0xb5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .debug_info    0x00000000000000b5     0x14e1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_info    0x0000000000001596      0x5c8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_info    0x0000000000001b5e      0x686 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_info    0x00000000000021e4      0x2d4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_info    0x00000000000024b8      0x3c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_info    0x000000000000287c      0xeca /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .debug_info    0x0000000000003746       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_info    0x00000000000037ee       0xbe /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_info    0x00000000000038ac     0x2d55 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_info    0x0000000000006601     0x1819 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .debug_info    0x0000000000007e1a     0x1cb9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .debug_info    0x0000000000009ad3      0xc75 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .debug_info    0x000000000000a748     0x115b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .debug_info    0x000000000000b8a3      0xae4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .debug_info    0x000000000000c387      0xe55 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .debug_info    0x000000000000d1dc      0x74c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .debug_info    0x000000000000d928      0x5e4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .debug_info    0x000000000000df0c     0x11e4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .debug_info    0x000000000000f0f0      0x426 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .debug_info    0x000000000000f516     0x17a9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .debug_info    0x0000000000010cbf     0x2564 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .debug_info    0x0000000000013223     0x24e2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .debug_info    0x0000000000015705     0x287b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .debug_info    0x0000000000017f80     0x29fd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .debug_info    0x000000000001a97d      0xdbb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .debug_info    0x000000000001b738      0xcc2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .debug_info    0x000000000001c3fa      0xe5b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+.debug_abbrev   0x0000000000000000     0x2f14
+ .debug_abbrev  0x0000000000000000       0x63 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .debug_abbrev  0x0000000000000063      0x2f4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_abbrev  0x0000000000000357      0x16b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_abbrev  0x00000000000004c2      0x18c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_abbrev  0x000000000000064e      0x126 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_abbrev  0x0000000000000774      0x11a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_abbrev  0x000000000000088e      0x26d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .debug_abbrev  0x0000000000000afb       0x8a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_abbrev  0x0000000000000b85       0x92 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_abbrev  0x0000000000000c17      0x232 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_abbrev  0x0000000000000e49      0x285 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .debug_abbrev  0x00000000000010ce      0x36d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .debug_abbrev  0x000000000000143b      0x1b5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .debug_abbrev  0x00000000000015f0      0x225 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .debug_abbrev  0x0000000000001815      0x190 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .debug_abbrev  0x00000000000019a5      0x20a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .debug_abbrev  0x0000000000001baf      0x11d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .debug_abbrev  0x0000000000001ccc       0xe9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .debug_abbrev  0x0000000000001db5      0x24f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .debug_abbrev  0x0000000000002004       0xf4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .debug_abbrev  0x00000000000020f8      0x1b6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .debug_abbrev  0x00000000000022ae      0x1af /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .debug_abbrev  0x000000000000245d      0x1a2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .debug_abbrev  0x00000000000025ff      0x1b9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .debug_abbrev  0x00000000000027b8      0x1b9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .debug_abbrev  0x0000000000002971      0x201 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .debug_abbrev  0x0000000000002b72      0x1f3 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .debug_abbrev  0x0000000000002d65      0x1af /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+.debug_line     0x0000000000000000     0x93ee
+ .debug_line    0x0000000000000000       0xda /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .debug_line    0x00000000000000da      0x7c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_line    0x000000000000089e      0x3a5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_line    0x0000000000000c43      0x2fc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_line    0x0000000000000f3f      0x292 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_line    0x00000000000011d1      0x226 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_line    0x00000000000013f7      0x688 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .debug_line    0x0000000000001a7f      0x113 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_line    0x0000000000001b92      0x11b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_line    0x0000000000001cad      0xc27 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_line    0x00000000000028d4      0x789 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .debug_line    0x000000000000305d      0xa0c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .debug_line    0x0000000000003a69      0x38c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .debug_line    0x0000000000003df5      0x430 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .debug_line    0x0000000000004225      0x31b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .debug_line    0x0000000000004540      0x3f1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .debug_line    0x0000000000004931      0x2a9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .debug_line    0x0000000000004bda      0x25d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .debug_line    0x0000000000004e37      0x482 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .debug_line    0x00000000000052b9      0x2f5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .debug_line    0x00000000000055ae      0x620 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .debug_line    0x0000000000005bce      0x9fa /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .debug_line    0x00000000000065c8      0x9d6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .debug_line    0x0000000000006f9e      0xa89 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .debug_line    0x0000000000007a27      0xaef /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .debug_line    0x0000000000008516      0x45e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .debug_line    0x0000000000008974      0x553 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .debug_line    0x0000000000008ec7      0x527 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+.debug_pubnames
+                0x0000000000000000     0x2a26
+ .debug_pubnames
+                0x0000000000000000       0x5a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .debug_pubnames
+                0x000000000000005a      0x4ee /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_pubnames
+                0x0000000000000548       0x9c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_pubnames
+                0x00000000000005e4      0x1e5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_pubnames
+                0x00000000000007c9       0x4b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_pubnames
+                0x0000000000000814       0xbf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_pubnames
+                0x00000000000008d3      0x3ab /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .debug_pubnames
+                0x0000000000000c7e       0x1e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_pubnames
+                0x0000000000000c9c       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_pubnames
+                0x0000000000000cc0      0x1cd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_pubnames
+                0x0000000000000e8d      0x39e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .debug_pubnames
+                0x000000000000122b      0x45f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .debug_pubnames
+                0x000000000000168a       0xb2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .debug_pubnames
+                0x000000000000173c       0xaf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .debug_pubnames
+                0x00000000000017eb       0x6e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .debug_pubnames
+                0x0000000000001859       0xc4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .debug_pubnames
+                0x000000000000191d       0xa7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .debug_pubnames
+                0x00000000000019c4       0x6d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .debug_pubnames
+                0x0000000000001a31      0x159 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .debug_pubnames
+                0x0000000000001b8a       0x75 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .debug_pubnames
+                0x0000000000001bff      0x3e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .debug_pubnames
+                0x0000000000001fe7       0x72 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .debug_pubnames
+                0x0000000000002059       0x55 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .debug_pubnames
+                0x00000000000020ae       0xee /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .debug_pubnames
+                0x000000000000219c      0x1ef /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .debug_pubnames
+                0x000000000000238b      0x271 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .debug_pubnames
+                0x00000000000025fc      0x233 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .debug_pubnames
+                0x000000000000282f      0x1f7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+.debug_pubtypes
+                0x0000000000000000     0x8a8b
+ .debug_pubtypes
+                0x0000000000000000       0x2c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .debug_pubtypes
+                0x000000000000002c      0x48a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_pubtypes
+                0x00000000000004b6      0x11b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_pubtypes
+                0x00000000000005d1      0x112 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_pubtypes
+                0x00000000000006e3       0xf7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_pubtypes
+                0x00000000000007da       0xe6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_pubtypes
+                0x00000000000008c0      0x2e7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .debug_pubtypes
+                0x0000000000000ba7       0x33 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_pubtypes
+                0x0000000000000bda       0x59 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_pubtypes
+                0x0000000000000c33     0x10d1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_pubtypes
+                0x0000000000001d04      0x4cd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .debug_pubtypes
+                0x00000000000021d1      0x3ed /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .debug_pubtypes
+                0x00000000000025be      0x497 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .debug_pubtypes
+                0x0000000000002a55      0x4e6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .debug_pubtypes
+                0x0000000000002f3b      0x489 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .debug_pubtypes
+                0x00000000000033c4      0x4bd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .debug_pubtypes
+                0x0000000000003881      0x1b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .debug_pubtypes
+                0x0000000000003a31       0xbf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .debug_pubtypes
+                0x0000000000003af0      0x3fa /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .debug_pubtypes
+                0x0000000000003eea       0xe0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .debug_pubtypes
+                0x0000000000003fca      0x3af /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .debug_pubtypes
+                0x0000000000004379     0x10a1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .debug_pubtypes
+                0x000000000000541a     0x10a1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .debug_pubtypes
+                0x00000000000064bb     0x10a1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .debug_pubtypes
+                0x000000000000755c     0x10a1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .debug_pubtypes
+                0x00000000000085fd      0x1a5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .debug_pubtypes
+                0x00000000000087a2      0x162 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .debug_pubtypes
+                0x0000000000008904      0x187 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+.debug_str      0x0000000000000000     0x8140
+ .debug_str     0x0000000000000000      0x194 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+                                        0x1a6 (size before relaxing)
+ .debug_str     0x0000000000000194      0xe85 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                                        0xf9a (size before relaxing)
+ .debug_str     0x0000000000001019      0x181 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                                        0x30c (size before relaxing)
+ .debug_str     0x000000000000119a      0x244 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                                        0x3f0 (size before relaxing)
+ .debug_str     0x00000000000013de       0xf9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                                        0x28b (size before relaxing)
+ .debug_str     0x00000000000014d7      0x306 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                                        0x46d (size before relaxing)
+ .debug_str     0x00000000000017dd      0x8af /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+                                        0xabf (size before relaxing)
+ .debug_str     0x000000000000208c       0xb1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                                        0x162 (size before relaxing)
+ .debug_str     0x000000000000213d       0xa9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                                        0x17e (size before relaxing)
+ .debug_str     0x00000000000021e6     0x20fc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                                       0x2d42 (size before relaxing)
+ .debug_str     0x00000000000042e2      0x89a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+                                       0x10b9 (size before relaxing)
+ .debug_str     0x0000000000004b7c      0x53e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+                                        0xf8a (size before relaxing)
+ .debug_str     0x00000000000050ba      0x210 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+                                        0xbfe (size before relaxing)
+ .debug_str     0x00000000000052ca      0x72b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+                                       0x113e (size before relaxing)
+ .debug_str     0x00000000000059f5       0xec /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+                                        0xaf4 (size before relaxing)
+ .debug_str     0x0000000000005ae1      0x1af /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+                                        0xed0 (size before relaxing)
+ .debug_str     0x0000000000005c90      0x29f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+                                        0x581 (size before relaxing)
+ .debug_str     0x0000000000005f2f      0x58f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+                                        0xa4d (size before relaxing)
+ .debug_str     0x00000000000064be      0x363 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+                                        0xd53 (size before relaxing)
+ .debug_str     0x0000000000006821      0x3c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+                                        0x514 (size before relaxing)
+ .debug_str     0x0000000000006be5      0x7bd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+                                       0x15e6 (size before relaxing)
+ .debug_str     0x00000000000073a2       0xab /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+                                       0x2b13 (size before relaxing)
+ .debug_str     0x000000000000744d       0xad /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+                                       0x2add (size before relaxing)
+ .debug_str     0x00000000000074fa      0x1c0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+                                       0x2cfa (size before relaxing)
+ .debug_str     0x00000000000076ba       0xa9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+                                       0x2c99 (size before relaxing)
+ .debug_str     0x0000000000007763      0x364 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+                                        0x867 (size before relaxing)
+ .debug_str     0x0000000000007ac7      0x378 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+                                        0x6f4 (size before relaxing)
+ .debug_str     0x0000000000007e3f      0x301 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+                                        0x62e (size before relaxing)
+
+.debug_loc      0x0000000000000000     0xd339
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .debug_loc     0x0000000000000000      0x941 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_loc     0x0000000000000941      0x385 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_loc     0x0000000000000cc6      0x36b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_loc     0x0000000000001031       0x6c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_loc     0x000000000000109d      0x11e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_loc     0x00000000000011bb      0xd51 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .debug_loc     0x0000000000001f0c       0x7c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_loc     0x0000000000001f88       0x8f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_loc     0x0000000000002017      0x40a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_loc     0x0000000000002421     0x20b2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .debug_loc     0x00000000000044d3     0x2346 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .debug_loc     0x0000000000006819      0x3f9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .debug_loc     0x0000000000006c12      0xda3 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .debug_loc     0x00000000000079b5      0x1eb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .debug_loc     0x0000000000007ba0      0x88a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .debug_loc     0x000000000000842a      0x776 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .debug_loc     0x0000000000008ba0      0x472 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .debug_loc     0x0000000000009012     0x118c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .debug_loc     0x000000000000a19e      0x6fb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .debug_loc     0x000000000000a899      0x65e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .debug_loc     0x000000000000aef7       0x8c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .debug_loc     0x000000000000af83       0x46 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .debug_loc     0x000000000000afc9      0x13b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .debug_loc     0x000000000000b104      0x20d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .debug_loc     0x000000000000b311      0x9cc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .debug_loc     0x000000000000bcdd      0xaa9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .debug_loc     0x000000000000c786      0xbb3 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+.debug_ranges   0x0000000000000000     0x2740
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+ .debug_ranges  0x0000000000000000      0x1e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_ranges  0x00000000000001e0      0x1e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_ranges  0x00000000000003c0       0x70 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_ranges  0x0000000000000430       0x60 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_ranges  0x0000000000000490        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_ranges  0x0000000000000490     0x10e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .debug_ranges  0x0000000000001570        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_ranges  0x0000000000001570        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_ranges  0x0000000000001570        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_ranges  0x0000000000001570      0x220 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .debug_ranges  0x0000000000001790      0x8a0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .debug_ranges  0x0000000000002030        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .debug_ranges  0x0000000000002030        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .debug_ranges  0x0000000000002030        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .debug_ranges  0x0000000000002030       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .debug_ranges  0x0000000000002060        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .debug_ranges  0x0000000000002060        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .debug_ranges  0x0000000000002060       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .debug_ranges  0x0000000000002090        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .debug_ranges  0x0000000000002090        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .debug_ranges  0x0000000000002090        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .debug_ranges  0x0000000000002090        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .debug_ranges  0x0000000000002090        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .debug_ranges  0x0000000000002090        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .debug_ranges  0x0000000000002090       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .debug_ranges  0x00000000000020c0      0x3c0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .debug_ranges  0x0000000000002480      0x2c0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+.comment        0x0000000000000000       0x44
+ .comment       0x0000000000000000       0x23 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/metadata.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .comment       0x0000000000000023       0x21 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vsnprintf.o)
+                                         0x22 (size before relaxing)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memcpy.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlen.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__errno_location.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(libc.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(vfprintf.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memchr.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(memset.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strerror.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wctomb.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lockfile.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(fwrite.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__wait.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(wcrtomb.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__towrite.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__stdio_exit.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(__lock.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(snprintf.o)
+ .comment       0x0000000000000000       0x22 /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a(strlcpy.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)
+
+.debug_frame    0x0000000000000000     0x2a48
+ .debug_frame   0x0000000000000000      0x3a8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_frame   0x00000000000003a8       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_frame   0x0000000000000450       0xc8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_frame   0x0000000000000518       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_frame   0x0000000000000550       0xe8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_frame   0x0000000000000638       0xe8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/qpay64/build/qpay/A53_64/IADAANAA/qpay_app.lib(app_main.o)
+ .debug_frame   0x0000000000000720       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_frame   0x0000000000000758       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/kernel/libstd/build/qpay/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_frame   0x0000000000000790      0x340 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_frame   0x0000000000000ad0      0x4e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(gp_tee_se_api.o)
+ .debug_frame   0x0000000000000fb0      0x560 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(tee_internal_se_api_helper.o)
+ .debug_frame   0x0000000000001510       0xe0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP.o)
+ .debug_frame   0x00000000000015f0      0x180 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP03.o)
+ .debug_frame   0x0000000000001770       0xd8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCP11.o)
+ .debug_frame   0x0000000000001848      0x158 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPX.o)
+ .debug_frame   0x00000000000019a0      0x110 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(ECC.o)
+ .debug_frame   0x0000000000001ab0       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(APDU.o)
+ .debug_frame   0x0000000000001b58      0x298 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(SCPUtils.o)
+ .debug_frame   0x0000000000001df0       0xe8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/tee_se_api/build/qpay/A53_64/IADAANAA/lib_tee_se_api.lib(AES.o)
+ .debug_frame   0x0000000000001ed8      0x3e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_qsee_shim.o)
+ .debug_frame   0x00000000000022c0       0x70 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ufdes.o)
+ .debug_frame   0x0000000000002330       0x40 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secmath.o)
+ .debug_frame   0x0000000000002370      0x100 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_secrsa.o)
+ .debug_frame   0x0000000000002470      0x1a8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/qpay/A53_64/IADAANAA/tzlib_proxy.lib(prxy_ecc.o)
+ .debug_frame   0x0000000000002618      0x180 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_ese_service.o)
+ .debug_frame   0x0000000000002798      0x138 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_cipher.o)
+ .debug_frame   0x00000000000028d0      0x178 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/qpay/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_hash.o)

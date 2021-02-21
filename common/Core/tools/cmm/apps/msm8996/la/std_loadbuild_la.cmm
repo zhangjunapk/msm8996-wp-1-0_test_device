@@ -1,0 +1,244 @@
+//============================================================================
+//  Name:                                                                     
+//    std_loadbuild_la.cmm 
+//
+//  Description:                                                              
+//    LA Specific Build loading script
+//                                                                            
+// Copyright (c) 2013 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who           what, where, why
+// --------   ---           ---------------------------------------------------------
+// 03/10/2015 AJCheriyan    Added workaround for UFS erase
+// 01/26/2015 JBILLING      Changed image names for 8996. removed SDI
+// 06/24/2014 AJCheriyan    Added pmic.mbn loading support
+// 05/26/2014 AJCheriyan    Added single image loading option
+// 12/05/2013 AJCheriyan    Added erase option back in for UFS
+// 11/05/2013 AJCheriyan    Added changes to pass storage type to loading script
+// 10/02/2013 AJCheriyan    New set of changes for UFS loading
+// 10/01/2012 AJCheriyan    Removed SDI image loading for good (needs boot support)
+// 09/13/2012 AJCheriyan    Added SDI image loading (add partition.xml changes)
+// 09/07/2012 AJCheriyan    Removed SDI image loading (revert partition.xml changes )
+// 09/02/2012 AJCheriyan    Added SDI image loading
+// 08/08/2012 AJCheriyan    Fixed issue with paths for mjsdload
+// 07/19/2012 AJCheriyan    Created for B-family 
+
+// ARG0 - Load option - Supported : ERASEONLY, LOADCOMMON, LOADFULL, LOADIMG
+// ARG1 - Valid image name. Can be used only with LOADIMG option.
+ENTRY &ARG0 &ARG1
+
+LOCAL &CWD &SEARCHPATHS &STORAGE_OPTION &STORAGE_TYPE &PROGRAMMER &PARTITION
+LOCAL &XML &MAX_PARTITIONS &XML_LOCATION &BINARY &BINARYPATH &METASEARCHPATH
+
+MAIN:
+    // We have checked for all the intercom sessions at this point and we don't need any error
+    // Save the argument
+    &LOAD_OPTION="&ARG0"
+
+    // Switch to the tools directory
+    &CWD=OS.PWD()
+
+    // Check for the boot option
+    do hwio 
+    
+    
+    do std_utils HWIO_INF BOOT_CONFIG FAST_BOOT
+    ENTRY &STORAGE_OPTION
+    
+    
+    IF (&STORAGE_OPTION==0x4) //0x4 UFS
+    (
+    
+        IF (OS.DIR("&BOOT_BUILDROOT/QcomPkg"))
+        (
+            &PROGRAMMER="QcomPkg/Tools/storage/UFS/jtagprogrammer"
+        )
+        ELSE
+        (
+            &PROGRAMMER="boot_images/QcomPkg/Tools/storage/UFS/jtagprogrammer"
+        )
+        &XML_LOCATION="&METASCRIPTSDIR/../../../build/ufs"
+        &STORAGE_TYPE="ufs"
+        &MAX_PARTITIONS=6
+
+    )
+    ELSE //else EMMC 
+    (
+    
+        IF (OS.DIR("&BOOT_BUILDROOT/QcomPkg"))
+        (
+            &PROGRAMMER="QcomPkg/Tools/storage/eMMC/jtagprogrammer"
+        )
+        ELSE
+        (
+            &PROGRAMMER="boot_images/QcomPkg/Tools/storage/eMMC/jtagprogrammer"
+        )
+        
+        &XML_LOCATION="&METASCRIPTSDIR/../../../build/emmc"
+        &STORAGE_TYPE="emmc"
+        &MAX_PARTITIONS=1
+    )
+
+    // Erase only
+    IF (("&ARG0"=="ERASEONLY")||("&ARG0"=="LOADCOMMON")||("&ARG0"=="LOADFULL"))
+    (
+        //only erase UFS if specifically asked for
+        IF ("&STORAGE_TYPE"=="emmc")||("&STORAGE_TYPE"=="ufs")
+        (  
+            // Only erase the chip and exit
+            CD.DO &BOOT_BUILDROOT/&PROGRAMMER ERASE
+        )
+    )
+
+    // Load common images
+    IF (("&ARG0"=="LOADCOMMON")||("&ARG0"=="LOADFULL"))
+    (
+        // Check for all the common images 
+
+        // Check for the presence of all the binaries
+        // Not needed because meta-build should have populated all this information
+        // SBL, TZ, HYP, RPM, APPSBL
+        do std_utils FILEXIST FATALEXIT &BOOT_BUILDROOT/&BOOT_BINARY
+        do std_utils FILEXIST FATALEXIT &BOOT_BUILDROOT/&PMIC_BINARY
+        do std_utils FILEXIST FATALEXIT &RPM_BUILDROOT/&RPM_BINARY
+        do std_utils FILEXIST FATALEXIT &APPS_BUILDROOT/&APPSBOOT_BINARY
+        do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&TZ_BINARY
+        do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&HYP_BINARY
+        do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&TZDEVCFG_BINARY
+
+
+        // Now flash them all one by one 
+        // Flash the partition table
+        &SEARCHPATHS="&XML_LOCATION"
+        &PARTITION=0
+        WHILE (&PARTITION<&MAX_PARTITIONS)
+        (
+            &XML="rawprogram"+FORMAT.DECIMAL(1, &PARTITION)+".xml"
+            &FILES="gpt_main"+FORMAT.DECIMAL(1, &PARTITION)+".bin,"+"gpt_backup"+FORMAT.DECIMAL(1,&PARTITION)+".bin"
+            CD.DO &BOOT_BUILDROOT/&PROGRAMMER LOAD searchpaths=&SEARCHPATHS xml=&XML files=&FILES
+            &PARTITION=&PARTITION+1
+        )
+
+    
+        // Flash xbl.elf, pmic.elf, tz/hyp/mon, rpm, emmc_appsboot
+        &SEARCHPATHS="&XML_LOCATION,"+OS.FILE.PATH(&BOOT_BUILDROOT/&BOOT_BINARY)+","+OS.FILE.PATH(&TZ_BUILDROOT/&TZ_BINARY)+","+OS.FILE.PATH(&RPM_BUILDROOT/&RPM_BINARY)+","+OS.FILE.PATH(&BOOT_BUILDROOT/&PMIC_BINARY)+","+OS.FILE.PATH(&APPS_BUILDROOT/&APPSBOOT_BINARY)
+
+    &METASEARCHPATH="&METASCRIPTSDIR/../../../config"+","+"&XML_LOCATION"
+
+        &PARTITION=0
+        WHILE (&PARTITION<&MAX_PARTITIONS)
+        (
+            &XML="rawprogram"+FORMAT.DECIMAL(1, &PARTITION)+".xml"
+            
+            CD.DO &BOOT_BUILDROOT/&PROGRAMMER LOAD searchpaths=&SEARCHPATHS xml=&XML files=xbl.elf,tz.mbn,devcfg.mbn,emmc_appsboot.mbn,hyp.mbn,rpm.mbn,pmic.elf,keymaster.mbn,cmnlib.mbn,cmnlib64.mbn
+        // Loading Boot partition with zeroed binary to stop after JTAG. This is workaround for UFS flashing issue. To be removed later.
+        CD.DO &BOOT_BUILDROOT/&PROGRAMMER LOAD searchpaths=&METASEARCHPATH xml=&XML files=boot.img
+            &PARTITION=&PARTITION+1
+        )
+
+        // Apply the disk patches
+        &SEARCHPATHS="&XML_LOCATION"
+        &PARTITION=0
+        WHILE (&PARTITION<&MAX_PARTITIONS)
+        (
+            &XML="patch"+FORMAT.DECIMAL(1, &PARTITION)+".xml"
+            CD.DO &BOOT_BUILDROOT/&PROGRAMMER PATCH searchpaths=&SEARCHPATHS xml=&XML
+            &PARTITION=&PARTITION+1
+        )
+
+    )
+
+        // Load common images
+    IF ("&ARG0"=="LOADIMG")
+    (
+        // Check for the binary first 
+        IF ("&ARG1"=="xbl")
+        (
+            do std_utils FILEXIST FATALEXIT &BOOT_BUILDROOT/&BOOT_BINARY
+            do std_utils FILEXIST FATALEXIT &BOOT_BUILDROOT/&PMIC_BINARY
+            &BINARY="xbl.elf,pmic.elf"
+            &BINARYPATH=OS.FILE.PATH("&BOOT_BUILDROOT/&BOOT_BINARY")+","+OS.FILE.PATH(&BOOT_BUILDROOT/&PMIC_BINARY)
+        )
+        IF ("&ARG1"=="tz")
+        (
+            do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&TZ_BINARY
+            do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&HYP_BINARY
+            do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&TZDEVCFG_BINARY
+            &BINARY="tz.mbn,hyp.mbn,devcfg.mbn,keymaster.mbn,cmnlib.mbn,cmnlib64.mbn"
+            &BINARYPATH=OS.FILE.PATH("&TZ_BUILDROOT/&TZ_BINARY")+","+OS.FILE.PATH("&TZ_BUILDROOT/&HYP_BINARY")+","+OS.FILE.PATH("&TZ_BUILDROOT/&TZDEVCFG_BINARY")
+        )
+        IF ("&ARG1"=="rpm")
+        (
+            do std_utils FILEXIST FATALEXIT &RPM_BUILDROOT/&RPM_BINARY
+            &BINARY="rpm.mbn"
+            &BINARYPATH=OS.FILE.PATH("&RPM_BUILDROOT/&RPM_BINARY")
+        )
+        
+        IF ("&ARG1"=="appsboot")
+        (
+            do std_utils FILEXIST FATALEXIT &APPS_BUILDROOT/&APPSBOOT_BINARY
+            &BINARY="emmc_appsboot.mbn"
+            &BINARYPATH=OS.FILE.PATH("&APPS_BUILDROOT/&APPSBOOT_BINARY")
+        )
+
+        // Flash the image now
+        &SEARCHPATHS="&XML_LOCATION,"+"&BINARYPATH"
+        &PARTITION=0
+        WHILE (&PARTITION<&MAX_PARTITIONS)
+        (
+            &XML="rawprogram"+FORMAT.DECIMAL(1, &PARTITION)+".xml"
+            CD.DO &BOOT_BUILDROOT/&PROGRAMMER LOAD searchpaths=&SEARCHPATHS xml=&XML files=&BINARY
+            &PARTITION=&PARTITION+1
+        )
+    )
+
+    // Load HLOS images
+    IF ("&LOAD_OPTION"=="LOADFULL")
+    (
+
+        // Change the active partition. This is needed only if the user flashes an HLOS that needs
+        // a different partition
+        // Set the active boot partition based on the type of the device
+        IF (&STORAGE_OPTION!=0x4)
+        (
+            CD.DO &BOOT_BUILDROOT/&PROGRAMMER 9 activeboot=0
+        )
+        ELSE
+        (
+            CD.DO &BOOT_BUILDROOT/&PROGRAMMER 9 activeboot=1
+        )
+        
+
+        // Call the script to fastboot the remaining images
+        OS.COMMAND cmd /k python &METASCRIPTSDIR/../../../build/fastboot_all.py --ap=&APPS_BUILDROOT --pf=&PRODUCT_FLAVOR --st=&STORAGE_TYPE
+        
+    )
+
+    // Return to the old directory
+    CD &CWD
+
+    GOTO EXIT
+
+
+
+FATALEXIT:
+    END
+
+EXIT:
+    ENDDO
+
+
+
+    
+    
+    
+
+        
+

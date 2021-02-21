@@ -1,0 +1,141 @@
+;============================================================================
+; Name: gcd_walk.cmm
+;
+; Description: Dump current GCD memory map entries, symbols should be loaded
+;     
+; Copyright (c) 2012-2015 Qualcomm Technologies, Inc.
+; All Rights Reserved. 
+; Qualcomm Technologies Proprietary and Confidential. 
+;
+;----------------------------------------------------------------------------
+
+;============================================================================
+;
+;                        EDIT HISTORY FOR MODULE
+;
+;
+;
+;  when         who     what, where, why
+;  ----------   ---     -----------------------------------------------------
+;  2015-15-04   vk      Support 64 bit addresses
+;  2015-02-12   bh      Change RD: to A:
+;  2015-01-27   bh      Unifying 32/64-bit scripts
+;  2014-24-10   vk      Chage to Quad
+;  2014-19-05   vk      Branch for 64 bit
+;  2013-06-03   vk      Initial version
+;============================================================================;
+
+;
+;NOTE:  symbols should be loaded
+;
+
+; ---------------------------------------------------------
+; Script entry point
+; ---------------------------------------------------------
+  print "-----------------"
+  print "+ UEFI GCD Dump +"
+  print "-----------------"
+  print " "
+  print "Memory Types"
+  print "EfiGcdMemoryTypeNonExistent           0"
+  print "EfiGcdMemoryTypeReserved              1"
+  print "EfiGcdMemoryTypeSystemMemory          2"
+  print "EfiGcdMemoryTypeMemoryMappedIo        3"
+  print "EfiGcdMemoryTypeMaximum               4"
+  print " "
+
+  local &Gcd_walk_ptr
+  local &NextPtr
+  local &Count
+
+  &Count=0
+
+  local &GcdMemSpacePtr
+  do ../InitOffsets.cmm 
+  &GcdMemSpacePtr=address.offset(mGcdMemorySpaceMap)
+  ;print "&GcdMemSpacePtr"
+  &Gcd_start_ptr=&GcdMemSpacePtr
+
+  if (&ARCHState==1)
+  (
+    &Gcd_walk_ptr=data.long(A:&Gcd_start_ptr)
+  )
+  else 
+  (
+    &Gcd_walk_ptr=data.quad(A:&Gcd_start_ptr)
+  )
+
+  ;print "MT = Memory Type"
+  print "----------------------------------------------------------------------------------------------------------------------"
+  print "AddressRange                         Size                  Pages       MT     ImgHndl               DevHandle"
+  print "----------------------------------------------------------------------------------------------------------------------"
+
+  while (&Gcd_walk_ptr!=&Gcd_start_ptr)
+  (
+    gosub print_gcd &Gcd_walk_ptr+0x8+&PtrSize
+    
+    if (&ARCHState==1)
+    (
+      &NextPtr=data.long(A:&Gcd_walk_ptr)
+    )
+    else 
+    (
+      &NextPtr=data.quad(A:&Gcd_walk_ptr)
+    )
+    &Gcd_walk_ptr=&NextPtr
+  )
+
+  print "-----------------------------------------------------------------------------------------------------------------------"
+  print "Count = " %Decimal &Count
+  print "-----------------------------------------------------------------------------------------------------------------------"
+enddo
+
+print_gcd:
+  entry &gcd_ptr
+
+  local &BaseAddr
+  local &EndAddr
+  local &Capability
+  local &Attrib
+  local &MemType
+  local &ImageHandle
+  local &DevHandle
+  
+  if (&ARCHState==1) 
+  (
+    &BaseAddr=data.long(A:&gcd_ptr)
+    &EndAddr=data.long(A:&gcd_ptr+0x8) 
+  )
+  else 
+  (
+    &BaseAddr=data.quad(A:&gcd_ptr)
+    &EndAddr=data.quad(A:&gcd_ptr+0x8) 
+  )
+
+  &EndAddr=&EndAddr+1
+  
+  if (&ARCHState==1) 
+  ( 
+    &Capability=data.long(A:&gcd_ptr+0x10)
+    &MemType=data.long(A:&gcd_ptr+0x20)
+  )
+  else 
+  (
+    &Capability=data.quad(A:&gcd_ptr+0x10)
+    &MemType=data.quad(A:&gcd_ptr+0x20)
+  )  
+
+  &ImageHandle=data.long(A:&gcd_ptr+0x28)
+  &DevHandle=data.long(A:&gcd_ptr+0x28+&PtrSize)
+
+  &Size=&EndAddr-&BaseAddr
+  &SizeStr=FORMAT.HEX(16.,&Size)
+  &Pages=(&Size/4096)
+  &PagesStr=FORMAT.HEX(8.,&Pages)
+
+  print FORMAT.HEX(16.,&BaseAddr), "--" FORMAT.HEX(16.,(&EndAddr-1)), "   0x&SizeStr", "    &PagesStr", "    &MemType" , "    0x" FORMAT.HEX(16.,&ImageHandle), "    0x", FORMAT.HEX(16.,&DevHandle)
+  ;print "Addr: " FORMAT.HEX(8.,&BaseAddr), " -- " FORMAT.HEX(8.,(&EndAddr-1)), " Size: 0x&SizeStr", " MemType: &MemType" , " ImgHndl: 0x" FORMAT.HEX(8.,&ImageHandle), " DevHandle: &DevHandle"
+  &Count=&Count+1
+  return
+
+enddo

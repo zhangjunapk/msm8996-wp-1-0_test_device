@@ -1,0 +1,76 @@
+#===============================================================================
+#
+# Secure PIN Configuration
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/apps.tz/1.0.6/securemsm/trustzone/qsapps/fidosui/locale/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:50:16 $
+#  $Author: pwbldsvc $
+#  $Change: 11897059 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/locale"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+# do not generate thumb code for inline assembler code
+#env.Append(ARMCC_OPT = ' --arm')
+
+env.PublishPrivateApi('SECUREMSM', [
+   "${INC_ROOT}/core/api/services",
+   "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+])
+
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/app/include")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/config/include")
+env.Append(CPPPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/fidosui/locale/include")
+
+env.Append(CPPDEFINES = '-D_AEABI_PORTABILITY_LEVEL=1')
+env.Append(CPPDEFINES = '-D_AEABI_LC_CTYPE=C')
+
+INC_PATH_API = ["${INC_ROOT}/core/api/kernel/libstd/stringl"]
+env.Append(CPPPATH = INC_PATH_API)
+
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------
+APP_CORE_ENTRY_SOURCES = [
+        '${BUILDPATH}/src/locale.c',
+]
+
+HEADERS = [
+        '${BUILDPATH}/include/locale.h',
+]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddLibrary('FIDOSUI_IMAGE', '${BUILDPATH}/fidosui_locale', APP_CORE_ENTRY_SOURCES, pack_exception=['USES_L1_ADD_SOURCE'])
+
+#-------------------------------------------------------------------------------
+# Pack out files
+#-------------------------------------------------------------------------------
+#env.CleanPack('FIDOSUI_IMAGE', HEADERS)
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

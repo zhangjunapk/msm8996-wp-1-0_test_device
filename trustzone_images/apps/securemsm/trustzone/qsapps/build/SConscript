@@ -1,0 +1,53 @@
+#===============================================================================
+#
+# Sample TZ OS App Libs
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2011 by QUALCOMM, Incorporated.
+# All Rights Reserved.
+# QUALCOMM Proprietary/GTDR
+#
+#-------------------------------------------------------------------------------
+#
+#  $Header:$
+#  $DateTime:$
+#  $Author:$
+#  $Change:$
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains comments describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#
+# when       who     what, where, why
+# --------   ---     ---------------------------------------------------------
+# 02/18/11   chm     Initial Version
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Add core image path 
+#-------------------------------------------------------------------------------
+import sys
+sys.path.append(env.subst('${INC_ROOT}/core/securemsm/trustzone/qsapps/build'))
+
+env.PublishPrivateApi('TZDRM_TZCOMMON_COMMON_SHARED', [
+   "${INC_ROOT}/apps/securemsm/trustzone/qsapps/tzdrm/tzcommon/common/shared/inc",
+])
+
+env.PublishPrivateApi('APP_COMMON_SVC_SHARED', [
+	"${INC_ROOT}/apps/securemsm/trustzone/qsapps/common/app_common_svc/shared/inc",
+])
+
+#-------------------------------------------------------------------------------
+# Add secure app tools - refer to core image
+#-------------------------------------------------------------------------------
+env.LoadToolScript("${INC_ROOT}/core/securemsm/trustzone/qsapps/build/secure_apps.py")
+
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()

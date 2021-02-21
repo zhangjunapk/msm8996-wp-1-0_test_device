@@ -1,0 +1,58 @@
+//
+//  Description:                                                              
+//    APPS Command Menu
+//                                                                            
+// Copyright (c) 2012 - 2014 by QUALCOMM, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who             what, where, why
+// --------   ---             ---------------------------------------------------------
+// 09/19/2014 JBILLING      Ported for MDM9x45
+// 07/27/2012 AJCheriyan    Created for B-family.
+
+ADD
+MENU
+(
+    POPUP "&Hydra Registers"
+    (
+        MENUITEM "[:vpureg]&CPU Arch Registers 64"
+        (
+            per Hydra_Pass_1_CPU_ARCHITECTED_AArch64.per
+        )
+        MENUITEM "[:vpureg]&CPU Implementation Defined Regs 64"
+        (
+            per Hydra_Pass_1_CPU_IMPL_DEFINED_AArch64.per
+        )
+        MENUITEM "[:vpureg]&Debug Registers 64"
+        (
+            per Hydra_Pass_1_Dbg_AArch64.per
+        )
+        MENUITEM "[:vpureg]&L2 Indirect Registers 64"
+        (
+            per Hydra_Pass_1_L2Indirect_AArch64.per
+        )
+        MENUITEM "[:vpureg]&Performance Monitor Registers 64"
+        (
+            per Hydra_Pass_1_PerfMon_ARCHITECTED_AArch64.per
+        )
+        MENUITEM "[:vpureg]&QGIC 64"
+        (
+            per Hydra_Pass_1_QGIC_AArch64.per
+        )
+        MENUITEM "[:vpureg]&QTimer 64"
+        (
+            per Hydra_Pass_1_QTmr_AArch64.per
+        )
+        MENUITEM "[:reg]&Prepare T32 for Scandump"
+        (
+            do std_apps_prepare_scandump
+        )
+        
+    )
+)

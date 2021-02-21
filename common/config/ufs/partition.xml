@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<configuration>
+    <parser_instructions>
+        <!-- NOTE: entries here are used by the parser when generating output -->
+        <!-- NOTE: each filename must be on it's own line as in variable=value-->
+        WRITE_PROTECT_BOUNDARY_IN_KB=0
+        SECTOR_SIZE_IN_BYTES = 4096
+        GROW_LAST_PARTITION_TO_FILL_DISK=true
+    </parser_instructions>
+
+    <!-- NOTE: "physical_partition" are listed in order and apply to UFS devices that have physical partitions -->
+
+    <!-- This is LUN 0 - HLOS LUN" -->
+    <physical_partition>
+        <partition label="EFIESP" size_in_kb="32768" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" uniqueguid="8183040A-8B44-4592-92F7-C6D9EE0560F7" bootable="false" readonly="false" filename="EFIESP.bin" align="true" />
+        <partition label="CrashDump" size_in_kb="2359296" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" bootable="false" readonly="false" align="true"/>
+        <partition label="MMOS" size_in_kb="13096" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" uniqueguid="27A47557-8243-4C8E-9D30-846844C29C52" bootable="false" readonly="false" align="true" PERFORMANCE_BOUNDARY_IN_KB="2048"/>
+        <partition label="MainOS" size_in_kb="671744" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" uniqueguid="A76B8CE2-0187-4C13-8FCA-8651C9B0620A" bootable="false" readonly="false" align="true" PERFORMANCE_BOUNDARY_IN_KB="8192"/>
+        <partition label="Data" size_in_kb="6387712" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" bootable="false" readonly="false" align="true" PERFORMANCE_BOUNDARY_IN_KB="8192"/>     
+    </physical_partition>
+
+ 
+    <!-- This is LUN 1 - Boot LUN A" -->
+    <physical_partition>
+        <partition label="xbl" size_in_kb="0" type="DEA0BA2C-CBDD-4805-B4F9-F428251C3E98" bootable="false" readonly="true" filename="xbl.elf"/>
+    </physical_partition>
+
+    <!-- This is LUN 2 - Boot LUN B" -->
+    <physical_partition>
+        <partition label="xbl" size_in_kb="0" type="DEA0BA2C-CBDD-4805-B4F9-F428251C3E98" bootable="false" readonly="true" filename="xbl.elf"/>
+    </physical_partition>
+	
+
+
+    <!-- This is LUN 3 - OTP LUN" -->
+    <physical_partition>
+        <partition label="reserve" size_in_kb="32" type="7A37A18E-48F0-BCA5-935E-5795DBB57FF8" bootable="false" readonly="true"/>
+        <partition label="cdt" size_in_kb="1" type="A19F205F-CCD8-4B6D-8F1E-2D9BC24CFFB1" bootable="false" readonly="true"/>
+        <partition label="ddr" size_in_kb="1024" type="20A0C19C-286A-42FA-9CE7-F64C3226A794" bootable="false" readonly="true"/>
+        <partition label="last_parti" size_in_kb="0" type="00000000-0000-0000-0000-000000000000" bootable="false" readonly="true" filename="" />
+    </physical_partition>
+
+    <!-- This is LUN 4 - Protected Read-only LUN" -->
+     <physical_partition>
+        <partition label="DPP" size_in_kb="8192" type="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7" bootable="false" readonly="true" align="true"/>
+        <partition label="MODEM_FSG" size_in_kb="2048" type="638FF8E2-22C9-E33B-8F5D-0E81686A68CB" bootable="false" readonly="true" align="true"/>
+        <partition label="SEC" size_in_kb="128" type="303E6AC3-AF15-4C54-9E9B-D9A8FBECF401" bootable="false" readonly="true" align="true"/>
+        <partition label="APDP" size_in_kb="256" type="E6E98DA2-E22A-4D12-AB33-169E7DEAA507" bootable="false" readonly="true" align="true"/>
+        <partition label="MSADP" size_in_kb="256" type="ED9E8101-05FA-46B7-82AA-8D58770D200B" bootable="false" readonly="true" align="true"/>
+        <partition label="DPO" size_in_kb="1" type="11406F35-1173-4869-807B-27DF71802812" bootable="false" readonly="true" align="true"/>
+        <partition label="LogFS" size_in_kb="16384" type="BC0330EB-3410-4951-A617-03898DBE3372" bootable="false" readonly="true" align="true"/>
+        <partition label="UEFI_BS_NV" size_in_kb="256" type="F0B4F48B-AEBA-4ECF-9142-5DC30CDC3E77" bootable="false" readonly="true" align="true"/>
+        <partition label="PMIC" size_in_kb="512" type="C00EEF24-7709-43D6-9799-DD2B411E7A3C" bootable="false"  readonly="true" filename="pmic.elf"/>
+        <partition label="RPM" size_in_kb="512" type="098DF793-D712-413D-9D4E-89D711772228" bootable="false" readonly="true" filename="rpm.mbn"/>
+        <partition label="TZ" size_in_kb="2048" type="A053AA7F-40B8-4B1C-BA08-2F68AC71A4F4" bootable="false" readonly="true" filename="tz.mbn"/>
+        <partition label="HYP" size_in_kb="512" type="E1A6A689-0C8D-4CC6-B4E8-55A4320FBD8A" bootable="false" readonly="true" filename="hyp.mbn"/>
+        <partition label="TZAPPS" size_in_kb="16384" type="14D11C40-2A3D-4F97-882D-103A1EC09333" bootable="false" readonly="true" align="true" filename="tzapps.bin"/>
+        <partition label="BACKUP_PMIC" size_in_kb="512" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false"  readonly="true" filename=""/>
+        <partition label="BACKUP_RPM" size_in_kb="512" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="true" filename=""/>
+        <partition label="BACKUP_TZ" size_in_kb="2048" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="true" filename=""/>
+        <partition label="BACKUP_HYP" size_in_kb="512" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="true" align="true"/>
+        <partition label="BACKUP_TZAPPS" size_in_kb="16384" type="A3381699-350C-465E-BD5D-FA3AB901A39A" bootable="false" readonly="true" align="true"/>
+        <partition label="PLAT" size_in_kb="8192" type="543C031A-4CB6-4897-BFFE-4B485768A8AD" bootable="false" readonly="true" filename="fat16.bin" align="true" PERFORMANCE_BOUNDARY_IN_KB="2048"/>
+        <partition label="DEVCFG" size_in_kb="128" type="F65D4B16-343D-4E25-AAFC-BE99B6556A6D" bootable="false" readonly="true" filename="devcfg.mbn"/>      
+        <partition label="SSD" size_in_kb="8" type="2C86E742-745E-4FDD-BFD8-B6A7AC638772" bootable="false" readonly="true" align="true"/>        
+		<partition label="sti" size_in_kb="2048" type="AA9A5C4C-4F1F-7D3A-014A-22BD33BF7191" bootable="false" readonly="false" filename=""/>
+        <partition label="last_parti" size_in_kb="0" type="00000000-0000-0000-0000-000000000000" bootable="false" readonly="true" filename="" />
+    </physical_partition>
+  
+    <!-- This is LUN 5 - Protected Read-write LUN" -->
+    <physical_partition>
+        <partition label="MODEM_FS1" size_in_kb="2048" type="EBBEADAF-22C9-E33B-8F5D-0E81686A68CB" bootable="false" readonly="false" align="true" />
+        <partition label="MODEM_FS2" size_in_kb="2048" type="0A288B1F-22C9-E33B-8F5D-0E81686A68CB" bootable="false" readonly="false" align="true"/>
+        <partition label="MODEM_FSC" size_in_kb="8" type="57B90A16-22C9-E33B-8F5D-0E81686A68CB" bootable="false" readonly="false" align="true"/>
+        <partition label="UEFI_RT_NV" size_in_kb="256" type="6BB94537-7D1C-44D0-9DFE-6D77C011DBFC" bootable="false" readonly="false" align="true"/>
+        <partition label="last_parti" size_in_kb="0" type="00000000-0000-0000-0000-000000000000" bootable="false" readonly="true" filename="" />
+    </physical_partition>
+</configuration>

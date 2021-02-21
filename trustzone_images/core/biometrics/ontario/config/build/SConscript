@@ -1,0 +1,67 @@
+#=============================================================================
+# Ontario devcfg
+#
+# Target:
+# Processor:
+#
+#=============================================================================
+# $Header: //components/rel/core.tz/1.0.3.c1/biometrics/ontario/config/build/SConscript#1 $
+#=============================================================================
+#  Copyright 2015 QUALCOMM Incorporated.
+#  All Rights Reserved.
+#  QUALCOMM Proprietary/GTDR
+#=============================================================================
+
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Python library imports
+#-------------------------------------------------------------------------------
+import glob, os
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "../src"
+env.VariantDir('${BUILDPATH}', SRCPATH , duplicate=0)
+
+#-------------------------------------------------------------------------------
+# Internal depends within CoreBSP
+#-------------------------------------------------------------------------------
+
+CBSP_API = [
+    'BUSES',
+    'DAL',
+    'DEBUGTOOLS',
+    'KERNEL',
+    'SYSTEMDRIVERS',
+    'SECUREMSM'
+]
+
+env.RequirePublicApi(CBSP_API)
+env.RequireRestrictedApi(CBSP_API)
+# for tzbsp_* definitions
+env.RequireRestrictedApi('TZCHIPSET')
+# for tzbsp_int* definitions
+env.RequireRestrictedApi('TZLIBARMV8')
+
+env.Append(CPPPATH = "${INC_ROOT}/core/biometrics/api/ontario")
+
+if os.path.exists(os.path.join(SRCPATH, env.subst('ontario_config_${MSM_ID}.xml'))):
+   env.Replace(ONTARIO_CONFIG_XML = 'ontario_config_${MSM_ID}.xml')
+else:
+   env.Replace(ONTARIO_CONFIG_XML = 'ontario_config_stubs.xml')
+   env.PrintWarning("Biometrics devcfg not implemented... using stubs.")
+
+#---------------------------------------------------------------------------
+# Device Config
+#---------------------------------------------------------------------------
+if 'USES_DEVCFG' in env:
+	DEVCFG_IMG = ['DAL_DEVCFG_OEM_QSEE_IMG']
+	env.AddDevCfgInfo(DEVCFG_IMG, 
+	{
+		'devcfg_xml'    : ['${BUILD_ROOT}/core/biometrics/ontario/config/src/${ONTARIO_CONFIG_XML}']
+	})
+ 
+env.Append(CPPDEFINES = ['FEATURE_LIBRARY_ONLY'])

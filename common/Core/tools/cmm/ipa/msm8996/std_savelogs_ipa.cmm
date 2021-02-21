@@ -1,0 +1,71 @@
+//============================================================================
+//  Name:                                                                     
+//    std_savelogs_rpm.cmm 
+//
+//  Description:                                                              
+//    Script to save RPM memory locations
+//                                                                            
+// Copyright (c) 2012 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who             what, where, why
+// --------   ---             ---------------------------------------------------------
+// 04/10/2015 JBILLING        Created for 8996
+//
+
+// We support one argument for this script
+// &ARG0 - Output location for the logs
+ENTRY &ARG0
+
+LOCAL &LOGLOCATION
+
+MAIN:
+    &LOGLOCATION="&ARG0"
+
+    // Load the memory map
+    do std_memorymap
+
+    // Save the memories first
+    GOSUB SAVEBIN
+
+    // Save registers and anything else
+    GOSUB SAVESTATE
+
+    // Done
+    GOTO EXIT
+
+// Function that actually saves the binaries
+SAVEBIN:
+    //do std_utils SAVEBIN &LOGLOCATION &IPA_IRAM_log &IPA_IRAM_start &IPA_IRAM_size
+    //do std_utils SAVEBIN &LOGLOCATION &IPA_DRAM_log &IPA_DRAM_IPA_start &IPA_DRAM_size
+    do std_utils SAVEBIN &LOGLOCATION &IPA_SRAM_log  &IPA_SRAM_start  &IPA_SRAM_size
+    do std_utils SAVEBIN &LOGLOCATION &IPA_HRAM_log &IPA_HRAM_start &IPA_HRAM_size
+    do std_utils SAVEBIN &LOGLOCATION &IPA_DICT_log &IPA_DICT_start &IPA_DICT_size
+    do std_utils SAVEBIN &LOGLOCATION &IPA_MBOX_log  &IPA_MBOX_start  &IPA_MBOX_size
+    
+
+    RETURN
+
+// Function that actually saves the state
+SAVESTATE:
+    
+    do std_utils SAVEREGS &LOGLOCATION &IPA_regs
+
+    RETURN    
+
+FATALEXIT:
+    END
+
+EXIT:
+    ENDDO
+
+
+        
+
+

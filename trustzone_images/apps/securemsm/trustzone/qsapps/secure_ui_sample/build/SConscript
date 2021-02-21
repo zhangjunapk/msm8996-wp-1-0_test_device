@@ -1,0 +1,104 @@
+#===============================================================================
+#
+# secure_ui_sample  build script
+#
+# GENERAL DESCRIPTION
+#    build script
+#
+# Copyright (c) 2013 by Qualcomm technologies Inc.
+# All Rights Reserved.
+# QUALCOMM Proprietary/GTDR
+#-------------------------------------------------------------------------------
+#
+#  $Header: //components/rel/apps.tz/1.0.6/securemsm/trustzone/qsapps/secure_ui_sample/build/SConscript#1 $
+#  $DateTime: 2016/12/02 01:50:16 $
+#  $Author: pwbldsvc $
+#  $Change: 11897059 $
+#                      EDIT HISTORY FOR FILE
+#
+#  This section contains schedulerents describing changes made to the module.
+#  Notice that changes are listed in reverse chronological order.
+#===============================================================================
+Import('env')
+env = env.Clone()
+
+#-------------------------------------------------------------------------------
+# Source PATH
+#-------------------------------------------------------------------------------
+SRCPATH = "${BUILD_ROOT}/apps/securemsm/trustzone/qsapps/secure_ui_sample/src"
+
+env.VariantDir('${BUILDPATH}', SRCPATH, duplicate=0)
+
+
+#-------------------------------------------------------------------------------
+# Compiler, object, and linker definitions
+#-------------------------------------------------------------------------------
+
+env.PublishPrivateApi('SECUREMSM', [
+   "${INC_ROOT}/core/api/services",
+   "${INC_ROOT}/core/kernel/smmu/v2/inc/",
+   "${INC_ROOT}/core/securemsm/accesscontrol/api",
+   "${INC_ROOT}/apps/securemsm/trustzone/qsapps/tzdrm/tzcommon/common/shared/inc",
+   "${INC_ROOT}/core/api/securemsm/trustzone/qsee",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUI/inc",
+   "${INC_ROOT}/core/securemsm/sse/qsee/SecureUILib/include",
+])
+
+# Logging APIs
+env.PublishPrivateApi('SSE_LOG_API', [
+   '${INC_ROOT}/core/securemsm/sse/log/inc',
+])
+
+# Common includes
+env.PublishPrivateApi('SSE_COMMON_API', [
+   '${INC_ROOT}/core/securemsm/sse/common/include',
+])
+
+# Secure Touch includes
+env.PublishPrivateApi('SSE_SECURE_TOUCH_API', [
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/common/include',
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/layout/include',
+])
+env.PublishPrivateApi('SSE_TOUCH_CONTROLLER_API', [
+   '${INC_ROOT}/core/securemsm/sse/SecureTouch/controller/inc',
+])
+env.PublishPrivateApi('SSE_TOUCH_CONTROLLER_QSEE_API', [
+   '${INC_ROOT}/core/securemsm/sse/qsee/SecureTouch/drTs/include',
+])
+
+INC_PATH_API = ["${INC_ROOT}/core/api/kernel/libstd/stringl"]
+env.Append(CPPPATH = INC_PATH_API)
+
+#----------------------------------------------------------------------------
+# App core Objects
+#----------------------------------------------------------------------------
+SOURCES = [
+   '${BUILDPATH}/app_main.c',
+]
+
+#-------------------------------------------------------------------------------
+# Add Libraries to image
+#-------------------------------------------------------------------------------
+env.AddObject(
+   'SECUREUISAMPLE_IMAGE',
+   SOURCES,
+   pack_exception=['USES_L1_ADD_SOURCE'])
+
+#-------------------------------------------------------------------------------
+# Add metadata to image
+#-------------------------------------------------------------------------------
+md = {
+    'appName':    'secure_ui_sample',
+    'privileges': ['default',
+                   'I2C',
+		           'SecureDisplay',
+                  ],
+}
+
+env.AddSecureAppMetadata('SECUREUISAMPLE_IMAGE', md )
+
+#-------------------------------------------------------------------------------
+# Load sub scripts
+#-------------------------------------------------------------------------------
+env.LoadSoftwareUnits()
+

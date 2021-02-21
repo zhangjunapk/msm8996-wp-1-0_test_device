@@ -1,0 +1,296 @@
+//============================================================================
+//  Name:                                                                     
+//    std_loadbuild_wp.cmm 
+//
+//  Description:                                                              
+//    WA Specific Build loading script
+//                                                                            
+// Copyright (c) 2012 - 2014 by Qualcomm Technologies, Incorporated.  All Rights Reserved.        
+//
+//
+//
+//
+//                      EDIT HISTORY FOR FILE
+//  This section contains comments describing changes made to the module.
+//  Notice that changes are listed in reverse chronological order.
+//
+// when       who           what, where, why
+// --------   ---           ---------------------------------------------------------
+// 08/03/2015 JBILLING      Major change for UFS functionality
+// 04/06/2015 JBILLING      changed path for devcfgtz back now that workaround finished.
+// 04/01/2015 JBILLING      changed path for devcfgtz
+// 03/17/2015 JBILLING      Added TZDevcfg
+// 01/26/2015 JBILLING      Changed for 8996. Removed SDI
+// 07/01/2014 AJCheriyan    Added change to load pmic.mbn
+// 02/21/2013 AJCheriyan    Changed SDI binary name
+// 01/18/2013 AJCheriyan    Added TZAPPS binary
+// 08/13/2012 AJCheriyan    Ported from 8974 LA, Added FAT16 binary
+// 08/08/2012 AJCheriyan    Fixed issue with paths for mjsdload
+// 07/19/2012 AJCheriyan    Created for B-family 
+
+// LoadOption - Load option - Supported : ERASEONLY, LOADCOMMON, LOADFULL, LOADIMG
+// ImageName - Valid image name. Can be used only with LOADIMG option.
+LOCAL &LoadOption &ImageName
+ENTRY &LoadOption &ImageName
+//ENTRY &ARG0 &ARG1
+
+LOCAL &CWD  &binarypath &programmer 
+
+MAIN:
+    // We have checked for all the intercom sessions at this point and we don't need any error
+    // Save the argument
+    &LOAD_OPTION="&LoadOption"
+
+    
+    //For WP, devcfg binary lives in apps. may change later
+    
+    LOCAL &Devcfg_Binary_Buildroot
+    LOCAL &binary_list &temp
+    //&Devcfg_Binary_Buildroot="&APPS_BUILDROOT"
+    &Devcfg_Binary_Buildroot="&TZ_BUILDROOT"
+
+
+    // Switch to the tools directory
+    &CWD=OS.PWD()
+
+
+    // Check for the boot option
+    do hwio 
+    
+    GOSUB CONFIGURE_MEMORY_STORAGE_TYPE
+    LOCAL &storage_option &programmer &storage_type &max_partitions &xml_location
+    ENTRY &storage_option &programmer &storage_type &max_partitions &xml_location
+
+
+
+
+    // Erase only
+    IF (("&LoadOption"=="ERASEONLY")||("&LoadOption"=="LOADCOMMON")||("&LoadOption"=="LOADFULL"))
+    (
+        // Only erase the chip and exit
+        CD.DO &BOOT_BUILDROOT/&programmer ERASE
+    )
+
+    // Load common images
+    IF (("&LoadOption"=="LOADCOMMON")||("&LoadOption"=="LOADFULL"))
+    (
+        // Check for all the common images 
+
+        // Check for the presence of all the binaries
+        // Not needed because meta-build should have populated all this information
+        // SBL + PMIC, TZ, RPM, APPSBL\
+        //boot: xbl64_core32.elf,pmic.elf
+        do std_utils FILEXIST FATALEXIT &BOOT_BUILDROOT/&BOOT_BINARY
+        do std_utils FILEXIST FATALEXIT &BOOT_BUILDROOT/&PMIC_BINARY
+        //rpm: rpm.mbn
+        do std_utils FILEXIST FATALEXIT &RPM_BUILDROOT/&RPM_BINARY
+        //tz: tz.mbn,hyp.mbn
+        do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&TZ_BINARY
+        do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&HYP_BINARY
+        //winsecapp.mbn, uefi_sec.mbn
+        
+        do std_utils FILEXIST FATALEXIT &APPS_BUILDROOT/&UEFISEC_BINARY
+        do std_utils FILEXIST FATALEXIT &APPS_BUILDROOT/&APPSCONFIG_BINARY
+        do std_utils FILEXIST FATALEXIT &APPS_BUILDROOT/&EFIESP_BINARY
+        do std_utils FILEXIST FATALEXIT &Devcfg_Binary_Buildroot/&TZDEVCFG_BINARY
+        
+        // Now flash each partition one by one
+        // Flash the partition table
+        &searchpaths="&xml_location"
+        &partition=0
+        LOCAL &xml &files
+        WHILE (&partition<&max_partitions)
+        (
+            &xml="rawprogram"+FORMAT.DECIMAL(1, &partition)+".xml"
+            &files="gpt_main"+FORMAT.DECIMAL(1, &partition)+".bin,"+"gpt_backup"+FORMAT.DECIMAL(1,&partition)+".bin"
+            CD.DO &BOOT_BUILDROOT/&programmer LOAD searchpaths=&searchpaths xml=&xml files=&files
+            &partition=&partition+1
+        )
+        
+        ////create searchpath list/////
+        &searchpaths="&xml_location,"+OS.FILE.PATH(&BOOT_BUILDROOT/&BOOT_BINARY)+","+OS.FILE.PATH(&BOOT_BUILDROOT/&PMIC_BINARY)+","+OS.FILE.PATH(&RPM_BUILDROOT/&RPM_BINARY)+","+OS.FILE.PATH(&TZ_BUILDROOT/&TZ_BINARY)+","+OS.FILE.PATH(&APPS_BUILDROOT/&UEFISEC_BINARY)+","+OS.FILE.PATH(&APPS_BUILDROOT/&EFIESP_BINARY)+","+OS.FILE.PATH(&APPS_BUILDROOT/&APPSCONFIG_BINARY)
+        
+        LOCAL &metasearchpath
+        &metasearchpath="&METASCRIPTSDIR/../../../config"+","+"&xml_location"
+        
+        
+        ////create binary list////////
+            //boot binaries
+                &binary_list=OS.FILE.NAME(&BOOT_BUILDROOT/&PMIC_BINARY)
+                &temp=OS.FILE.NAME(&BOOT_BUILDROOT/&BOOT_BINARY)
+                &binary_list="&binary_list"+","+"&temp"
+            //RPM binaries
+                &temp=OS.FILE.NAME(&RPM_BUILDROOT/&RPM_BINARY)
+                &binary_list="&binary_list"+","+"&temp"
+            //TZ binaries
+                &temp=OS.FILE.NAME(&TZ_BUILDROOT/&TZ_BINARY)
+                &binary_list="&binary_list"+","+"&temp"
+                &temp=OS.FILE.NAME(&TZ_BUILDROOT/&HYP_BINARY)
+                &binary_list="&binary_list"+","+"&temp"
+                &temp=OS.FILE.NAME(&Devcfg_Binary_Buildroot/&TZDEVCFG_BINARY)
+                &binary_list="&binary_list"+","+"&temp"
+            //uefi,apps config and apci binaries
+                &temp=OS.FILE.NAME(&APPS_BUILDROOT/&UEFISEC_BINARY)
+                &binary_list="&binary_list"+","+"&temp"
+                &temp=OS.FILE.NAME(&APPS_BUILDROOT/&EFIESP_BINARY)
+                &binary_list="&binary_list"+","+"&temp"
+                &temp=OS.FILE.NAME(&APPS_BUILDROOT/&APPSCONFIG_BINARY)
+                &binary_list="&binary_list"+","+"&temp"
+        
+
+    
+        &partition=0
+        WHILE (&partition<&max_partitions)
+        (
+            &xml="rawprogram"+FORMAT.DECIMAL(1, &partition)+".xml"
+            
+            CD.DO &BOOT_BUILDROOT/&programmer LOAD searchpaths=&searchpaths xml=&xml files=&binary_list
+            // Loading Boot partition with zeroed binary to stop after JTAG. This is workaround for UFS flashing issue. To be removed later.
+            CD.DO &BOOT_BUILDROOT/&programmer LOAD searchpaths=&metasearchpath xml=&xml files=boot.img
+                &partition=&partition+1
+        )
+
+        // Apply the disk patches
+        &searchpaths="&xml_location"
+        &partition=0
+        WHILE (&partition<&max_partitions)
+        (
+            &xml="patch"+FORMAT.DECIMAL(1, &partition)+".xml"
+            CD.DO &BOOT_BUILDROOT/&programmer PATCH searchpaths=&searchpaths xml=&xml
+            &partition=&partition+1
+        )
+        
+        
+    )
+    
+    // Load common images
+    IF ("&LoadOption"=="LOADIMG")
+    (
+        // Check for the binary first 
+        IF ("&ImageName"=="xbl")
+        (
+            do std_utils FILEXIST FATALEXIT &BOOT_BUILDROOT/&BOOT_BINARY
+            do std_utils FILEXIST FATALEXIT &BOOT_BUILDROOT/&PMIC_BINARY
+            //"xbl64_core32.elf,pmic.elf"
+            &binary_list=OS.FILE.NAME(&BOOT_BUILDROOT/&PMIC_BINARY)
+            &temp=OS.FILE.NAME(&BOOT_BUILDROOT/&BOOT_BINARY)
+            &binary_list="&binary_list"+","+"&temp"
+            &binarypath=OS.FILE.PATH(&BOOT_BUILDROOT/&BOOT_BINARY)+","+OS.FILE.PATH(&BOOT_BUILDROOT/&PMIC_BINARY)
+        )
+        IF ("&ImageName"=="tz")
+        (
+            do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&TZ_BINARY
+            do std_utils FILEXIST FATALEXIT &TZ_BUILDROOT/&HYP_BINARY
+            do std_utils FILEXIST FATALEXIT &Devcfg_Binary_Buildroot/&TZDEVCFG_BINARY
+            
+            
+            &binary_list=OS.FILE.NAME(&TZ_BUILDROOT/&TZ_BINARY)
+            &temp=OS.FILE.NAME(&TZ_BUILDROOT/&HYP_BINARY)
+            &binary_list="&binary_list"+","+"&temp"
+            &temp=OS.FILE.NAME(&Devcfg_Binary_Buildroot/&TZDEVCFG_BINARY)
+            &binary_list="&binary_list"+","+"&temp"
+            //"tz.mbn,hyp.mbn,devcfg.mbn"
+            &binarypath=OS.FILE.PATH("&TZ_BUILDROOT/&TZ_BINARY")+","+OS.FILE.PATH("&TZ_BUILDROOT/&HYP_BINARY")+","+OS.FILE.PATH("&Devcfg_Binary_Buildroot/&TZDEVCFG_BINARY")
+        )
+        IF ("&ImageName"=="rpm")
+        (
+            do std_utils FILEXIST FATALEXIT &RPM_BUILDROOT/&RPM_BINARY
+            &binary_list=OS.FILE.NAME(&RPM_BUILDROOT/&RPM_BINARY)
+            //"rpm.mbn"
+            &binarypath=OS.FILE.PATH("&RPM_BUILDROOT/&RPM_BINARY")
+        )
+        
+        IF ("&ImageName"=="appsboot")
+        (
+            
+            do std_utils FILEXIST FATALEXIT &APPS_BUILDROOT/&UEFISEC_BINARY
+            
+            &binary_list=OS.FILE.NAME(&APPS_BUILDROOT/&UEFISEC_BINARY)
+            
+            //"winsecapp.mbn"
+            &binarypath=OS.FILE.PATH("&APPS_BUILDROOT/&UEFISEC_BINARY")
+        )
+        
+        // Flash the image now
+        &searchpaths="&METASCRIPTSDIR/../../../build/&storage_type,"+"&binarypath"
+        &partition=0
+        WHILE (&partition<&max_partitions)
+        (
+            &xml="rawprogram"+FORMAT.DECIMAL(1, &partition)+".xml"
+            CD.DO &BOOT_BUILDROOT/&programmer LOAD searchpaths=&searchpaths xml=rawprogram0.xml files=&binary_list
+            &partition=&partition+1
+        )
+    )
+
+    // Load HLOS images
+    IF ("&LOAD_OPTION"=="LOADFULL")
+    (
+        // Call the HLOS specific loading script
+        do std_utils FILEXIST FATALEXIT &METASCRIPTSDIR/../../../config/loadbuild_wp.py
+        OS.COMMAND cmd /k python &METASCRIPTSDIR/../../../config/loadbuild_wp.py 
+             
+    )
+
+    // Return to the old directory
+    CD &CWD
+
+    GOTO EXIT
+CONFIGURE_MEMORY_STORAGE_TYPE:
+    LOCAL &storage_option &programmer &storage_type &max_partitions &xml_location
+    do std_utils HWIO_INF BOOT_CONFIG FAST_BOOT
+    ENTRY &storage_option
+    
+    
+    IF (&storage_option==0x4) //0x4 UFS
+    (
+    
+        IF (OS.DIR("&BOOT_BUILDROOT/QcomPkg"))
+        (
+            &programmer="QcomPkg/Tools/storage/UFS/jtagprogrammer"
+        )
+        ELSE
+        (
+            &programmer="boot_images/QcomPkg/Tools/storage/UFS/jtagprogrammer"
+        )
+        &xml_location="&METASCRIPTSDIR/../../../build/ufs"
+        &storage_type="ufs"
+        &max_partitions=6
+        
+        PRINT %ERROR "Warning - WP scripts not yet configured for UFS"
+
+    )
+    ELSE //else EMMC 
+    (
+
+        IF (OS.DIR("&BOOT_BUILDROOT/QcomPkg"))
+        (
+            &programmer="QcomPkg/Tools/storage/eMMC/jtagprogrammer"
+        )
+        ELSE
+        (
+            &programmer="boot_images/QcomPkg/Tools/storage/eMMC/jtagprogrammer"
+        )
+        
+        &xml_location="&METASCRIPTSDIR/../../../build/emmc"
+        &storage_type="emmc"
+        &max_partitions=1
+
+    )
+    
+    
+    RETURN &storage_option &programmer &storage_type &max_partitions &xml_location
+
+FATALEXIT:
+    END
+
+EXIT:
+    ENDDO
+
+
+
+    
+    
+    
+
+        
+

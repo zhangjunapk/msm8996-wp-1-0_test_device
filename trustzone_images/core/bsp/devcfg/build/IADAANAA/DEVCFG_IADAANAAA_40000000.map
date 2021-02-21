@@ -1,0 +1,470 @@
+Archive member included because of file (symbol)
+
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o (DALPROP_PropBin_8996_xml_tz)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o (DALPROP_PropBin_8996_xml_hyp)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.iplt           0x0000000000000000        0x0
+ .iplt          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+
+.igot.plt       0x0000000000000000        0x0
+ .igot.plt      0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+
+.rela.dyn       0x0000000000000000        0x0
+ .rela.iplt     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+
+DEVCFG_DATA_TZ  0x00000000862d4000     0x570c
+ *\DevCfgSegInfo_tz_oem.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .data          0x00000000862d4000       0x40 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+                0x00000000862d4000                devcfg_target_soc_info_tz
+ *\8996_data_tz_oem.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .rodata        0x00000000862d4040       0x20 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+                0x00000000862d4040                DALPROP_PropsInfo_8996_xml_tz
+ .data          0x00000000862d4060        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ *\DALConfig_8996_tz_oem.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .rodata        0x00000000862d4060     0x2158 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+                0x00000000862d4060                DALPROP_StructPtrs_8996_xml_tz
+                0x00000000862d4400                DALPROP_PropBin_8996_xml_tz
+                0x00000000862d5a10                driver_list_8996_xml_tz
+ .data          0x00000000862d61b8     0x217c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .rodata.str1.1
+                0x00000000862d8334      0x3f5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ *\8996_devcfg_BIMC_error_OEM_data.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ *fill*         0x00000000862d8729        0x7 
+ .rodata        0x00000000862d8730       0x90 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+                0x00000000862d8730                BRIC_info_oem
+                0x00000000862d8760                DEFAULT_info_oem
+                0x00000000862d8770                DDR_SCMO_info_oem
+                0x00000000862d8790                BIMC_propdata_oem_8996_xml_tz
+ .data          0x00000000862d87c0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .rodata.str1.1
+                0x00000000862d87c0       0x72 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ *\8996_devcfg_ABT_OEM_data.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ *fill*         0x00000000862d8832        0x6 
+ .rodata        0x00000000862d8838      0x180 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+                0x00000000862d8838                ABT_cfgdata_oem
+                0x00000000862d89a8                ABT_propdata_oem_8996_xml_tz
+ .data          0x00000000862d89b8        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .rodata.str1.1
+                0x00000000862d89b8       0xa2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ *\8996_devcfg_NOC_error_OEM_data.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ *fill*         0x00000000862d8a5a        0x6 
+ .rodata        0x00000000862d8a60       0x80 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+                0x00000000862d8a60                NOCERR_cfgdata_oem
+                0x00000000862d8ad0                NOCERR_propdata_oem_8996_xml_tz
+ .data          0x00000000862d8ae0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .rodata.str1.1
+                0x00000000862d8ae0       0x4a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ *\8996_devcfg_oem_data.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ *fill*         0x00000000862d8b2a        0x6 
+ .data          0x00000000862d8b30       0x70 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+                0x00000000862d8b30                rst_reason_list
+                0x00000000862d8b90                oem_rst_reason_list_8996_xml_tz
+ *\8996_devcfg_pm_oem_config.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .data          0x00000000862d8ba0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .rodata        0x00000000862d8ba0       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+                0x00000000862d8ba0                pm_oem_pshold_cfg_8996_xml_tz
+ *\8996_devcfg_pm_spmi_config.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .data          0x00000000862d8c48      0x598 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+                0x00000000862d8c48                pm_spmi_pheriph_cfg_8996_xml_tz
+                0x00000000862d91dc                pm_spmi_pheriph_cfg_sz_8996_xml_tz
+ *\8996_devcfg_pm_ac_config.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .data          0x00000000862d91e0      0x360 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+                0x00000000862d91e0                pm_mpu_rg_cfg_8996_xml_tz
+                0x00000000862d9420                pm_spmi_rg_cfg_8996_xml_tz
+ .rodata        0x00000000862d9540        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+                0x00000000862d9540                pm_spmi_rg_sz_8996_xml_tz
+                0x00000000862d9544                pm_hal_id_xpu_8996_xml_tz
+ *\8996_devcfg_pm_tz_config.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .rodata        0x00000000862d9548       0x54 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+                0x00000000862d9548                pm_arb_pvc_cfg_8996_xml_tz
+                0x00000000862d9590                pm_num_pvc_port_8996_xml_tz
+                0x00000000862d9594                pm_arb_priorities_8996_xml_tz
+                0x00000000862d9598                pm_num_prio_8996_xml_tz
+ .data          0x00000000862d959c       0x20 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ *\8996_devcfg_pm_config.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .data          0x00000000862d95bc        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .rodata        0x00000000862d95bc       0xd8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+                0x00000000862d95bc                pm_pam_qfprom_rail_8996_xml_tz
+ *\8996_devcfg_pm_reg_dump_config.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .data          0x00000000862d9694        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .rodata        0x00000000862d9694       0x78 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+                0x00000000862d9694                pm_ddr_rai_reg_8996_xml_tz
+                0x0000000000000001                ASSERT ((SIZEOF (DEVCFG_DATA_TZ) <= 0xa000), Oversize)
+
+DEVCFG_DATA_HYP
+                0x0000000085dfd000     0x1560
+ *\DevCfgSegInfo_hyp_oem.o(SORT(.rodata*) SORT(.data*) SORT(.sdata))
+ .data          0x0000000085dfd000       0x40 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+                0x0000000085dfd000                devcfg_target_soc_info_hyp
+ *\8996_data_hyp_oem.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .rodata        0x0000000085dfd040       0x20 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+                0x0000000085dfd040                DALPROP_PropsInfo_8996_xml_hyp
+ .data          0x0000000085dfd060        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ *\DALConfig_8996_hyp_oem.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ .rodata        0x0000000085dfd060      0xc20 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+                0x0000000085dfd060                DALPROP_StructPtrs_8996_xml_hyp
+                0x0000000085dfd090                DALPROP_PropBin_8996_xml_hyp
+                0x0000000085dfd758                driver_list_8996_xml_hyp
+ .data          0x0000000085dfdc80        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+ .rodata.str1.1
+                0x0000000085dfdc80      0x346 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+ *\8996_devcfg_pm_hyp_config.o(SORT(.rodata*) SORT(.data*) SORT(.sdata*))
+ *fill*         0x0000000085dfdfc6        0x2 
+ .data          0x0000000085dfdfc8        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .rodata        0x0000000085dfdfc8      0x598 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+                0x0000000085dfdfc8                pm_hyp_spmi_cfg_8996_xml_hyp
+                0x0000000085dfe55c                pm_hyp_spmi_cfg_sz_8996_xml_hyp
+                0x0000000000000001                ASSERT ((SIZEOF (DEVCFG_DATA_HYP) <= 0x3000), Oversize)
+
+.got
+ *(SORT(.got))
+
+.got.plt
+ *(SORT(.got.plt))
+
+.debug
+ *(SORT(.debug))
+
+.line
+ *(SORT(.line))
+
+.debug_srcinfo
+ *(SORT(.debug_srcinfo))
+
+.debug_sfnames
+ *(SORT(.debug_sfnames))
+
+.debug_aranges
+ *(SORT(.debug_aranges))
+
+.debug_pubnames
+                0x0000000000000000      0x7df
+ *(SORT(.debug_pubnames))
+ .debug_pubnames
+                0x0000000000000000       0x71 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .debug_pubnames
+                0x0000000000000071       0x47 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .debug_pubnames
+                0x00000000000000b8       0x4d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .debug_pubnames
+                0x0000000000000105       0x34 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .debug_pubnames
+                0x0000000000000139       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .debug_pubnames
+                0x0000000000000169       0x35 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .debug_pubnames
+                0x000000000000019e       0x31 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .debug_pubnames
+                0x00000000000001cf       0x4a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .debug_pubnames
+                0x0000000000000219       0x34 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .debug_pubnames
+                0x000000000000024d       0x5d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .debug_pubnames
+                0x00000000000002aa       0x8b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .debug_pubnames
+                0x0000000000000335       0xcd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .debug_pubnames
+                0x0000000000000402       0x35 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .debug_pubnames
+                0x0000000000000437       0x31 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .debug_pubnames
+                0x0000000000000468       0x57 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .debug_pubnames
+                0x00000000000004bf      0x2ac /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .debug_pubnames
+                0x000000000000076b       0x74 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+.debug_info     0x0000000000000000     0x305a
+ *(SORT(.debug_info) SORT(.gnu.linkonce.wi.*))
+ .debug_info    0x0000000000000000      0x210 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .debug_info    0x0000000000000210      0x106 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .debug_info    0x0000000000000316       0xf9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .debug_info    0x000000000000040f      0x40b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .debug_info    0x000000000000081a      0x566 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .debug_info    0x0000000000000d80      0x40b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .debug_info    0x000000000000118b      0x566 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .debug_info    0x00000000000016f1       0xdf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .debug_info    0x00000000000017d0       0x90 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .debug_info    0x0000000000001860      0x112 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .debug_info    0x0000000000001972      0x581 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .debug_info    0x0000000000001ef3      0x20e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .debug_info    0x0000000000002101      0x1d9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .debug_info    0x00000000000022da       0xc3 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .debug_info    0x000000000000239d      0x11c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .debug_info    0x00000000000024b9      0x7b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .debug_info    0x0000000000002c69      0x3f1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+.debug_abbrev   0x0000000000000000      0xa5f
+ *(SORT(.debug_abbrev))
+ .debug_abbrev  0x0000000000000000       0x90 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .debug_abbrev  0x0000000000000090       0x83 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .debug_abbrev  0x0000000000000113       0x83 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .debug_abbrev  0x0000000000000196       0xa1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .debug_abbrev  0x0000000000000237       0xc0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .debug_abbrev  0x00000000000002f7       0xa1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .debug_abbrev  0x0000000000000398       0xc0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .debug_abbrev  0x0000000000000458       0x89 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .debug_abbrev  0x00000000000004e1       0x67 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .debug_abbrev  0x0000000000000548       0x84 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .debug_abbrev  0x00000000000005cc       0xb9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .debug_abbrev  0x0000000000000685       0xb7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .debug_abbrev  0x000000000000073c       0x8b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .debug_abbrev  0x00000000000007c7       0x8e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .debug_abbrev  0x0000000000000855       0x8b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .debug_abbrev  0x00000000000008e0       0xd5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .debug_abbrev  0x00000000000009b5       0xaa /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+.debug_line     0x0000000000000000     0x17c9
+ *(SORT(.debug_line))
+ .debug_line    0x0000000000000000       0xed /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .debug_line    0x00000000000000ed       0xe6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .debug_line    0x00000000000001d3       0xec /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .debug_line    0x00000000000002bf      0x186 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .debug_line    0x0000000000000445      0x233 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .debug_line    0x0000000000000678      0x187 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .debug_line    0x00000000000007ff      0x234 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .debug_line    0x0000000000000a33       0xfd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .debug_line    0x0000000000000b30      0x105 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .debug_line    0x0000000000000c35      0x106 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .debug_line    0x0000000000000d3b      0x104 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .debug_line    0x0000000000000e3f      0x104 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .debug_line    0x0000000000000f43      0x101 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .debug_line    0x0000000000001044      0x10a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .debug_line    0x000000000000114e      0x105 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .debug_line    0x0000000000001253      0x309 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .debug_line    0x000000000000155c      0x26d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+.debug_frame
+ *(SORT(.debug_frame))
+
+.debug_str      0x0000000000000000     0x2bd4
+ *(SORT(.debug_str))
+ .debug_str     0x0000000000000000      0x27e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+                                        0x283 (size before relaxing)
+ .debug_str     0x000000000000027e      0x155 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+                                        0x221 (size before relaxing)
+ .debug_str     0x00000000000003d3      0x144 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+                                        0x21c (size before relaxing)
+ .debug_str     0x0000000000000517      0x2a8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+                                        0x37d (size before relaxing)
+ .debug_str     0x00000000000007bf      0x4dc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+                                        0x78a (size before relaxing)
+ .debug_str     0x0000000000000c9b       0xd1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+                                        0x37f (size before relaxing)
+ .debug_str     0x0000000000000d6c       0xd1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+                                        0x78c (size before relaxing)
+ .debug_str     0x0000000000000e3d      0x176 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+                                        0x22c (size before relaxing)
+ .debug_str     0x0000000000000fb3      0x1df /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+                                        0x281 (size before relaxing)
+ .debug_str     0x0000000000001192      0x19f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+                                        0x27a (size before relaxing)
+ .debug_str     0x0000000000001331      0xd05 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+                                        0xe04 (size before relaxing)
+ .debug_str     0x0000000000002036      0x255 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+                                        0x357 (size before relaxing)
+ .debug_str     0x000000000000228b      0x2de /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+                                        0x38d (size before relaxing)
+ .debug_str     0x0000000000002569      0x171 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+                                        0x230 (size before relaxing)
+ .debug_str     0x00000000000026da      0x122 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+                                        0x273 (size before relaxing)
+ .debug_str     0x00000000000027fc      0x2cb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+                                        0x546 (size before relaxing)
+ .debug_str     0x0000000000002ac7      0x10d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+                                        0x36d (size before relaxing)
+
+.debug_loc      0x0000000000000000        0x0
+ *(SORT(.debug_loc))
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+.debug_macinfo
+ *(SORT(.debug_macinfo))
+
+.debug_weaknames
+ *(SORT(.debug_weaknames))
+
+.debug_funcnames
+ *(SORT(.debug_funcnames))
+
+.debug_typenames
+ *(SORT(.debug_typenames))
+
+.debug_varnames
+ *(SORT(.debug_varnames))
+
+.debug_pubtypes
+                0x0000000000000000      0xea4
+ *(SORT(.debug_pubtypes))
+ .debug_pubtypes
+                0x0000000000000000       0xb9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .debug_pubtypes
+                0x00000000000000b9       0x79 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .debug_pubtypes
+                0x0000000000000132       0x79 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .debug_pubtypes
+                0x00000000000001ab      0x13e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .debug_pubtypes
+                0x00000000000002e9      0x192 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .debug_pubtypes
+                0x000000000000047b      0x13e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .debug_pubtypes
+                0x00000000000005b9      0x192 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .debug_pubtypes
+                0x000000000000074b       0x7a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .debug_pubtypes
+                0x00000000000007c5       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .debug_pubtypes
+                0x00000000000007f5       0xbf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .debug_pubtypes
+                0x00000000000008b4      0x11d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .debug_pubtypes
+                0x00000000000009d1       0xfc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .debug_pubtypes
+                0x0000000000000acd       0x37 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .debug_pubtypes
+                0x0000000000000b04       0x61 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .debug_pubtypes
+                0x0000000000000b65       0xbf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .debug_pubtypes
+                0x0000000000000c24      0x15d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .debug_pubtypes
+                0x0000000000000d81      0x123 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+.debug_ranges   0x0000000000000000        0x0
+ *(SORT(.debug_ranges))
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+.comment        0x0000000000000000       0x23
+ .comment       0x0000000000000000       0x23 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib(DALConfig_8996_tz_oem.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib(DALConfig_8996_hyp_oem.o)
+
+.gnu.attributes
+ *(SORT(.gnu.attributes))
+
+.note.gnu.arm.ident
+ *(SORT(.note.gnu.arm.ident))
+
+/DISCARD/
+ *(SORT(.ARM.exidx*))
+ *(SORT(.note.GNU-stack))
+ *(SORT(.gnu_debuglink))
+ *(SORT(.gnu.lto_*))
+ *(SORT(.init))
+ *(SORT(.fini))
+START GROUP
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_oem_8996_xml.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DALConfig_hyp_oem_8996_xml.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_BIMC_error_OEM_data.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_ABT_OEM_data.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/buses/icb/build/devcfg_img/A53_64/IADAANAA/8996_xml/8996/8996_devcfg_NOC_error_OEM_data.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_tz_oem.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_tz_oem.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/8996_data_hyp_oem.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/dal/config/build/devcfg_img/A53_64/IADAANAA/DevCfgSegInfo_hyp_oem.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/oem/build/devcfg_img/A53_64/IADAANAA/8996_xml/msm8996/8996_devcfg_oem_data.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_oem_config.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_spmi_config.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_ac_config.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_tz_config.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_config.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_reg_dump_config.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/systemdrivers/pmic/config/msm8996_pm8994/build/devcfg_img/A53_64/IADAANAA/8996_xml/src/8996_devcfg_pm_hyp_config.o
+END GROUP
+OUTPUT(/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/bsp/devcfg/build/IADAANAA/DEVCFG_IADAANAAA_40000000.elf elf64-littleaarch64)

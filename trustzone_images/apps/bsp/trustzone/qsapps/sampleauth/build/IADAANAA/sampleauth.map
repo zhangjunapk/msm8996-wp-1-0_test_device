@@ -1,0 +1,756 @@
+Archive member included because of file (symbol)
+
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o (get_app_md)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (minkIPC)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (qsee_open)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (qsee_prng_getdata)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o (app_export_init_info_to_qsee)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (CApp_invoke)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o) (mink_generic_syscall)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (secure_memset)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o) (memset)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o) (strlen)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o) (vsnprintf)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o) (memcpy)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o) (memchr)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o) (tz_app_cmd_handler)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o) (qsee_log)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o) (qsee_get_uptime)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o) (qsee_encapsulate_inter_app_message)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o) (bio_set_auth_result)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o) (bio_deserialize_auth_result)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o) (memscpy)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o) (strlcpy)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o) (strnlen)
+/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+                              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o) (qsee_bulletin_board_post)
+
+Allocating common symbols
+Common symbol       size              file
+
+apps_request_resp   0x28              /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .group         0x0000000000000000        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .text          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .data          0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+ .bss           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000000000000     0x6786
+ *\tzapp_entry.o(SORT(TZAPPENTRYCODE))
+ TZAPPENTRYCODE
+                0x0000000000000000       0x58 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000000000                __main
+                0x0000000000000000                TZAPPENTRY
+                0x0000000000000000                _main
+                0x000000000000003c                get_cmnlib_ctx_ptr
+ *(SORT(.text) SORT(.text.*) SORT(kthread_shared))
+ .text          0x0000000000000058      0x9b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000000058                qsee_err_fatal
+                0x0000000000000078                platform_err_fatal
+                0x000000000000007c                platform_get_random
+                0x0000000000000080                __stack_chk_fail
+                0x0000000000000084                _sys_command_string
+                0x0000000000000090                get_app_req_resp
+                0x000000000000009c                qsee_read_register
+                0x00000000000000c0                qsee_request_service
+                0x0000000000000180                qsee_prepare_shared_buf_for_nosecure_read
+                0x00000000000001a4                qsee_prepare_shared_buf_for_secure_read
+                0x00000000000001c8                qsee_set_global_flag
+                0x00000000000001ec                qsee_get_global_flag
+                0x000000000000020c                qsee_oem_process_cmd
+                0x0000000000000238                qsee_enforce_hdmi_hdcp_encryption
+                0x000000000000025c                qsee_write_hdcp2p2_key_riv_enable
+                0x000000000000028c                qsee_read_hdcp2p2_min_encryption_level
+                0x00000000000002b0                qsee_write_hdcp2p2_min_encryption_level
+                0x00000000000002d4                qsee_get_hdcp_min_enc_level
+                0x00000000000002f8                qsee_set_hdcp_min_enc_level
+                0x000000000000031c                qsee_write_hdcp1_key
+                0x0000000000000340                qsee_set_hdcp_cpi_assert
+                0x0000000000000364                qsee_get_secure_state
+                0x0000000000000388                qsee_malloc
+                0x0000000000000398                qsee_realloc
+                0x00000000000003e8                qsee_realloc_common
+                0x00000000000004a0                qsee_free
+                0x00000000000004cc                qsee_cmnlib_malloc
+                0x00000000000004fc                qsee_cmnlib_free
+                0x0000000000000528                tzlib_app_entry
+                0x0000000000000680                get_ta_app_name
+                0x0000000000000690                get_app_md
+ .text.tz_module_open
+                0x0000000000000a08        0xc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000000a08                tz_module_open
+ .text          0x0000000000000a14      0x3e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                0x0000000000000a14                UThread_syscall
+                0x0000000000000a3c                minkIPC
+                0x0000000000000bc8                minkServerLoop
+                0x0000000000000dd4                minkServerEntry
+ .text          0x0000000000000dfc      0x430 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                0x0000000000000dfc                qsee_set_env
+                0x0000000000000e2c                qsee_open
+                0x0000000000000ecc                qsee_open_singleton
+                0x00000000000010d4                qsee_printf_ap
+                0x0000000000001184                qsee_printf
+ .text          0x000000000000122c       0x8c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                0x000000000000122c                qsee_prng_getdata
+ .text          0x00000000000012b8       0xfc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                0x00000000000012b8                get_app_stack_base
+                0x00000000000012c4                get_app_stack_size
+                0x00000000000012dc                get_app_heap_base
+                0x00000000000012e8                get_app_heap_size
+                0x0000000000001300                CApp_handleRequest
+                0x0000000000001334                CApp_invoke
+                0x0000000000001384                secure_app_init
+                0x000000000000139c                secure_app_shutdown
+ .text          0x00000000000013b4       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                0x00000000000013b4                secure_memset
+ .text          0x00000000000013e4       0x68 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+                0x00000000000013e4                memset
+ .text          0x000000000000144c       0x70 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+                0x000000000000144c                strlen
+ .text          0x00000000000014bc     0x12d8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+                0x00000000000014bc                __towrite
+                0x0000000000001508                __fwritex
+                0x0000000000001600                vfprintf
+                0x00000000000021d4                vsnprintf
+                0x0000000000002328                snprintf
+ .text          0x0000000000002794      0x3f8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+                0x0000000000002794                memcpy
+ .text          0x0000000000002b8c       0xd4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+                0x0000000000002b8c                memchr
+ .text          0x0000000000002c60      0x5d8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+                0x0000000000002c60                dumpHex
+                0x0000000000002d8c                tz_app_init
+                0x0000000000002da4                tz_app_cmd_handler
+                0x0000000000003220                tz_app_shutdown
+ .text          0x0000000000003238      0x6e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                0x0000000000003238                qsee_kdf
+                0x0000000000003264                qsee_log
+                0x0000000000003374                qsee_log_set_mask
+                0x000000000000339c                qsee_log_get_mask
+                0x00000000000033c8                open
+                0x0000000000003420                read
+                0x000000000000344c                write
+                0x0000000000003478                close
+                0x00000000000034a4                lstat
+                0x00000000000034d0                mkdir
+                0x00000000000034fc                frename
+                0x0000000000003528                opendir
+                0x0000000000003554                readdir
+                0x0000000000003580                rmdir
+                0x00000000000035ac                testdir
+                0x00000000000035d8                file_get_partition_free_size
+                0x0000000000003604                fstat
+                0x0000000000003630                lseek
+                0x000000000000365c                time_getsystime
+                0x0000000000003688                time_getutcsec
+                0x00000000000036b4                time_is_leap_year
+                0x00000000000036e0                remove
+                0x000000000000370c                unlink
+                0x0000000000003738                link
+                0x0000000000003764                telldir
+                0x0000000000003790                fsync
+                0x00000000000037bc                openat
+                0x0000000000003810                unlinkat
+                0x000000000000383c                fcntl
+                0x0000000000003894                creat
+                0x00000000000038c0                file_dir_chown_chmod
+                0x00000000000038f4                get_error_number
+ .text          0x0000000000003920       0x74 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+                0x0000000000003920                qsee_get_uptime
+                0x0000000000003954                qsee_wdog_stop
+                0x0000000000003974                qsee_wdog_pet
+ .text          0x0000000000003994      0x20c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+                0x0000000000003994                qsee_encapsulate_inter_app_message
+                0x0000000000003ab4                qsee_decapsulate_inter_app_message
+ .text          0x0000000000003ba0      0x4e8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+                0x0000000000003ba0                bio_set_auth_result
+                0x0000000000003d64                bio_get_auth_result
+                0x0000000000003f2c                bio_wait_for_hlos_event
+ .text          0x0000000000004088      0x850 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+                0x0000000000004088                bio_serialize_auth_result
+                0x00000000000043bc                bio_deserialize_auth_result
+                0x00000000000046f4                bio_serialize_file_poll_event_data
+                0x0000000000004890                bio_parse_listener_response
+ .text          0x00000000000048d8       0x30 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                0x00000000000048d8                memscpy
+ .text          0x0000000000004908       0x3c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+                0x0000000000004908                strlcpy
+ .text          0x0000000000004944       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+                0x0000000000004944                strnlen
+ .text          0x000000000000496c       0x74 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+                0x000000000000496c                qsee_bulletin_board_post
+                0x00000000000049a0                qsee_bulletin_board_read
+ kthread_shared
+                0x00000000000049e0       0x98 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(kthread_shared.o)
+                0x00000000000049e0                mink_generic_syscall
+ *(SORT(tzapp_syscall_asm))
+ *fill*         0x0000000000004a78       0x88 
+ tzapp_syscall_asm
+                0x0000000000004b00      0x200 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_syscall.o)
+                0x0000000000004b00                app_export_init_info_to_qsee
+                0x0000000000004b14                qsee_wait_default_signal_syscall
+                0x0000000000004ba4                qsee_generic_syscall
+ *(SORT(.rodata))
+ .rodata        0x0000000000004d00       0x58 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .rodata        0x0000000000004d58     0x106c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .rodata        0x0000000000005dc4        0x4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+                0x0000000000005dc4                TA_ACCEPT_BUF_SIZE
+ .rodata        0x0000000000005dc8      0x1d0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ *(SORT(EXCLUDE_FILE(*\metadata.o) .rodata.*))
+ .rodata.cst16  0x0000000000005f98       0x10 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .rodata.str1.1
+                0x0000000000005fa8        0x9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .rodata.str1.1
+                0x0000000000005fb1       0x11 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .rodata.cst16  0x0000000000005fc2       0x10 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .rodata.str1.1
+                0x0000000000005fd2      0x1a2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .rodata.str1.1
+                0x0000000000006174      0x286 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+                                        0x28d (size before relaxing)
+ .rodata.str1.1
+                0x00000000000063fa      0x381 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ *metadata.o(SORT(.rodata.str1.1))
+ .rodata.str1.1
+                0x000000000000677b        0xb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+
+.plt            0x0000000000006788        0x0
+ .plt           0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.sentinel       0x0000000000006786       0x2c
+ *(SORT(.rodata.sentinel))
+ .rodata.sentinel
+                0x0000000000006786       0x2c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+                0x0000000000006786                TA_METADATA
+                0x0000000000000001                ASSERT ((SIZEOF (.sentinel) != 0x0), No sentinel section defined.)
+
+.gnu.version_d  0x00000000000067b8        0x0
+ .gnu.version_d
+                0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.version    0x00000000000067b2        0x0
+ .gnu.version   0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.version_r  0x00000000000067b8        0x0
+ .gnu.version_r
+                0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.metadata_check
+                0x00000000000067b2        0x0
+ *metadata.o(SORT(.rodata.*))
+                0x0000000000000001                ASSERT ((SIZEOF (.metadata_check) == 0x0), New metadata not accounted for here)
+
+.data           0x0000000000007000     0x1799
+ *(SORT(.data) SORT(TZAPPENTRYSTACK) SORT(.bss) SORT(COMMON))
+ TZAPPENTRYSTACK
+                0x0000000000007000       0x80 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000007080                app_entry_stack_start
+ .data          0x0000000000007080      0x290 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000007080                magic_num
+                0x0000000000007094                magic_num_index_array
+                0x00000000000070a0                mem_magic_number
+                0x00000000000070b8                __stack_chk_guard
+ .bss           0x0000000000007310       0x84 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000007310                pgCmnlib
+ *fill*         0x0000000000007394        0x4 
+ COMMON         0x0000000000007398       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000007398                apps_request_resp
+ .bss           0x00000000000073c0      0x1e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .data          0x00000000000075a0       0x18 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .bss           0x00000000000075b8       0xc0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .bss           0x0000000000007678     0x1000 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+                0x0000000000007678                ta_acceptBuf
+ .bss           0x0000000000008678      0x121 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+
+.rel.text
+ *(SORT(.rel.text))
+
+.rel.rodata
+ *(SORT(.rel.rodata))
+
+.data.rel.ro.local
+                0x00000000000087a0       0xf0
+ *(SORT(.data.rel.ro.local))
+ .data.rel.ro.local
+                0x00000000000087a0       0xe0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .data.rel.ro.local
+                0x0000000000008880       0x10 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+
+.data.rel.ro
+ *(SORT(.data.rel.ro))
+
+.rel.data
+ *(SORT(.rel.data))
+
+.rel.plt
+ *(SORT(.rel.plt))
+
+.data.rel
+ *(SORT(.data.rel))
+
+.data.rel.local
+                0x0000000000008890       0x20
+ *(SORT(.data.rel.local))
+ .data.rel.local
+                0x0000000000008890        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+                0x0000000000008890                TA_APP_NAME
+ .data.rel.local
+                0x0000000000008898        0x8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                0x0000000000008898                dummy_str
+ .data.rel.local
+                0x00000000000088a0       0x10 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+
+TZ_APP_STACK    0x00000000000088b0     0x4000
+                0x00000000000088b0                Image$$TZ_APP_STACK$$ZI$$Base = .
+                0x000000000000c8b0                . = (. + 0x4000)
+ *fill*         0x00000000000088b0     0x4000 
+                0x000000000000c8b0                Image$$TZ_APP_STACK$$ZI$$Limit = .
+
+TZ_APP_HEAP     0x000000000000c8b0     0x8000
+                0x000000000000c8b0                Image$$TZ_APP_HEAP$$ZI$$Base = .
+                0x00000000000148b0                . = (. + 0x8000)
+ *fill*         0x000000000000c8b0     0x8000 
+                0x00000000000148b0                Image$$TZ_APP_HEAP$$ZI$$Limit = .
+
+.got            0x0000000000015000       0xe0
+ *(SORT(.got.plt))
+ .got.plt       0x0000000000015000       0x18 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ *(SORT(.igot.plt))
+ *(SORT(.got))
+ .got           0x0000000000015018       0xc8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000015018                _GLOBAL_OFFSET_TABLE_
+ *(SORT(.igot))
+
+.dynamic        0x0000000000016000       0xa0
+ *(SORT(.dynamic))
+ .dynamic       0x0000000000016000       0xa0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+                0x0000000000016000                _DYNAMIC
+
+.rela.dyn       0x0000000000017000      0x2e8
+ *(SORT(.rela.dyn))
+ .rela.got      0x0000000000017000      0x240 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.plt      0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.ifunc    0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .relaTZAPPENTRYCODE
+                0x0000000000017240       0x18 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.data.rel.local
+                0x0000000000017258       0x48 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+ .rela.data.rel.ro.local
+                0x00000000000172a0       0x48 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.dynbss         0x00000000000172e8        0x0
+ .dynbss        0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+
+.gnu.attributes
+ *(SORT(.gnu.attributes))
+
+.note.gnu.arm.ident
+ *(SORT(.note.gnu.arm.ident))
+
+/DISCARD/
+ *(SORT(.hash))
+ *(SORT(.dynsym))
+ *(SORT(.dynstr))
+ *(SORT(.ARM.exidx*))
+ *(SORT(.note.GNU-stack))
+ *(SORT(.gnu_debuglink))
+ *(SORT(.gnu.lto_*))
+ *(SORT(.init))
+ *(SORT(.fini))
+START GROUP
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib
+LOAD /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/tools/lib64/lib/libc.a
+LOAD /afs/localcell/cm/gv2.6/sysname/pkg.@sys/qct/software/llvm/release/arm/3.5.2.4/lib/clang/3.5.2/lib/linux/libclang_rt.builtins-arm.a
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/qsee64/src/tzapp_entry.o
+LOAD /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+END GROUP
+OUTPUT(/local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/bsp/trustzone/qsapps/sampleauth/build/IADAANAA/sampleauth.elf elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0x8599
+ .debug_info    0x0000000000000000       0xb5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .debug_info    0x00000000000000b5     0x14d3 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_info    0x0000000000001588      0x5c8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_info    0x0000000000001b50      0x67e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_info    0x00000000000021ce      0x2c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_info    0x0000000000002492      0x3c4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_info    0x0000000000002856       0xbe /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_info    0x0000000000002914       0xb5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_info    0x00000000000029c9       0xa2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_info    0x0000000000002a6b      0xb5e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_info    0x00000000000035c9       0xfc /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_info    0x00000000000036c5       0xfb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .debug_info    0x00000000000037c0      0x58f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .debug_info    0x0000000000003d4f     0x2d55 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_info    0x0000000000006aa4       0x78 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .debug_info    0x0000000000006b1c      0x565 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .debug_info    0x0000000000007081      0x8fb /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .debug_info    0x000000000000797c      0x8ac /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .debug_info    0x0000000000008228       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_info    0x00000000000082d0       0xc6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .debug_info    0x0000000000008396       0x93 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .debug_info    0x0000000000008429      0x170 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+.debug_abbrev   0x0000000000000000     0x1992
+ .debug_abbrev  0x0000000000000000       0x63 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .debug_abbrev  0x0000000000000063      0x2f4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_abbrev  0x0000000000000357      0x16b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_abbrev  0x00000000000004c2      0x18c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_abbrev  0x000000000000064e      0x124 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_abbrev  0x0000000000000772      0x11a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_abbrev  0x000000000000088c       0x92 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_abbrev  0x000000000000091e       0x85 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_abbrev  0x00000000000009a3       0x76 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_abbrev  0x0000000000000a19      0x26a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_abbrev  0x0000000000000c83       0x98 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_abbrev  0x0000000000000d1b       0x8b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .debug_abbrev  0x0000000000000da6      0x171 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .debug_abbrev  0x0000000000000f17      0x232 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_abbrev  0x0000000000001149       0x52 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .debug_abbrev  0x000000000000119b      0x17c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .debug_abbrev  0x0000000000001317      0x1e4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .debug_abbrev  0x00000000000014fb      0x245 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .debug_abbrev  0x0000000000001740       0x8a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_abbrev  0x00000000000017ca       0x94 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .debug_abbrev  0x000000000000185e       0x85 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .debug_abbrev  0x00000000000018e3       0xaf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+.debug_line     0x0000000000000000     0x429d
+ .debug_line    0x0000000000000000       0xe4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .debug_line    0x00000000000000e4      0x7d4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_line    0x00000000000008b8      0x3a5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_line    0x0000000000000c5d      0x317 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_line    0x0000000000000f74      0x29b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_line    0x000000000000120f      0x226 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_line    0x0000000000001435      0x132 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_line    0x0000000000001567      0x145 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_line    0x00000000000016ac      0x151 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_line    0x00000000000017fd      0x5e4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_line    0x0000000000001de1      0x26a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_line    0x000000000000204b      0x17e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .debug_line    0x00000000000021c9      0x37b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .debug_line    0x0000000000002544      0xc27 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_line    0x000000000000316b       0xed /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .debug_line    0x0000000000003258      0x300 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .debug_line    0x0000000000003558      0x405 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .debug_line    0x000000000000395d      0x3a3 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .debug_line    0x0000000000003d00      0x12a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_line    0x0000000000003e2a      0x13b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .debug_line    0x0000000000003f65      0x131 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .debug_line    0x0000000000004096      0x207 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+.debug_pubnames
+                0x0000000000000000     0x117a
+ .debug_pubnames
+                0x0000000000000000       0x5a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .debug_pubnames
+                0x000000000000005a      0x4ee /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_pubnames
+                0x0000000000000548       0x9c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_pubnames
+                0x00000000000005e4      0x1e5 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_pubnames
+                0x00000000000007c9       0x4b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_pubnames
+                0x0000000000000814       0xbf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_pubnames
+                0x00000000000008d3       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_pubnames
+                0x00000000000008f7       0x1d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_pubnames
+                0x0000000000000914       0x1d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_pubnames
+                0x0000000000000931       0xcf /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_pubnames
+                0x0000000000000a00       0x1d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_pubnames
+                0x0000000000000a1d       0x1d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .debug_pubnames
+                0x0000000000000a3a       0x59 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .debug_pubnames
+                0x0000000000000a93      0x1cd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_pubnames
+                0x0000000000000c60       0x4b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .debug_pubnames
+                0x0000000000000cab       0xe2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .debug_pubnames
+                0x0000000000000d8d      0x151 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .debug_pubnames
+                0x0000000000000ede      0x1f6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .debug_pubnames
+                0x00000000000010d4       0x1e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_pubnames
+                0x00000000000010f2       0x1e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .debug_pubnames
+                0x0000000000001110       0x1e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .debug_pubnames
+                0x000000000000112e       0x4c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+.debug_pubtypes
+                0x0000000000000000     0x2427
+ .debug_pubtypes
+                0x0000000000000000       0x2c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .debug_pubtypes
+                0x000000000000002c      0x48a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_pubtypes
+                0x00000000000004b6      0x11b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_pubtypes
+                0x00000000000005d1      0x112 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_pubtypes
+                0x00000000000006e3       0xf7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_pubtypes
+                0x00000000000007da       0xe6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_pubtypes
+                0x00000000000008c0       0x59 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_pubtypes
+                0x0000000000000919       0x4d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_pubtypes
+                0x0000000000000966       0x3c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_pubtypes
+                0x00000000000009a2      0x110 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_pubtypes
+                0x0000000000000ab2       0x63 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_pubtypes
+                0x0000000000000b15       0x4d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .debug_pubtypes
+                0x0000000000000b62      0x1aa /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .debug_pubtypes
+                0x0000000000000d0c     0x10d1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_pubtypes
+                0x0000000000001ddd       0x2d /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .debug_pubtypes
+                0x0000000000001e0a      0x100 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .debug_pubtypes
+                0x0000000000001f0a      0x211 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .debug_pubtypes
+                0x000000000000211b      0x1a4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .debug_pubtypes
+                0x00000000000022bf       0x33 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_pubtypes
+                0x00000000000022f2       0x3c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .debug_pubtypes
+                0x000000000000232e       0x3c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .debug_pubtypes
+                0x000000000000236a       0xbd /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+.debug_str      0x0000000000000000     0x5312
+ .debug_str     0x0000000000000000      0x19e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+                                        0x1b0 (size before relaxing)
+ .debug_str     0x000000000000019e      0xe6b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+                                        0xf9a (size before relaxing)
+ .debug_str     0x0000000000001009      0x181 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+                                        0x30c (size before relaxing)
+ .debug_str     0x000000000000118a      0x248 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+                                        0x3f0 (size before relaxing)
+ .debug_str     0x00000000000013d2       0xf9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+                                        0x28b (size before relaxing)
+ .debug_str     0x00000000000014cb      0x306 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+                                        0x46d (size before relaxing)
+ .debug_str     0x00000000000017d1       0xc0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+                                        0x195 (size before relaxing)
+ .debug_str     0x0000000000001891       0xa4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+                                        0x172 (size before relaxing)
+ .debug_str     0x0000000000001935       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+                                        0x15e (size before relaxing)
+ .debug_str     0x00000000000019dd      0x29a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+                                        0x480 (size before relaxing)
+ .debug_str     0x0000000000001c77       0xaa /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+                                        0x18a (size before relaxing)
+ .debug_str     0x0000000000001d21       0xa6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+                                        0x173 (size before relaxing)
+ .debug_str     0x0000000000001dc7      0x3b7 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+                                        0x51b (size before relaxing)
+ .debug_str     0x000000000000217e     0x22b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+                                       0x2d42 (size before relaxing)
+ .debug_str     0x000000000000442e       0xf3 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+                                        0x187 (size before relaxing)
+ .debug_str     0x0000000000004521      0x30c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+                                        0x4a3 (size before relaxing)
+ .debug_str     0x000000000000482d      0x366 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+                                        0xbc0 (size before relaxing)
+ .debug_str     0x0000000000004b93      0x467 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+                                        0x783 (size before relaxing)
+ .debug_str     0x0000000000004ffa       0xc4 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+                                        0x179 (size before relaxing)
+ .debug_str     0x00000000000050be       0xac /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+                                        0x16c (size before relaxing)
+ .debug_str     0x000000000000516a       0xb2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+                                        0x168 (size before relaxing)
+ .debug_str     0x000000000000521c       0xf6 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+                                        0x23b (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x50a8
+ .debug_loc     0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .debug_loc     0x0000000000000000      0x964 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_loc     0x0000000000000964      0x385 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_loc     0x0000000000000ce9      0x36b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_loc     0x0000000000001054       0x6c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_loc     0x00000000000010c0      0x11e /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_loc     0x00000000000011de       0x8f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_loc     0x000000000000126d       0xc8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_loc     0x0000000000001335       0x8f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_loc     0x00000000000013c4     0x15a2 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_loc     0x0000000000002966      0x650 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_loc     0x0000000000002fb6      0x157 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .debug_loc     0x000000000000310d      0x44b /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .debug_loc     0x0000000000003558      0x40a /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_loc     0x0000000000003962        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .debug_loc     0x0000000000003962      0x4b1 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .debug_loc     0x0000000000003e13      0x6c9 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .debug_loc     0x00000000000044dc      0x9ff /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .debug_loc     0x0000000000004edb       0x7c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_loc     0x0000000000004f57       0x9f /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .debug_loc     0x0000000000004ff6       0x36 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .debug_loc     0x000000000000502c       0x7c /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+.debug_ranges   0x0000000000000000     0x10e0
+ .debug_ranges  0x0000000000000000        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+ .debug_ranges  0x0000000000000000      0x240 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_ranges  0x0000000000000240      0x1e0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_ranges  0x0000000000000420       0xa0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_ranges  0x00000000000004c0       0xc0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_ranges  0x0000000000000580        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_ranges  0x0000000000000580        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_ranges  0x0000000000000580        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_ranges  0x0000000000000580        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_ranges  0x0000000000000580      0x170 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_ranges  0x00000000000006f0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_ranges  0x00000000000006f0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .debug_ranges  0x00000000000006f0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .debug_ranges  0x00000000000006f0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_ranges  0x00000000000006f0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .debug_ranges  0x00000000000006f0       0xc0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .debug_ranges  0x00000000000007b0      0x280 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .debug_ranges  0x0000000000000a30      0x6b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .debug_ranges  0x00000000000010e0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_ranges  0x00000000000010e0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .debug_ranges  0x00000000000010e0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .debug_ranges  0x00000000000010e0        0x0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+.comment        0x0000000000000000       0x23
+ .comment       0x0000000000000000       0x23 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/metadata.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .comment       0x0000000000000000       0x24 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)
+
+.debug_frame    0x0000000000000000     0x1058
+ .debug_frame   0x0000000000000000      0x3b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/common_applib/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(common_applib.o)
+ .debug_frame   0x00000000000003b0       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(mink_shared_code.o)
+ .debug_frame   0x0000000000000458       0xc8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_env.o)
+ .debug_frame   0x0000000000000520       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_prng.o)
+ .debug_frame   0x0000000000000558       0xe8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(tzapp_lib_main.o)
+ .debug_frame   0x0000000000000640       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(secure_memset.o)
+ .debug_frame   0x0000000000000678       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memset.o)
+ .debug_frame   0x00000000000006a0       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlen.o)
+ .debug_frame   0x00000000000006c8      0x1b0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(printf.o)
+ .debug_frame   0x0000000000000878       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memcpy.o)
+ .debug_frame   0x00000000000008a0       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memchr.o)
+ .debug_frame   0x00000000000008c8       0xa8 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/apps/securemsm/trustzone/qsapps/sampleauth/build/sampleauth/A53_64/IADAANAA/sampleauth_app.lib(app_main.o)
+ .debug_frame   0x0000000000000970      0x340 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/proxy/build/sampleauth/A53_64/IADAANAA/tzlib_proxy.lib(prxy_services.o)
+ .debug_frame   0x0000000000000cb0       0x60 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_timer_shim.o)
+ .debug_frame   0x0000000000000d10       0x88 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_appmessage.o)
+ .debug_frame   0x0000000000000d98       0xd0 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric.o)
+ .debug_frame   0x0000000000000e68      0x128 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/biometric/build/sampleauth/A53_64/IADAANAA/biometric_lib.lib(biometric_serializer.o)
+ .debug_frame   0x0000000000000f90       0x38 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(memscpy.o)
+ .debug_frame   0x0000000000000fc8       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strlcpy.o)
+ .debug_frame   0x0000000000000ff0       0x28 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsee/mink/libstd/build/sampleauth/A53_64/IADAANAA/libstd.lib(strnlen.o)
+ .debug_frame   0x0000000000001018       0x40 /local/mnt/workspace/CRMBuilds/TZ.BF.4.0.3.c1-00005-M8996AAAAANAZT-1_20170110_230814/b/HK11/trustzone_images/core/securemsm/trustzone/qsapps/libs/applib/qsee64/build/sampleauth/A53_64/IADAANAA/tzapp_entrylib.lib(qsee_bulletin_board_shim.o)

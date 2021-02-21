@@ -1,0 +1,32 @@
+//============================================================================
+//  Name:                                                                     
+//    std_toolsconfig.cmm 
+//
+//  Description:                                                              
+//    None 
+//                                                                            
+// Copyright (c) 2016 by QUALCOMM, Incorporated.  All Rights Reserved.        
+//============================================================================
+//                                                                            
+// *** AUTO GENERATED FILE - DO NOT EDIT                                      
+//                                                                            
+// GENERATED: Sun Mar 27 23:05:58 2016 
+//============================================================================
+
+
+GLOBAL &RPM_ABS_BUILD_ROOT
+GLOBAL &RPM_BUILD_ROOT
+GLOBAL &RPM_CBSP_ROOT
+GLOBAL &RPM_SCRIPTSDIR
+GLOBAL &RPM_BUILDMSDIR
+
+
+
+&RPM_ABS_BUILD_ROOT="Z:/b/rpm_proc"
+&RPM_BUILD_ROOT=os.ppd()+"/../../.."
+&RPM_CBSP_ROOT=os.ppd()+"/../.."
+&RPM_SCRIPTSDIR=os.ppd()+"/../../products"
+&RPM_BUILDMSDIR=os.ppd()+"/../../../rpm/build/ms"
+
+
+ENDDO

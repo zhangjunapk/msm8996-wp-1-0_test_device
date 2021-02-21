@@ -1,0 +1,26 @@
+#/** @file MemoryValidation.inf
+#  
+#  INF used by packit.py for including tools files into packed build.
+#  
+#  Copyright (c) 2015, Qualcomm Technologies Inc. All rights reserved.
+#
+#**/
+#==============================================================================
+#                              EDIT HISTORY
+#
+#
+# when       who        what, where, why
+# --------   ---        ----------------------------------------------------------
+# 07/20/15   jb         Initial release
+#==============================================================================
+
+[Sources]
+
+[UserExtensions.PackIt.PackIn]
+  ./
+
+[UserExtensions.PackIt.PackOut]
+  ./tiotest32
+  ./tiotest64
+  ./MemoryValidation.rar
+

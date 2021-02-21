@@ -1,0 +1,228 @@
+//=============================================================================
+//
+// FILE:        HALxpu2Data.xml
+//
+// DESCRIPTION: This file contains the HAL XML properties for the xPU2 driver.
+//
+//=============================================================================
+//
+//                             Edit History
+//
+// $Header:  $
+// $DateTime: $
+// $Author: $
+// $Change: $
+//
+// when         who     what, where, why
+// ----------   ---     -------------------------------------------------------
+// 07/14/2014   sc      Updated for 8996
+// 09/10/2013   sc      Initial revision
+//
+//=============================================================================
+// Copyright (c) 2013 - 2015
+// Qualcomm Technologies Incorporated.
+// All Rights Reserved.
+// Qualcomm Confidential and Proprietary
+//=============================================================================
+#include "HALxpu2.h"
+#include "HALxpu2InfoImpl.h"
+#include <HALhwio.h>
+#include "HALxpu2HWIOTarget.h"
+
+<driver name="NULL">
+
+  <device id="/dev/xpu2">
+    <props id=XPU2_BIMC_APU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(BIMC_CONFIG_APU_XPU_SCR), "BIMC_APU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_BIMC_MPU0 type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(BIMC_S_DDR0_XPU_SCR), "BIMC_MPU0", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_BIMC_MPU1 type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(BIMC_S_DDR1_XPU_SCR), "BIMC_MPU1", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_BOOT_ROM type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(BOOT_ROM_XPU_SCR), "BOOT_ROM", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_CRYPTO0_BAM type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(CRYPTO0_CRYPTO_BAM_XPU_SCR), "CRYPTO0_BAM", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_CLK_CTL type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(GCC_RPU_XPU_SCR), "CLK_CTL", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_MDSS_APU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(MMSS_XPU_XPU_SCR), "MDSS_APU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_MPM2 type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(MPM2_XPU_SCR), "MPM2", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_IMEM_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(OCIMEM_MPU_XPU_SCR), "IMEM_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_IMEM_APU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(OCIMEM_APU_XPU_SCR), "IMEM_APU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+    
+    <props id=XPU2_BAM_BLSP1_DMA type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(PERIPH_SS_BLSP1_BLSP_BAM_XPU_SCR), "BAM_BLSP1_DMA", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_BAM_BLSP2_DMA type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(PERIPH_SS_BLSP2_BLSP_BAM_XPU_SCR), "BAM_BLSP2_DMA", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_BAM_SDCC1 type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(PERIPH_SS_SDC1_SDCC_XPU_SCR), "BAM_SDCC1", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_BAM_SDCC2 type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(PERIPH_SS_SDC2_SDCC_XPU_SCR), "BAM_SDCC2", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+    
+    <props id=XPU2_PMIC_ARB type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(PMIC_ARB_XPU_SCR), "PMIC_ARB", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_SEC_CTRL_APU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(SEC_CTRL_APU_XPU_SCR), "SEC_CTRL_APU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_SPDM_APU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(SPDM_XPU_SCR), "SPDM_APU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_TCSR_MUTEX type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(TCSR_MUTEX_XPU_SCR), "TCSR_MUTEX", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_TCSR_REGS type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(TCSR_REGS_XPU_SCR), "TCSR_REGS", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_TLMM type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(TLMM_XPU_SCR), "TLMM", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_UFS type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(UFS_XPU_SCR), "UFS", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_DCC type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(DCC_XPU_SCR), "DCC", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_MMAGIC_DSA_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(MMAGIC_DSA_MPU_XPU_SCR), "MMAGIC_DSA_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_MMAGIC_XPU2_MNOC type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(MMAGIC_XPU2_MNOC_XPU_SCR), "MMAGIC_XPU2_MNOC", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_SSC_BLSP_BAM type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(SSC_BLSP_BLSP_BAM_XPU_SCR), "SSC_BLSP_BAM", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_UFS_ICE type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(UFS_ICE_XPU_SCR), "UFS_ICE", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_CFG_ANOC0_CFG type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(XPU_CFG_ANOC0_CFG_XPU_SCR), "ANOC0_CFG", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_CFG_ANOC1_CFG type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(XPU_CFG_ANOC1_CFG_XPU_SCR), "ANOC1_CFG", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_CFG_ANOC2_CFG type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(XPU_CFG_ANOC2_CFG_XPU_SCR), "ANOC2_CFG", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_CFG_CPR type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(XPU_CFG_CPR_XPU_SCR), "CFG_CPR", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_RBCR_QDSS type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(XPU_CFG_QDSS_XPU_SCR), "RBCR_QDSS", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_SNOC_CFG type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(XPU_CFG_SNOC_CFG_XPU_SCR), "SNOC_CFG", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_CFG_SSC type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(XPU_CFG_SSC_XPU_SCR), "CFG_SSC", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_LPASS_QDSP6SS type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(LPASS_Q6SS_XPU_SCR), "LPASS_Q6SS", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_PNOC_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(PERIPH_SS_MPU_XPU_SCR), "PNOC_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_RAMBLUR_PIMEM_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(RAMBLUR_PIMEM_MPU_XPU_SCR), "RAMBLUR_PIMEM_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_RAMBLUR_PIMEM_APU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(RAMBLUR_PIMEM_APU_XPU_SCR), "RAMBLUR_PIMEM_APU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_RPM_MSTR_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(RPM_MSTR_MPU_XPU_SCR), "RPM_MSTR_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_SSC_Q6_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(SSC_Q6_MPU_XPU_SCR), "SSC_Q6_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_MMSS_VENUS type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(MMSS_VENUS0_VENUS_XPU_SCR), "MMSS_VENUS", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_IPA type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(IPA_0_XPU_SCR), "IPA", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_MMSS_CC type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(MMSS_XPU2_MMSS_CC_XPU_SCR), "MMSS_CC", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_SDC1_SDCC_ICE type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(PERIPH_SS_SDC1_SDCC_ICE_XPU_SCR), "SDC1_ICE", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_SKL type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(SKL_XPU_SCR), "SKL", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_ANOC1_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(ANOC1_MPU_XPU_SCR), "ANOC1_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_ANOC2_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(ANOC2_MPU_XPU_SCR), "ANOC2_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_MSS_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(MSS_MPU_XPU_SCR), "MSS_MPU", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+
+    <props id=XPU2_MSS_Q6_MPU type="HAL_xpu2_InfoType">
+      {HWIO_ADDR(MSS_Q6_MPU_XPU_SCR), "MSS_Q6", {HAL_XPU2_DEVICE_DNE, 0, 0, 0, 0, 0, 0, FALSE, FALSE, FALSE, FALSE}}
+    </props>
+  </device>
+
+</driver>
